@@ -1,0 +1,156 @@
+@keyframes headShake {
+  0%   {transform: rotate(0)}
+  30%  {transform: rotate(-20deg)}
+  100% {transform: rotate(20deg);}
+}
+
+@keyframes hairShake {
+  0% {transform: rotate(0); transform: translate(0)}
+  30% {transform: rotate(-20deg) translate(-18px, 0px)}
+  100% {transform: rotate(20deg) translate(18px, 0px)}
+}
+
+@keyframes eyeBlink {
+from {opacity: 1}
+to {opacity: 0}
+}
+.aboutMe{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    .logoLink {
+      text-decoration: none;
+      color: #555;
+      font-family: Channel;
+    }
+  }
+  .avatarBox {
+    background-color: #E83168;
+    width: 300px;
+    height: 300px;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+  }
+}
+
+.head {
+  width: 77px;
+  height: 100px;
+  background-color: #FDE0AA;
+  position: relative;
+  .beard1 {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #E83168;
+    border-right: 30px solid transparent;
+  }
+  .beard2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #E83168;
+    border-left: 30px solid transparent;
+  }
+  .eye1 {
+    animation-name: eyeBlink;
+    animation-duration: 0.3s;
+    animation-delay: 1s;
+    width: 7px;
+    height: 9px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    background-color: black;
+  }
+  .eye2 {
+    width: 7px;
+    height: 9px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    background-color: black;
+  }
+}
+
+.hair {
+  position: absolute;
+  top: 70px;
+  width: 77px;
+  height: 55px;
+  z-index: 1;
+  background-color: #472B1F;
+  .hair1 {
+    position: absolute;
+    top: 30px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 40px solid #FDE0AA;
+    transform: rotate(-20deg);
+  }
+  .hair2 {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #E83168;
+    border-left: 25px solid transparent;
+  }
+  .hair3 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #E83168;
+    border-right: 15px solid transparent;
+  }
+}
+.headAnimation {
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-name: headShake;
+  animation-duration: 1s;
+}
+
+.hairAnimation {
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-name: hairShake;
+  animation-duration: 1s;
+}
+
+.mouth {
+  position: absolute;
+  bottom: 17px;
+  left: 23px;
+  width: 30px;
+  height: 7px;
+  background-color: #CA9A82;
+}

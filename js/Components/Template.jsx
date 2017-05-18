@@ -7,14 +7,15 @@ class Template extends React.Component {
     super()
     this.state = {
       toggled: false
+
     }
   }
-
   rollMenu = () => {
     this.setState({
       toggled: !this.state.toggled
     });
   }
+  
   render() {
     let classes = "menu-btn"
     let lists = "hide"

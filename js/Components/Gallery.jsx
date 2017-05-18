@@ -6,12 +6,10 @@ class Gallery extends React.Component {
     super()
   }
   componentDidMount() {
-    this.handleScroll = () => {
-      console.log('lol');
-    }
+
   }
   render() {
-    return <MainGallery/>
+    return <MainGallery />
   }
 }
 
