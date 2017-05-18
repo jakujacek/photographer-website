@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link, IndexLink} from 'react-router'
-import Slider from './Slider.jsx'
+
+
 class Template extends React.Component {
   constructor() {
     super()
@@ -8,6 +9,7 @@ class Template extends React.Component {
       toggled: false
     }
   }
+
   rollMenu = () => {
     this.setState({
       toggled: !this.state.toggled
@@ -15,7 +17,7 @@ class Template extends React.Component {
   }
   render() {
     let classes = "menu-btn"
-    let lists = "listMenu"
+    let lists = "hide"
     if (this.state.toggled) {
       classes += " open";
       lists = "show";
@@ -25,10 +27,10 @@ class Template extends React.Component {
               <nav id="menu">
               <div className="navBar"></div>
               <ul className={lists}>
-                  <li className="liElement"><Link to="/porfolio" className="link">Porfolio</Link></li>
-                  <li className="liElement"><Link to="/blog" className="link">Blog</Link></li>
-                  <li className="liElement"><Link to="/aboutme" className="link">About Me</Link></li>
-                  <li className="liElement"><Link to="/contact" className="link">Contact</Link></li>
+                  <li className="liElement"><Link to="/porfolio" className="link" onClick={this.rollMenu}>Porfolio</Link></li>
+                  <li className="liElement"><Link to="/blog" className="link" onClick={this.rollMenu}>Blog</Link></li>
+                  <li className="liElement"><Link to="/aboutme" className="link" onClick={this.rollMenu}>About Me</Link></li>
+                  <li className="liElement"><Link to="/contact" className="link" onClick={this.rollMenu}>Contact</Link></li>
               </ul>
               <div className={classes} onClick={this.rollMenu}>
                   <span></span>
@@ -36,11 +38,8 @@ class Template extends React.Component {
                   <span></span>
                   <span></span>
               </div>
-                <Slider />
+                {this.props.children}
               </nav>
-          </section>
-          <section className="main-width">
-            {this.props.children}
           </section>
       </div>
   }

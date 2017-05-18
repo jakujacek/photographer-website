@@ -1,5 +1,5 @@
 module.exports = {
-    entry: [//'./js/zadanie00.jsx'
+    entry: [
             './js/app.jsx'
           ],
     output: {

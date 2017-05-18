@@ -12705,8 +12705,6 @@ module.exports = getIteratorFn;
 "use strict";
 
 
-__webpack_require__(252);
-
 var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
@@ -12721,20 +12719,26 @@ var _Template = __webpack_require__(115);
 
 var _Template2 = _interopRequireDefault(_Template);
 
-var _MainGallery = __webpack_require__(113);
+var _Gallery = __webpack_require__(256);
 
-var _MainGallery2 = _interopRequireDefault(_MainGallery);
+var _Gallery2 = _interopRequireDefault(_Gallery);
+
+var _AboutMe = __webpack_require__(113);
+
+var _AboutMe2 = _interopRequireDefault(_AboutMe);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+__webpack_require__(252);
 document.addEventListener("DOMContentLoaded", function () {
   _reactDom2.default.render(_react2.default.createElement(
     _reactRouter.Router,
     { history: _reactRouter.hashHistory },
     _react2.default.createElement(
       _reactRouter.Route,
-      { path: "/", component: _Template2.default },
-      _react2.default.createElement(_reactRouter.IndexRoute, { component: _MainGallery2.default })
+      { path: '/', component: _Template2.default },
+      _react2.default.createElement(_reactRouter.IndexRoute, { component: _Gallery2.default }),
+      _react2.default.createElement(_reactRouter.Route, { path: '/aboutme', component: _AboutMe2.default })
     )
   ), document.getElementById('app'));
 });
@@ -12764,38 +12768,36 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MainGallery = function (_React$Component) {
-  _inherits(MainGallery, _React$Component);
+var AboutMe = function (_React$Component) {
+  _inherits(AboutMe, _React$Component);
 
-  function MainGallery() {
-    _classCallCheck(this, MainGallery);
+  function AboutMe() {
+    _classCallCheck(this, AboutMe);
 
-    return _possibleConstructorReturn(this, (MainGallery.__proto__ || Object.getPrototypeOf(MainGallery)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AboutMe.__proto__ || Object.getPrototypeOf(AboutMe)).apply(this, arguments));
   }
 
-  _createClass(MainGallery, [{
+  _createClass(AboutMe, [{
     key: "render",
     value: function render() {
       return _react2.default.createElement(
         "div",
-        null,
+        { className: "box" },
         _react2.default.createElement(
           "div",
-          { className: "box" },
-          _react2.default.createElement("img", { src: "./images/jacek-jpg-3.jpg", className: "boxImg" })
-        ),
-        _react2.default.createElement("div", { className: "boxImg" }),
-        _react2.default.createElement("div", { className: "boxImg" }),
-        _react2.default.createElement("div", { className: "boxImg" }),
-        _react2.default.createElement("div", { className: "boxImg" })
+          { className: "" },
+          "Hello it",
+          "'",
+          "s me"
+        )
       );
     }
   }]);
 
-  return MainGallery;
+  return AboutMe;
 }(_react2.default.Component);
 
-exports.default = MainGallery;
+exports.default = AboutMe;
 
 /***/ }),
 /* 114 */
@@ -12805,7 +12807,7 @@ exports.default = MainGallery;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -12822,35 +12824,78 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Slider = function (_React$Component) {
-  _inherits(Slider, _React$Component);
+var MainGallery = function (_React$Component) {
+    _inherits(MainGallery, _React$Component);
 
-  function Slider() {
-    _classCallCheck(this, Slider);
+    function MainGallery() {
+        _classCallCheck(this, MainGallery);
 
-    return _possibleConstructorReturn(this, (Slider.__proto__ || Object.getPrototypeOf(Slider)).apply(this, arguments));
-  }
-
-  _createClass(Slider, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        { className: "slider" },
-        _react2.default.createElement("div", { className: "imgSlider" }),
-        _react2.default.createElement(
-          "div",
-          { className: "logo" },
-          "Awwgraphy"
-        )
-      );
+        return _possibleConstructorReturn(this, (MainGallery.__proto__ || Object.getPrototypeOf(MainGallery)).call(this));
     }
-  }]);
 
-  return Slider;
+    _createClass(MainGallery, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            document.querySelector('.box').firstChild.addEventListener('scroll', function () {
+                console.log('lol');
+            });
+        }
+    }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {}
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: 'slider' },
+                    _react2.default.createElement('div', { className: 'imgSlider' }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'logo' },
+                        'Awwgraphy'
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'box', style: this.props.style },
+                        _react2.default.createElement('img', { src: './images/jacek-jpg-3.jpg', className: 'boxImg' })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'box', style: this.props.style },
+                        _react2.default.createElement('img', { src: './images/jacek-jpg-3.jpg', className: 'boxImg' })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'box', style: this.props.style },
+                        _react2.default.createElement('img', { src: './images/jacek-jpg-3.jpg', className: 'boxImg' })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'box', style: this.props.style },
+                        _react2.default.createElement('img', { src: './images/jacek-jpg-3.jpg', className: 'boxImg' })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'box', style: this.props.style },
+                        _react2.default.createElement('img', { src: './images/jacek-jpg-3.jpg', className: 'boxImg' })
+                    )
+                )
+            );
+        }
+    }]);
+
+    return MainGallery;
 }(_react2.default.Component);
 
-exports.default = Slider;
+exports.default = MainGallery;
 
 /***/ }),
 /* 115 */
@@ -12870,10 +12915,6 @@ var _react = __webpack_require__(6);
 var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(105);
-
-var _Slider = __webpack_require__(114);
-
-var _Slider2 = _interopRequireDefault(_Slider);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12907,7 +12948,7 @@ var Template = function (_React$Component) {
     key: 'render',
     value: function render() {
       var classes = "menu-btn";
-      var lists = "listMenu";
+      var lists = "hide";
       if (this.state.toggled) {
         classes += " open";
         lists = "show";
@@ -12930,7 +12971,7 @@ var Template = function (_React$Component) {
                 { className: 'liElement' },
                 _react2.default.createElement(
                   _reactRouter.Link,
-                  { to: '/porfolio', className: 'link' },
+                  { to: '/porfolio', className: 'link', onClick: this.rollMenu },
                   'Porfolio'
                 )
               ),
@@ -12939,7 +12980,7 @@ var Template = function (_React$Component) {
                 { className: 'liElement' },
                 _react2.default.createElement(
                   _reactRouter.Link,
-                  { to: '/blog', className: 'link' },
+                  { to: '/blog', className: 'link', onClick: this.rollMenu },
                   'Blog'
                 )
               ),
@@ -12948,7 +12989,7 @@ var Template = function (_React$Component) {
                 { className: 'liElement' },
                 _react2.default.createElement(
                   _reactRouter.Link,
-                  { to: '/aboutme', className: 'link' },
+                  { to: '/aboutme', className: 'link', onClick: this.rollMenu },
                   'About Me'
                 )
               ),
@@ -12957,7 +12998,7 @@ var Template = function (_React$Component) {
                 { className: 'liElement' },
                 _react2.default.createElement(
                   _reactRouter.Link,
-                  { to: '/contact', className: 'link' },
+                  { to: '/contact', className: 'link', onClick: this.rollMenu },
                   'Contact'
                 )
               )
@@ -12970,13 +13011,8 @@ var Template = function (_React$Component) {
               _react2.default.createElement('span', null),
               _react2.default.createElement('span', null)
             ),
-            _react2.default.createElement(_Slider2.default, null)
+            this.props.children
           )
-        ),
-        _react2.default.createElement(
-          'section',
-          { className: 'main-width' },
-          this.props.children
         )
       );
     }
@@ -12997,7 +13033,7 @@ exports = module.exports = __webpack_require__(117)(undefined);
 
 
 // module
-exports.push([module.i, "@keyframes menuslide {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes vanish {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@font-face {\n  font-family: Channel;\n  src: url(" + __webpack_require__(253) + "); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.main-width {\n  width: 100vw;\n  height: auto;\n  background-color: white; }\n  .main-width .box {\n    width: 100vw;\n    height: 50vh;\n    flex: auto;\n    flex-wrap: wrap; }\n    .main-width .box .boxImg {\n      height: 50vh;\n      width: 100%;\n      object-fit: cover; }\n  .main-width #menu {\n    width: 100vw;\n    height: 100vh;\n    display: flex;\n    justify-content: flex-end;\n    flex-wrap: wrap; }\n    .main-width #menu .slider {\n      width: 100vw;\n      height: 100vh;\n      z-index: 0;\n      top: 0;\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n      flex-wrap: wrap;\n      align-items: center; }\n      .main-width #menu .slider .imgSlider {\n        width: 100vw;\n        height: 100vh;\n        background-image: url(" + __webpack_require__(135) + ");\n        background-repeat: no-repeat;\n        position: absolute;\n        background-size: cover;\n        background-position: center;\n        display: inline-block; }\n      .main-width #menu .slider .logo {\n        position: absolute;\n        top: 20px;\n        width: 30%;\n        height: 60px;\n        color: #555;\n        font-family: Channel;\n        z-index: 1; }\n    .main-width #menu .menu-btn {\n      width: 50px;\n      height: 50px;\n      background-color: transparent;\n      border-radius: 50%;\n      transform: rotate(0deg);\n      transition: .5s ease-in-out;\n      cursor: pointer;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      flex-wrap: wrap;\n      align-content: space-around;\n      position: absolute;\n      top: 10px;\n      right: 10px;\n      z-index: 2;\n      border: 1px solid transparent; }\n    .main-width #menu .listMenu {\n      display: none; }\n\nspan {\n  height: 3px;\n  width: 70%;\n  background: #d3531a;\n  opacity: 1;\n  right: 7px;\n  background-color: white;\n  transform: rotate(0deg);\n  transition: .30s ease-in-out;\n  position: absolute; }\n  span:nth-child(1) {\n    top: 13px; }\n  span:nth-child(2), span:nth-child(3) {\n    top: 23px; }\n  span:nth-child(4) {\n    top: 33px; }\n\n.open span:nth-child(1), .open span:nth-child(4) {\n  top: 18px;\n  width: 0%;\n  left: 50%;\n  animation-name: vanish;\n  animation-duration: 0.3s; }\n\n.open span:nth-child(2) {\n  transform: rotate(45deg);\n  height: 3px;\n  background-color: black; }\n\n.open span:nth-child(3) {\n  transform: rotate(-45deg);\n  height: 3px;\n  background-color: black; }\n\n.show {\n  animation-name: menuslide;\n  animation-duration: 0.6s;\n  display: flex;\n  width: 100vw;\n  height: 100vh;\n  list-style: none;\n  flex-direction: column;\n  align-items: center;\n  background: white;\n  z-index: 1;\n  position: absolute; }\n  .show .liElement {\n    width: 100vw;\n    height: 15vh;\n    display: flex;\n    justify-content: center; }\n    .show .liElement .link {\n      text-decoration: none;\n      color: #555;\n      align-self: center;\n      font-family: Channel; }\n", ""]);
+exports.push([module.i, "@keyframes menuslide {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes vanish {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@font-face {\n  font-family: Channel;\n  src: url(" + __webpack_require__(253) + "); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.main-width {\n  width: 100%;\n  height: 100vh;\n  background-color: #555; }\n  .main-width .box {\n    width: 100%;\n    height: 50vh;\n    justify-content: flex-start;\n    align-items: flex-start;\n    flex-wrap: wrap;\n    z-index: 0; }\n    .main-width .box .boxImg {\n      height: 50vh;\n      width: 100%;\n      object-fit: cover; }\n  .main-width #menu {\n    width: auto;\n    height: 100vh;\n    display: flex;\n    justify-content: flex-end;\n    flex-wrap: wrap; }\n    .main-width #menu .slider {\n      width: auto;\n      height: 100vh;\n      z-index: 0;\n      top: 0;\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n      flex-wrap: wrap;\n      align-items: center; }\n      .main-width #menu .slider .imgSlider {\n        width: 100vw;\n        height: 100vh;\n        background-image: url(" + __webpack_require__(135) + ");\n        background-repeat: no-repeat;\n        position: absolute;\n        background-size: cover;\n        background-position: center;\n        display: inline-block; }\n      .main-width #menu .slider .logo {\n        position: absolute;\n        top: 20px;\n        width: 30%;\n        height: 60px;\n        color: #555;\n        font-family: Channel;\n        z-index: 0; }\n    .main-width #menu .menu-btn {\n      width: 50px;\n      height: 50px;\n      background-color: transparent;\n      border-radius: 50%;\n      transform: rotate(0deg);\n      transition: .5s ease-in-out;\n      cursor: pointer;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      flex-wrap: wrap;\n      align-content: space-around;\n      position: fixed;\n      top: 10px;\n      right: 10px;\n      z-index: 2;\n      border: 1px solid transparent; }\n    .main-width #menu .hide {\n      display: none; }\n\nspan {\n  height: 3px;\n  width: 70%;\n  background: #d3531a;\n  opacity: 1;\n  right: 7px;\n  background-color: white;\n  transform: rotate(0deg);\n  transition: .30s ease-in-out;\n  position: absolute; }\n  span:nth-child(1) {\n    top: 13px; }\n  span:nth-child(2), span:nth-child(3) {\n    top: 23px; }\n  span:nth-child(4) {\n    top: 33px; }\n\n.open span:nth-child(1), .open span:nth-child(4) {\n  top: 18px;\n  width: 0%;\n  left: 50%;\n  animation-name: vanish;\n  animation-duration: 0.3s; }\n\n.open span:nth-child(2) {\n  transform: rotate(45deg);\n  height: 3px;\n  background-color: black; }\n\n.open span:nth-child(3) {\n  transform: rotate(-45deg);\n  height: 3px;\n  background-color: black; }\n\n.show {\n  animation-name: menuslide;\n  animation-duration: 0.6s;\n  display: flex;\n  width: auto;\n  height: 80vh;\n  list-style: none;\n  flex-direction: column;\n  align-items: center;\n  background: white;\n  z-index: 1;\n  position: fixed; }\n  .show .liElement {\n    width: 100vw;\n    height: 15vh;\n    display: flex;\n    justify-content: center; }\n    .show .liElement .link {\n      text-decoration: none;\n      color: #555;\n      align-self: center;\n      font-family: Channel; }\n", ""]);
 
 // exports
 
@@ -28509,6 +28545,63 @@ module.exports = warning;
 
 module.exports = __webpack_require__(112);
 
+
+/***/ }),
+/* 256 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _MainGallery = __webpack_require__(114);
+
+var _MainGallery2 = _interopRequireDefault(_MainGallery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Gallery = function (_React$Component) {
+  _inherits(Gallery, _React$Component);
+
+  function Gallery() {
+    _classCallCheck(this, Gallery);
+
+    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this));
+  }
+
+  _createClass(Gallery, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.handleScroll = function () {
+        console.log('lol');
+      };
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(_MainGallery2.default, null);
+    }
+  }]);
+
+  return Gallery;
+}(_react2.default.Component);
+
+exports.default = Gallery;
 
 /***/ })
 /******/ ]);
