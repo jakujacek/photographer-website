@@ -15,7 +15,7 @@ class Template extends React.Component {
       toggled: !this.state.toggled
     });
   }
-  
+
   render() {
     let classes = "menu-btn"
     let lists = "hide"
@@ -44,5 +44,5 @@ class Template extends React.Component {
           </section>
       </div>
   }
-}4
+}
 export default Template;

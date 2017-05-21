@@ -7,7 +7,6 @@ class MainGallery extends React.Component {
 componentDidMount() {
   window.onscroll = function(ev) {
     if ((window.innerHeight + window.pageYOffset) >= document.body.scrollHeight) {
-        alert("you're at the bottom of the page");
     }
 };
 }

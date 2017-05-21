@@ -12791,17 +12791,23 @@ var AboutMe = function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      var interVal = setInterval(function () {
+      this.interVal = setInterval(function () {
         _this2.setState({
           animation: !_this2.state.animation
         });
       }, 4000);
-      var randomClear = setInterval(function () {
+      this.randomClear = setInterval(function () {
         _this2.setState({
           click: !_this2.state.click,
           random: 1.5
         });
       }, 800);
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      clearInterval(this.interVal);
+      clearInterval(this.randomClear);
     }
   }, {
     key: 'render',
@@ -12950,9 +12956,6 @@ var Gallery = function (_React$Component) {
   }
 
   _createClass(Gallery, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {}
-  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(_MainGallery2.default, null);
@@ -13004,9 +13007,7 @@ var MainGallery = function (_React$Component) {
         key: 'componentDidMount',
         value: function componentDidMount() {
             window.onscroll = function (ev) {
-                if (window.innerHeight + window.pageYOffset >= document.body.scrollHeight) {
-                    alert("you're at the bottom of the page");
-                }
+                if (window.innerHeight + window.pageYOffset >= document.body.scrollHeight) {}
             };
         }
     }, {
@@ -13194,7 +13195,6 @@ var Template = function (_React$Component) {
   return Template;
 }(_react2.default.Component);
 
-4;
 exports.default = Template;
 
 /***/ }),

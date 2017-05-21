@@ -10,17 +10,22 @@ class AboutMe extends React.Component {
     }
   }
   componentDidMount() {
-    let interVal = setInterval(() => {
+    this.interVal = setInterval(() => {
       this.setState({
               animation: !this.state.animation
             })
     }, 4000);
-    let randomClear = setInterval(()=> {
+    this.randomClear = setInterval(()=> {
       this.setState({
         click: !this.state.click,
         random: 1.5
       });
     }, 800)
+
+  }
+  componentWillUnmount() {
+    clearInterval(this.interVal)
+    clearInterval(this.randomClear)
   }
   render() {
       let headAnimation = "headAnimation"
