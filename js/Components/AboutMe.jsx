@@ -63,6 +63,7 @@ class AboutMe extends React.Component {
                               </div>
                               <div className="lipsBottomRight">
                               </div>
+                              <div className="smile"></div>
                           </div>
                           <div className="shadow"></div>
                           <div className="nose1">
@@ -77,25 +78,35 @@ class AboutMe extends React.Component {
                       </div>
                       <div className="keyboard">
                           <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                          className={`keyButton button0 ${buttonAnimation}`}></div>
+                          className={`keyButton button0 ${buttonAnimation}`}>
+                          </div>
                           <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                          className={`keyButton button1 ${buttonAnimation}`}></div>
+                          className={`keyButton button1 ${buttonAnimation}`}>
+                          </div>
                           <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                          className={`keyButton button2 ${buttonAnimation}`}></div>
+                          className={`keyButton button2 ${buttonAnimation}`}>
+                          </div>
                           <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                          className={`keyButton button3 ${buttonAnimation}`}></div>
+                          className={`keyButton button3 ${buttonAnimation}`}>
+                          </div>
                           <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                          className={`keyButton button4 ${buttonAnimation}`}></div>
+                          className={`keyButton button4 ${buttonAnimation}`}>
+                          </div>
                           <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                          className={`keyButton button5 ${buttonAnimation}`}></div>
+                          className={`keyButton button5 ${buttonAnimation}`}>
+                          </div>
                           <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                          className={`keyButton button6 ${buttonAnimation}`}></div>
+                          className={`keyButton button6 ${buttonAnimation}`}>
+                          </div>
                           <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                          className={`keyButton button7 ${buttonAnimation}`}></div>
+                          className={`keyButton button7 ${buttonAnimation}`}>
+                          </div>
                           <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                          className={`keyButton button8 ${buttonAnimation}`}></div>
+                          className={`keyButton button8 ${buttonAnimation}`}>
+                          </div>
                           <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                          className={`keyButton button9 ${buttonAnimation}`}></div>
+                          className={`keyButton button9 ${buttonAnimation}`}>
+                          </div>
                       </div>
                       <div className="avatarBody">
                       </div>

@@ -4,7 +4,15 @@ class MainGallery extends React.Component {
   constructor() {
     super()
 }
+componentDidMount() {
+  window.onscroll = function(ev) {
+    if ((window.innerHeight + window.pageYOffset) >= document.body.scrollHeight) {
+        alert("you're at the bottom of the page");
+    }
+};
+}
   render() {
+    let boxAnimation = ""
     return    <div>
     <div className="slider">
                   <div className="imgSlider"></div>
@@ -12,19 +20,19 @@ class MainGallery extends React.Component {
                   className='logoLink'>Awwgraphy</Link></div>
               </div>
               <div>
-              <div className="box" style={this.props.style}>
+              <div className={`box ${boxAnimation}`}>
                   <img src="./images/jacek-jpg-3.jpg" className="boxImg" />
               </div>
-              <div className="box" style={this.props.style}>
+              <div className={`box ${boxAnimation}`} style={this.props.style}>
                   <img src="./images/jacek-jpg-3.jpg" className="boxImg" />
               </div>
-              <div className="box" style={this.props.style}>
+              <div className={`box ${boxAnimation}`} style={this.props.style}>
                   <img src="./images/jacek-jpg-3.jpg" className="boxImg" />
               </div>
-              <div className="box" style={this.props.style}>
+              <div className={`box ${boxAnimation}`} style={this.props.style}>
                   <img src="./images/jacek-jpg-3.jpg" className="boxImg" />
               </div>
-              <div className="box" style={this.props.style}>
+              <div className={`box ${boxAnimation}`} style={this.props.style}>
                   <img src="./images/jacek-jpg-3.jpg" className="boxImg" />
               </div>
           </div>

@@ -1,12 +1,14 @@
 $colors: (
   skinColor: #FDE0AA,
-  backgroundColor: #E83168,
+  backgroundColor: tomato,
   shadowSkinColor: #E4BB86,
   bigHairColor: #472B1F,
   smallHairColor: #170F08,
   mouthColor: #CA9A82,
   lightHairColor: #5A352A,
-  keyboard: #AFAB9D
+  keyboard: #AFAB9D,
+  bodyColorRight: #113A79,
+  bodyColorLeft: #134E86
 );
 @keyframes headShake {
   0%   {transform: rotate(0)}
@@ -29,6 +31,7 @@ to {opacity: 0}
   from {height: 15px}
   to {height: 0px}
 }
+
 .aboutMe{
   width: 100%;
   height: 100vh;
@@ -48,17 +51,13 @@ to {opacity: 0}
     }
   }
   .avatarBox {
-    background-color: #E83168;
-    width: 300px;
-    height: 300px;
+    background-color: map-get($colors, backgroundColor);
     align-self: flex-start;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     .head {
-      width: 77px;
-      height: 100px;
       background-color: map-get($colors, skinColor);
       position: relative;
       .beard1 {
@@ -66,8 +65,6 @@ to {opacity: 0}
         bottom: 0;
         width: 0;
         height: 0;
-        border-bottom: 30px solid map-get($colors, backgroundColor);
-        border-right: 30px solid transparent;
       }
       .beard2 {
         position: absolute;
@@ -75,101 +72,59 @@ to {opacity: 0}
         right: 0;
         width: 0;
         height: 0;
-        border-bottom: 30px solid map-get($colors, backgroundColor);
-        border-left: 30px solid transparent;
       }
       .eye1 {
         animation-name: eyeBlink;
         animation-duration: 0.3s;
         animation-delay: 1s;
-        width: 7px;
-        height: 7px;
         border-radius: 50%;
         position: absolute;
-        top: 35px;
-        left: 15px;
         background-color: black;
         z-index: 2;
       }
       .eye2 {
-        width: 7px;
-        height: 7px;
         border-radius: 50%;
         position: absolute;
-        top: 35px;
-        right: 15px;
         background-color: black;
         z-index: 2;
       }
       .eyeBrow1 {
-        width: 15px;
-        height: 3px;
         position: absolute;
-        top: 30px;
-        left: 10px;
         background-color: map-get($colors, bigHairColor);
         z-index: 2;
         transform: skew(-70deg, 183deg);
       }
       .eyeBrow2 {
-        width: 15px;
-        height: 3px;
         position: absolute;
-        top: 30px;
-        right: 10px;
         background-color: map-get($colors, bigHairColor);
         z-index: 2;
         transform: skew(70deg, -5deg);
       }
       .earLeft {
-        width: 10px;
-        height: 20px;
         position: absolute;
-        left: -10px;
-        top: 30px;
         background-color: map-get($colors, skinColor);
         .earShell {
-          width: 5px;
-          height: 10px;
           position: absolute;
-          right: 0px;
-          top: 5px;
           background-color: map-get($colors, shadowSkinColor);
         }
       }
       .earRight {
-        width: 10px;
-        height: 20px;
         position: absolute;
-        right: -10px;
-        top: 30px;
         background-color: map-get($colors, skinColor);
         .earShell {
-          width: 5px;
-          height: 10px;
           position: absolute;
-          right: 5px;
-          top: 5px;
           background-color: map-get($colors, shadowSkinColor);
         }
       }
     }
-
     .hair {
       position: absolute;
-      top: 70px;
-      width: 77px;
-      height: 55px;
       z-index: 2;
       background-color: map-get($colors, bigHairColor);
       .hairSkin {
         position: absolute;
-        top: 28px;
         width: 0;
         height: 0;
-        border-top: 20px solid transparent;
-        border-bottom: 16px solid transparent;
-        border-right: 40px solid map-get($colors, skinColor);
         transform: rotate(-22deg);
       }
       .hairBackground1 {
@@ -178,8 +133,6 @@ to {opacity: 0}
         right: 0;
         width: 0;
         height: 0;
-        border-top: 20px solid map-get($colors, backgroundColor);
-        border-left: 25px solid transparent;
       }
       .hairBackground2 {
         position: absolute;
@@ -187,51 +140,27 @@ to {opacity: 0}
         left: 0;
         width: 0;
         height: 0;
-        border-top: 20px solid map-get($colors, backgroundColor);
-        border-right: 15px solid transparent;
       }
       .hair1 {
         position: absolute;
-        top: 13px;
-        left: -6.5px;
         width: 0;
-        height: 35px;
-        border-top: 0px solid transparent;
-        border-bottom: 15px solid transparent;
-        border-right: 25.5px solid map-get($colors, lightHairColor);
         transform: rotate(40deg) skewY(30deg);
       }
       .hair2 {
         position: absolute;
-        top: -10px;
         left: 0px;
         width: 0;
         height: 0;
-        border-top: 15px solid transparent;
-        border-bottom: 15px solid transparent;
-        border-right: 30px solid map-get($colors, lightHairColor);
         transform: rotate(40deg);
       }
       .hair3 {
         position: absolute;
-        top: 7px;
-        right: 6px;
-        height: 33px;
-        border-top: 12px solid transparent;
-        border-bottom: -10px map-get($colors, smallHairColor);
-        border-left: 10px solid transparent;
-        border-right: 26px solid map-get($colors, smallHairColor);
         transform: rotate(157deg) skewY(-30deg);
       }
       .hair4 {
         position: absolute;
-        top: 8px;
-        left: -13px;
         width: 0;
         height: 0;
-        border-top: 15px solid transparent;
-        border-bottom: 15px solid transparent;
-        border-right: 30px solid #503026;
         transform: rotate(-28deg);
       }
     }
@@ -257,10 +186,6 @@ to {opacity: 0}
 
     .mouth {
       position: absolute;
-      bottom: 19px;
-      left: 23px;
-      width: 30px;
-      height: 4px;
       z-index: 2;
       background-color: map-get($colors, mouthColor);
       .lipsBottomRight {
@@ -269,8 +194,6 @@ to {opacity: 0}
         right: 0;
         width: 0;
         height: 0;
-        border-bottom: 5px solid map-get($colors, skinColor);
-        border-left: 5px solid transparent;
       }
       .lipsTopRight {
         position: absolute;
@@ -278,8 +201,6 @@ to {opacity: 0}
         right: 0;
         width: 0;
         height: 0;
-        border-top: 5px solid map-get($colors, skinColor);
-        border-left: 5px solid transparent;
       }
       .lipsTopLeft {
         position: absolute;
@@ -287,8 +208,6 @@ to {opacity: 0}
         left: 0;
         width: 0;
         height: 0;
-        border-top: 5px solid map-get($colors, skinColor);
-        border-right: 5px solid transparent;
       }
       .lipsBottomLeft {
         position: absolute;
@@ -296,49 +215,31 @@ to {opacity: 0}
         left: 0;
         width: 0;
         height: 0;
-        border-bottom: 5px solid map-get($colors, skinColor);
-        border-right: 5px solid transparent;
       }
     }
 
     .shadow {
     position: absolute;
-    top: 0px;
-    right: 0;
     border-radius: 50% 0% 0% 35%;
-    border-left: 15px solid map-get($colors, shadowSkinColor);
-    border-top: 0px solid transparent;
-    border-bottom: 15px solid transparent;
-    height: 85px;
     z-index: 1;
     width: 0;
     }
 
     .nose1 {
       position: absolute;
-      bottom: 40px;
-      left: 42px;
-      width: 23px;
       border-radius: 50% 0 0 0;
-      border-top: 35px solid #EECB9B;
-      border-left: 0px solid transparent;
-      border-right: 10px solid transparent;
       transform: skew(0deg, 140deg);
     }
     .keyboard {
-      width: 150px;
-      height: 10px;
       position: absolute;
-      bottom: 0;
       background-color: map-get($colors, keyboard);
       z-index: 1;
       .keyButton {
         position: absolute;
-        top: -10px;
-        width: 15px;
-        border-bottom: 10px solid grey;
-        border-left: 3px solid transparent;
-        border-right: 3px solid transparent;
+        .finger {
+          position: absolute;
+          background-color: map-get($colors, skinColor);
+        }
       }
       .buttonAnimation{
         animation-name: buttonClick;
@@ -347,24 +248,394 @@ to {opacity: 0}
       }
     }
     .avatarBody {
-      width: 40px;
-      height: 85px;
       position: absolute;
-      bottom: 0px;
-      left: 150px;
-      background-color: #2B2C7D;
+      background-color: map-get($colors, bodyColorRight);
     }
     .avatarBody2 {
-      width: 40px;
-      height: 85px;
       position: absolute;
-      bottom: 0px;
-      left: 110px;
-      background-color: #3A38A3;
+      background-color: map-get($colors, bodyColorLeft);
     }
   }
 }
 
-@for $i from 0 through 9  {
-.button#{$i} {left: 15px * $i;}
+
+@media (min-width: 320px) {
+  .avatarBox {
+    width: 300px;
+    height: 300px;
+    .head {
+      width: 77px;
+      height: 100px;
+      .beard1 {
+        border-bottom: 30px solid map-get($colors, backgroundColor);
+        border-right: 30px solid transparent;
+      }
+      .beard2 {
+        border-bottom: 30px solid map-get($colors, backgroundColor);
+        border-left: 30px solid transparent;
+      }
+      .eye1 {
+        width: 7px;
+        height: 7px;
+        top: 35px;
+        left: 15px;
+      }
+      .eye2 {
+        width: 7px;
+        height: 7px;
+        top: 35px;
+        right: 15px;
+      }
+      .eyeBrow1 {
+        width: 15px;
+        height: 3px;
+        top: 30px;
+        left: 10px;
+      }
+      .eyeBrow2 {
+        width: 15px;
+        height: 3px;
+        top: 30px;
+        right: 10px;
+      }
+      .earLeft {
+        width: 10px;
+        height: 20px;
+        left: -10px;
+        top: 30px;
+        .earShell {
+          width: 5px;
+          height: 10px;
+          right: 0px;
+          top: 5px;
+        }
+      }
+      .earRight {
+        width: 10px;
+        height: 20px;
+        right: -10px;
+        top: 30px;
+        .earShell {
+          width: 5px;
+          height: 10px;
+          right: 5px;
+          top: 5px;
+        }
+      }
+    }
+
+    .hair {
+      top: 70px;
+      width: 77px;
+      height: 55px;
+      .hairSkin {
+        top: 28px;
+        border-top: 20px solid transparent;
+        border-bottom: 16px solid transparent;
+        border-right: 40px solid map-get($colors, skinColor);
+      }
+      .hairBackground1 {
+        border-top: 20px solid map-get($colors, backgroundColor);
+        border-left: 25px solid transparent;
+      }
+      .hairBackground2 {
+        border-top: 20px solid map-get($colors, backgroundColor);
+        border-right: 15px solid transparent;
+      }
+      .hair1 {
+        top: 13px;
+        left: -6.5px;
+        height: 35px;
+        border-top: 0px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 25.5px solid map-get($colors, lightHairColor);
+      }
+      .hair2 {
+        top: -10px;
+        left: 0px;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 30px solid map-get($colors, lightHairColor);
+      }
+      .hair3 {
+        top: 7px;
+        right: 6px;
+        height: 33px;
+        border-top: 12px solid transparent;
+        border-bottom: -10px map-get($colors, smallHairColor);
+        border-left: 10px solid transparent;
+        border-right: 26px solid map-get($colors, smallHairColor);
+      }
+      .hair4 {
+        top: 8px;
+        left: -13px;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 30px solid #503026;
+      }
+    }
+    .mouth {
+      bottom: 19px;
+      left: 23px;
+      width: 30px;
+      height: 4px;
+      .lipsBottomRight {
+        border-bottom: 5px solid map-get($colors, skinColor);
+        border-left: 5px solid transparent;
+      }
+      .lipsTopRight {
+        border-top: 5px solid map-get($colors, skinColor);
+        border-left: 5px solid transparent;
+      }
+      .lipsTopLeft {
+        border-top: 5px solid map-get($colors, skinColor);
+        border-right: 5px solid transparent;
+      }
+      .lipsBottomLeft {
+        border-bottom: 5px solid map-get($colors, skinColor);
+        border-right: 5px solid transparent;
+      }
+    }
+
+    .shadow {
+    top: 0px;
+    right: 0;
+    border-left: 15px solid map-get($colors, shadowSkinColor);
+    border-top: 0px solid transparent;
+    border-bottom: 15px solid transparent;
+    height: 85px;
+    }
+
+    .nose1 {
+      bottom: 40px;
+      left: 42px;
+      width: 23px;
+      border-top: 35px solid #EECB9B;
+      border-left: 0px solid transparent;
+      border-right: 10px solid transparent;
+    }
+    .keyboard {
+      width: 150px;
+      height: 10px;
+      bottom: 0;
+      .keyButton {
+        top: -10px;
+        width: 15px;
+        border-bottom: 10px solid grey;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+      }
+    }
+    .avatarBody {
+      width: 40px;
+      height: 85px;
+      bottom: 0px;
+      left: 150px;
+    }
+    .avatarBody2 {
+      width: 40px;
+      height: 85px;
+      bottom: 0px;
+      left: 110px;
+    }
+  }
+  @for $i from 0 through 9  {
+  .button#{$i} {left: 15px * $i;}
+  }
+}
+@media (min-width: 1024px) {
+  .avatarBox {
+    width: 500px;
+    height: 500px;
+    .head {
+      width: 128px;
+      height: 166px;
+      .beard1 {
+        border-bottom: 50px solid map-get($colors, backgroundColor);
+        border-right: 50px solid transparent;
+      }
+      .beard2 {
+        border-bottom: 50px solid map-get($colors, backgroundColor);
+        border-left: 50px solid transparent;
+      }
+      .eye1 {
+        width: 11.5px;
+        height: 11.5px;
+        top: 56.5px;
+        left: 25px;
+      }
+      .eye2 {
+        width: 11.5px;
+        height: 11.5px;
+        top: 56.5px;
+        right: 25px;
+      }
+      .eyeBrow1 {
+        width: 25px;
+        height: 5px;
+        top: 50px;
+        left: 16.6px;
+      }
+      .eyeBrow2 {
+        width: 25px;
+        height: 5px;
+        top: 50px;
+        right: 16.6px;
+      }
+      .earLeft {
+        width: 16.6px;
+        height: 33.5px;
+        left: -16.6px;
+        top: 50px;
+        .earShell {
+          width: 8.4px;
+          height: 16.6px;
+          right: 0px;
+          top: 8.4px;
+        }
+      }
+      .earRight {
+        width: 16.6px;
+        height: 33.5px;
+        right: -16.6px;
+        top: 50px;
+        .earShell {
+          width: 8.4px;
+          height: 16.6px;
+          right: 8.4px;
+          top: 8.4px;
+        }
+      }
+    }
+
+    .hair {
+      top: 116px;
+      width: 128px;
+      height: 91.6px;
+      .hairSkin {
+        top: 46.6px;
+        border-top: 33.6px solid transparent;
+        border-bottom: 26.6px solid transparent;
+        border-right: 66.6px solid map-get($colors, skinColor);
+      }
+      .hairBackground1 {
+        border-top: 33.6px solid map-get($colors, backgroundColor);
+        border-left: 40.6px solid transparent;
+      }
+      .hairBackground2 {
+        border-top: 33.6px solid map-get($colors, backgroundColor);
+        border-right: 25px solid transparent;
+      }
+      .hair1 {
+        top: 21.6px;
+        left: -11px;
+        height: 58.1px;
+        border-top: 0px solid transparent;
+        border-bottom: 25.3px solid transparent;
+        border-right: 42.5px solid map-get($colors, lightHairColor);
+      }
+      .hair2 {
+        top: -16.6px;
+        left: 0px;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 50px solid map-get($colors, lightHairColor);
+      }
+      .hair3 {
+        top: 11.62px;
+        right: 10px;
+        height: 55px;
+        border-top: 20px solid transparent;
+        border-bottom: -16.6px map-get($colors, smallHairColor);
+        border-left: 16.6px solid transparent;
+        border-right: 43.16px solid map-get($colors, smallHairColor);
+      }
+      .hair4 {
+        top: 13.3px;
+        left: -21.6px;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 50px solid #503026;
+      }
+    }
+    .mouth {
+      bottom: 31.55px;
+      left: 38.2px;
+      width: 50px;
+      height: 6.64px;
+      .lipsBottomRight {
+        border-bottom: 8.3px solid map-get($colors, skinColor);
+        border-left: 8.3px solid transparent;
+      }
+      .lipsTopRight {
+        border-top: 8.3px solid map-get($colors, skinColor);
+        border-left: 8.3px solid transparent;
+      }
+      .lipsTopLeft {
+        border-top: 8.3px solid map-get($colors, skinColor);
+        border-right: 8.3px solid transparent;
+      }
+      .lipsBottomLeft {
+        border-bottom: 8.3px solid map-get($colors, skinColor);
+        border-right: 8.3px solid transparent;
+      }
+      .smile {
+
+      }
+    }
+
+    .shadow {
+    top: 0px;
+    right: 0;
+    border-left: 25px solid map-get($colors, shadowSkinColor);
+    border-top: 0px solid transparent;
+    border-bottom: 25px solid transparent;
+    height: 141px;
+    }
+
+    .nose1 {
+      bottom: 60px;
+      left: 69.7px;
+      width: 38.2px;
+      border-top: 58.1px solid #EECB9B;
+      border-left: 0px solid transparent;
+      border-right: 16.6px solid transparent;
+    }
+    .keyboard {
+      width: 250px;
+      height: 16.6px;
+      bottom: 0;
+      .keyButton {
+        top: -16.6px;
+        width: 25px;
+        border-bottom: 16.6px solid grey;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+      }
+    }
+    .avatarBody {
+      width: 66.4px;
+      height: 141px;
+      bottom: 0px;
+      left: 250px;
+    }
+    .avatarBody2 {
+      width: 66.4px;
+      height: 141px;
+      bottom: 0px;
+      left: 184.6px;
+    }
+  }
+  @for $i from 0 through 9  {
+  .button#{$i} {left: 25px * $i;}
+  }
+  @keyframes buttonClick {
+    from {height: 25px}
+    to {height: 0px}
+  }
+  @keyframes hairShake {
+    0% {transform: rotate(0); transform: translate(0)}
+    30% {transform: rotate(-20deg) translate(-29.9px, 0px)}
+    100% {transform: rotate(20deg) translate(29.9px, 0px)}
+  }
 }
