@@ -42,6 +42,15 @@ to {opacity: 0}
   100% {width: 100%}
 }
 
+@keyframes writeMessage2 {
+  from {width: 0px}
+}
+
+@keyframes write3 {
+  0% {width: 0}
+  50% {width: 0}
+  100% {width: 100%}
+}
 .aboutMe{
   width: 100%;
   height: 100vh;
@@ -69,8 +78,10 @@ to {opacity: 0}
     position: relative;
     .message {
       position: absolute;
+      color: #555;
     }
     .head {
+      z-index: 3;
       background-color: map-get($colors, skinColor);
       position: relative;
       .beard1 {
@@ -132,7 +143,7 @@ to {opacity: 0}
     }
     .hair {
       position: absolute;
-      z-index: 2;
+      z-index: 4;
       background-color: map-get($colors, bigHairColor);
       .hairSkin {
         position: absolute;
@@ -262,13 +273,49 @@ to {opacity: 0}
       animation-direction: alternate;
       animation-timing-function: ease-in;
     }
-    .avatarBody {
+    .avatarBodyRight {
       position: absolute;
       background-color: map-get($colors, bodyColorRight);
+      .collar {
+        position: absolute;
+        top: 0;
+        z-index: 3;
+      }
+      .rightArm {
+        position: absolute;
+        z-index: 1;
+        .bodyShapeRight {
+          position: absolute;
+          top: 0;
+          width: 0;
+          height: 0;
+          left: 0;
+        }
+      }
     }
-    .avatarBody2 {
+    .neck {
+      z-index: 2;
+      position: absolute;
+      background-color: map-get($colors, shadowSkinColor);
+    }
+    .avatarBodyLeft {
       position: absolute;
       background-color: map-get($colors, bodyColorLeft);
+      .collar {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+      }
+      .leftArm {
+        position: absolute;
+        z-index: 1;
+        .bodyShapeLeft {
+          position: absolute;
+          top: 0;
+          width: 0;
+          height: 0;
+        }
+      }
     }
   }
 }
@@ -279,12 +326,17 @@ to {opacity: 0}
     width: 300px;
     height: 300px;
     .message {
-      left: 55px;
+      left: 45px;
       overflow: hidden;
       font-family: "Courier";
       white-space: nowrap;
+      font-size: 13px;
+    }
+    .writeMessage {
       animation: writeMessage 3s steps(60, end);
-      font-size: 12px;
+    }
+    .write2 {
+      animation: write2 6s steps(60, end);
     }
     p:nth-child(1) {
       top: 10px;
@@ -293,11 +345,21 @@ to {opacity: 0}
     p:nth-child(2) {
       width: 18em;
       top: 30px;
-      animation: write2 6s steps(60, end);
     }
     .head {
       width: 77px;
-      height: 100px;
+      height: 65px;
+      &:after {
+        content: "";
+      	position: absolute;
+      	bottom: -25px;
+      	left: 0;
+      	width: 0;
+      	height: 0;
+      	border-left: 38.5px solid transparent;
+      	border-right: 38.5px solid transparent;
+      	border-top: 25px solid map-get($colors, skinColor);
+      }
       .beard1 {
         border-bottom: 30px solid map-get($colors, backgroundColor);
         border-right: 30px solid transparent;
@@ -309,32 +371,32 @@ to {opacity: 0}
       .eye1 {
         width: 7px;
         height: 7px;
-        top: 35px;
+        top: 20px;
         left: 15px;
       }
       .eye2 {
         width: 7px;
         height: 7px;
-        top: 35px;
+        top: 20px;
         right: 15px;
       }
       .eyeBrow1 {
         width: 15px;
         height: 3px;
-        top: 30px;
+        top: 15px;
         left: 10px;
       }
       .eyeBrow2 {
         width: 15px;
         height: 3px;
-        top: 30px;
+        top: 15px;
         right: 10px;
       }
       .earLeft {
         width: 10px;
         height: 20px;
         left: -10px;
-        top: 30px;
+        top: 15px;
         .earShell {
           width: 5px;
           height: 10px;
@@ -346,7 +408,7 @@ to {opacity: 0}
         width: 10px;
         height: 20px;
         right: -10px;
-        top: 30px;
+        top: 15px;
         .earShell {
           width: 5px;
           height: 10px;
@@ -407,7 +469,7 @@ to {opacity: 0}
       }
     }
     .mouth {
-      bottom: 19px;
+      bottom: 2px;
       left: 23px;
       width: 30px;
       height: 4px;
@@ -430,19 +492,19 @@ to {opacity: 0}
     }
 
     .shadow {
-    top: 0px;
+    top: 1px;
     right: 0;
     border-left: 15px solid map-get($colors, shadowSkinColor);
     border-top: 0px solid transparent;
-    border-bottom: 15px solid transparent;
-    height: 85px;
+    border-bottom: 10px solid transparent;
+    height: 74px;
     }
 
     .nose1 {
-      bottom: 40px;
-      left: 42px;
+      bottom: 20px;
+      left: 43px;
       width: 23px;
-      border-top: 35px solid #EECB9B;
+      border-top: 31px solid #EECB9B;
       border-left: 0px solid transparent;
       border-right: 10px solid transparent;
     }
@@ -459,17 +521,75 @@ to {opacity: 0}
       border-left: 3px solid transparent;
       border-right: 3px solid transparent;
     }
-    .avatarBody {
+    .neck {
+      z-index: 0;
       width: 40px;
-      height: 85px;
+      height: 70px;
+      bottom: 80px;
+    }
+    .avatarBodyRight {
+      width: 40px;
+      height: 96px;
       bottom: 0px;
       left: 150px;
+      .collar {
+        left: 0;
+        border-bottom: 20px solid map-get($colors, bodyColorRight);
+        border-left: 20px solid transparent
+      }
+      .rightArm {
+          border-radius: 0 20px 10px 0;
+        width: 24.1px;
+        height: 71.2px;
+        background-color: map-get($colors, bodyColorRight);
+        bottom: 24.5px;
+        right: -24.1px;
+        .bodyShapeRight {
+          border-top: 40px solid map-get($colors, backgroundColor);
+          border-left: 40px solid transparent;
+          right: 0px;
+          z-index: 1;
+        }
+        .armShadowRight {
+          position: absolute;
+          height: 100%;
+          width: 50%;
+          background-color: map-get($colors, bodyColorLeft);
+          border-radius: 0 30px 20px 0;
+        }
+      }
     }
-    .avatarBody2 {
+    .avatarBodyLeft {
       width: 40px;
-      height: 85px;
+      height: 96px;
       bottom: 0px;
       left: 110px;
+      .collar {
+        right: 0;
+        border-bottom: 20px solid map-get($colors, bodyColorLeft);
+        border-right: 20px solid transparent
+      }
+      .leftArm {
+          border-radius: 20px 0 0 10px;
+        width: 24.1px;
+        height: 71.2px;
+        background-color: #2E6085;
+        bottom: 24.5px;
+        left: -24.1px;
+        .bodyShapeLeft {
+          border-top: 40px solid map-get($colors, backgroundColor);
+          border-right: 40px solid transparent;
+          right: 0px;
+          z-index: 1;
+        }
+        .armShadowLeft {
+          position: absolute;
+          height: 100%;
+          width: 50%;
+          background-color: map-get($colors, bodyColorLeft);
+          border-radius: 30px 0 0 20px;
+        }
+      }
     }
   }
   @for $i from 0 through 9  {
@@ -670,20 +790,46 @@ to {opacity: 0}
         background-color: map-get($colors, skinColor);
       }
     }
-    .avatarBody {
+    .avatarBodyRight {
       width: 66.4px;
-      height: 141px;
+      height: 160px;
       bottom: 0px;
       left: 250px;
+      .bodyShapeLeft {
+
+      }
+      .rightArm {
+        width: 40px;
+        height: 120px;
+        background-color: map-get($colors, bodyColorRight);
+        bottom: 41px;
+        left: 317px;
+        .armShadowRight {
+          position: absolute;
+          height: 100%;
+          width: 50%;
+          background-color: #007DB2;
+        }
+      }
     }
-    .avatarBody2 {
+    .avatarBodyLeft {
       width: 66.4px;
-      height: 141px;
+      height: 160px;
       bottom: 0px;
       left: 184.6px;
-    }
-    .leftArm {
-
+      .leftArm {
+        width: 40px;
+        height: 120px;
+        background-color: map-get($colors, bodyColorLeft);
+        bottom: 41px;
+        left: 144px;
+        .armShadowLeft {
+          position: absolute;
+          height: 100%;
+          width: 50%;
+          background-color: #007DB2 ;
+        }
+      }
     }
   }
   @for $i from 0 through 9  {
