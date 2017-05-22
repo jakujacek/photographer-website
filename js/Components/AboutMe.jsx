@@ -6,7 +6,7 @@ class AboutMe extends React.Component {
     this.state = {
       animation: true,
       click: true,
-      delay: [0.7, 0.5, 0.2, 1, 0.1, 0.8, 0.4, 1.2, 0.6, 0.3]
+      delay: [0.35, 0.25, 0.1, 0.5, 0.05, 0.4, 0.2, 0.6, 0.3, 0.15]
     }
   }
   componentDidMount() {
@@ -19,8 +19,7 @@ class AboutMe extends React.Component {
       this.setState({
         click: !this.state.click,
       });
-    }, 1300)
-
+    }, 700)
   }
   componentWillUnmount() {
     clearInterval(this.interVal)
@@ -40,8 +39,15 @@ class AboutMe extends React.Component {
     return <div className="aboutMe">
               <div className="logo"><Link to="/"
               className="logoLink">Awwgraphy</Link></div>
-
                   <div className="avatarBox">
+                      <p className="message">
+                          Hi, I am Jacek
+                          Jakubiak and
+                      </p>
+                      <p className="message">
+                          I invite You to
+                          my website.
+                      </p>
                       <div className={`hair ${hairAnimation}`}>
                           <div className="hairSkin"></div>
                           <div className="hairBackground1"></div>
@@ -95,6 +101,8 @@ class AboutMe extends React.Component {
                       </div>
                       <div className="avatarBody2">
                       </div>
+                      <div className="leftArm"> </div>
+                      <div className="rightArm"></div>
                   </div>
           </div>
   }
