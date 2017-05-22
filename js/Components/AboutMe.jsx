@@ -6,7 +6,7 @@ class AboutMe extends React.Component {
     this.state = {
       animation: true,
       click: true,
-      random: 0.7
+      delay: [0.7, 0.5, 0.2, 1, 0.1, 0.8, 0.4, 1.2, 0.6, 0.3]
     }
   }
   componentDidMount() {
@@ -18,9 +18,8 @@ class AboutMe extends React.Component {
     this.randomClear = setInterval(()=> {
       this.setState({
         click: !this.state.click,
-        random: 1.5
       });
-    }, 800)
+    }, 1300)
 
   }
   componentWillUnmount() {
@@ -81,36 +80,15 @@ class AboutMe extends React.Component {
                               <div className="earShell"></div>
                           </div>
                       </div>
-                      <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                      className={`keyButton button0 ${buttonAnimation}`}>
-                      </div>
-                      <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                      className={`keyButton button1 ${buttonAnimation}`}>
-                      </div>
-                      <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                      className={`keyButton button2 ${buttonAnimation}`}>
-                      </div>
-                      <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                      className={`keyButton button3 ${buttonAnimation}`}>
-                      </div>
-                      <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                      className={`keyButton button4 ${buttonAnimation}`}>
-                      </div>
-                      <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                      className={`keyButton button5 ${buttonAnimation}`}>
-                      </div>
-                      <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                      className={`keyButton button6 ${buttonAnimation}`}>
-                      </div>
-                      <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                      className={`keyButton button7 ${buttonAnimation}`}>
-                      </div>
-                      <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                      className={`keyButton button8 ${buttonAnimation}`}>
-                      </div>
-                      <div style={{animationDelay: Math.random() * this.state.random + "s"}}
-                      className={`keyButton button9 ${buttonAnimation}`}>
-                      </div>
+                      {
+                        this.state.delay.map((e, i)=> {
+                          return <div
+                          className={`keyButton button${i} ${buttonAnimation}`}
+                          style={{animationDelay: e + "s"}}>
+                            <div className="finger"></div>
+                          </div>
+                        })
+                      }
                       <div className="keyboard">
                       </div>
                       <div className="avatarBody">
