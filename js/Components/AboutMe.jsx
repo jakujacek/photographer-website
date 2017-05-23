@@ -74,6 +74,18 @@ class AboutMe extends React.Component {
                         style={{animation: `${write2} 6s steps(60,end)`}}  >
                           {this.state.text2}
                       </p>
+                      <div className="pot">
+                        <div className="cactus">
+                            <div className="cactusArmLeft">
+                              <div className="cactusArmShadow"></div>
+                            </div>
+                            <div className="cactusArmRight">
+                              <div className="cactusArmShadow"></div>
+                            </div>
+                            <div className="cactusShadow"></div>
+                        </div>
+                        <div className="potShadow"></div>
+                      </div>
                       <div className={`hair ${hairAnimation}`}>
                           <div className="hairSkin"></div>
                           <div className="hairBackground1"></div>
@@ -112,7 +124,7 @@ class AboutMe extends React.Component {
                       </div>
                       {
                         this.state.delay.map((e, i)=> {
-                          return <div
+                          return <div key={i}
                           className={`keyButton button${i} ${buttonAnimation}`}
                           style={{animationDelay: e + "s"}}>
                             <div className="finger"></div>

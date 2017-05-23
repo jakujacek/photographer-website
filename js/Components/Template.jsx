@@ -28,7 +28,7 @@ class Template extends React.Component {
               <nav id="menu">
               <div className="navBar"></div>
               <ul className={lists}>
-                  <li className="liElement"><Link to="/porfolio" className="link" onClick={this.rollMenu}>Porfolio</Link></li>
+                  <li className="liElement"><Link to="/" className="link" onClick={this.rollMenu}>Home</Link></li>
                   <li className="liElement"><Link to="/blog" className="link" onClick={this.rollMenu}>Blog</Link></li>
                   <li className="liElement"><Link to="/aboutme" className="link" onClick={this.rollMenu}>About Me</Link></li>
                   <li className="liElement"><Link to="/contact" className="link" onClick={this.rollMenu}>Contact</Link></li>
