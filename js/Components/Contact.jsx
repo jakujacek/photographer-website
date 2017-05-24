@@ -89,6 +89,7 @@ class Contact extends React.Component {
    }
    render() {
        return <div className="contact">
+            <div className="opacityImage"></div>
            <div className="logo"><Link to="/"
            className="logoLink">Awwgraphy</Link></div>
            <h1 className="contactTitle">Get in touch</h1>
