@@ -357,6 +357,7 @@ to {opacity: 0}
       font-family: "Courier";
       white-space: nowrap;
       font-size: 13px;
+      width: auto;
     }
     .writeMessage {
       animation: writeMessage 3s steps(60, end);

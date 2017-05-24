@@ -1,15 +1,15 @@
 import React from 'react';
+import {Link} from 'react-router'
 
 class Contact extends React.Component {
    constructor() {
        super();
        this.state = {
            name: '',
-           forWho: '',
            email: '',
            info: '',
            errors: [],
-           success: "Dziękujemy za wiadomość. Wysłano do: ",
+           success: "Email was sent successfully",
            errorStyle: {
                display: "none"
            },
@@ -45,18 +45,15 @@ class Contact extends React.Component {
 
    handleFormSubmit = event => {
        event.preventDefault()
+       if (this.state.errors.length > 0) {
+
+       }
        let arr = this.state.errors.slice()
        if (this.state.name.length === 0) {
-           arr.push("Imię i nazwisko ma zostać wypełnione")
+           arr.push("Error, name is required field.")
        }
        if (this.state.email.indexOf('@') === -1) {
-           arr.push("Pole email nie jest prawidłowo wypełnione")
-       }
-       if (this.state.info.length === 0) {
-           arr.push("Proszę wypełnić pole wiadomości")
-       }
-       if (this.state.forWho.length === 0) {
-           arr.push("Proszę ustawić wydział")
+           arr.push("Error, please enter a valid email address.")
        }
        this.setState({
            errors: arr
@@ -65,41 +62,59 @@ class Contact extends React.Component {
                this.setState({
                    errorStyle: {
                        display: "block",
-                       color: "red"
+                       color: "tomato"
                    }
                })
            } else {
                this.setState({
                    successStyle: {
                        display: "block",
-                       color: "green"
+                       color: "#44813B"
                    }
                })
            }
        })
    }
-
+   componentDidUpdate() {
+     if(this.state.errors.length > 0) {
+       this.errorVanish = setTimeout(()=> {
+         this.setState({
+           errors: []
+         })
+       }, 3000)
+     }
+   }
+   componentWillUnmount() {
+     clearTimeout(this.errorVanish);
+   }
    render() {
-       return <div className="form">
-           <div style={this.state.errorStyle}>
-               <ul>
-               {this.state.errors.map(error => {
-                    return <li>
-                         {error}
-                    </li>
-                })
-               }
-               </ul>
-           </div>
-           <div style={this.state.successStyle}>{this.state.success} {this.state.forWho}</div><br/>
-           <form onSubmit={this.handleFormSubmit}>
+       return <div className="contact">
+           <div className="logo"><Link to="/"
+           className="logoLink">Awwgraphy</Link></div>
+           <h1 className="contactTitle">Get in touch</h1>
+           <p className="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+           </p>
+           <form onSubmit={this.handleFormSubmit} className="form">
                <input type="text" value={this.state.name} onChange={this.handleNameChange}
-               placeholder="Wpisz Imię i Nazwisko"/><br/>
+               placeholder="Name" className="formInput"/><br/>
                <input type="text"  value={this.state.email} onChange={this.handleEmailChange}
-                placeholder="Wpisz adres e-mail"/><br/>
+                placeholder="Email" className="formInput"/><br/>
+                <input type="text"  value={this.state.subject} onChange={this.handleSubjectChange}
+                 placeholder="Subject" className="formInput"/><br/>
                <textarea  value={this.state.info} onChange={this.handleInfoChange}
-                placeholder="Wpisz wiadomość:"/><br/>
-               <input type="submit" value='Wyślij'/>
+                placeholder="Your Message" className="formMessage"/><br/>
+               <input type="submit" value='Submit' className="submitButton"/>
+               <div style={this.state.errorStyle} className="error">
+                   <ul>
+                   {this.state.errors.map((error, i) => {
+                        return <li key={i}>
+                             {error}
+                        </li>
+                    })
+                   }
+                   </ul>
+               </div>
+               <div style={this.state.successStyle} className="success">{this.state.success}</div><br/>
            </form>
        </div>
    }

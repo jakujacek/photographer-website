@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 256);
+/******/ 	return __webpack_require__(__webpack_require__.s = 257);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -795,7 +795,7 @@ exports.__esModule = true;
 exports.default = routerWarning;
 exports._resetWarned = _resetWarned;
 
-var _warning = __webpack_require__(255);
+var _warning = __webpack_require__(256);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -1248,7 +1248,7 @@ module.exports = ReactComponentTreeHook;
 var debugTool = null;
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactDebugTool = __webpack_require__(174);
+  var ReactDebugTool = __webpack_require__(175);
   debugTool = ReactDebugTool;
 }
 
@@ -1391,7 +1391,7 @@ var CallbackQueue = __webpack_require__(81);
 var PooledClass = __webpack_require__(20);
 var ReactFeatureFlags = __webpack_require__(86);
 var ReactReconciler = __webpack_require__(26);
-var Transaction = __webpack_require__(39);
+var Transaction = __webpack_require__(40);
 
 var invariant = __webpack_require__(1);
 
@@ -2905,7 +2905,7 @@ exports['default'] = {
 
 
 var DOMNamespaces = __webpack_require__(51);
-var setInnerHTML = __webpack_require__(41);
+var setInnerHTML = __webpack_require__(42);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(58);
 var setTextContent = __webpack_require__(99);
@@ -3027,7 +3027,7 @@ module.exports = DOMLazyTree;
 
 
 
-var ReactRef = __webpack_require__(188);
+var ReactRef = __webpack_require__(189);
 var ReactInstrumentation = __webpack_require__(11);
 
 var warning = __webpack_require__(2);
@@ -3422,16 +3422,16 @@ function formatPattern(pattern, params) {
 
 var _assign = __webpack_require__(4);
 
-var ReactChildren = __webpack_require__(239);
+var ReactChildren = __webpack_require__(240);
 var ReactComponent = __webpack_require__(68);
-var ReactPureComponent = __webpack_require__(244);
-var ReactClass = __webpack_require__(240);
-var ReactDOMFactories = __webpack_require__(241);
+var ReactPureComponent = __webpack_require__(245);
+var ReactClass = __webpack_require__(241);
+var ReactDOMFactories = __webpack_require__(242);
 var ReactElement = __webpack_require__(22);
-var ReactPropTypes = __webpack_require__(242);
-var ReactVersion = __webpack_require__(245);
+var ReactPropTypes = __webpack_require__(243);
+var ReactVersion = __webpack_require__(246);
 
-var onlyChild = __webpack_require__(248);
+var onlyChild = __webpack_require__(249);
 var warning = __webpack_require__(2);
 
 var createElement = ReactElement.createElement;
@@ -3558,7 +3558,7 @@ module.exports = emptyObject;
 
 var _prodInvariant = __webpack_require__(3);
 
-var EventPluginRegistry = __webpack_require__(36);
+var EventPluginRegistry = __webpack_require__(37);
 var EventPluginUtils = __webpack_require__(52);
 var ReactErrorUtils = __webpack_require__(56);
 
@@ -4088,11 +4088,173 @@ module.exports = SyntheticUIEvent;
 
 
 exports.__esModule = true;
+exports.createMemoryHistory = exports.hashHistory = exports.browserHistory = exports.applyRouterMiddleware = exports.formatPattern = exports.useRouterHistory = exports.match = exports.routerShape = exports.locationShape = exports.PropTypes = exports.RoutingContext = exports.RouterContext = exports.createRoutes = exports.useRoutes = exports.RouteContext = exports.Lifecycle = exports.History = exports.Route = exports.Redirect = exports.IndexRoute = exports.IndexRedirect = exports.withRouter = exports.IndexLink = exports.Link = exports.Router = undefined;
+
+var _RouteUtils = __webpack_require__(18);
+
+Object.defineProperty(exports, 'createRoutes', {
+  enumerable: true,
+  get: function get() {
+    return _RouteUtils.createRoutes;
+  }
+});
+
+var _PropTypes2 = __webpack_require__(66);
+
+Object.defineProperty(exports, 'locationShape', {
+  enumerable: true,
+  get: function get() {
+    return _PropTypes2.locationShape;
+  }
+});
+Object.defineProperty(exports, 'routerShape', {
+  enumerable: true,
+  get: function get() {
+    return _PropTypes2.routerShape;
+  }
+});
+
+var _PatternUtils = __webpack_require__(27);
+
+Object.defineProperty(exports, 'formatPattern', {
+  enumerable: true,
+  get: function get() {
+    return _PatternUtils.formatPattern;
+  }
+});
+
+var _Router2 = __webpack_require__(224);
+
+var _Router3 = _interopRequireDefault(_Router2);
+
+var _Link2 = __webpack_require__(101);
+
+var _Link3 = _interopRequireDefault(_Link2);
+
+var _IndexLink2 = __webpack_require__(218);
+
+var _IndexLink3 = _interopRequireDefault(_IndexLink2);
+
+var _withRouter2 = __webpack_require__(237);
+
+var _withRouter3 = _interopRequireDefault(_withRouter2);
+
+var _IndexRedirect2 = __webpack_require__(219);
+
+var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
+
+var _IndexRoute2 = __webpack_require__(220);
+
+var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
+
+var _Redirect2 = __webpack_require__(102);
+
+var _Redirect3 = _interopRequireDefault(_Redirect2);
+
+var _Route2 = __webpack_require__(222);
+
+var _Route3 = _interopRequireDefault(_Route2);
+
+var _History2 = __webpack_require__(217);
+
+var _History3 = _interopRequireDefault(_History2);
+
+var _Lifecycle2 = __webpack_require__(221);
+
+var _Lifecycle3 = _interopRequireDefault(_Lifecycle2);
+
+var _RouteContext2 = __webpack_require__(223);
+
+var _RouteContext3 = _interopRequireDefault(_RouteContext2);
+
+var _useRoutes2 = __webpack_require__(236);
+
+var _useRoutes3 = _interopRequireDefault(_useRoutes2);
+
+var _RouterContext2 = __webpack_require__(43);
+
+var _RouterContext3 = _interopRequireDefault(_RouterContext2);
+
+var _RoutingContext2 = __webpack_require__(225);
+
+var _RoutingContext3 = _interopRequireDefault(_RoutingContext2);
+
+var _PropTypes3 = _interopRequireDefault(_PropTypes2);
+
+var _match2 = __webpack_require__(234);
+
+var _match3 = _interopRequireDefault(_match2);
+
+var _useRouterHistory2 = __webpack_require__(107);
+
+var _useRouterHistory3 = _interopRequireDefault(_useRouterHistory2);
+
+var _applyRouterMiddleware2 = __webpack_require__(227);
+
+var _applyRouterMiddleware3 = _interopRequireDefault(_applyRouterMiddleware2);
+
+var _browserHistory2 = __webpack_require__(228);
+
+var _browserHistory3 = _interopRequireDefault(_browserHistory2);
+
+var _hashHistory2 = __webpack_require__(232);
+
+var _hashHistory3 = _interopRequireDefault(_hashHistory2);
+
+var _createMemoryHistory2 = __webpack_require__(104);
+
+var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.Router = _Router3.default; /* components */
+
+exports.Link = _Link3.default;
+exports.IndexLink = _IndexLink3.default;
+exports.withRouter = _withRouter3.default;
+
+/* components (configuration) */
+
+exports.IndexRedirect = _IndexRedirect3.default;
+exports.IndexRoute = _IndexRoute3.default;
+exports.Redirect = _Redirect3.default;
+exports.Route = _Route3.default;
+
+/* mixins */
+
+exports.History = _History3.default;
+exports.Lifecycle = _Lifecycle3.default;
+exports.RouteContext = _RouteContext3.default;
+
+/* utils */
+
+exports.useRoutes = _useRoutes3.default;
+exports.RouterContext = _RouterContext3.default;
+exports.RoutingContext = _RoutingContext3.default;
+exports.PropTypes = _PropTypes3.default;
+exports.match = _match3.default;
+exports.useRouterHistory = _useRouterHistory3.default;
+exports.applyRouterMiddleware = _applyRouterMiddleware3.default;
+
+/* histories */
+
+exports.browserHistory = _browserHistory3.default;
+exports.hashHistory = _hashHistory3.default;
+exports.createMemoryHistory = _createMemoryHistory3.default;
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
 var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
 exports.canUseDOM = canUseDOM;
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4108,7 +4270,7 @@ var _warning = __webpack_require__(13);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _queryString = __webpack_require__(144);
+var _queryString = __webpack_require__(145);
 
 var _runTransitionHook = __webpack_require__(49);
 
@@ -4275,7 +4437,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4536,7 +4698,7 @@ module.exports = EventPluginRegistry;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4554,11 +4716,11 @@ module.exports = EventPluginRegistry;
 
 var _assign = __webpack_require__(4);
 
-var EventPluginRegistry = __webpack_require__(36);
-var ReactEventEmitterMixin = __webpack_require__(178);
+var EventPluginRegistry = __webpack_require__(37);
+var ReactEventEmitterMixin = __webpack_require__(179);
 var ViewportMetrics = __webpack_require__(92);
 
-var getVendorPrefixedEventName = __webpack_require__(213);
+var getVendorPrefixedEventName = __webpack_require__(214);
 var isEventSupported = __webpack_require__(62);
 
 /**
@@ -4869,7 +5031,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
 module.exports = ReactBrowserEventEmitter;
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4946,7 +5108,7 @@ SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 module.exports = SyntheticMouseEvent;
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5177,7 +5339,7 @@ module.exports = TransactionImpl;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5305,7 +5467,7 @@ function escapeTextContentForBrowser(text) {
 module.exports = escapeTextContentForBrowser;
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5408,7 +5570,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setInnerHTML;
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5428,11 +5590,11 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _deprecateObjectProperties = __webpack_require__(43);
+var _deprecateObjectProperties = __webpack_require__(44);
 
 var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 
-var _getRouteParams = __webpack_require__(230);
+var _getRouteParams = __webpack_require__(231);
 
 var _getRouteParams2 = _interopRequireDefault(_getRouteParams);
 
@@ -5571,7 +5733,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5651,168 +5813,6 @@ if (process.env.NODE_ENV !== 'production') {
 
 exports.default = deprecateObjectProperties;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.createMemoryHistory = exports.hashHistory = exports.browserHistory = exports.applyRouterMiddleware = exports.formatPattern = exports.useRouterHistory = exports.match = exports.routerShape = exports.locationShape = exports.PropTypes = exports.RoutingContext = exports.RouterContext = exports.createRoutes = exports.useRoutes = exports.RouteContext = exports.Lifecycle = exports.History = exports.Route = exports.Redirect = exports.IndexRoute = exports.IndexRedirect = exports.withRouter = exports.IndexLink = exports.Link = exports.Router = undefined;
-
-var _RouteUtils = __webpack_require__(18);
-
-Object.defineProperty(exports, 'createRoutes', {
-  enumerable: true,
-  get: function get() {
-    return _RouteUtils.createRoutes;
-  }
-});
-
-var _PropTypes2 = __webpack_require__(66);
-
-Object.defineProperty(exports, 'locationShape', {
-  enumerable: true,
-  get: function get() {
-    return _PropTypes2.locationShape;
-  }
-});
-Object.defineProperty(exports, 'routerShape', {
-  enumerable: true,
-  get: function get() {
-    return _PropTypes2.routerShape;
-  }
-});
-
-var _PatternUtils = __webpack_require__(27);
-
-Object.defineProperty(exports, 'formatPattern', {
-  enumerable: true,
-  get: function get() {
-    return _PatternUtils.formatPattern;
-  }
-});
-
-var _Router2 = __webpack_require__(223);
-
-var _Router3 = _interopRequireDefault(_Router2);
-
-var _Link2 = __webpack_require__(101);
-
-var _Link3 = _interopRequireDefault(_Link2);
-
-var _IndexLink2 = __webpack_require__(217);
-
-var _IndexLink3 = _interopRequireDefault(_IndexLink2);
-
-var _withRouter2 = __webpack_require__(236);
-
-var _withRouter3 = _interopRequireDefault(_withRouter2);
-
-var _IndexRedirect2 = __webpack_require__(218);
-
-var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
-
-var _IndexRoute2 = __webpack_require__(219);
-
-var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
-
-var _Redirect2 = __webpack_require__(102);
-
-var _Redirect3 = _interopRequireDefault(_Redirect2);
-
-var _Route2 = __webpack_require__(221);
-
-var _Route3 = _interopRequireDefault(_Route2);
-
-var _History2 = __webpack_require__(216);
-
-var _History3 = _interopRequireDefault(_History2);
-
-var _Lifecycle2 = __webpack_require__(220);
-
-var _Lifecycle3 = _interopRequireDefault(_Lifecycle2);
-
-var _RouteContext2 = __webpack_require__(222);
-
-var _RouteContext3 = _interopRequireDefault(_RouteContext2);
-
-var _useRoutes2 = __webpack_require__(235);
-
-var _useRoutes3 = _interopRequireDefault(_useRoutes2);
-
-var _RouterContext2 = __webpack_require__(42);
-
-var _RouterContext3 = _interopRequireDefault(_RouterContext2);
-
-var _RoutingContext2 = __webpack_require__(224);
-
-var _RoutingContext3 = _interopRequireDefault(_RoutingContext2);
-
-var _PropTypes3 = _interopRequireDefault(_PropTypes2);
-
-var _match2 = __webpack_require__(233);
-
-var _match3 = _interopRequireDefault(_match2);
-
-var _useRouterHistory2 = __webpack_require__(107);
-
-var _useRouterHistory3 = _interopRequireDefault(_useRouterHistory2);
-
-var _applyRouterMiddleware2 = __webpack_require__(226);
-
-var _applyRouterMiddleware3 = _interopRequireDefault(_applyRouterMiddleware2);
-
-var _browserHistory2 = __webpack_require__(227);
-
-var _browserHistory3 = _interopRequireDefault(_browserHistory2);
-
-var _hashHistory2 = __webpack_require__(231);
-
-var _hashHistory3 = _interopRequireDefault(_hashHistory2);
-
-var _createMemoryHistory2 = __webpack_require__(104);
-
-var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.Router = _Router3.default; /* components */
-
-exports.Link = _Link3.default;
-exports.IndexLink = _IndexLink3.default;
-exports.withRouter = _withRouter3.default;
-
-/* components (configuration) */
-
-exports.IndexRedirect = _IndexRedirect3.default;
-exports.IndexRoute = _IndexRoute3.default;
-exports.Redirect = _Redirect3.default;
-exports.Route = _Route3.default;
-
-/* mixins */
-
-exports.History = _History3.default;
-exports.Lifecycle = _Lifecycle3.default;
-exports.RouteContext = _RouteContext3.default;
-
-/* utils */
-
-exports.useRoutes = _useRoutes3.default;
-exports.RouterContext = _RouterContext3.default;
-exports.RoutingContext = _RoutingContext3.default;
-exports.PropTypes = _PropTypes3.default;
-exports.match = _match3.default;
-exports.useRouterHistory = _useRouterHistory3.default;
-exports.applyRouterMiddleware = _applyRouterMiddleware3.default;
-
-/* histories */
-
-exports.browserHistory = _browserHistory3.default;
-exports.hashHistory = _hashHistory3.default;
-exports.createMemoryHistory = _createMemoryHistory3.default;
 
 /***/ }),
 /* 45 */
@@ -6075,12 +6075,12 @@ module.exports = exports['default'];
 
 
 var DOMLazyTree = __webpack_require__(25);
-var Danger = __webpack_require__(151);
+var Danger = __webpack_require__(152);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(11);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(58);
-var setInnerHTML = __webpack_require__(41);
+var setInnerHTML = __webpack_require__(42);
 var setTextContent = __webpack_require__(99);
 
 function getNodeAfter(parentNode, node) {
@@ -7910,7 +7910,7 @@ exports.router = exports.routes = exports.route = exports.components = exports.c
 
 var _react = __webpack_require__(5);
 
-var _deprecateObjectProperties = __webpack_require__(43);
+var _deprecateObjectProperties = __webpack_require__(44);
 
 var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 
@@ -8023,21 +8023,21 @@ var _routerWarning = __webpack_require__(8);
 
 var _routerWarning2 = _interopRequireDefault(_routerWarning);
 
-var _computeChangedRoutes2 = __webpack_require__(228);
+var _computeChangedRoutes2 = __webpack_require__(229);
 
 var _computeChangedRoutes3 = _interopRequireDefault(_computeChangedRoutes2);
 
-var _TransitionUtils = __webpack_require__(225);
+var _TransitionUtils = __webpack_require__(226);
 
-var _isActive2 = __webpack_require__(232);
+var _isActive2 = __webpack_require__(233);
 
 var _isActive3 = _interopRequireDefault(_isActive2);
 
-var _getComponents = __webpack_require__(229);
+var _getComponents = __webpack_require__(230);
 
 var _getComponents2 = _interopRequireDefault(_getComponents);
 
-var _matchRoutes = __webpack_require__(234);
+var _matchRoutes = __webpack_require__(235);
 
 var _matchRoutes2 = _interopRequireDefault(_matchRoutes);
 
@@ -8804,7 +8804,7 @@ var _invariant = __webpack_require__(9);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _ExecutionEnvironment = __webpack_require__(34);
+var _ExecutionEnvironment = __webpack_require__(35);
 
 var _DOMUtils = __webpack_require__(47);
 
@@ -8859,7 +8859,7 @@ var _Actions = __webpack_require__(24);
 
 var _PathUtils = __webpack_require__(19);
 
-var _ExecutionEnvironment = __webpack_require__(34);
+var _ExecutionEnvironment = __webpack_require__(35);
 
 var _DOMUtils = __webpack_require__(47);
 
@@ -9104,17 +9104,17 @@ var _warning = __webpack_require__(13);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _deepEqual = __webpack_require__(119);
+var _deepEqual = __webpack_require__(120);
 
 var _deepEqual2 = _interopRequireDefault(_deepEqual);
 
 var _PathUtils = __webpack_require__(19);
 
-var _AsyncUtils = __webpack_require__(137);
+var _AsyncUtils = __webpack_require__(138);
 
 var _Actions = __webpack_require__(24);
 
-var _createLocation2 = __webpack_require__(139);
+var _createLocation2 = __webpack_require__(140);
 
 var _createLocation3 = _interopRequireDefault(_createLocation2);
 
@@ -9399,7 +9399,7 @@ var _warning = __webpack_require__(13);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _ExecutionEnvironment = __webpack_require__(34);
+var _ExecutionEnvironment = __webpack_require__(35);
 
 var _PathUtils = __webpack_require__(19);
 
@@ -9567,7 +9567,7 @@ module.exports = exports['default'];
 // Therefore we re-export development-only version with all the PropTypes checks here.
 // However if one is migrating to the `prop-types` npm library, they will go through the
 // `index.js` entry point, and it will branch depending on the environment.
-var factory = __webpack_require__(143);
+var factory = __webpack_require__(144);
 module.exports = function(isValidElement) {
   // It is still allowed in 15.5.
   var throwOnDirectAccess = false;
@@ -9895,7 +9895,7 @@ var DOMProperty = __webpack_require__(17);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(11);
 
-var quoteAttributeValueForBrowser = __webpack_require__(214);
+var quoteAttributeValueForBrowser = __webpack_require__(215);
 var warning = __webpack_require__(2);
 
 var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -10499,9 +10499,9 @@ module.exports = ReactHostComponent;
 
 
 
-var ReactDOMSelection = __webpack_require__(169);
+var ReactDOMSelection = __webpack_require__(170);
 
-var containsNode = __webpack_require__(124);
+var containsNode = __webpack_require__(125);
 var focusNode = __webpack_require__(71);
 var getActiveElement = __webpack_require__(72);
 
@@ -10633,15 +10633,15 @@ var _prodInvariant = __webpack_require__(3);
 var DOMLazyTree = __webpack_require__(25);
 var DOMProperty = __webpack_require__(17);
 var React = __webpack_require__(28);
-var ReactBrowserEventEmitter = __webpack_require__(37);
+var ReactBrowserEventEmitter = __webpack_require__(38);
 var ReactCurrentOwner = __webpack_require__(15);
 var ReactDOMComponentTree = __webpack_require__(6);
-var ReactDOMContainerInfo = __webpack_require__(161);
-var ReactDOMFeatureFlags = __webpack_require__(163);
+var ReactDOMContainerInfo = __webpack_require__(162);
+var ReactDOMFeatureFlags = __webpack_require__(164);
 var ReactFeatureFlags = __webpack_require__(86);
 var ReactInstanceMap = __webpack_require__(32);
 var ReactInstrumentation = __webpack_require__(11);
-var ReactMarkupChecksum = __webpack_require__(183);
+var ReactMarkupChecksum = __webpack_require__(184);
 var ReactReconciler = __webpack_require__(26);
 var ReactUpdateQueue = __webpack_require__(57);
 var ReactUpdates = __webpack_require__(14);
@@ -10649,7 +10649,7 @@ var ReactUpdates = __webpack_require__(14);
 var emptyObject = __webpack_require__(29);
 var instantiateReactComponent = __webpack_require__(97);
 var invariant = __webpack_require__(1);
-var setInnerHTML = __webpack_require__(41);
+var setInnerHTML = __webpack_require__(42);
 var shouldUpdateReactComponent = __webpack_require__(63);
 var warning = __webpack_require__(2);
 
@@ -11448,11 +11448,11 @@ module.exports = getTextContentAccessor;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var ReactCompositeComponent = __webpack_require__(158);
+var ReactCompositeComponent = __webpack_require__(159);
 var ReactEmptyComponent = __webpack_require__(85);
 var ReactHostComponent = __webpack_require__(87);
 
-var getNextDebugID = __webpack_require__(247);
+var getNextDebugID = __webpack_require__(248);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
@@ -11637,8 +11637,8 @@ module.exports = isTextInputElement;
 
 
 var ExecutionEnvironment = __webpack_require__(7);
-var escapeTextContentForBrowser = __webpack_require__(40);
-var setInnerHTML = __webpack_require__(41);
+var escapeTextContentForBrowser = __webpack_require__(41);
+var setInnerHTML = __webpack_require__(42);
 
 /**
  * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -11696,9 +11696,9 @@ module.exports = setTextContent;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(15);
-var REACT_ELEMENT_TYPE = __webpack_require__(177);
+var REACT_ELEMENT_TYPE = __webpack_require__(178);
 
-var getIteratorFn = __webpack_require__(211);
+var getIteratorFn = __webpack_require__(212);
 var invariant = __webpack_require__(1);
 var KeyEscapeUtils = __webpack_require__(53);
 var warning = __webpack_require__(2);
@@ -12164,7 +12164,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 exports.createRouterObject = createRouterObject;
 exports.createRoutingHistory = createRoutingHistory;
 
-var _deprecateObjectProperties = __webpack_require__(43);
+var _deprecateObjectProperties = __webpack_require__(44);
 
 var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 
@@ -12199,7 +12199,7 @@ function createRoutingHistory(history, transitionManager) {
 exports.__esModule = true;
 exports.default = createMemoryHistory;
 
-var _useQueries = __webpack_require__(35);
+var _useQueries = __webpack_require__(36);
 
 var _useQueries2 = _interopRequireDefault(_useQueries);
 
@@ -12207,7 +12207,7 @@ var _useBasename = __webpack_require__(77);
 
 var _useBasename2 = _interopRequireDefault(_useBasename);
 
-var _createMemoryHistory = __webpack_require__(140);
+var _createMemoryHistory = __webpack_require__(141);
 
 var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 
@@ -12265,7 +12265,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = makeStateWithLocation;
 
-var _deprecateObjectProperties = __webpack_require__(43);
+var _deprecateObjectProperties = __webpack_require__(44);
 
 var _routerWarning = __webpack_require__(8);
 
@@ -12318,7 +12318,7 @@ module.exports = exports['default'];
 exports.__esModule = true;
 exports.default = useRouterHistory;
 
-var _useQueries = __webpack_require__(35);
+var _useQueries = __webpack_require__(36);
 
 var _useQueries2 = _interopRequireDefault(_useQueries);
 
@@ -12390,7 +12390,7 @@ var ReactCurrentOwner = __webpack_require__(15);
 var ReactComponentTreeHook = __webpack_require__(10);
 var ReactElement = __webpack_require__(22);
 
-var checkReactTypeSpec = __webpack_require__(246);
+var checkReactTypeSpec = __webpack_require__(247);
 
 var canDefineProperty = __webpack_require__(45);
 var getIteratorFn = __webpack_require__(111);
@@ -12709,17 +12709,17 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(145);
+var _reactDom = __webpack_require__(146);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouter = __webpack_require__(44);
+var _reactRouter = __webpack_require__(34);
 
-var _Template = __webpack_require__(116);
+var _Template = __webpack_require__(117);
 
 var _Template2 = _interopRequireDefault(_Template);
 
-var _Gallery = __webpack_require__(114);
+var _Gallery = __webpack_require__(115);
 
 var _Gallery2 = _interopRequireDefault(_Gallery);
 
@@ -12727,13 +12727,13 @@ var _AboutMe = __webpack_require__(113);
 
 var _AboutMe2 = _interopRequireDefault(_AboutMe);
 
-var _Contact = __webpack_require__(257);
+var _Contact = __webpack_require__(114);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-__webpack_require__(253);
+__webpack_require__(254);
 document.addEventListener("DOMContentLoaded", function () {
   _reactDom2.default.render(_react2.default.createElement(
     _reactRouter.Router,
@@ -12765,7 +12765,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(44);
+var _reactRouter = __webpack_require__(34);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12990,6 +12990,203 @@ exports.default = AboutMe;
 
 
 Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(34);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Contact = function (_React$Component) {
+    _inherits(Contact, _React$Component);
+
+    function Contact() {
+        _classCallCheck(this, Contact);
+
+        var _this = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this));
+
+        _this.handleNameChange = function (event) {
+            _this.setState({
+                name: event.target.value
+            });
+        };
+
+        _this.handleForWhoChange = function (event) {
+            _this.setState({
+                forWho: event.target.value
+            });
+        };
+
+        _this.handleEmailChange = function (event) {
+            _this.setState({
+                email: event.target.value
+            });
+        };
+
+        _this.handleInfoChange = function (event) {
+            _this.setState({
+                info: event.target.value
+            });
+        };
+
+        _this.handleFormSubmit = function (event) {
+            event.preventDefault();
+            if (_this.state.errors.length > 0) {}
+            var arr = _this.state.errors.slice();
+            if (_this.state.name.length === 0) {
+                arr.push("Error, name is required field.");
+            }
+            if (_this.state.email.indexOf('@') === -1) {
+                arr.push("Error, please enter a valid email address.");
+            }
+            _this.setState({
+                errors: arr
+            }, function () {
+                if (_this.state.errors.length !== 0) {
+                    _this.setState({
+                        errorStyle: {
+                            display: "block",
+                            color: "tomato"
+                        }
+                    });
+                } else {
+                    _this.setState({
+                        successStyle: {
+                            display: "block",
+                            color: "#44813B"
+                        }
+                    });
+                }
+            });
+        };
+
+        _this.state = {
+            name: '',
+            email: '',
+            info: '',
+            errors: [],
+            success: "Email was sent successfully",
+            errorStyle: {
+                display: "none"
+            },
+            successStyle: {
+                display: "none"
+            }
+        };
+        return _this;
+    }
+
+    _createClass(Contact, [{
+        key: 'componentDidUpdate',
+        value: function componentDidUpdate() {
+            var _this2 = this;
+
+            if (this.state.errors.length > 0) {
+                this.errorVanish = setTimeout(function () {
+                    _this2.setState({
+                        errors: []
+                    });
+                }, 3000);
+            }
+        }
+    }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+            clearTimeout(this.errorVanish);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'contact' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'logo' },
+                    _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/',
+                            className: 'logoLink' },
+                        'Awwgraphy'
+                    )
+                ),
+                _react2.default.createElement(
+                    'h1',
+                    { className: 'contactTitle' },
+                    'Get in touch'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    { className: 'lorem' },
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+                ),
+                _react2.default.createElement(
+                    'form',
+                    { onSubmit: this.handleFormSubmit, className: 'form' },
+                    _react2.default.createElement('input', { type: 'text', value: this.state.name, onChange: this.handleNameChange,
+                        placeholder: 'Name', className: 'formInput' }),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('input', { type: 'text', value: this.state.email, onChange: this.handleEmailChange,
+                        placeholder: 'Email', className: 'formInput' }),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('input', { type: 'text', value: this.state.subject, onChange: this.handleSubjectChange,
+                        placeholder: 'Subject', className: 'formInput' }),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('textarea', { value: this.state.info, onChange: this.handleInfoChange,
+                        placeholder: 'Your Message', className: 'formMessage' }),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('input', { type: 'submit', value: 'Submit', className: 'submitButton' }),
+                    _react2.default.createElement(
+                        'div',
+                        { style: this.state.errorStyle, className: 'error' },
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            this.state.errors.map(function (error, i) {
+                                return _react2.default.createElement(
+                                    'li',
+                                    { key: i },
+                                    error
+                                );
+                            })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { style: this.state.successStyle, className: 'success' },
+                        this.state.success
+                    ),
+                    _react2.default.createElement('br', null)
+                )
+            );
+        }
+    }]);
+
+    return Contact;
+}(_react2.default.Component);
+
+exports.default = Contact;
+
+/***/ }),
+/* 115 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -12999,7 +13196,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _MainGallery = __webpack_require__(115);
+var _MainGallery = __webpack_require__(116);
 
 var _MainGallery2 = _interopRequireDefault(_MainGallery);
 
@@ -13033,109 +13230,6 @@ var Gallery = function (_React$Component) {
 exports.default = Gallery;
 
 /***/ }),
-/* 115 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(5);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouter = __webpack_require__(44);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MainGallery = function (_React$Component) {
-    _inherits(MainGallery, _React$Component);
-
-    function MainGallery() {
-        _classCallCheck(this, MainGallery);
-
-        return _possibleConstructorReturn(this, (MainGallery.__proto__ || Object.getPrototypeOf(MainGallery)).call(this));
-    }
-
-    _createClass(MainGallery, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            window.onscroll = function (ev) {
-                if (window.innerHeight + window.pageYOffset >= document.body.scrollHeight) {}
-            };
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var boxAnimation = "";
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'div',
-                    { className: 'slider' },
-                    _react2.default.createElement('div', { className: 'imgSlider' }),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'logo' },
-                        _react2.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/',
-                                className: 'logoLink' },
-                            'Awwgraphy'
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'box ' + boxAnimation },
-                        _react2.default.createElement('img', { src: './images/jacek-jpg-3.jpg', className: 'boxImg' })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'box ' + boxAnimation, style: this.props.style },
-                        _react2.default.createElement('img', { src: './images/jacek-jpg-3.jpg', className: 'boxImg' })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'box ' + boxAnimation, style: this.props.style },
-                        _react2.default.createElement('img', { src: './images/jacek-jpg-3.jpg', className: 'boxImg' })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'box ' + boxAnimation, style: this.props.style },
-                        _react2.default.createElement('img', { src: './images/jacek-jpg-3.jpg', className: 'boxImg' })
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'box ' + boxAnimation, style: this.props.style },
-                        _react2.default.createElement('img', { src: './images/jacek-jpg-3.jpg', className: 'boxImg' })
-                    )
-                )
-            );
-        }
-    }]);
-
-    return MainGallery;
-}(_react2.default.Component);
-
-exports.default = MainGallery;
-
-/***/ }),
 /* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13152,7 +13246,95 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(44);
+var _reactRouter = __webpack_require__(34);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var MainGallery = function (_React$Component) {
+  _inherits(MainGallery, _React$Component);
+
+  function MainGallery() {
+    _classCallCheck(this, MainGallery);
+
+    return _possibleConstructorReturn(this, (MainGallery.__proto__ || Object.getPrototypeOf(MainGallery)).call(this));
+  }
+
+  _createClass(MainGallery, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      window.onscroll = function (ev) {
+        if (window.innerHeight + window.pageYOffset >= document.body.scrollHeight) {}
+      };
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var boxAnimation = "";
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'slider' },
+          _react2.default.createElement('div', { className: 'imgSlider' }),
+          _react2.default.createElement(
+            'div',
+            { className: 'logo' },
+            _react2.default.createElement(
+              _reactRouter.Link,
+              { to: '/',
+                className: 'logoLink' },
+              'Awwgraphy'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            'div',
+            { className: 'box ' + boxAnimation },
+            _react2.default.createElement('img', { src: './images/car.jpg', className: 'boxImg' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'box ' + boxAnimation, style: this.props.style },
+            _react2.default.createElement('img', { src: './images/mountain.jpg', className: 'boxImg' })
+          )
+        )
+      );
+    }
+  }]);
+
+  return MainGallery;
+}(_react2.default.Component);
+
+exports.default = MainGallery;
+
+/***/ }),
+/* 117 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(34);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13263,21 +13445,21 @@ var Template = function (_React$Component) {
 exports.default = Template;
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(118)(undefined);
+exports = module.exports = __webpack_require__(119)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "@keyframes headShake {\n  0% {\n    transform: rotate(0); }\n  30% {\n    transform: rotate(-20deg); }\n  100% {\n    transform: rotate(20deg); } }\n\n@keyframes hairShake {\n  0% {\n    transform: rotate(0);\n    transform: translate(0); }\n  30% {\n    transform: rotate(-20deg) translate(-18px, 0px); }\n  100% {\n    transform: rotate(20deg) translate(18px, 0px); } }\n\n@keyframes eyeBlink {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@keyframes buttonClick {\n  from {\n    bottom: 10px; }\n  to {\n    bottom: 0px; } }\n\n@keyframes writeMessage {\n  from {\n    width: 0px; } }\n\n@keyframes write2 {\n  0% {\n    width: 0; }\n  50% {\n    width: 0; }\n  100% {\n    width: 100%; } }\n\n@keyframes writeMessage2 {\n  from {\n    width: 0px; } }\n\n@keyframes write3 {\n  0% {\n    width: 0; }\n  50% {\n    width: 0; }\n  100% {\n    width: 100%; } }\n\n.aboutMe {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  background-color: beige; }\n  .aboutMe .logo {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 70px;\n    width: 100%; }\n    .aboutMe .logo .logoLink {\n      text-decoration: none;\n      color: #555;\n      font-family: Channel; }\n  .aboutMe .avatarBox {\n    background-color: beige;\n    align-self: flex-start;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    position: relative; }\n    .aboutMe .avatarBox .message {\n      position: absolute;\n      color: #555; }\n    .aboutMe .avatarBox .pot {\n      position: absolute;\n      right: 0; }\n      .aboutMe .avatarBox .pot .cactus {\n        position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusShadow {\n          position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusArmLeft {\n          position: absolute;\n          transform: rotate(-35deg);\n          z-index: 1; }\n          .aboutMe .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusArmRight {\n          position: absolute;\n          transform: rotate(45deg); }\n          .aboutMe .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            position: absolute; }\n    .aboutMe .avatarBox .head {\n      z-index: 3;\n      background-color: #FDE0AA;\n      position: relative; }\n      .aboutMe .avatarBox .head .beard1 {\n        position: absolute;\n        bottom: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .head .beard2 {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .head .eye1 {\n        animation-name: eyeBlink;\n        animation-duration: 0.3s;\n        animation-delay: 1s;\n        border-radius: 50%;\n        position: absolute;\n        background-color: black;\n        z-index: 2; }\n      .aboutMe .avatarBox .head .eye2 {\n        border-radius: 50%;\n        position: absolute;\n        background-color: black;\n        z-index: 2; }\n      .aboutMe .avatarBox .head .eyeBrow1 {\n        position: absolute;\n        background-color: #472B1F;\n        z-index: 2;\n        transform: skew(-70deg, 183deg); }\n      .aboutMe .avatarBox .head .eyeBrow2 {\n        position: absolute;\n        background-color: #472B1F;\n        z-index: 2;\n        transform: skew(70deg, -5deg); }\n      .aboutMe .avatarBox .head .earLeft {\n        position: absolute;\n        background-color: #FDE0AA; }\n        .aboutMe .avatarBox .head .earLeft .earShell {\n          position: absolute;\n          background-color: #E4BB86; }\n      .aboutMe .avatarBox .head .earRight {\n        position: absolute;\n        background-color: #FDE0AA; }\n        .aboutMe .avatarBox .head .earRight .earShell {\n          position: absolute;\n          background-color: #E4BB86; }\n    .aboutMe .avatarBox .hair {\n      position: absolute;\n      z-index: 4;\n      background-color: #472B1F; }\n      .aboutMe .avatarBox .hair .hairSkin {\n        position: absolute;\n        width: 0;\n        height: 0;\n        transform: rotate(-22deg); }\n      .aboutMe .avatarBox .hair .hairBackground1 {\n        position: absolute;\n        top: 0px;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .hair .hairBackground2 {\n        position: absolute;\n        top: 0px;\n        left: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .hair .hair1 {\n        position: absolute;\n        width: 0;\n        transform: rotate(40deg) skewY(30deg); }\n      .aboutMe .avatarBox .hair .hair2 {\n        position: absolute;\n        left: 0px;\n        width: 0;\n        height: 0;\n        transform: rotate(40deg); }\n      .aboutMe .avatarBox .hair .hair3 {\n        position: absolute;\n        transform: rotate(157deg) skewY(-30deg); }\n      .aboutMe .avatarBox .hair .hair4 {\n        position: absolute;\n        width: 0;\n        height: 0;\n        transform: rotate(-28deg); }\n    .aboutMe .avatarBox .headAnimation {\n      animation-fill-mode: forwards;\n      animation-direction: alternate;\n      animation-timing-function: linear;\n      animation-iteration-count: infinite;\n      animation-delay: 2s;\n      animation-name: headShake;\n      animation-duration: 1s; }\n    .aboutMe .avatarBox .hairAnimation {\n      animation-fill-mode: forwards;\n      animation-direction: alternate;\n      animation-timing-function: linear;\n      animation-iteration-count: infinite;\n      animation-delay: 2s;\n      animation-name: hairShake;\n      animation-duration: 1s; }\n    .aboutMe .avatarBox .mouth {\n      position: absolute;\n      z-index: 2;\n      background-color: #CA9A82; }\n      .aboutMe .avatarBox .mouth .lipsBottomRight {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsTopRight {\n        position: absolute;\n        top: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsTopLeft {\n        position: absolute;\n        top: 0;\n        left: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsBottomLeft {\n        position: absolute;\n        bottom: 0;\n        left: 0;\n        width: 0;\n        height: 0; }\n    .aboutMe .avatarBox .shadow {\n      position: absolute;\n      border-radius: 50% 0% 0% 35%;\n      z-index: 1;\n      width: 0; }\n    .aboutMe .avatarBox .nose1 {\n      position: absolute;\n      border-radius: 50% 0 0 0;\n      transform: skew(0deg, 140deg); }\n    .aboutMe .avatarBox .keyboard {\n      position: absolute;\n      background-color: #AFAB9D;\n      z-index: 1; }\n    .aboutMe .avatarBox .keyButton {\n      position: absolute; }\n      .aboutMe .avatarBox .keyButton .finger {\n        display: none;\n        position: absolute; }\n    .aboutMe .avatarBox .buttonAnimation {\n      animation-name: buttonClick;\n      animation-duration: 0.07s;\n      animation-iteration-count: 1;\n      animation-direction: alternate;\n      animation-timing-function: ease-in; }\n    .aboutMe .avatarBox .avatarBodyRight {\n      position: absolute;\n      background-color: #113A79; }\n      .aboutMe .avatarBox .avatarBodyRight .collar {\n        position: absolute;\n        top: 0;\n        z-index: 3; }\n      .aboutMe .avatarBox .avatarBodyRight .rightArm {\n        position: absolute;\n        z-index: 1; }\n        .aboutMe .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          position: absolute;\n          top: 0;\n          width: 0;\n          height: 0;\n          left: 0; }\n    .aboutMe .avatarBox .neck {\n      z-index: 2;\n      position: absolute;\n      background-color: #E4BB86; }\n    .aboutMe .avatarBox .avatarBodyLeft {\n      position: absolute;\n      background-color: #134E86; }\n      .aboutMe .avatarBox .avatarBodyLeft .collar {\n        position: absolute;\n        z-index: 3;\n        top: 0; }\n      .aboutMe .avatarBox .avatarBodyLeft .leftArm {\n        position: absolute;\n        z-index: 1; }\n        .aboutMe .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          position: absolute;\n          top: 0;\n          width: 0;\n          height: 0; }\n\n@media (min-width: 320px) {\n  .avatarBox {\n    width: 300px;\n    height: 300px; }\n    .avatarBox .message {\n      left: 45px;\n      overflow: hidden;\n      font-family: \"Courier\";\n      white-space: nowrap;\n      font-size: 13px; }\n    .avatarBox .writeMessage {\n      animation: writeMessage 3s steps(60, end); }\n    .avatarBox .write2 {\n      animation: write2 6s steps(60, end); }\n    .avatarBox p:nth-child(1) {\n      top: 10px;\n      width: 17em; }\n    .avatarBox p:nth-child(2) {\n      width: 18em;\n      top: 30px; }\n    .avatarBox .pot {\n      border-top: 30px solid #E8B882;\n      border-left: 10px solid transparent;\n      border-right: 10px solid transparent;\n      width: 30px;\n      top: 150px;\n      z-index: 0; }\n      .avatarBox .pot:after {\n        content: \"\";\n        position: absolute;\n        width: 45px;\n        height: 7px;\n        bottom: -7px;\n        background-color: white;\n        right: -20px; }\n      .avatarBox .pot:before {\n        content: \"\";\n        position: absolute;\n        width: 40px;\n        height: 5px;\n        bottom: 30px;\n        background-color: #E8B882;\n        right: -15px; }\n      .avatarBox .pot .potShadow {\n        position: absolute;\n        bottom: 26px;\n        width: 30px;\n        border-top: 4px solid #B9945F;\n        border-left: 1px solid beige;\n        border-right: 1px solid beige;\n        background-color: grey;\n        left: -10px; }\n      .avatarBox .pot .cactus {\n        left: 0px;\n        width: 14px;\n        height: 45px;\n        bottom: 35px;\n        background-color: #2A6034;\n        border-radius: 12% 12% 0 0; }\n        .avatarBox .pot .cactus .cactusShadow {\n          left: 0px;\n          height: 45px;\n          width: 7px;\n          background-color: #377B44; }\n        .avatarBox .pot .cactus .cactusArmLeft {\n          width: 15px;\n          height: 20px;\n          left: -12px; }\n          .avatarBox .pot .cactus .cactusArmLeft:after {\n            content: \"\";\n            border-top: 14px solid #2A6034;\n            border-bottom: 14px solid #2A6034;\n            border-left: 13px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 50% 50% 0 50%; }\n          .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute;\n            width: 50%;\n            height: 40px;\n            background-color: #377B44;\n            border-radius: 30% 0 30% 50%;\n            top: -13px; }\n        .avatarBox .pot .cactus .cactusArmRight {\n          width: 12px;\n          height: 10px;\n          right: -13px;\n          transform: skew(-10deg, 100deg);\n          top: 10px; }\n          .avatarBox .pot .cactus .cactusArmRight:after {\n            content: \"\";\n            border-top: 10px solid #2A6034;\n            border-bottom: 10px solid #2A6034;\n            border-left: 10px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 20% 50% 50% 50%; }\n          .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            width: 50%;\n            height: 30px;\n            background-color: #377B44;\n            border-radius: 0 30% 30% 50%;\n            right: 0;\n            top: -10px; }\n    .avatarBox .head {\n      width: 77px;\n      height: 65px; }\n      .avatarBox .head:after {\n        content: \"\";\n        position: absolute;\n        bottom: -25px;\n        left: 0;\n        width: 0;\n        height: 0;\n        border-left: 38.5px solid transparent;\n        border-right: 38.5px solid transparent;\n        border-top: 25px solid #FDE0AA; }\n      .avatarBox .head .beard1 {\n        border-bottom: 30px solid beige;\n        border-right: 30px solid transparent; }\n      .avatarBox .head .beard2 {\n        border-bottom: 30px solid beige;\n        border-left: 30px solid transparent; }\n      .avatarBox .head .eye1 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        left: 15px; }\n      .avatarBox .head .eye2 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        right: 15px; }\n      .avatarBox .head .eyeBrow1 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        left: 10px; }\n      .avatarBox .head .eyeBrow2 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        right: 10px; }\n      .avatarBox .head .earLeft {\n        width: 10px;\n        height: 20px;\n        left: -10px;\n        top: 15px; }\n        .avatarBox .head .earLeft .earShell {\n          width: 5px;\n          height: 10px;\n          right: 0px;\n          top: 5px; }\n      .avatarBox .head .earRight {\n        width: 10px;\n        height: 20px;\n        right: -10px;\n        top: 15px; }\n        .avatarBox .head .earRight .earShell {\n          width: 5px;\n          height: 10px;\n          right: 5px;\n          top: 5px; }\n    .avatarBox .hair {\n      top: 70px;\n      width: 77px;\n      height: 55px; }\n      .avatarBox .hair .hairSkin {\n        top: 28px;\n        border-top: 20px solid transparent;\n        border-bottom: 16px solid transparent;\n        border-right: 40px solid #FDE0AA; }\n      .avatarBox .hair .hairBackground1 {\n        border-top: 20px solid beige;\n        border-left: 25px solid transparent; }\n      .avatarBox .hair .hairBackground2 {\n        border-top: 20px solid beige;\n        border-right: 15px solid transparent; }\n      .avatarBox .hair .hair1 {\n        top: 13px;\n        left: -6.5px;\n        height: 35px;\n        border-top: 0px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 25.5px solid #5A352A; }\n      .avatarBox .hair .hair2 {\n        top: -10px;\n        left: 0px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #5A352A; }\n      .avatarBox .hair .hair3 {\n        top: 7px;\n        right: 6px;\n        height: 33px;\n        border-top: 12px solid transparent;\n        border-bottom: -10px #170F08;\n        border-left: 10px solid transparent;\n        border-right: 26px solid #170F08; }\n      .avatarBox .hair .hair4 {\n        top: 8px;\n        left: -13px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #503026; }\n    .avatarBox .mouth {\n      bottom: 0px;\n      left: 23px;\n      width: 30px;\n      height: 4px; }\n      .avatarBox .mouth .lipsBottomRight {\n        border-bottom: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopRight {\n        border-top: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopLeft {\n        border-top: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n      .avatarBox .mouth .lipsBottomLeft {\n        border-bottom: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n    .avatarBox .shadow {\n      top: 1px;\n      right: 0;\n      border-left: 15px solid #E4BB86;\n      border-top: 0px solid transparent;\n      border-bottom: 10px solid transparent;\n      height: 74px; }\n    .avatarBox .nose1 {\n      bottom: 20px;\n      left: 43px;\n      width: 23px;\n      border-top: 31px solid #EECB9B;\n      border-left: 0px solid transparent;\n      border-right: 10px solid transparent; }\n    .avatarBox .keyboard {\n      width: 150px;\n      height: 10px;\n      bottom: 0; }\n    .avatarBox .keyButton {\n      z-index: 1;\n      bottom: 10px;\n      width: 15px;\n      border-bottom: 10px solid grey;\n      border-left: 3px solid transparent;\n      border-right: 3px solid transparent; }\n    .avatarBox .neck {\n      z-index: 0;\n      width: 40px;\n      height: 70px;\n      bottom: 80px; }\n    .avatarBox .avatarBodyRight {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 150px; }\n      .avatarBox .avatarBodyRight .collar {\n        left: 0;\n        border-bottom: 20px solid #113A79;\n        border-left: 20px solid transparent; }\n      .avatarBox .avatarBodyRight .rightArm {\n        border-radius: 0 20px 10px 0;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #113A79;\n        bottom: 24.5px;\n        right: -24.1px; }\n        .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          border-top: 40px solid beige;\n          border-left: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyRight .rightArm .armShadowRight {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 0 30px 20px 0; }\n    .avatarBox .avatarBodyLeft {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 110px; }\n      .avatarBox .avatarBodyLeft .collar {\n        right: 0;\n        border-bottom: 20px solid #134E86;\n        border-right: 20px solid transparent; }\n      .avatarBox .avatarBodyLeft .leftArm {\n        border-radius: 20px 0 0 10px;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #2E6085;\n        bottom: 24.5px;\n        left: -24.1px; }\n        .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          border-top: 40px solid beige;\n          border-right: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyLeft .leftArm .armShadowLeft {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 30px 0 0 20px; }\n  .button0 {\n    left: 75px; }\n  .button1 {\n    left: 90px; }\n  .button2 {\n    left: 105px; }\n  .button3 {\n    left: 120px; }\n  .button4 {\n    left: 135px; }\n  .button5 {\n    left: 150px; }\n  .button6 {\n    left: 165px; }\n  .button7 {\n    left: 180px; }\n  .button8 {\n    left: 195px; }\n  .button9 {\n    left: 210px; } }\n\n@media (min-width: 1024px) {\n  .avatarBox {\n    width: 500px;\n    height: 500px; }\n    .avatarBox .message {\n      left: 120px;\n      overflow: hidden;\n      font-family: \"Courier\";\n      white-space: nowrap;\n      animation: writeMessage 3s steps(60, end);\n      font-size: 16px; }\n    .avatarBox p:nth-child(1) {\n      top: 10px;\n      width: 17em; }\n    .avatarBox p:nth-child(2) {\n      width: 18em;\n      top: 40px;\n      animation: write2 6s steps(60, end); }\n    .avatarBox .head {\n      width: 128px;\n      height: 166px; }\n      .avatarBox .head .beard1 {\n        border-bottom: 50px solid beige;\n        border-right: 50px solid transparent; }\n      .avatarBox .head .beard2 {\n        border-bottom: 50px solid beige;\n        border-left: 50px solid transparent; }\n      .avatarBox .head .eye1 {\n        width: 11.5px;\n        height: 11.5px;\n        top: 56.5px;\n        left: 25px; }\n      .avatarBox .head .eye2 {\n        width: 11.5px;\n        height: 11.5px;\n        top: 56.5px;\n        right: 25px; }\n      .avatarBox .head .eyeBrow1 {\n        width: 25px;\n        height: 5px;\n        top: 50px;\n        left: 16.6px; }\n      .avatarBox .head .eyeBrow2 {\n        width: 25px;\n        height: 5px;\n        top: 50px;\n        right: 16.6px; }\n      .avatarBox .head .earLeft {\n        width: 16.6px;\n        height: 33.5px;\n        left: -16.6px;\n        top: 50px; }\n        .avatarBox .head .earLeft .earShell {\n          width: 8.4px;\n          height: 16.6px;\n          right: 0px;\n          top: 8.4px; }\n      .avatarBox .head .earRight {\n        width: 16.6px;\n        height: 33.5px;\n        right: -16.6px;\n        top: 50px; }\n        .avatarBox .head .earRight .earShell {\n          width: 8.4px;\n          height: 16.6px;\n          right: 8.4px;\n          top: 8.4px; }\n    .avatarBox .hair {\n      top: 116px;\n      width: 128px;\n      height: 91.6px; }\n      .avatarBox .hair .hairSkin {\n        top: 46.6px;\n        border-top: 33.6px solid transparent;\n        border-bottom: 26.6px solid transparent;\n        border-right: 66.6px solid #FDE0AA; }\n      .avatarBox .hair .hairBackground1 {\n        border-top: 33.6px solid beige;\n        border-left: 40.6px solid transparent; }\n      .avatarBox .hair .hairBackground2 {\n        border-top: 33.6px solid beige;\n        border-right: 25px solid transparent; }\n      .avatarBox .hair .hair1 {\n        top: 21.6px;\n        left: -11px;\n        height: 58.1px;\n        border-top: 0px solid transparent;\n        border-bottom: 25.3px solid transparent;\n        border-right: 42.5px solid #5A352A; }\n      .avatarBox .hair .hair2 {\n        top: -16.6px;\n        left: 0px;\n        border-top: 25px solid transparent;\n        border-bottom: 25px solid transparent;\n        border-right: 50px solid #5A352A; }\n      .avatarBox .hair .hair3 {\n        top: 11.62px;\n        right: 10px;\n        height: 55px;\n        border-top: 20px solid transparent;\n        border-bottom: -16.6px #170F08;\n        border-left: 16.6px solid transparent;\n        border-right: 43.16px solid #170F08; }\n      .avatarBox .hair .hair4 {\n        top: 13.3px;\n        left: -21.6px;\n        border-top: 25px solid transparent;\n        border-bottom: 25px solid transparent;\n        border-right: 50px solid #503026; }\n    .avatarBox .mouth {\n      bottom: 31.55px;\n      left: 38.2px;\n      width: 50px;\n      height: 6.64px; }\n      .avatarBox .mouth .lipsBottomRight {\n        border-bottom: 8.3px solid #FDE0AA;\n        border-left: 8.3px solid transparent; }\n      .avatarBox .mouth .lipsTopRight {\n        border-top: 8.3px solid #FDE0AA;\n        border-left: 8.3px solid transparent; }\n      .avatarBox .mouth .lipsTopLeft {\n        border-top: 8.3px solid #FDE0AA;\n        border-right: 8.3px solid transparent; }\n      .avatarBox .mouth .lipsBottomLeft {\n        border-bottom: 8.3px solid #FDE0AA;\n        border-right: 8.3px solid transparent; }\n    .avatarBox .shadow {\n      top: 0px;\n      right: 0;\n      border-left: 25px solid #E4BB86;\n      border-top: 0px solid transparent;\n      border-bottom: 25px solid transparent;\n      height: 141px; }\n    .avatarBox .nose1 {\n      bottom: 60px;\n      left: 69.7px;\n      width: 38.2px;\n      border-top: 58.1px solid #EECB9B;\n      border-left: 0px solid transparent;\n      border-right: 16.6px solid transparent; }\n    .avatarBox .keyboard {\n      width: 250px;\n      height: 16.6px;\n      bottom: 0; }\n    .avatarBox .keyButton {\n      z-index: 1;\n      bottom: 16.6px;\n      width: 25px;\n      border-bottom: 16.6px solid grey;\n      border-left: 5px solid transparent;\n      border-right: 5px solid transparent; }\n      .avatarBox .keyButton .finger {\n        width: 10px;\n        height: 10px;\n        top: -12px;\n        background-color: #FDE0AA; }\n    .avatarBox .avatarBodyRight {\n      width: 66.4px;\n      height: 160px;\n      bottom: 0px;\n      left: 250px; }\n      .avatarBox .avatarBodyRight .rightArm {\n        width: 40px;\n        height: 120px;\n        background-color: #113A79;\n        bottom: 41px;\n        left: 317px; }\n        .avatarBox .avatarBodyRight .rightArm .armShadowRight {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #007DB2; }\n    .avatarBox .avatarBodyLeft {\n      width: 66.4px;\n      height: 160px;\n      bottom: 0px;\n      left: 184.6px; }\n      .avatarBox .avatarBodyLeft .leftArm {\n        width: 40px;\n        height: 120px;\n        background-color: #134E86;\n        bottom: 41px;\n        left: 144px; }\n        .avatarBox .avatarBodyLeft .leftArm .armShadowLeft {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #007DB2; }\n  .button0 {\n    left: 125px; }\n  .button1 {\n    left: 150px; }\n  .button2 {\n    left: 175px; }\n  .button3 {\n    left: 200px; }\n  .button4 {\n    left: 225px; }\n  .button5 {\n    left: 250px; }\n  .button6 {\n    left: 275px; }\n  .button7 {\n    left: 300px; }\n  .button8 {\n    left: 325px; }\n  .button9 {\n    left: 350px; }\n  @keyframes buttonClick {\n    from {\n      bottom: 16.6px; }\n    to {\n      bottom: 0px; } }\n  @keyframes hairShake {\n    0% {\n      transform: rotate(0);\n      transform: translate(0); }\n    30% {\n      transform: rotate(-20deg) translate(-29.9px, 0px); }\n    100% {\n      transform: rotate(20deg) translate(29.9px, 0px); } } }\n\n.form {\n  width: 100%;\n  background-color: beige;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n@keyframes menuslide {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes vanish {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@font-face {\n  font-family: Channel;\n  src: url(" + __webpack_require__(254) + "); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.main-width {\n  width: 100%;\n  height: 100vh; }\n  .main-width .box {\n    width: 100%;\n    height: 50vh;\n    justify-content: flex-start;\n    align-items: flex-start;\n    flex-wrap: wrap;\n    z-index: 0; }\n    .main-width .box .boxImg {\n      height: 50vh;\n      width: 100%;\n      object-fit: cover; }\n  .main-width #menu {\n    width: auto;\n    height: 100vh;\n    display: flex;\n    justify-content: flex-end;\n    flex-wrap: wrap; }\n    .main-width #menu .slider {\n      width: auto;\n      height: 100vh;\n      z-index: 0;\n      top: 0;\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n      flex-wrap: wrap;\n      align-items: center; }\n      .main-width #menu .slider .imgSlider {\n        width: 100%;\n        height: 100vh;\n        background-image: url(" + __webpack_require__(136) + ");\n        background-repeat: no-repeat;\n        position: absolute;\n        background-size: cover;\n        background-position: center;\n        display: inline-block; }\n      .main-width #menu .slider .logo {\n        width: 100%;\n        height: 70px;\n        font-family: Channel;\n        z-index: 0;\n        display: flex;\n        justify-content: center;\n        align-items: center; }\n        .main-width #menu .slider .logo .logoLink {\n          text-decoration: none;\n          color: #555; }\n    .main-width #menu .menu-btn {\n      width: 50px;\n      height: 50px;\n      background-color: transparent;\n      border-radius: 50%;\n      transform: rotate(0deg);\n      transition: .5s ease-in-out;\n      cursor: pointer;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      flex-wrap: wrap;\n      align-content: space-around;\n      position: fixed;\n      top: 10px;\n      right: 10px;\n      z-index: 99;\n      border: 1px solid transparent; }\n    .main-width #menu .hide {\n      display: none; }\n\nspan {\n  height: 3px;\n  width: 70%;\n  background: #d3531a;\n  opacity: 1;\n  right: 7px;\n  background-color: #999;\n  transform: rotate(0deg);\n  transition: .30s ease-in-out;\n  position: absolute; }\n  span:nth-child(1) {\n    top: 13px; }\n  span:nth-child(2), span:nth-child(3) {\n    top: 23px; }\n  span:nth-child(4) {\n    top: 33px; }\n\n.open span:nth-child(1), .open span:nth-child(4) {\n  top: 18px;\n  width: 0%;\n  left: 50%;\n  animation-name: vanish;\n  animation-duration: 0.3s; }\n\n.open span:nth-child(2) {\n  transform: rotate(45deg);\n  height: 3px;\n  background-color: black; }\n\n.open span:nth-child(3) {\n  transform: rotate(-45deg);\n  height: 3px;\n  background-color: black; }\n\n.show {\n  animation-name: menuslide;\n  animation-duration: 0.6s;\n  display: flex;\n  width: auto;\n  height: 80vh;\n  list-style: none;\n  flex-direction: column;\n  align-items: center;\n  background: white;\n  z-index: 5;\n  position: fixed; }\n  .show .liElement {\n    width: 100vw;\n    height: 15vh;\n    display: flex;\n    justify-content: center; }\n    .show .liElement .link {\n      text-decoration: none;\n      color: #555;\n      align-self: center;\n      font-family: Channel; }\n", ""]);
+exports.push([module.i, "@keyframes headShake {\n  0% {\n    transform: rotate(0); }\n  30% {\n    transform: rotate(-20deg); }\n  100% {\n    transform: rotate(20deg); } }\n\n@keyframes hairShake {\n  0% {\n    transform: rotate(0);\n    transform: translate(0); }\n  30% {\n    transform: rotate(-20deg) translate(-18px, 0px); }\n  100% {\n    transform: rotate(20deg) translate(18px, 0px); } }\n\n@keyframes eyeBlink {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@keyframes buttonClick {\n  from {\n    bottom: 10px; }\n  to {\n    bottom: 0px; } }\n\n@keyframes writeMessage {\n  from {\n    width: 0px; } }\n\n@keyframes write2 {\n  0% {\n    width: 0; }\n  50% {\n    width: 0; }\n  100% {\n    width: 100%; } }\n\n@keyframes writeMessage2 {\n  from {\n    width: 0px; } }\n\n@keyframes write3 {\n  0% {\n    width: 0; }\n  50% {\n    width: 0; }\n  100% {\n    width: 100%; } }\n\n.aboutMe {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  background-color: beige; }\n  .aboutMe .logo {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 70px;\n    width: 100%; }\n    .aboutMe .logo .logoLink {\n      text-decoration: none;\n      color: #555;\n      font-family: Channel; }\n  .aboutMe .avatarBox {\n    background-color: beige;\n    align-self: flex-start;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    position: relative; }\n    .aboutMe .avatarBox .message {\n      position: absolute;\n      color: #555; }\n    .aboutMe .avatarBox .pot {\n      position: absolute;\n      right: 0; }\n      .aboutMe .avatarBox .pot .cactus {\n        position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusShadow {\n          position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusArmLeft {\n          position: absolute;\n          transform: rotate(-35deg);\n          z-index: 1; }\n          .aboutMe .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusArmRight {\n          position: absolute;\n          transform: rotate(45deg); }\n          .aboutMe .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            position: absolute; }\n    .aboutMe .avatarBox .head {\n      z-index: 3;\n      background-color: #FDE0AA;\n      position: relative; }\n      .aboutMe .avatarBox .head .beard1 {\n        position: absolute;\n        bottom: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .head .beard2 {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .head .eye1 {\n        animation-name: eyeBlink;\n        animation-duration: 0.3s;\n        animation-delay: 1s;\n        border-radius: 50%;\n        position: absolute;\n        background-color: black;\n        z-index: 2; }\n      .aboutMe .avatarBox .head .eye2 {\n        border-radius: 50%;\n        position: absolute;\n        background-color: black;\n        z-index: 2; }\n      .aboutMe .avatarBox .head .eyeBrow1 {\n        position: absolute;\n        background-color: #472B1F;\n        z-index: 2;\n        transform: skew(-70deg, 183deg); }\n      .aboutMe .avatarBox .head .eyeBrow2 {\n        position: absolute;\n        background-color: #472B1F;\n        z-index: 2;\n        transform: skew(70deg, -5deg); }\n      .aboutMe .avatarBox .head .earLeft {\n        position: absolute;\n        background-color: #FDE0AA; }\n        .aboutMe .avatarBox .head .earLeft .earShell {\n          position: absolute;\n          background-color: #E4BB86; }\n      .aboutMe .avatarBox .head .earRight {\n        position: absolute;\n        background-color: #FDE0AA; }\n        .aboutMe .avatarBox .head .earRight .earShell {\n          position: absolute;\n          background-color: #E4BB86; }\n    .aboutMe .avatarBox .hair {\n      position: absolute;\n      z-index: 4;\n      background-color: #472B1F; }\n      .aboutMe .avatarBox .hair .hairSkin {\n        position: absolute;\n        width: 0;\n        height: 0;\n        transform: rotate(-22deg); }\n      .aboutMe .avatarBox .hair .hairBackground1 {\n        position: absolute;\n        top: 0px;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .hair .hairBackground2 {\n        position: absolute;\n        top: 0px;\n        left: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .hair .hair1 {\n        position: absolute;\n        width: 0;\n        transform: rotate(40deg) skewY(30deg); }\n      .aboutMe .avatarBox .hair .hair2 {\n        position: absolute;\n        left: 0px;\n        width: 0;\n        height: 0;\n        transform: rotate(40deg); }\n      .aboutMe .avatarBox .hair .hair3 {\n        position: absolute;\n        transform: rotate(157deg) skewY(-30deg); }\n      .aboutMe .avatarBox .hair .hair4 {\n        position: absolute;\n        width: 0;\n        height: 0;\n        transform: rotate(-28deg); }\n    .aboutMe .avatarBox .headAnimation {\n      animation-fill-mode: forwards;\n      animation-direction: alternate;\n      animation-timing-function: linear;\n      animation-iteration-count: infinite;\n      animation-delay: 2s;\n      animation-name: headShake;\n      animation-duration: 1s; }\n    .aboutMe .avatarBox .hairAnimation {\n      animation-fill-mode: forwards;\n      animation-direction: alternate;\n      animation-timing-function: linear;\n      animation-iteration-count: infinite;\n      animation-delay: 2s;\n      animation-name: hairShake;\n      animation-duration: 1s; }\n    .aboutMe .avatarBox .mouth {\n      position: absolute;\n      z-index: 2;\n      background-color: #CA9A82; }\n      .aboutMe .avatarBox .mouth .lipsBottomRight {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsTopRight {\n        position: absolute;\n        top: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsTopLeft {\n        position: absolute;\n        top: 0;\n        left: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsBottomLeft {\n        position: absolute;\n        bottom: 0;\n        left: 0;\n        width: 0;\n        height: 0; }\n    .aboutMe .avatarBox .shadow {\n      position: absolute;\n      border-radius: 50% 0% 0% 35%;\n      z-index: 1;\n      width: 0; }\n    .aboutMe .avatarBox .nose1 {\n      position: absolute;\n      border-radius: 50% 0 0 0;\n      transform: skew(0deg, 140deg); }\n    .aboutMe .avatarBox .keyboard {\n      position: absolute;\n      background-color: #AFAB9D;\n      z-index: 1; }\n    .aboutMe .avatarBox .keyButton {\n      position: absolute; }\n      .aboutMe .avatarBox .keyButton .finger {\n        display: none;\n        position: absolute; }\n    .aboutMe .avatarBox .buttonAnimation {\n      animation-name: buttonClick;\n      animation-duration: 0.07s;\n      animation-iteration-count: 1;\n      animation-direction: alternate;\n      animation-timing-function: ease-in; }\n    .aboutMe .avatarBox .avatarBodyRight {\n      position: absolute;\n      background-color: #113A79; }\n      .aboutMe .avatarBox .avatarBodyRight .collar {\n        position: absolute;\n        top: 0;\n        z-index: 3; }\n      .aboutMe .avatarBox .avatarBodyRight .rightArm {\n        position: absolute;\n        z-index: 1; }\n        .aboutMe .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          position: absolute;\n          top: 0;\n          width: 0;\n          height: 0;\n          left: 0; }\n    .aboutMe .avatarBox .neck {\n      z-index: 2;\n      position: absolute;\n      background-color: #E4BB86; }\n    .aboutMe .avatarBox .avatarBodyLeft {\n      position: absolute;\n      background-color: #134E86; }\n      .aboutMe .avatarBox .avatarBodyLeft .collar {\n        position: absolute;\n        z-index: 3;\n        top: 0; }\n      .aboutMe .avatarBox .avatarBodyLeft .leftArm {\n        position: absolute;\n        z-index: 1; }\n        .aboutMe .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          position: absolute;\n          top: 0;\n          width: 0;\n          height: 0; }\n\n@media (min-width: 320px) {\n  .avatarBox {\n    width: 300px;\n    height: 300px; }\n    .avatarBox .message {\n      left: 45px;\n      overflow: hidden;\n      font-family: \"Courier\";\n      white-space: nowrap;\n      font-size: 13px;\n      width: auto; }\n    .avatarBox .writeMessage {\n      animation: writeMessage 3s steps(60, end); }\n    .avatarBox .write2 {\n      animation: write2 6s steps(60, end); }\n    .avatarBox p:nth-child(1) {\n      top: 10px;\n      width: 17em; }\n    .avatarBox p:nth-child(2) {\n      width: 18em;\n      top: 30px; }\n    .avatarBox .pot {\n      border-top: 30px solid #E8B882;\n      border-left: 10px solid transparent;\n      border-right: 10px solid transparent;\n      width: 30px;\n      top: 150px;\n      z-index: 0; }\n      .avatarBox .pot:after {\n        content: \"\";\n        position: absolute;\n        width: 45px;\n        height: 7px;\n        bottom: -7px;\n        background-color: white;\n        right: -20px; }\n      .avatarBox .pot:before {\n        content: \"\";\n        position: absolute;\n        width: 40px;\n        height: 5px;\n        bottom: 30px;\n        background-color: #E8B882;\n        right: -15px; }\n      .avatarBox .pot .potShadow {\n        position: absolute;\n        bottom: 26px;\n        width: 30px;\n        border-top: 4px solid #B9945F;\n        border-left: 1px solid beige;\n        border-right: 1px solid beige;\n        background-color: grey;\n        left: -10px; }\n      .avatarBox .pot .cactus {\n        left: 0px;\n        width: 14px;\n        height: 45px;\n        bottom: 35px;\n        background-color: #2A6034;\n        border-radius: 12% 12% 0 0; }\n        .avatarBox .pot .cactus .cactusShadow {\n          left: 0px;\n          height: 45px;\n          width: 7px;\n          background-color: #377B44; }\n        .avatarBox .pot .cactus .cactusArmLeft {\n          width: 15px;\n          height: 20px;\n          left: -12px; }\n          .avatarBox .pot .cactus .cactusArmLeft:after {\n            content: \"\";\n            border-top: 14px solid #2A6034;\n            border-bottom: 14px solid #2A6034;\n            border-left: 13px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 50% 50% 0 50%; }\n          .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute;\n            width: 50%;\n            height: 40px;\n            background-color: #377B44;\n            border-radius: 30% 0 30% 50%;\n            top: -13px; }\n        .avatarBox .pot .cactus .cactusArmRight {\n          width: 12px;\n          height: 10px;\n          right: -13px;\n          transform: skew(-10deg, 100deg);\n          top: 10px; }\n          .avatarBox .pot .cactus .cactusArmRight:after {\n            content: \"\";\n            border-top: 10px solid #2A6034;\n            border-bottom: 10px solid #2A6034;\n            border-left: 10px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 20% 50% 50% 50%; }\n          .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            width: 50%;\n            height: 30px;\n            background-color: #377B44;\n            border-radius: 0 30% 30% 50%;\n            right: 0;\n            top: -10px; }\n    .avatarBox .head {\n      width: 77px;\n      height: 65px; }\n      .avatarBox .head:after {\n        content: \"\";\n        position: absolute;\n        bottom: -25px;\n        left: 0;\n        width: 0;\n        height: 0;\n        border-left: 38.5px solid transparent;\n        border-right: 38.5px solid transparent;\n        border-top: 25px solid #FDE0AA; }\n      .avatarBox .head .beard1 {\n        border-bottom: 30px solid beige;\n        border-right: 30px solid transparent; }\n      .avatarBox .head .beard2 {\n        border-bottom: 30px solid beige;\n        border-left: 30px solid transparent; }\n      .avatarBox .head .eye1 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        left: 15px; }\n      .avatarBox .head .eye2 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        right: 15px; }\n      .avatarBox .head .eyeBrow1 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        left: 10px; }\n      .avatarBox .head .eyeBrow2 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        right: 10px; }\n      .avatarBox .head .earLeft {\n        width: 10px;\n        height: 20px;\n        left: -10px;\n        top: 15px; }\n        .avatarBox .head .earLeft .earShell {\n          width: 5px;\n          height: 10px;\n          right: 0px;\n          top: 5px; }\n      .avatarBox .head .earRight {\n        width: 10px;\n        height: 20px;\n        right: -10px;\n        top: 15px; }\n        .avatarBox .head .earRight .earShell {\n          width: 5px;\n          height: 10px;\n          right: 5px;\n          top: 5px; }\n    .avatarBox .hair {\n      top: 70px;\n      width: 77px;\n      height: 55px; }\n      .avatarBox .hair .hairSkin {\n        top: 28px;\n        border-top: 20px solid transparent;\n        border-bottom: 16px solid transparent;\n        border-right: 40px solid #FDE0AA; }\n      .avatarBox .hair .hairBackground1 {\n        border-top: 20px solid beige;\n        border-left: 25px solid transparent; }\n      .avatarBox .hair .hairBackground2 {\n        border-top: 20px solid beige;\n        border-right: 15px solid transparent; }\n      .avatarBox .hair .hair1 {\n        top: 13px;\n        left: -6.5px;\n        height: 35px;\n        border-top: 0px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 25.5px solid #5A352A; }\n      .avatarBox .hair .hair2 {\n        top: -10px;\n        left: 0px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #5A352A; }\n      .avatarBox .hair .hair3 {\n        top: 7px;\n        right: 6px;\n        height: 33px;\n        border-top: 12px solid transparent;\n        border-bottom: -10px #170F08;\n        border-left: 10px solid transparent;\n        border-right: 26px solid #170F08; }\n      .avatarBox .hair .hair4 {\n        top: 8px;\n        left: -13px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #503026; }\n    .avatarBox .mouth {\n      bottom: 0px;\n      left: 23px;\n      width: 30px;\n      height: 4px; }\n      .avatarBox .mouth .lipsBottomRight {\n        border-bottom: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopRight {\n        border-top: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopLeft {\n        border-top: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n      .avatarBox .mouth .lipsBottomLeft {\n        border-bottom: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n    .avatarBox .shadow {\n      top: 1px;\n      right: 0;\n      border-left: 15px solid #E4BB86;\n      border-top: 0px solid transparent;\n      border-bottom: 10px solid transparent;\n      height: 74px; }\n    .avatarBox .nose1 {\n      bottom: 20px;\n      left: 43px;\n      width: 23px;\n      border-top: 31px solid #EECB9B;\n      border-left: 0px solid transparent;\n      border-right: 10px solid transparent; }\n    .avatarBox .keyboard {\n      width: 150px;\n      height: 10px;\n      bottom: 0; }\n    .avatarBox .keyButton {\n      z-index: 1;\n      bottom: 10px;\n      width: 15px;\n      border-bottom: 10px solid grey;\n      border-left: 3px solid transparent;\n      border-right: 3px solid transparent; }\n    .avatarBox .neck {\n      z-index: 0;\n      width: 40px;\n      height: 70px;\n      bottom: 80px; }\n    .avatarBox .avatarBodyRight {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 150px; }\n      .avatarBox .avatarBodyRight .collar {\n        left: 0;\n        border-bottom: 20px solid #113A79;\n        border-left: 20px solid transparent; }\n      .avatarBox .avatarBodyRight .rightArm {\n        border-radius: 0 20px 10px 0;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #113A79;\n        bottom: 24.5px;\n        right: -24.1px; }\n        .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          border-top: 40px solid beige;\n          border-left: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyRight .rightArm .armShadowRight {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 0 30px 20px 0; }\n    .avatarBox .avatarBodyLeft {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 110px; }\n      .avatarBox .avatarBodyLeft .collar {\n        right: 0;\n        border-bottom: 20px solid #134E86;\n        border-right: 20px solid transparent; }\n      .avatarBox .avatarBodyLeft .leftArm {\n        border-radius: 20px 0 0 10px;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #2E6085;\n        bottom: 24.5px;\n        left: -24.1px; }\n        .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          border-top: 40px solid beige;\n          border-right: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyLeft .leftArm .armShadowLeft {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 30px 0 0 20px; }\n  .button0 {\n    left: 75px; }\n  .button1 {\n    left: 90px; }\n  .button2 {\n    left: 105px; }\n  .button3 {\n    left: 120px; }\n  .button4 {\n    left: 135px; }\n  .button5 {\n    left: 150px; }\n  .button6 {\n    left: 165px; }\n  .button7 {\n    left: 180px; }\n  .button8 {\n    left: 195px; }\n  .button9 {\n    left: 210px; } }\n\n@media (min-width: 1024px) {\n  .avatarBox {\n    width: 500px;\n    height: 500px; }\n    .avatarBox .message {\n      left: 120px;\n      overflow: hidden;\n      font-family: \"Courier\";\n      white-space: nowrap;\n      animation: writeMessage 3s steps(60, end);\n      font-size: 16px; }\n    .avatarBox p:nth-child(1) {\n      top: 10px;\n      width: 17em; }\n    .avatarBox p:nth-child(2) {\n      width: 18em;\n      top: 40px;\n      animation: write2 6s steps(60, end); }\n    .avatarBox .head {\n      width: 128px;\n      height: 166px; }\n      .avatarBox .head .beard1 {\n        border-bottom: 50px solid beige;\n        border-right: 50px solid transparent; }\n      .avatarBox .head .beard2 {\n        border-bottom: 50px solid beige;\n        border-left: 50px solid transparent; }\n      .avatarBox .head .eye1 {\n        width: 11.5px;\n        height: 11.5px;\n        top: 56.5px;\n        left: 25px; }\n      .avatarBox .head .eye2 {\n        width: 11.5px;\n        height: 11.5px;\n        top: 56.5px;\n        right: 25px; }\n      .avatarBox .head .eyeBrow1 {\n        width: 25px;\n        height: 5px;\n        top: 50px;\n        left: 16.6px; }\n      .avatarBox .head .eyeBrow2 {\n        width: 25px;\n        height: 5px;\n        top: 50px;\n        right: 16.6px; }\n      .avatarBox .head .earLeft {\n        width: 16.6px;\n        height: 33.5px;\n        left: -16.6px;\n        top: 50px; }\n        .avatarBox .head .earLeft .earShell {\n          width: 8.4px;\n          height: 16.6px;\n          right: 0px;\n          top: 8.4px; }\n      .avatarBox .head .earRight {\n        width: 16.6px;\n        height: 33.5px;\n        right: -16.6px;\n        top: 50px; }\n        .avatarBox .head .earRight .earShell {\n          width: 8.4px;\n          height: 16.6px;\n          right: 8.4px;\n          top: 8.4px; }\n    .avatarBox .hair {\n      top: 116px;\n      width: 128px;\n      height: 91.6px; }\n      .avatarBox .hair .hairSkin {\n        top: 46.6px;\n        border-top: 33.6px solid transparent;\n        border-bottom: 26.6px solid transparent;\n        border-right: 66.6px solid #FDE0AA; }\n      .avatarBox .hair .hairBackground1 {\n        border-top: 33.6px solid beige;\n        border-left: 40.6px solid transparent; }\n      .avatarBox .hair .hairBackground2 {\n        border-top: 33.6px solid beige;\n        border-right: 25px solid transparent; }\n      .avatarBox .hair .hair1 {\n        top: 21.6px;\n        left: -11px;\n        height: 58.1px;\n        border-top: 0px solid transparent;\n        border-bottom: 25.3px solid transparent;\n        border-right: 42.5px solid #5A352A; }\n      .avatarBox .hair .hair2 {\n        top: -16.6px;\n        left: 0px;\n        border-top: 25px solid transparent;\n        border-bottom: 25px solid transparent;\n        border-right: 50px solid #5A352A; }\n      .avatarBox .hair .hair3 {\n        top: 11.62px;\n        right: 10px;\n        height: 55px;\n        border-top: 20px solid transparent;\n        border-bottom: -16.6px #170F08;\n        border-left: 16.6px solid transparent;\n        border-right: 43.16px solid #170F08; }\n      .avatarBox .hair .hair4 {\n        top: 13.3px;\n        left: -21.6px;\n        border-top: 25px solid transparent;\n        border-bottom: 25px solid transparent;\n        border-right: 50px solid #503026; }\n    .avatarBox .mouth {\n      bottom: 31.55px;\n      left: 38.2px;\n      width: 50px;\n      height: 6.64px; }\n      .avatarBox .mouth .lipsBottomRight {\n        border-bottom: 8.3px solid #FDE0AA;\n        border-left: 8.3px solid transparent; }\n      .avatarBox .mouth .lipsTopRight {\n        border-top: 8.3px solid #FDE0AA;\n        border-left: 8.3px solid transparent; }\n      .avatarBox .mouth .lipsTopLeft {\n        border-top: 8.3px solid #FDE0AA;\n        border-right: 8.3px solid transparent; }\n      .avatarBox .mouth .lipsBottomLeft {\n        border-bottom: 8.3px solid #FDE0AA;\n        border-right: 8.3px solid transparent; }\n    .avatarBox .shadow {\n      top: 0px;\n      right: 0;\n      border-left: 25px solid #E4BB86;\n      border-top: 0px solid transparent;\n      border-bottom: 25px solid transparent;\n      height: 141px; }\n    .avatarBox .nose1 {\n      bottom: 60px;\n      left: 69.7px;\n      width: 38.2px;\n      border-top: 58.1px solid #EECB9B;\n      border-left: 0px solid transparent;\n      border-right: 16.6px solid transparent; }\n    .avatarBox .keyboard {\n      width: 250px;\n      height: 16.6px;\n      bottom: 0; }\n    .avatarBox .keyButton {\n      z-index: 1;\n      bottom: 16.6px;\n      width: 25px;\n      border-bottom: 16.6px solid grey;\n      border-left: 5px solid transparent;\n      border-right: 5px solid transparent; }\n      .avatarBox .keyButton .finger {\n        width: 10px;\n        height: 10px;\n        top: -12px;\n        background-color: #FDE0AA; }\n    .avatarBox .avatarBodyRight {\n      width: 66.4px;\n      height: 160px;\n      bottom: 0px;\n      left: 250px; }\n      .avatarBox .avatarBodyRight .rightArm {\n        width: 40px;\n        height: 120px;\n        background-color: #113A79;\n        bottom: 41px;\n        left: 317px; }\n        .avatarBox .avatarBodyRight .rightArm .armShadowRight {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #007DB2; }\n    .avatarBox .avatarBodyLeft {\n      width: 66.4px;\n      height: 160px;\n      bottom: 0px;\n      left: 184.6px; }\n      .avatarBox .avatarBodyLeft .leftArm {\n        width: 40px;\n        height: 120px;\n        background-color: #134E86;\n        bottom: 41px;\n        left: 144px; }\n        .avatarBox .avatarBodyLeft .leftArm .armShadowLeft {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #007DB2; }\n  .button0 {\n    left: 125px; }\n  .button1 {\n    left: 150px; }\n  .button2 {\n    left: 175px; }\n  .button3 {\n    left: 200px; }\n  .button4 {\n    left: 225px; }\n  .button5 {\n    left: 250px; }\n  .button6 {\n    left: 275px; }\n  .button7 {\n    left: 300px; }\n  .button8 {\n    left: 325px; }\n  .button9 {\n    left: 350px; }\n  @keyframes buttonClick {\n    from {\n      bottom: 16.6px; }\n    to {\n      bottom: 0px; } }\n  @keyframes hairShake {\n    0% {\n      transform: rotate(0);\n      transform: translate(0); }\n    30% {\n      transform: rotate(-20deg) translate(-29.9px, 0px); }\n    100% {\n      transform: rotate(20deg) translate(29.9px, 0px); } } }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.contact {\n  width: 100%;\n  background-color: beige;\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  flex-wrap: wrap;\n  align-content: space-around; }\n  .contact .logo {\n    display: flex;\n    align-items: flex-start;\n    justify-content: center;\n    height: 70px;\n    width: 100%; }\n    .contact .logo .logoLink {\n      text-decoration: none;\n      color: #555;\n      font-family: Channel; }\n  .contact .lorem {\n    font-family: 'Alegreya SC', serif;\n    text-align: center;\n    width: 60%;\n    align-self: center;\n    margin: 20px 0; }\n  .contact .error ul {\n    list-style-type: none; }\n  .contact .success {\n    list-style-type: none; }\n  .contact .contactTitle {\n    font-family: 'Alegreya SC', serif;\n    font-weight: 100;\n    font-size: 27px;\n    align-self: center;\n    color: #555; }\n  .contact .form {\n    background-color: white;\n    align-self: center;\n    height: 60vh;\n    width: 80%;\n    display: flex;\n    flex-direction: column;\n    border: 1px solid #A0947E;\n    justify-content: center;\n    align-items: center;\n    font-family: 'Alegreya SC', serif;\n    font-size: 14px;\n    min-width: 320px; }\n    .contact .form .formInput {\n      width: 80%;\n      height: 2rem;\n      text-transform: uppercase; }\n    .contact .form input, .contact .form textarea {\n      color: black;\n      font-family: 'Alegreya SC', serif;\n      border: 1px solid #DDC59C; }\n      .contact .form input:-ms-input-placeholder, .contact .form textarea:-ms-input-placeholder {\n        color: #967C50; }\n      .contact .form input:-moz-placeholder, .contact .form textarea:-moz-placeholder {\n        color: #967C50; }\n      .contact .form input::-webkit-input-placeholder, .contact .form textarea::-webkit-input-placeholder {\n        color: #967C50; }\n      .contact .form input::-moz-placeholder, .contact .form textarea::-moz-placeholder {\n        color: #967C50; }\n    .contact .form .formMessage {\n      text-transform: uppercase;\n      resize: none;\n      width: 80%;\n      height: 7rem; }\n    .contact .form .submitButton {\n      text-transform: uppercase;\n      width: 80%;\n      height: 2rem;\n      background-color: #967C50;\n      border: 1px solid transparent;\n      color: white;\n      outline: 0; }\n\n@keyframes menuslide {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes vanish {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@font-face {\n  font-family: Channel;\n  src: url(" + __webpack_require__(255) + "); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.main-width {\n  width: 100%;\n  height: 100vh; }\n  .main-width .box {\n    width: 100%;\n    height: 50vh;\n    justify-content: flex-start;\n    align-items: flex-start;\n    flex-wrap: wrap;\n    z-index: 0; }\n    .main-width .box .boxImg {\n      height: 50vh;\n      width: 100%;\n      object-fit: cover; }\n  .main-width #menu {\n    width: auto;\n    height: 100vh;\n    display: flex;\n    justify-content: flex-end;\n    flex-wrap: wrap; }\n    .main-width #menu .slider {\n      width: auto;\n      height: 100vh;\n      z-index: 0;\n      top: 0;\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n      flex-wrap: wrap;\n      align-items: center; }\n      .main-width #menu .slider .imgSlider {\n        width: 100%;\n        height: 100vh;\n        background-image: url(" + __webpack_require__(137) + ");\n        background-repeat: no-repeat;\n        position: absolute;\n        background-size: cover;\n        background-position: center;\n        display: inline-block; }\n      .main-width #menu .slider .logo {\n        width: 100%;\n        height: 70px;\n        font-family: Channel;\n        z-index: 0;\n        display: flex;\n        justify-content: center;\n        align-items: center; }\n        .main-width #menu .slider .logo .logoLink {\n          text-decoration: none;\n          color: #555; }\n    .main-width #menu .menu-btn {\n      width: 50px;\n      height: 50px;\n      background-color: transparent;\n      border-radius: 50%;\n      transform: rotate(0deg);\n      transition: .5s ease-in-out;\n      cursor: pointer;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      flex-wrap: wrap;\n      align-content: space-around;\n      position: fixed;\n      top: 10px;\n      right: 10px;\n      z-index: 99;\n      border: 1px solid transparent; }\n    .main-width #menu .hide {\n      display: none; }\n\nspan {\n  height: 3px;\n  width: 70%;\n  background: #d3531a;\n  opacity: 1;\n  right: 7px;\n  background-color: #C6996C;\n  transform: rotate(0deg);\n  transition: .30s ease-in-out;\n  position: absolute; }\n  span:nth-child(1) {\n    top: 13px; }\n  span:nth-child(2), span:nth-child(3) {\n    top: 23px; }\n  span:nth-child(4) {\n    top: 33px; }\n\n.open span:nth-child(1), .open span:nth-child(4) {\n  top: 18px;\n  width: 0%;\n  left: 50%;\n  animation-name: vanish;\n  animation-duration: 0.3s; }\n\n.open span:nth-child(2) {\n  transform: rotate(45deg);\n  height: 3px;\n  background-color: black; }\n\n.open span:nth-child(3) {\n  transform: rotate(-45deg);\n  height: 3px;\n  background-color: black; }\n\n.show {\n  animation-name: menuslide;\n  animation-duration: 0.6s;\n  display: flex;\n  width: auto;\n  height: 80vh;\n  list-style: none;\n  flex-direction: column;\n  align-items: center;\n  background: white;\n  z-index: 5;\n  position: fixed; }\n  .show .liElement {\n    width: 100vw;\n    height: 15vh;\n    display: flex;\n    justify-content: center; }\n    .show .liElement .link {\n      text-decoration: none;\n      color: #555;\n      align-self: center;\n      font-family: Channel; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, exports) {
 
 /*
@@ -13359,12 +13541,12 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var pSlice = Array.prototype.slice;
-var objectKeys = __webpack_require__(121);
-var isArguments = __webpack_require__(120);
+var objectKeys = __webpack_require__(122);
+var isArguments = __webpack_require__(121);
 
 var deepEqual = module.exports = function (actual, expected, opts) {
   if (!opts) opts = {};
@@ -13459,7 +13641,7 @@ function objEquiv(a, b, opts) {
 
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, exports) {
 
 var supportsArgumentsClass = (function(){
@@ -13485,7 +13667,7 @@ function unsupported(object){
 
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, exports) {
 
 exports = module.exports = typeof Object.keys === 'function'
@@ -13500,7 +13682,7 @@ function shim (obj) {
 
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13537,7 +13719,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13554,7 +13736,7 @@ module.exports = camelize;
 
 
 
-var camelize = __webpack_require__(122);
+var camelize = __webpack_require__(123);
 
 var msPattern = /^-ms-/;
 
@@ -13582,7 +13764,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13599,7 +13781,7 @@ module.exports = camelizeStyleName;
  * 
  */
 
-var isTextNode = __webpack_require__(132);
+var isTextNode = __webpack_require__(133);
 
 /*eslint-disable no-bitwise */
 
@@ -13627,7 +13809,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13760,7 +13942,7 @@ module.exports = createArrayFromMixed;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 126 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13781,8 +13963,8 @@ module.exports = createArrayFromMixed;
 
 var ExecutionEnvironment = __webpack_require__(7);
 
-var createArrayFromMixed = __webpack_require__(125);
-var getMarkupWrap = __webpack_require__(127);
+var createArrayFromMixed = __webpack_require__(126);
+var getMarkupWrap = __webpack_require__(128);
 var invariant = __webpack_require__(1);
 
 /**
@@ -13850,7 +14032,7 @@ module.exports = createNodesFromMarkup;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 127 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13951,7 +14133,7 @@ module.exports = getMarkupWrap;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 128 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13995,7 +14177,7 @@ function getUnboundedScrollPosition(scrollable) {
 module.exports = getUnboundedScrollPosition;
 
 /***/ }),
-/* 129 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14033,7 +14215,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 130 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14050,7 +14232,7 @@ module.exports = hyphenate;
 
 
 
-var hyphenate = __webpack_require__(129);
+var hyphenate = __webpack_require__(130);
 
 var msPattern = /^ms-/;
 
@@ -14077,7 +14259,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14107,7 +14289,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 132 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14124,7 +14306,7 @@ module.exports = isNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(131);
+var isNode = __webpack_require__(132);
 
 /**
  * @param {*} object The object to check.
@@ -14137,7 +14319,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 133 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14172,7 +14354,7 @@ function memoizeStringOnly(callback) {
 module.exports = memoizeStringOnly;
 
 /***/ }),
-/* 134 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14200,7 +14382,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = performance || {};
 
 /***/ }),
-/* 135 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14217,7 +14399,7 @@ module.exports = performance || {};
  * @typechecks
  */
 
-var performance = __webpack_require__(134);
+var performance = __webpack_require__(135);
 
 var performanceNow;
 
@@ -14239,13 +14421,13 @@ if (performance.now) {
 module.exports = performanceNow;
 
 /***/ }),
-/* 136 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/mountain.jpg";
+module.exports = __webpack_require__.p + "images/field.jpg";
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14309,7 +14491,7 @@ function loopAsync(turns, work, callback) {
 }
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14329,7 +14511,7 @@ var _Actions = __webpack_require__(24);
 
 var _PathUtils = __webpack_require__(19);
 
-var _ExecutionEnvironment = __webpack_require__(34);
+var _ExecutionEnvironment = __webpack_require__(35);
 
 var _DOMUtils = __webpack_require__(47);
 
@@ -14496,7 +14678,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14554,7 +14736,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14715,7 +14897,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 141 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14772,7 +14954,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 
 /***/ }),
-/* 142 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14841,7 +15023,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14861,7 +15043,7 @@ var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
 var ReactPropTypesSecret = __webpack_require__(79);
-var checkPropTypes = __webpack_require__(142);
+var checkPropTypes = __webpack_require__(143);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -15327,12 +15509,12 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 144 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var strictUriEncode = __webpack_require__(250);
+var strictUriEncode = __webpack_require__(251);
 
 exports.extract = function (str) {
 	return str.split('?')[1] || '';
@@ -15400,17 +15582,17 @@ exports.stringify = function (obj) {
 
 
 /***/ }),
-/* 145 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(159);
+module.exports = __webpack_require__(160);
 
 
 /***/ }),
-/* 146 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15489,7 +15671,7 @@ var ARIADOMPropertyConfig = {
 module.exports = ARIADOMPropertyConfig;
 
 /***/ }),
-/* 147 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15518,7 +15700,7 @@ var AutoFocusUtils = {
 module.exports = AutoFocusUtils;
 
 /***/ }),
-/* 148 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15536,9 +15718,9 @@ module.exports = AutoFocusUtils;
 
 var EventPropagators = __webpack_require__(31);
 var ExecutionEnvironment = __webpack_require__(7);
-var FallbackCompositionState = __webpack_require__(154);
-var SyntheticCompositionEvent = __webpack_require__(197);
-var SyntheticInputEvent = __webpack_require__(200);
+var FallbackCompositionState = __webpack_require__(155);
+var SyntheticCompositionEvent = __webpack_require__(198);
+var SyntheticInputEvent = __webpack_require__(201);
 
 var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 var START_KEYCODE = 229;
@@ -15908,7 +16090,7 @@ var BeforeInputEventPlugin = {
 module.exports = BeforeInputEventPlugin;
 
 /***/ }),
-/* 149 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15928,10 +16110,10 @@ var CSSProperty = __webpack_require__(80);
 var ExecutionEnvironment = __webpack_require__(7);
 var ReactInstrumentation = __webpack_require__(11);
 
-var camelizeStyleName = __webpack_require__(123);
-var dangerousStyleValue = __webpack_require__(207);
-var hyphenateStyleName = __webpack_require__(130);
-var memoizeStringOnly = __webpack_require__(133);
+var camelizeStyleName = __webpack_require__(124);
+var dangerousStyleValue = __webpack_require__(208);
+var hyphenateStyleName = __webpack_require__(131);
+var memoizeStringOnly = __webpack_require__(134);
 var warning = __webpack_require__(2);
 
 var processStyleName = memoizeStringOnly(function (styleName) {
@@ -16123,7 +16305,7 @@ module.exports = CSSPropertyOperations;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 150 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16474,7 +16656,7 @@ var ChangeEventPlugin = {
 module.exports = ChangeEventPlugin;
 
 /***/ }),
-/* 151 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16495,7 +16677,7 @@ var _prodInvariant = __webpack_require__(3);
 var DOMLazyTree = __webpack_require__(25);
 var ExecutionEnvironment = __webpack_require__(7);
 
-var createNodesFromMarkup = __webpack_require__(126);
+var createNodesFromMarkup = __webpack_require__(127);
 var emptyFunction = __webpack_require__(12);
 var invariant = __webpack_require__(1);
 
@@ -16528,7 +16710,7 @@ module.exports = Danger;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16559,7 +16741,7 @@ var DefaultEventPluginOrder = ['ResponderEventPlugin', 'SimpleEventPlugin', 'Tap
 module.exports = DefaultEventPluginOrder;
 
 /***/ }),
-/* 153 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16577,7 +16759,7 @@ module.exports = DefaultEventPluginOrder;
 
 var EventPropagators = __webpack_require__(31);
 var ReactDOMComponentTree = __webpack_require__(6);
-var SyntheticMouseEvent = __webpack_require__(38);
+var SyntheticMouseEvent = __webpack_require__(39);
 
 var eventTypes = {
   mouseEnter: {
@@ -16664,7 +16846,7 @@ var EnterLeaveEventPlugin = {
 module.exports = EnterLeaveEventPlugin;
 
 /***/ }),
-/* 154 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16764,7 +16946,7 @@ PooledClass.addPoolingTo(FallbackCompositionState);
 module.exports = FallbackCompositionState;
 
 /***/ }),
-/* 155 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17005,7 +17187,7 @@ var HTMLDOMPropertyConfig = {
 module.exports = HTMLDOMPropertyConfig;
 
 /***/ }),
-/* 156 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17165,7 +17347,7 @@ module.exports = ReactChildReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 157 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17182,7 +17364,7 @@ module.exports = ReactChildReconciler;
 
 
 var DOMChildrenOperations = __webpack_require__(50);
-var ReactDOMIDOperations = __webpack_require__(164);
+var ReactDOMIDOperations = __webpack_require__(165);
 
 /**
  * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -17200,7 +17382,7 @@ var ReactComponentBrowserEnvironment = {
 module.exports = ReactComponentBrowserEnvironment;
 
 /***/ }),
-/* 158 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17229,7 +17411,7 @@ var ReactNodeTypes = __webpack_require__(90);
 var ReactReconciler = __webpack_require__(26);
 
 if (process.env.NODE_ENV !== 'production') {
-  var checkReactTypeSpec = __webpack_require__(206);
+  var checkReactTypeSpec = __webpack_require__(207);
 }
 
 var emptyObject = __webpack_require__(29);
@@ -18108,7 +18290,7 @@ module.exports = ReactCompositeComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 159 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18127,15 +18309,15 @@ module.exports = ReactCompositeComponent;
 
 
 var ReactDOMComponentTree = __webpack_require__(6);
-var ReactDefaultInjection = __webpack_require__(176);
+var ReactDefaultInjection = __webpack_require__(177);
 var ReactMount = __webpack_require__(89);
 var ReactReconciler = __webpack_require__(26);
 var ReactUpdates = __webpack_require__(14);
-var ReactVersion = __webpack_require__(191);
+var ReactVersion = __webpack_require__(192);
 
-var findDOMNode = __webpack_require__(208);
+var findDOMNode = __webpack_require__(209);
 var getHostComponentFromComposite = __webpack_require__(95);
-var renderSubtreeIntoContainer = __webpack_require__(215);
+var renderSubtreeIntoContainer = __webpack_require__(216);
 var warning = __webpack_require__(2);
 
 ReactDefaultInjection.inject();
@@ -18212,9 +18394,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 if (process.env.NODE_ENV !== 'production') {
   var ReactInstrumentation = __webpack_require__(11);
-  var ReactDOMUnknownPropertyHook = __webpack_require__(173);
-  var ReactDOMNullInputValuePropHook = __webpack_require__(167);
-  var ReactDOMInvalidARIAHook = __webpack_require__(166);
+  var ReactDOMUnknownPropertyHook = __webpack_require__(174);
+  var ReactDOMNullInputValuePropHook = __webpack_require__(168);
+  var ReactDOMInvalidARIAHook = __webpack_require__(167);
 
   ReactInstrumentation.debugTool.addHook(ReactDOMUnknownPropertyHook);
   ReactInstrumentation.debugTool.addHook(ReactDOMNullInputValuePropHook);
@@ -18225,7 +18407,7 @@ module.exports = ReactDOM;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 160 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18246,27 +18428,27 @@ module.exports = ReactDOM;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var AutoFocusUtils = __webpack_require__(147);
-var CSSPropertyOperations = __webpack_require__(149);
+var AutoFocusUtils = __webpack_require__(148);
+var CSSPropertyOperations = __webpack_require__(150);
 var DOMLazyTree = __webpack_require__(25);
 var DOMNamespaces = __webpack_require__(51);
 var DOMProperty = __webpack_require__(17);
 var DOMPropertyOperations = __webpack_require__(82);
 var EventPluginHub = __webpack_require__(30);
-var EventPluginRegistry = __webpack_require__(36);
-var ReactBrowserEventEmitter = __webpack_require__(37);
+var EventPluginRegistry = __webpack_require__(37);
+var ReactBrowserEventEmitter = __webpack_require__(38);
 var ReactDOMComponentFlags = __webpack_require__(83);
 var ReactDOMComponentTree = __webpack_require__(6);
-var ReactDOMInput = __webpack_require__(165);
-var ReactDOMOption = __webpack_require__(168);
+var ReactDOMInput = __webpack_require__(166);
+var ReactDOMOption = __webpack_require__(169);
 var ReactDOMSelect = __webpack_require__(84);
-var ReactDOMTextarea = __webpack_require__(171);
+var ReactDOMTextarea = __webpack_require__(172);
 var ReactInstrumentation = __webpack_require__(11);
-var ReactMultiChild = __webpack_require__(184);
-var ReactServerRenderingTransaction = __webpack_require__(189);
+var ReactMultiChild = __webpack_require__(185);
+var ReactServerRenderingTransaction = __webpack_require__(190);
 
 var emptyFunction = __webpack_require__(12);
-var escapeTextContentForBrowser = __webpack_require__(40);
+var escapeTextContentForBrowser = __webpack_require__(41);
 var invariant = __webpack_require__(1);
 var isEventSupported = __webpack_require__(62);
 var shallowEqual = __webpack_require__(46);
@@ -19232,7 +19414,7 @@ module.exports = ReactDOMComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 161 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19271,7 +19453,7 @@ module.exports = ReactDOMContainerInfo;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 162 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19336,7 +19518,7 @@ _assign(ReactDOMEmptyComponent.prototype, {
 module.exports = ReactDOMEmptyComponent;
 
 /***/ }),
-/* 163 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19360,7 +19542,7 @@ var ReactDOMFeatureFlags = {
 module.exports = ReactDOMFeatureFlags;
 
 /***/ }),
-/* 164 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19399,7 +19581,7 @@ var ReactDOMIDOperations = {
 module.exports = ReactDOMIDOperations;
 
 /***/ }),
-/* 165 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19690,7 +19872,7 @@ module.exports = ReactDOMInput;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 166 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19789,7 +19971,7 @@ module.exports = ReactDOMInvalidARIAHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 167 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19838,7 +20020,7 @@ module.exports = ReactDOMNullInputValuePropHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 168 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19967,7 +20149,7 @@ module.exports = ReactDOMOption;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 169 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19985,7 +20167,7 @@ module.exports = ReactDOMOption;
 
 var ExecutionEnvironment = __webpack_require__(7);
 
-var getNodeForCharacterOffset = __webpack_require__(212);
+var getNodeForCharacterOffset = __webpack_require__(213);
 var getTextContentAccessor = __webpack_require__(96);
 
 /**
@@ -20184,7 +20366,7 @@ var ReactDOMSelection = {
 module.exports = ReactDOMSelection;
 
 /***/ }),
-/* 170 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20207,7 +20389,7 @@ var DOMChildrenOperations = __webpack_require__(50);
 var DOMLazyTree = __webpack_require__(25);
 var ReactDOMComponentTree = __webpack_require__(6);
 
-var escapeTextContentForBrowser = __webpack_require__(40);
+var escapeTextContentForBrowser = __webpack_require__(41);
 var invariant = __webpack_require__(1);
 var validateDOMNesting = __webpack_require__(64);
 
@@ -20354,7 +20536,7 @@ module.exports = ReactDOMTextComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20520,7 +20702,7 @@ module.exports = ReactDOMTextarea;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20662,7 +20844,7 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20679,7 +20861,7 @@ module.exports = {
 
 
 var DOMProperty = __webpack_require__(17);
-var EventPluginRegistry = __webpack_require__(36);
+var EventPluginRegistry = __webpack_require__(37);
 var ReactComponentTreeHook = __webpack_require__(10);
 
 var warning = __webpack_require__(2);
@@ -20780,7 +20962,7 @@ module.exports = ReactDOMUnknownPropertyHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20797,12 +20979,12 @@ module.exports = ReactDOMUnknownPropertyHook;
 
 
 
-var ReactInvalidSetStateWarningHook = __webpack_require__(182);
-var ReactHostOperationHistoryHook = __webpack_require__(180);
+var ReactInvalidSetStateWarningHook = __webpack_require__(183);
+var ReactHostOperationHistoryHook = __webpack_require__(181);
 var ReactComponentTreeHook = __webpack_require__(10);
 var ExecutionEnvironment = __webpack_require__(7);
 
-var performanceNow = __webpack_require__(135);
+var performanceNow = __webpack_require__(136);
 var warning = __webpack_require__(2);
 
 var hooks = [];
@@ -21145,7 +21327,7 @@ module.exports = ReactDebugTool;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21164,7 +21346,7 @@ module.exports = ReactDebugTool;
 var _assign = __webpack_require__(4);
 
 var ReactUpdates = __webpack_require__(14);
-var Transaction = __webpack_require__(39);
+var Transaction = __webpack_require__(40);
 
 var emptyFunction = __webpack_require__(12);
 
@@ -21218,7 +21400,7 @@ var ReactDefaultBatchingStrategy = {
 module.exports = ReactDefaultBatchingStrategy;
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21234,25 +21416,25 @@ module.exports = ReactDefaultBatchingStrategy;
 
 
 
-var ARIADOMPropertyConfig = __webpack_require__(146);
-var BeforeInputEventPlugin = __webpack_require__(148);
-var ChangeEventPlugin = __webpack_require__(150);
-var DefaultEventPluginOrder = __webpack_require__(152);
-var EnterLeaveEventPlugin = __webpack_require__(153);
-var HTMLDOMPropertyConfig = __webpack_require__(155);
-var ReactComponentBrowserEnvironment = __webpack_require__(157);
-var ReactDOMComponent = __webpack_require__(160);
+var ARIADOMPropertyConfig = __webpack_require__(147);
+var BeforeInputEventPlugin = __webpack_require__(149);
+var ChangeEventPlugin = __webpack_require__(151);
+var DefaultEventPluginOrder = __webpack_require__(153);
+var EnterLeaveEventPlugin = __webpack_require__(154);
+var HTMLDOMPropertyConfig = __webpack_require__(156);
+var ReactComponentBrowserEnvironment = __webpack_require__(158);
+var ReactDOMComponent = __webpack_require__(161);
 var ReactDOMComponentTree = __webpack_require__(6);
-var ReactDOMEmptyComponent = __webpack_require__(162);
-var ReactDOMTreeTraversal = __webpack_require__(172);
-var ReactDOMTextComponent = __webpack_require__(170);
-var ReactDefaultBatchingStrategy = __webpack_require__(175);
-var ReactEventListener = __webpack_require__(179);
-var ReactInjection = __webpack_require__(181);
-var ReactReconcileTransaction = __webpack_require__(187);
-var SVGDOMPropertyConfig = __webpack_require__(192);
-var SelectEventPlugin = __webpack_require__(193);
-var SimpleEventPlugin = __webpack_require__(194);
+var ReactDOMEmptyComponent = __webpack_require__(163);
+var ReactDOMTreeTraversal = __webpack_require__(173);
+var ReactDOMTextComponent = __webpack_require__(171);
+var ReactDefaultBatchingStrategy = __webpack_require__(176);
+var ReactEventListener = __webpack_require__(180);
+var ReactInjection = __webpack_require__(182);
+var ReactReconcileTransaction = __webpack_require__(188);
+var SVGDOMPropertyConfig = __webpack_require__(193);
+var SelectEventPlugin = __webpack_require__(194);
+var SimpleEventPlugin = __webpack_require__(195);
 
 var alreadyInjected = false;
 
@@ -21309,7 +21491,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21334,7 +21516,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21372,7 +21554,7 @@ var ReactEventEmitterMixin = {
 module.exports = ReactEventEmitterMixin;
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21397,7 +21579,7 @@ var ReactDOMComponentTree = __webpack_require__(6);
 var ReactUpdates = __webpack_require__(14);
 
 var getEventTarget = __webpack_require__(61);
-var getUnboundedScrollPosition = __webpack_require__(128);
+var getUnboundedScrollPosition = __webpack_require__(129);
 
 /**
  * Find the deepest React component completely containing the root of the
@@ -21532,7 +21714,7 @@ var ReactEventListener = {
 module.exports = ReactEventListener;
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21571,7 +21753,7 @@ var ReactHostOperationHistoryHook = {
 module.exports = ReactHostOperationHistoryHook;
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21592,7 +21774,7 @@ var EventPluginHub = __webpack_require__(30);
 var EventPluginUtils = __webpack_require__(52);
 var ReactComponentEnvironment = __webpack_require__(55);
 var ReactEmptyComponent = __webpack_require__(85);
-var ReactBrowserEventEmitter = __webpack_require__(37);
+var ReactBrowserEventEmitter = __webpack_require__(38);
 var ReactHostComponent = __webpack_require__(87);
 var ReactUpdates = __webpack_require__(14);
 
@@ -21610,7 +21792,7 @@ var ReactInjection = {
 module.exports = ReactInjection;
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21653,7 +21835,7 @@ module.exports = ReactInvalidSetStateWarningHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21669,7 +21851,7 @@ module.exports = ReactInvalidSetStateWarningHook;
 
 
 
-var adler32 = __webpack_require__(205);
+var adler32 = __webpack_require__(206);
 
 var TAG_END = /\/?>/;
 var COMMENT_START = /^<\!\-\-/;
@@ -21708,7 +21890,7 @@ var ReactMarkupChecksum = {
 module.exports = ReactMarkupChecksum;
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21732,10 +21914,10 @@ var ReactInstrumentation = __webpack_require__(11);
 
 var ReactCurrentOwner = __webpack_require__(15);
 var ReactReconciler = __webpack_require__(26);
-var ReactChildReconciler = __webpack_require__(156);
+var ReactChildReconciler = __webpack_require__(157);
 
 var emptyFunction = __webpack_require__(12);
-var flattenChildren = __webpack_require__(209);
+var flattenChildren = __webpack_require__(210);
 var invariant = __webpack_require__(1);
 
 /**
@@ -22164,7 +22346,7 @@ module.exports = ReactMultiChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22264,7 +22446,7 @@ module.exports = ReactOwner;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22295,7 +22477,7 @@ module.exports = ReactPropTypeLocationNames;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22315,10 +22497,10 @@ var _assign = __webpack_require__(4);
 
 var CallbackQueue = __webpack_require__(81);
 var PooledClass = __webpack_require__(20);
-var ReactBrowserEventEmitter = __webpack_require__(37);
+var ReactBrowserEventEmitter = __webpack_require__(38);
 var ReactInputSelection = __webpack_require__(88);
 var ReactInstrumentation = __webpack_require__(11);
-var Transaction = __webpack_require__(39);
+var Transaction = __webpack_require__(40);
 var ReactUpdateQueue = __webpack_require__(57);
 
 /**
@@ -22479,7 +22661,7 @@ module.exports = ReactReconcileTransaction;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22496,7 +22678,7 @@ module.exports = ReactReconcileTransaction;
 
 
 
-var ReactOwner = __webpack_require__(185);
+var ReactOwner = __webpack_require__(186);
 
 var ReactRef = {};
 
@@ -22573,7 +22755,7 @@ ReactRef.detachRefs = function (instance, element) {
 module.exports = ReactRef;
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22592,9 +22774,9 @@ module.exports = ReactRef;
 var _assign = __webpack_require__(4);
 
 var PooledClass = __webpack_require__(20);
-var Transaction = __webpack_require__(39);
+var Transaction = __webpack_require__(40);
 var ReactInstrumentation = __webpack_require__(11);
-var ReactServerUpdateQueue = __webpack_require__(190);
+var ReactServerUpdateQueue = __webpack_require__(191);
 
 /**
  * Executed within the scope of the `Transaction` instance. Consider these as
@@ -22669,7 +22851,7 @@ module.exports = ReactServerRenderingTransaction;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22814,7 +22996,7 @@ module.exports = ReactServerUpdateQueue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22833,7 +23015,7 @@ module.exports = ReactServerUpdateQueue;
 module.exports = '15.5.4';
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23140,7 +23322,7 @@ Object.keys(ATTRS).forEach(function (key) {
 module.exports = SVGDOMPropertyConfig;
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23336,7 +23518,7 @@ var SelectEventPlugin = {
 module.exports = SelectEventPlugin;
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23358,17 +23540,17 @@ var _prodInvariant = __webpack_require__(3);
 var EventListener = __webpack_require__(70);
 var EventPropagators = __webpack_require__(31);
 var ReactDOMComponentTree = __webpack_require__(6);
-var SyntheticAnimationEvent = __webpack_require__(195);
-var SyntheticClipboardEvent = __webpack_require__(196);
+var SyntheticAnimationEvent = __webpack_require__(196);
+var SyntheticClipboardEvent = __webpack_require__(197);
 var SyntheticEvent = __webpack_require__(16);
-var SyntheticFocusEvent = __webpack_require__(199);
-var SyntheticKeyboardEvent = __webpack_require__(201);
-var SyntheticMouseEvent = __webpack_require__(38);
-var SyntheticDragEvent = __webpack_require__(198);
-var SyntheticTouchEvent = __webpack_require__(202);
-var SyntheticTransitionEvent = __webpack_require__(203);
+var SyntheticFocusEvent = __webpack_require__(200);
+var SyntheticKeyboardEvent = __webpack_require__(202);
+var SyntheticMouseEvent = __webpack_require__(39);
+var SyntheticDragEvent = __webpack_require__(199);
+var SyntheticTouchEvent = __webpack_require__(203);
+var SyntheticTransitionEvent = __webpack_require__(204);
 var SyntheticUIEvent = __webpack_require__(33);
-var SyntheticWheelEvent = __webpack_require__(204);
+var SyntheticWheelEvent = __webpack_require__(205);
 
 var emptyFunction = __webpack_require__(12);
 var getEventCharCode = __webpack_require__(59);
@@ -23570,7 +23752,7 @@ module.exports = SimpleEventPlugin;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23614,7 +23796,7 @@ SyntheticEvent.augmentClass(SyntheticAnimationEvent, AnimationEventInterface);
 module.exports = SyntheticAnimationEvent;
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23657,7 +23839,7 @@ SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 module.exports = SyntheticClipboardEvent;
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23698,7 +23880,7 @@ SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface
 module.exports = SyntheticCompositionEvent;
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23714,7 +23896,7 @@ module.exports = SyntheticCompositionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(38);
+var SyntheticMouseEvent = __webpack_require__(39);
 
 /**
  * @interface DragEvent
@@ -23739,7 +23921,7 @@ SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 module.exports = SyntheticDragEvent;
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23780,7 +23962,7 @@ SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 module.exports = SyntheticFocusEvent;
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23822,7 +24004,7 @@ SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 module.exports = SyntheticInputEvent;
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23841,7 +24023,7 @@ module.exports = SyntheticInputEvent;
 var SyntheticUIEvent = __webpack_require__(33);
 
 var getEventCharCode = __webpack_require__(59);
-var getEventKey = __webpack_require__(210);
+var getEventKey = __webpack_require__(211);
 var getEventModifierState = __webpack_require__(60);
 
 /**
@@ -23911,7 +24093,7 @@ SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 module.exports = SyntheticKeyboardEvent;
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23961,7 +24143,7 @@ SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 module.exports = SyntheticTouchEvent;
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24005,7 +24187,7 @@ SyntheticEvent.augmentClass(SyntheticTransitionEvent, TransitionEventInterface);
 module.exports = SyntheticTransitionEvent;
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24021,7 +24203,7 @@ module.exports = SyntheticTransitionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(38);
+var SyntheticMouseEvent = __webpack_require__(39);
 
 /**
  * @interface WheelEvent
@@ -24064,7 +24246,7 @@ SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 module.exports = SyntheticWheelEvent;
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24113,7 +24295,7 @@ function adler32(data) {
 module.exports = adler32;
 
 /***/ }),
-/* 206 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24131,7 +24313,7 @@ module.exports = adler32;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactPropTypeLocationNames = __webpack_require__(186);
+var ReactPropTypeLocationNames = __webpack_require__(187);
 var ReactPropTypesSecret = __webpack_require__(91);
 
 var invariant = __webpack_require__(1);
@@ -24206,7 +24388,7 @@ module.exports = checkReactTypeSpec;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 207 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24291,7 +24473,7 @@ module.exports = dangerousStyleValue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 208 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24357,7 +24539,7 @@ module.exports = findDOMNode;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 209 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24439,7 +24621,7 @@ module.exports = flattenChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 210 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24546,7 +24728,7 @@ function getEventKey(nativeEvent) {
 module.exports = getEventKey;
 
 /***/ }),
-/* 211 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24592,7 +24774,7 @@ function getIteratorFn(maybeIterable) {
 module.exports = getIteratorFn;
 
 /***/ }),
-/* 212 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24671,7 +24853,7 @@ function getNodeForCharacterOffset(root, offset) {
 module.exports = getNodeForCharacterOffset;
 
 /***/ }),
-/* 213 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24777,7 +24959,7 @@ function getVendorPrefixedEventName(eventName) {
 module.exports = getVendorPrefixedEventName;
 
 /***/ }),
-/* 214 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24793,7 +24975,7 @@ module.exports = getVendorPrefixedEventName;
 
 
 
-var escapeTextContentForBrowser = __webpack_require__(40);
+var escapeTextContentForBrowser = __webpack_require__(41);
 
 /**
  * Escapes attribute value to prevent scripting attacks.
@@ -24808,7 +24990,7 @@ function quoteAttributeValueForBrowser(value) {
 module.exports = quoteAttributeValueForBrowser;
 
 /***/ }),
-/* 215 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24829,7 +25011,7 @@ var ReactMount = __webpack_require__(89);
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ }),
-/* 216 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24865,7 +25047,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 217 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24899,7 +25081,7 @@ exports.default = IndexLink;
 module.exports = exports['default'];
 
 /***/ }),
-/* 218 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24969,7 +25151,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 219 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25036,7 +25218,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 220 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25111,7 +25293,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 221 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25175,7 +25357,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 222 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25227,7 +25409,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 223 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25241,7 +25423,7 @@ var _createHashHistory = __webpack_require__(75);
 
 var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
 
-var _useQueries = __webpack_require__(35);
+var _useQueries = __webpack_require__(36);
 
 var _useQueries2 = _interopRequireDefault(_useQueries);
 
@@ -25259,7 +25441,7 @@ var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager)
 
 var _InternalPropTypes = __webpack_require__(21);
 
-var _RouterContext = __webpack_require__(42);
+var _RouterContext = __webpack_require__(43);
 
 var _RouterContext2 = _interopRequireDefault(_RouterContext);
 
@@ -25458,7 +25640,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 224 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25470,7 +25652,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _RouterContext = __webpack_require__(42);
+var _RouterContext = __webpack_require__(43);
 
 var _RouterContext2 = _interopRequireDefault(_RouterContext);
 
@@ -25495,7 +25677,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25624,7 +25806,7 @@ function runLeaveHooks(routes, prevState) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25638,7 +25820,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _RouterContext = __webpack_require__(42);
+var _RouterContext = __webpack_require__(43);
 
 var _RouterContext2 = _interopRequireDefault(_RouterContext);
 
@@ -25688,7 +25870,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25696,7 +25878,7 @@ module.exports = exports['default'];
 
 exports.__esModule = true;
 
-var _createBrowserHistory = __webpack_require__(138);
+var _createBrowserHistory = __webpack_require__(139);
 
 var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
@@ -25710,7 +25892,7 @@ exports.default = (0, _createRouterHistory2.default)(_createBrowserHistory2.defa
 module.exports = exports['default'];
 
 /***/ }),
-/* 228 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25793,7 +25975,7 @@ exports.default = computeChangedRoutes;
 module.exports = exports['default'];
 
 /***/ }),
-/* 229 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25845,7 +26027,7 @@ exports.default = getComponents;
 module.exports = exports['default'];
 
 /***/ }),
-/* 230 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25877,7 +26059,7 @@ exports.default = getRouteParams;
 module.exports = exports['default'];
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25899,7 +26081,7 @@ exports.default = (0, _createRouterHistory2.default)(_createHashHistory2.default
 module.exports = exports['default'];
 
 /***/ }),
-/* 232 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26057,7 +26239,7 @@ function isActive(_ref, indexOnly, currentLocation, routes, params) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 233 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26147,7 +26329,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 234 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26405,7 +26587,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 235 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26415,7 +26597,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _useQueries = __webpack_require__(35);
+var _useQueries = __webpack_require__(36);
 
 var _useQueries2 = _interopRequireDefault(_useQueries);
 
@@ -26463,7 +26645,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 236 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26483,7 +26665,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _hoistNonReactStatics = __webpack_require__(141);
+var _hoistNonReactStatics = __webpack_require__(142);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
@@ -26534,7 +26716,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 237 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26598,7 +26780,7 @@ var KeyEscapeUtils = {
 module.exports = KeyEscapeUtils;
 
 /***/ }),
-/* 238 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26716,7 +26898,7 @@ module.exports = PooledClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 239 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26732,11 +26914,11 @@ module.exports = PooledClass;
 
 
 
-var PooledClass = __webpack_require__(238);
+var PooledClass = __webpack_require__(239);
 var ReactElement = __webpack_require__(22);
 
 var emptyFunction = __webpack_require__(12);
-var traverseAllChildren = __webpack_require__(249);
+var traverseAllChildren = __webpack_require__(250);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
 var fourArgumentPooler = PooledClass.fourArgumentPooler;
@@ -26912,7 +27094,7 @@ var ReactChildren = {
 module.exports = ReactChildren;
 
 /***/ }),
-/* 240 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27641,7 +27823,7 @@ module.exports = ReactClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 241 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27817,7 +27999,7 @@ module.exports = ReactDOMFactories;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 242 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27841,7 +28023,7 @@ var factory = __webpack_require__(78);
 module.exports = factory(isValidElement);
 
 /***/ }),
-/* 243 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27863,7 +28045,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 244 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27910,7 +28092,7 @@ ReactPureComponent.prototype.isPureReactComponent = true;
 module.exports = ReactPureComponent;
 
 /***/ }),
-/* 245 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27929,7 +28111,7 @@ module.exports = ReactPureComponent;
 module.exports = '15.5.4';
 
 /***/ }),
-/* 246 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27948,7 +28130,7 @@ module.exports = '15.5.4';
 var _prodInvariant = __webpack_require__(23);
 
 var ReactPropTypeLocationNames = __webpack_require__(110);
-var ReactPropTypesSecret = __webpack_require__(243);
+var ReactPropTypesSecret = __webpack_require__(244);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -28022,7 +28204,7 @@ module.exports = checkReactTypeSpec;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 247 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28048,7 +28230,7 @@ function getNextDebugID() {
 module.exports = getNextDebugID;
 
 /***/ }),
-/* 248 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28092,7 +28274,7 @@ module.exports = onlyChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 249 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28115,7 +28297,7 @@ var REACT_ELEMENT_TYPE = __webpack_require__(108);
 
 var getIteratorFn = __webpack_require__(111);
 var invariant = __webpack_require__(1);
-var KeyEscapeUtils = __webpack_require__(237);
+var KeyEscapeUtils = __webpack_require__(238);
 var warning = __webpack_require__(2);
 
 var SEPARATOR = '.';
@@ -28274,7 +28456,7 @@ module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 250 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28287,7 +28469,7 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 251 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -28324,7 +28506,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(252);
+	fixUrls = __webpack_require__(253);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -28583,7 +28765,7 @@ function updateLink(linkElement, options, obj) {
 
 
 /***/ }),
-/* 252 */
+/* 253 */
 /***/ (function(module, exports) {
 
 
@@ -28678,16 +28860,16 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 253 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(117);
+var content = __webpack_require__(118);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(251)(content, {});
+var update = __webpack_require__(252)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -28704,13 +28886,13 @@ if(false) {
 }
 
 /***/ }),
-/* 254 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "2d2bba8a7ba9300ae5976cb3fb769a30.ttf";
 
 /***/ }),
-/* 255 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28778,173 +28960,11 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 256 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(112);
 
-
-/***/ }),
-/* 257 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(5);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Contact = function (_React$Component) {
-    _inherits(Contact, _React$Component);
-
-    function Contact() {
-        _classCallCheck(this, Contact);
-
-        var _this = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this));
-
-        _this.handleNameChange = function (event) {
-            _this.setState({
-                name: event.target.value
-            });
-        };
-
-        _this.handleForWhoChange = function (event) {
-            _this.setState({
-                forWho: event.target.value
-            });
-        };
-
-        _this.handleEmailChange = function (event) {
-            _this.setState({
-                email: event.target.value
-            });
-        };
-
-        _this.handleInfoChange = function (event) {
-            _this.setState({
-                info: event.target.value
-            });
-        };
-
-        _this.handleFormSubmit = function (event) {
-            event.preventDefault();
-            var arr = _this.state.errors.slice();
-            if (_this.state.name.length === 0) {
-                arr.push("Imię i nazwisko ma zostać wypełnione");
-            }
-            if (_this.state.email.indexOf('@') === -1) {
-                arr.push("Pole email nie jest prawidłowo wypełnione");
-            }
-            if (_this.state.info.length === 0) {
-                arr.push("Proszę wypełnić pole wiadomości");
-            }
-            if (_this.state.forWho.length === 0) {
-                arr.push("Proszę ustawić wydział");
-            }
-            _this.setState({
-                errors: arr
-            }, function () {
-                if (_this.state.errors.length !== 0) {
-                    _this.setState({
-                        errorStyle: {
-                            display: "block",
-                            color: "red"
-                        }
-                    });
-                } else {
-                    _this.setState({
-                        successStyle: {
-                            display: "block",
-                            color: "green"
-                        }
-                    });
-                }
-            });
-        };
-
-        _this.state = {
-            name: '',
-            forWho: '',
-            email: '',
-            info: '',
-            errors: [],
-            success: "Dziękujemy za wiadomość. Wysłano do: ",
-            errorStyle: {
-                display: "none"
-            },
-            successStyle: {
-                display: "none"
-            }
-        };
-        return _this;
-    }
-
-    _createClass(Contact, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                { className: 'form' },
-                _react2.default.createElement(
-                    'div',
-                    { style: this.state.errorStyle },
-                    _react2.default.createElement(
-                        'ul',
-                        null,
-                        this.state.errors.map(function (error) {
-                            return _react2.default.createElement(
-                                'li',
-                                null,
-                                error
-                            );
-                        })
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { style: this.state.successStyle },
-                    this.state.success,
-                    ' ',
-                    this.state.forWho
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                    'form',
-                    { onSubmit: this.handleFormSubmit },
-                    _react2.default.createElement('input', { type: 'text', value: this.state.name, onChange: this.handleNameChange,
-                        placeholder: 'Wpisz Imi\u0119 i Nazwisko' }),
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement('input', { type: 'text', value: this.state.email, onChange: this.handleEmailChange,
-                        placeholder: 'Wpisz adres e-mail' }),
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement('textarea', { value: this.state.info, onChange: this.handleInfoChange,
-                        placeholder: 'Wpisz wiadomo\u015B\u0107:' }),
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement('input', { type: 'submit', value: 'Wy\u015Blij' })
-                )
-            );
-        }
-    }]);
-
-    return Contact;
-}(_react2.default.Component);
-
-exports.default = Contact;
 
 /***/ })
 /******/ ]);

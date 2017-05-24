@@ -20,19 +20,10 @@ componentDidMount() {
               </div>
               <div>
               <div className={`box ${boxAnimation}`}>
-                  <img src="./images/jacek-jpg-3.jpg" className="boxImg" />
+                  <img src="./images/car.jpg" className="boxImg" />
               </div>
               <div className={`box ${boxAnimation}`} style={this.props.style}>
-                  <img src="./images/jacek-jpg-3.jpg" className="boxImg" />
-              </div>
-              <div className={`box ${boxAnimation}`} style={this.props.style}>
-                  <img src="./images/jacek-jpg-3.jpg" className="boxImg" />
-              </div>
-              <div className={`box ${boxAnimation}`} style={this.props.style}>
-                  <img src="./images/jacek-jpg-3.jpg" className="boxImg" />
-              </div>
-              <div className={`box ${boxAnimation}`} style={this.props.style}>
-                  <img src="./images/jacek-jpg-3.jpg" className="boxImg" />
+                  <img src="./images/mountain.jpg" className="boxImg" />
               </div>
           </div>
       </div>
