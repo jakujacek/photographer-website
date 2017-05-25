@@ -20,16 +20,14 @@
 }
 .contact {
   width: 100%;
+  height: 100%;
   background-color: beige;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-around;
   z-index: 0;
   position: relative;
+  justify-content: center;
   .opacityImage {
-    opacity: 0.6;
+    opacity: 0.8;
     background-image: url('../images/orchard.jpg');
     background-size: cover;
     background-position: center;
@@ -40,23 +38,18 @@
     position: absolute;
   }
   .logo {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    height: 70px;
+    position: absolute;
+    top: 1rem;
+    font-size: 1rem;
     width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
     .logoLink {
       text-decoration: none;
       color: #555;
       font-family: Channel;
     }
-  }
-  .lorem {
-    font-family: 'Alegreya SC', serif;
-    text-align: center;
-    width: 60%;
-    align-self: center;
-    margin: 20px 0;
   }
   .error {
     ul {
@@ -67,57 +60,233 @@
     list-style-type: none;
 
   }
-  .contactTitle {
-    font-family: 'Alegreya SC', serif;
-    font-weight: 100;
-    font-size: 27px;
-    align-self: center;
-    color: #555;
-  }
-  .form {
-    z-index: 1;
-    background-color: white;
-    align-self: center;
-    height: 60vh;
-    width: 80%;
+  .book {
     display: flex;
-    flex-direction: column;
-    border: 1px solid #A0947E;
+    align-self: center;
     justify-content: center;
-    align-items: center;
-    font-family: 'Alegreya SC', serif;
-    font-size: 14px;
-    min-width: 320px;
-    .formInput {
-      width: 80%;
-      height: 2rem;
-      text-transform: uppercase;
-    }
-    input, textarea {
-      color: black;
-      font-family: 'Alegreya SC', serif;
-      @include placeholder(#967C50);
-      border: 1px solid #DDC59C;
+    .contactTitle {
+      align-self: center;
+      text-align: center;
+      color: #555;
+      width: 100%;
+      height: 100%;
+      .title {
+        font-family: 'Alegreya SC', serif;
+        font-weight: 100;
+        text-align: center;
+        width: 100%;
+        align-self: center;
+      }
+      .lorem {
+        color: black;
+        font-size: 14px;
+        font-family: 'Alegreya SC', serif;
+        text-align: center;
+        width: 60%;
+        align-self: center;
+        z-index: 2;
+        width: 100%;
+      }
 
     }
-    .formMessage {
-      text-transform: uppercase;
-      resize: none;
-      width: 80%;
-      height: 7rem;
+    .form {
+      height: 100%;
+      z-index: 1;
+      background-color: white;
+      align-self: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #A0947E;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Alegreya SC', serif;
+      .formInput {
+        width: 80%;
+        text-transform: uppercase;
+        z-index: 1;
+      }
+      input, textarea {
+        color: black;
+        font-family: 'Alegreya SC', serif;
+        @include placeholder(#967C50);
+        border: 1px solid #DDC59C;
+        margin: 0.3rem 0;
+
+      }
+      .formMessage {
+        text-transform: uppercase;
+        resize: none;
+        width: 80%;
+      }
+      .submitButton {
+        text-transform: uppercase;
+        width: 80%;
+        height: 3rem;
+        background-color: #967C50;
+        border: 1px solid transparent;
+        color: white;
+        outline: 0;
+      }
     }
-    .submitButton {
-      text-transform: uppercase;
+  }
+}
+@media only screen
+  and (min-device-width: 320px)
+  and (orientation: landscape) {
+    .contact {
+      flex-direction: column;
+      justify-content: center;
+      .logo {
+      }
+      .book {
+        align-items: center;
+        width: 80%;
+        position: absolute;
+        bottom: 2%;
+        height: 75vh;
+        .contactTitle {
+          border: 1px solid #A0947E;
+          flex-direction: column;
+          display: flex;
+          background-color: white;
+          justify-content: center;
+          flex: 1;
+          .text {
+            font-size: 20px;
+          }
+          .lorem {
+            font-size: 12px;
+          }
+        }
+        .form {
+          font-size: 14px;
+          flex: 1;
+          .formInput {
+            height: 2rem;
+          }
+          .formMessage {
+            height: 7rem;
+          }
+        }
+
+      }
+    }
+
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (orientation: portrait) {
+    .contact {
+      flex-direction: column;
+      flex-wrap: wrap;
+      .logo {
+      }
+      .book {
+        width: 90%;
+        flex-wrap: wrap;
+        .contactTitle {
+          border: 0.5rem solid transparent;
+          .text {
+            font-size: 20px;
+          }
+          .lorem {
+            font-size: 12px;
+          }
+        }
+        .form {
+          font-size: 14px;
+          height: 70vh;
+          .formInput {
+            height: 2.5rem;
+          }
+          .formMessage {
+            height: 7rem;
+          }
+        }
+
+      }
+    }
+}
+
+@media only screen and (min-width: 700px)
+and (orientation: portrait) {
+  .contact {
+    flex-direction: column;
+    flex-wrap: wrap;
+    .logo {
+    }
+    .book {
       width: 80%;
-      height: 2rem;
-      background-color: #967C50;
-      border: 1px solid transparent;
-      color: white;
-      outline: 0;
+      flex-wrap: wrap;
+      .contactTitle {
+        border: 1rem solid transparent;
+        .title {
+          font-size: 27px;
+        }
+      }
+      .form {
+        font-size: 20px;
+        height: 70vh;
+        .formInput {
+          height: 4rem;
+        }
+        .formMessage {
+          height: 10rem;
+        }
+        .submitButton {
+          height: 4rem;
+        }
+      }
+
     }
   }
 }
 
-@media (min-width: 1024) {
+
+@media only screen
+  and (min-device-width: 1000px)
+  and (orientation: landscape) {
+    .contact {
+      flex-direction: column;
+      justify-content: center;
+      .logo {
+      }
+      .book {
+        align-items: center;
+        width: 70%;
+        position: absolute;
+        bottom: 10%;
+        height: 70vh;
+        .contactTitle {
+          border: 1px solid #A0947E;
+          flex-direction: column;
+          display: flex;
+          background-color: white;
+          justify-content: center;
+          flex: 1;
+          .title {
+            font-size: 27px;
+          }
+          .lorem {
+          }
+        }
+        .form {
+          font-size: 14px;
+          flex: 1;
+          .formInput {
+            height: 3rem;
+          }
+          .formMessage {
+            height: 12rem;
+          }
+          .submitButton {
+            height: 3rem;
+          }
+        }
+
+      }
+    }
 
 }

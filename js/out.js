@@ -1391,7 +1391,7 @@ var CallbackQueue = __webpack_require__(81);
 var PooledClass = __webpack_require__(20);
 var ReactFeatureFlags = __webpack_require__(86);
 var ReactReconciler = __webpack_require__(26);
-var Transaction = __webpack_require__(39);
+var Transaction = __webpack_require__(40);
 
 var invariant = __webpack_require__(1);
 
@@ -2905,7 +2905,7 @@ exports['default'] = {
 
 
 var DOMNamespaces = __webpack_require__(51);
-var setInnerHTML = __webpack_require__(41);
+var setInnerHTML = __webpack_require__(42);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(58);
 var setTextContent = __webpack_require__(99);
@@ -3558,7 +3558,7 @@ module.exports = emptyObject;
 
 var _prodInvariant = __webpack_require__(3);
 
-var EventPluginRegistry = __webpack_require__(36);
+var EventPluginRegistry = __webpack_require__(37);
 var EventPluginUtils = __webpack_require__(52);
 var ReactErrorUtils = __webpack_require__(56);
 
@@ -4088,11 +4088,173 @@ module.exports = SyntheticUIEvent;
 
 
 exports.__esModule = true;
+exports.createMemoryHistory = exports.hashHistory = exports.browserHistory = exports.applyRouterMiddleware = exports.formatPattern = exports.useRouterHistory = exports.match = exports.routerShape = exports.locationShape = exports.PropTypes = exports.RoutingContext = exports.RouterContext = exports.createRoutes = exports.useRoutes = exports.RouteContext = exports.Lifecycle = exports.History = exports.Route = exports.Redirect = exports.IndexRoute = exports.IndexRedirect = exports.withRouter = exports.IndexLink = exports.Link = exports.Router = undefined;
+
+var _RouteUtils = __webpack_require__(18);
+
+Object.defineProperty(exports, 'createRoutes', {
+  enumerable: true,
+  get: function get() {
+    return _RouteUtils.createRoutes;
+  }
+});
+
+var _PropTypes2 = __webpack_require__(66);
+
+Object.defineProperty(exports, 'locationShape', {
+  enumerable: true,
+  get: function get() {
+    return _PropTypes2.locationShape;
+  }
+});
+Object.defineProperty(exports, 'routerShape', {
+  enumerable: true,
+  get: function get() {
+    return _PropTypes2.routerShape;
+  }
+});
+
+var _PatternUtils = __webpack_require__(27);
+
+Object.defineProperty(exports, 'formatPattern', {
+  enumerable: true,
+  get: function get() {
+    return _PatternUtils.formatPattern;
+  }
+});
+
+var _Router2 = __webpack_require__(225);
+
+var _Router3 = _interopRequireDefault(_Router2);
+
+var _Link2 = __webpack_require__(101);
+
+var _Link3 = _interopRequireDefault(_Link2);
+
+var _IndexLink2 = __webpack_require__(219);
+
+var _IndexLink3 = _interopRequireDefault(_IndexLink2);
+
+var _withRouter2 = __webpack_require__(238);
+
+var _withRouter3 = _interopRequireDefault(_withRouter2);
+
+var _IndexRedirect2 = __webpack_require__(220);
+
+var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
+
+var _IndexRoute2 = __webpack_require__(221);
+
+var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
+
+var _Redirect2 = __webpack_require__(102);
+
+var _Redirect3 = _interopRequireDefault(_Redirect2);
+
+var _Route2 = __webpack_require__(223);
+
+var _Route3 = _interopRequireDefault(_Route2);
+
+var _History2 = __webpack_require__(218);
+
+var _History3 = _interopRequireDefault(_History2);
+
+var _Lifecycle2 = __webpack_require__(222);
+
+var _Lifecycle3 = _interopRequireDefault(_Lifecycle2);
+
+var _RouteContext2 = __webpack_require__(224);
+
+var _RouteContext3 = _interopRequireDefault(_RouteContext2);
+
+var _useRoutes2 = __webpack_require__(237);
+
+var _useRoutes3 = _interopRequireDefault(_useRoutes2);
+
+var _RouterContext2 = __webpack_require__(43);
+
+var _RouterContext3 = _interopRequireDefault(_RouterContext2);
+
+var _RoutingContext2 = __webpack_require__(226);
+
+var _RoutingContext3 = _interopRequireDefault(_RoutingContext2);
+
+var _PropTypes3 = _interopRequireDefault(_PropTypes2);
+
+var _match2 = __webpack_require__(235);
+
+var _match3 = _interopRequireDefault(_match2);
+
+var _useRouterHistory2 = __webpack_require__(107);
+
+var _useRouterHistory3 = _interopRequireDefault(_useRouterHistory2);
+
+var _applyRouterMiddleware2 = __webpack_require__(228);
+
+var _applyRouterMiddleware3 = _interopRequireDefault(_applyRouterMiddleware2);
+
+var _browserHistory2 = __webpack_require__(229);
+
+var _browserHistory3 = _interopRequireDefault(_browserHistory2);
+
+var _hashHistory2 = __webpack_require__(233);
+
+var _hashHistory3 = _interopRequireDefault(_hashHistory2);
+
+var _createMemoryHistory2 = __webpack_require__(104);
+
+var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.Router = _Router3.default; /* components */
+
+exports.Link = _Link3.default;
+exports.IndexLink = _IndexLink3.default;
+exports.withRouter = _withRouter3.default;
+
+/* components (configuration) */
+
+exports.IndexRedirect = _IndexRedirect3.default;
+exports.IndexRoute = _IndexRoute3.default;
+exports.Redirect = _Redirect3.default;
+exports.Route = _Route3.default;
+
+/* mixins */
+
+exports.History = _History3.default;
+exports.Lifecycle = _Lifecycle3.default;
+exports.RouteContext = _RouteContext3.default;
+
+/* utils */
+
+exports.useRoutes = _useRoutes3.default;
+exports.RouterContext = _RouterContext3.default;
+exports.RoutingContext = _RoutingContext3.default;
+exports.PropTypes = _PropTypes3.default;
+exports.match = _match3.default;
+exports.useRouterHistory = _useRouterHistory3.default;
+exports.applyRouterMiddleware = _applyRouterMiddleware3.default;
+
+/* histories */
+
+exports.browserHistory = _browserHistory3.default;
+exports.hashHistory = _hashHistory3.default;
+exports.createMemoryHistory = _createMemoryHistory3.default;
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
 var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
 exports.canUseDOM = canUseDOM;
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4275,7 +4437,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4536,7 +4698,7 @@ module.exports = EventPluginRegistry;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4554,7 +4716,7 @@ module.exports = EventPluginRegistry;
 
 var _assign = __webpack_require__(4);
 
-var EventPluginRegistry = __webpack_require__(36);
+var EventPluginRegistry = __webpack_require__(37);
 var ReactEventEmitterMixin = __webpack_require__(180);
 var ViewportMetrics = __webpack_require__(92);
 
@@ -4869,7 +5031,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
 module.exports = ReactBrowserEventEmitter;
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4946,7 +5108,7 @@ SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 module.exports = SyntheticMouseEvent;
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5177,7 +5339,7 @@ module.exports = TransactionImpl;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5305,7 +5467,7 @@ function escapeTextContentForBrowser(text) {
 module.exports = escapeTextContentForBrowser;
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5408,7 +5570,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setInnerHTML;
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5428,7 +5590,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _deprecateObjectProperties = __webpack_require__(43);
+var _deprecateObjectProperties = __webpack_require__(44);
 
 var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 
@@ -5571,7 +5733,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5651,168 +5813,6 @@ if (process.env.NODE_ENV !== 'production') {
 
 exports.default = deprecateObjectProperties;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-exports.createMemoryHistory = exports.hashHistory = exports.browserHistory = exports.applyRouterMiddleware = exports.formatPattern = exports.useRouterHistory = exports.match = exports.routerShape = exports.locationShape = exports.PropTypes = exports.RoutingContext = exports.RouterContext = exports.createRoutes = exports.useRoutes = exports.RouteContext = exports.Lifecycle = exports.History = exports.Route = exports.Redirect = exports.IndexRoute = exports.IndexRedirect = exports.withRouter = exports.IndexLink = exports.Link = exports.Router = undefined;
-
-var _RouteUtils = __webpack_require__(18);
-
-Object.defineProperty(exports, 'createRoutes', {
-  enumerable: true,
-  get: function get() {
-    return _RouteUtils.createRoutes;
-  }
-});
-
-var _PropTypes2 = __webpack_require__(66);
-
-Object.defineProperty(exports, 'locationShape', {
-  enumerable: true,
-  get: function get() {
-    return _PropTypes2.locationShape;
-  }
-});
-Object.defineProperty(exports, 'routerShape', {
-  enumerable: true,
-  get: function get() {
-    return _PropTypes2.routerShape;
-  }
-});
-
-var _PatternUtils = __webpack_require__(27);
-
-Object.defineProperty(exports, 'formatPattern', {
-  enumerable: true,
-  get: function get() {
-    return _PatternUtils.formatPattern;
-  }
-});
-
-var _Router2 = __webpack_require__(225);
-
-var _Router3 = _interopRequireDefault(_Router2);
-
-var _Link2 = __webpack_require__(101);
-
-var _Link3 = _interopRequireDefault(_Link2);
-
-var _IndexLink2 = __webpack_require__(219);
-
-var _IndexLink3 = _interopRequireDefault(_IndexLink2);
-
-var _withRouter2 = __webpack_require__(238);
-
-var _withRouter3 = _interopRequireDefault(_withRouter2);
-
-var _IndexRedirect2 = __webpack_require__(220);
-
-var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
-
-var _IndexRoute2 = __webpack_require__(221);
-
-var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
-
-var _Redirect2 = __webpack_require__(102);
-
-var _Redirect3 = _interopRequireDefault(_Redirect2);
-
-var _Route2 = __webpack_require__(223);
-
-var _Route3 = _interopRequireDefault(_Route2);
-
-var _History2 = __webpack_require__(218);
-
-var _History3 = _interopRequireDefault(_History2);
-
-var _Lifecycle2 = __webpack_require__(222);
-
-var _Lifecycle3 = _interopRequireDefault(_Lifecycle2);
-
-var _RouteContext2 = __webpack_require__(224);
-
-var _RouteContext3 = _interopRequireDefault(_RouteContext2);
-
-var _useRoutes2 = __webpack_require__(237);
-
-var _useRoutes3 = _interopRequireDefault(_useRoutes2);
-
-var _RouterContext2 = __webpack_require__(42);
-
-var _RouterContext3 = _interopRequireDefault(_RouterContext2);
-
-var _RoutingContext2 = __webpack_require__(226);
-
-var _RoutingContext3 = _interopRequireDefault(_RoutingContext2);
-
-var _PropTypes3 = _interopRequireDefault(_PropTypes2);
-
-var _match2 = __webpack_require__(235);
-
-var _match3 = _interopRequireDefault(_match2);
-
-var _useRouterHistory2 = __webpack_require__(107);
-
-var _useRouterHistory3 = _interopRequireDefault(_useRouterHistory2);
-
-var _applyRouterMiddleware2 = __webpack_require__(228);
-
-var _applyRouterMiddleware3 = _interopRequireDefault(_applyRouterMiddleware2);
-
-var _browserHistory2 = __webpack_require__(229);
-
-var _browserHistory3 = _interopRequireDefault(_browserHistory2);
-
-var _hashHistory2 = __webpack_require__(233);
-
-var _hashHistory3 = _interopRequireDefault(_hashHistory2);
-
-var _createMemoryHistory2 = __webpack_require__(104);
-
-var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.Router = _Router3.default; /* components */
-
-exports.Link = _Link3.default;
-exports.IndexLink = _IndexLink3.default;
-exports.withRouter = _withRouter3.default;
-
-/* components (configuration) */
-
-exports.IndexRedirect = _IndexRedirect3.default;
-exports.IndexRoute = _IndexRoute3.default;
-exports.Redirect = _Redirect3.default;
-exports.Route = _Route3.default;
-
-/* mixins */
-
-exports.History = _History3.default;
-exports.Lifecycle = _Lifecycle3.default;
-exports.RouteContext = _RouteContext3.default;
-
-/* utils */
-
-exports.useRoutes = _useRoutes3.default;
-exports.RouterContext = _RouterContext3.default;
-exports.RoutingContext = _RoutingContext3.default;
-exports.PropTypes = _PropTypes3.default;
-exports.match = _match3.default;
-exports.useRouterHistory = _useRouterHistory3.default;
-exports.applyRouterMiddleware = _applyRouterMiddleware3.default;
-
-/* histories */
-
-exports.browserHistory = _browserHistory3.default;
-exports.hashHistory = _hashHistory3.default;
-exports.createMemoryHistory = _createMemoryHistory3.default;
 
 /***/ }),
 /* 45 */
@@ -6080,7 +6080,7 @@ var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(11);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(58);
-var setInnerHTML = __webpack_require__(41);
+var setInnerHTML = __webpack_require__(42);
 var setTextContent = __webpack_require__(99);
 
 function getNodeAfter(parentNode, node) {
@@ -7910,7 +7910,7 @@ exports.router = exports.routes = exports.route = exports.components = exports.c
 
 var _react = __webpack_require__(5);
 
-var _deprecateObjectProperties = __webpack_require__(43);
+var _deprecateObjectProperties = __webpack_require__(44);
 
 var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 
@@ -8804,7 +8804,7 @@ var _invariant = __webpack_require__(9);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _ExecutionEnvironment = __webpack_require__(34);
+var _ExecutionEnvironment = __webpack_require__(35);
 
 var _DOMUtils = __webpack_require__(47);
 
@@ -8859,7 +8859,7 @@ var _Actions = __webpack_require__(24);
 
 var _PathUtils = __webpack_require__(19);
 
-var _ExecutionEnvironment = __webpack_require__(34);
+var _ExecutionEnvironment = __webpack_require__(35);
 
 var _DOMUtils = __webpack_require__(47);
 
@@ -9399,7 +9399,7 @@ var _warning = __webpack_require__(13);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _ExecutionEnvironment = __webpack_require__(34);
+var _ExecutionEnvironment = __webpack_require__(35);
 
 var _PathUtils = __webpack_require__(19);
 
@@ -10633,7 +10633,7 @@ var _prodInvariant = __webpack_require__(3);
 var DOMLazyTree = __webpack_require__(25);
 var DOMProperty = __webpack_require__(17);
 var React = __webpack_require__(28);
-var ReactBrowserEventEmitter = __webpack_require__(37);
+var ReactBrowserEventEmitter = __webpack_require__(38);
 var ReactCurrentOwner = __webpack_require__(15);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMContainerInfo = __webpack_require__(163);
@@ -10649,7 +10649,7 @@ var ReactUpdates = __webpack_require__(14);
 var emptyObject = __webpack_require__(29);
 var instantiateReactComponent = __webpack_require__(97);
 var invariant = __webpack_require__(1);
-var setInnerHTML = __webpack_require__(41);
+var setInnerHTML = __webpack_require__(42);
 var shouldUpdateReactComponent = __webpack_require__(63);
 var warning = __webpack_require__(2);
 
@@ -11637,8 +11637,8 @@ module.exports = isTextInputElement;
 
 
 var ExecutionEnvironment = __webpack_require__(7);
-var escapeTextContentForBrowser = __webpack_require__(40);
-var setInnerHTML = __webpack_require__(41);
+var escapeTextContentForBrowser = __webpack_require__(41);
+var setInnerHTML = __webpack_require__(42);
 
 /**
  * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -12164,7 +12164,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 exports.createRouterObject = createRouterObject;
 exports.createRoutingHistory = createRoutingHistory;
 
-var _deprecateObjectProperties = __webpack_require__(43);
+var _deprecateObjectProperties = __webpack_require__(44);
 
 var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 
@@ -12199,7 +12199,7 @@ function createRoutingHistory(history, transitionManager) {
 exports.__esModule = true;
 exports.default = createMemoryHistory;
 
-var _useQueries = __webpack_require__(35);
+var _useQueries = __webpack_require__(36);
 
 var _useQueries2 = _interopRequireDefault(_useQueries);
 
@@ -12265,7 +12265,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 exports.default = makeStateWithLocation;
 
-var _deprecateObjectProperties = __webpack_require__(43);
+var _deprecateObjectProperties = __webpack_require__(44);
 
 var _routerWarning = __webpack_require__(8);
 
@@ -12318,7 +12318,7 @@ module.exports = exports['default'];
 exports.__esModule = true;
 exports.default = useRouterHistory;
 
-var _useQueries = __webpack_require__(35);
+var _useQueries = __webpack_require__(36);
 
 var _useQueries2 = _interopRequireDefault(_useQueries);
 
@@ -12713,7 +12713,7 @@ var _reactDom = __webpack_require__(147);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouter = __webpack_require__(44);
+var _reactRouter = __webpack_require__(34);
 
 var _Template = __webpack_require__(117);
 
@@ -12765,7 +12765,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(44);
+var _reactRouter = __webpack_require__(34);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -12999,7 +12999,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(44);
+var _reactRouter = __webpack_require__(34);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13124,52 +13124,56 @@ var Contact = function (_React$Component) {
                     )
                 ),
                 _react2.default.createElement(
-                    'h1',
-                    { className: 'contactTitle' },
-                    'Get in touch'
-                ),
-                _react2.default.createElement(
-                    'p',
-                    { className: 'lorem' },
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-                ),
-                _react2.default.createElement(
-                    'form',
-                    { onSubmit: this.handleFormSubmit, className: 'form' },
-                    _react2.default.createElement('input', { type: 'text', value: this.state.name, onChange: this.handleNameChange,
-                        placeholder: 'Name', className: 'formInput' }),
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement('input', { type: 'text', value: this.state.email, onChange: this.handleEmailChange,
-                        placeholder: 'Email', className: 'formInput' }),
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement('input', { type: 'text', value: this.state.subject, onChange: this.handleSubjectChange,
-                        placeholder: 'Subject', className: 'formInput' }),
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement('textarea', { value: this.state.info, onChange: this.handleInfoChange,
-                        placeholder: 'Your Message', className: 'formMessage' }),
-                    _react2.default.createElement('br', null),
-                    _react2.default.createElement('input', { type: 'submit', value: 'Submit', className: 'submitButton' }),
+                    'div',
+                    { className: 'book' },
                     _react2.default.createElement(
                         'div',
-                        { style: this.state.errorStyle, className: 'error' },
+                        { className: 'contactTitle' },
                         _react2.default.createElement(
-                            'ul',
-                            null,
-                            this.state.errors.map(function (error, i) {
-                                return _react2.default.createElement(
-                                    'li',
-                                    { key: i },
-                                    error
-                                );
-                            })
+                            'h1',
+                            { className: 'title' },
+                            'Get in Touch'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            { className: 'lorem' },
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
                         )
                     ),
                     _react2.default.createElement(
-                        'div',
-                        { style: this.state.successStyle, className: 'success' },
-                        this.state.success
-                    ),
-                    _react2.default.createElement('br', null)
+                        'form',
+                        { onSubmit: this.handleFormSubmit, className: 'form' },
+                        _react2.default.createElement('input', { type: 'text', value: this.state.name, onChange: this.handleNameChange,
+                            placeholder: 'Name', className: 'formInput' }),
+                        _react2.default.createElement('input', { type: 'text', value: this.state.email, onChange: this.handleEmailChange,
+                            placeholder: 'Email', className: 'formInput' }),
+                        _react2.default.createElement('input', { type: 'text', value: this.state.subject, onChange: this.handleSubjectChange,
+                            placeholder: 'Subject', className: 'formInput' }),
+                        _react2.default.createElement('textarea', { value: this.state.info, onChange: this.handleInfoChange,
+                            placeholder: 'Your Message', className: 'formMessage' }),
+                        _react2.default.createElement('input', { type: 'submit', value: 'Submit', className: 'submitButton' }),
+                        _react2.default.createElement(
+                            'div',
+                            { style: this.state.errorStyle, className: 'error' },
+                            _react2.default.createElement(
+                                'ul',
+                                null,
+                                this.state.errors.map(function (error, i) {
+                                    return _react2.default.createElement(
+                                        'li',
+                                        { key: i },
+                                        error
+                                    );
+                                })
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { style: this.state.successStyle, className: 'success' },
+                            this.state.success
+                        ),
+                        _react2.default.createElement('br', null)
+                    )
                 )
             );
         }
@@ -13247,7 +13251,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(44);
+var _reactRouter = __webpack_require__(34);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13340,7 +13344,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(44);
+var _reactRouter = __webpack_require__(34);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -13459,7 +13463,7 @@ exports = module.exports = __webpack_require__(119)(undefined);
 
 
 // module
-exports.push([module.i, "@keyframes headShake {\n  0% {\n    transform: rotate(0); }\n  30% {\n    transform: rotate(-20deg); }\n  100% {\n    transform: rotate(20deg); } }\n\n@keyframes hairShake {\n  0% {\n    transform: rotate(0);\n    transform: translate(0); }\n  30% {\n    transform: rotate(-20deg) translate(-18px, 0px); }\n  100% {\n    transform: rotate(20deg) translate(18px, 0px); } }\n\n@keyframes eyeBlink {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@keyframes buttonClick {\n  from {\n    bottom: 10px; }\n  to {\n    bottom: 0px; } }\n\n@keyframes writeMessage {\n  from {\n    width: 0px; } }\n\n@keyframes write2 {\n  0% {\n    width: 0; }\n  50% {\n    width: 0; }\n  100% {\n    width: 100%; } }\n\n@keyframes writeMessage2 {\n  from {\n    width: 0px; } }\n\n@keyframes write3 {\n  0% {\n    width: 0; }\n  50% {\n    width: 0; }\n  100% {\n    width: 100%; } }\n\n.aboutMe {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  background-color: beige; }\n  .aboutMe .logo {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 70px;\n    width: 100%; }\n    .aboutMe .logo .logoLink {\n      text-decoration: none;\n      color: #555;\n      font-family: Channel; }\n  .aboutMe .avatarBox {\n    background-color: beige;\n    align-self: flex-start;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    position: relative; }\n    .aboutMe .avatarBox .message {\n      position: absolute;\n      color: #555; }\n    .aboutMe .avatarBox .pot {\n      position: absolute;\n      right: 0; }\n      .aboutMe .avatarBox .pot .cactus {\n        position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusShadow {\n          position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusArmLeft {\n          position: absolute;\n          transform: rotate(-35deg);\n          z-index: 1; }\n          .aboutMe .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusArmRight {\n          position: absolute;\n          transform: rotate(45deg); }\n          .aboutMe .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            position: absolute; }\n    .aboutMe .avatarBox .head {\n      z-index: 3;\n      background-color: #FDE0AA;\n      position: relative; }\n      .aboutMe .avatarBox .head .beard1 {\n        position: absolute;\n        bottom: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .head .beard2 {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .head .eye1 {\n        animation-name: eyeBlink;\n        animation-duration: 0.3s;\n        animation-delay: 1s;\n        border-radius: 50%;\n        position: absolute;\n        background-color: black;\n        z-index: 2; }\n      .aboutMe .avatarBox .head .eye2 {\n        border-radius: 50%;\n        position: absolute;\n        background-color: black;\n        z-index: 2; }\n      .aboutMe .avatarBox .head .eyeBrow1 {\n        position: absolute;\n        background-color: #472B1F;\n        z-index: 2;\n        transform: skew(-70deg, 183deg); }\n      .aboutMe .avatarBox .head .eyeBrow2 {\n        position: absolute;\n        background-color: #472B1F;\n        z-index: 2;\n        transform: skew(70deg, -5deg); }\n      .aboutMe .avatarBox .head .earLeft {\n        position: absolute;\n        background-color: #FDE0AA; }\n        .aboutMe .avatarBox .head .earLeft .earShell {\n          position: absolute;\n          background-color: #E4BB86; }\n      .aboutMe .avatarBox .head .earRight {\n        position: absolute;\n        background-color: #FDE0AA; }\n        .aboutMe .avatarBox .head .earRight .earShell {\n          position: absolute;\n          background-color: #E4BB86; }\n    .aboutMe .avatarBox .hair {\n      position: absolute;\n      z-index: 4;\n      background-color: #472B1F; }\n      .aboutMe .avatarBox .hair .hairSkin {\n        position: absolute;\n        width: 0;\n        height: 0;\n        transform: rotate(-22deg); }\n      .aboutMe .avatarBox .hair .hairBackground1 {\n        position: absolute;\n        top: 0px;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .hair .hairBackground2 {\n        position: absolute;\n        top: 0px;\n        left: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .hair .hair1 {\n        position: absolute;\n        width: 0;\n        transform: rotate(40deg) skewY(30deg); }\n      .aboutMe .avatarBox .hair .hair2 {\n        position: absolute;\n        left: 0px;\n        width: 0;\n        height: 0;\n        transform: rotate(40deg); }\n      .aboutMe .avatarBox .hair .hair3 {\n        position: absolute;\n        transform: rotate(157deg) skewY(-30deg); }\n      .aboutMe .avatarBox .hair .hair4 {\n        position: absolute;\n        width: 0;\n        height: 0;\n        transform: rotate(-28deg); }\n    .aboutMe .avatarBox .headAnimation {\n      animation-fill-mode: forwards;\n      animation-direction: alternate;\n      animation-timing-function: linear;\n      animation-iteration-count: infinite;\n      animation-delay: 2s;\n      animation-name: headShake;\n      animation-duration: 1s; }\n    .aboutMe .avatarBox .hairAnimation {\n      animation-fill-mode: forwards;\n      animation-direction: alternate;\n      animation-timing-function: linear;\n      animation-iteration-count: infinite;\n      animation-delay: 2s;\n      animation-name: hairShake;\n      animation-duration: 1s; }\n    .aboutMe .avatarBox .mouth {\n      position: absolute;\n      z-index: 2;\n      background-color: #CA9A82; }\n      .aboutMe .avatarBox .mouth .lipsBottomRight {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsTopRight {\n        position: absolute;\n        top: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsTopLeft {\n        position: absolute;\n        top: 0;\n        left: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsBottomLeft {\n        position: absolute;\n        bottom: 0;\n        left: 0;\n        width: 0;\n        height: 0; }\n    .aboutMe .avatarBox .shadow {\n      position: absolute;\n      border-radius: 50% 0% 0% 35%;\n      z-index: 1;\n      width: 0; }\n    .aboutMe .avatarBox .nose1 {\n      position: absolute;\n      border-radius: 50% 0 0 0;\n      transform: skew(0deg, 140deg); }\n    .aboutMe .avatarBox .keyboard {\n      position: absolute;\n      background-color: #AFAB9D;\n      z-index: 1; }\n    .aboutMe .avatarBox .keyButton {\n      position: absolute; }\n      .aboutMe .avatarBox .keyButton .finger {\n        display: none;\n        position: absolute; }\n    .aboutMe .avatarBox .buttonAnimation {\n      animation-name: buttonClick;\n      animation-duration: 0.07s;\n      animation-iteration-count: 1;\n      animation-direction: alternate;\n      animation-timing-function: ease-in; }\n    .aboutMe .avatarBox .avatarBodyRight {\n      position: absolute;\n      background-color: #113A79; }\n      .aboutMe .avatarBox .avatarBodyRight .collar {\n        position: absolute;\n        top: 0;\n        z-index: 3; }\n      .aboutMe .avatarBox .avatarBodyRight .rightArm {\n        position: absolute;\n        z-index: 1; }\n        .aboutMe .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          position: absolute;\n          top: 0;\n          width: 0;\n          height: 0;\n          left: 0; }\n    .aboutMe .avatarBox .neck {\n      z-index: 2;\n      position: absolute;\n      background-color: #E4BB86; }\n    .aboutMe .avatarBox .avatarBodyLeft {\n      position: absolute;\n      background-color: #134E86; }\n      .aboutMe .avatarBox .avatarBodyLeft .collar {\n        position: absolute;\n        z-index: 3;\n        top: 0; }\n      .aboutMe .avatarBox .avatarBodyLeft .leftArm {\n        position: absolute;\n        z-index: 1; }\n        .aboutMe .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          position: absolute;\n          top: 0;\n          width: 0;\n          height: 0; }\n\n@media (min-width: 320px) {\n  .avatarBox {\n    width: 300px;\n    height: 300px; }\n    .avatarBox .message {\n      left: 45px;\n      overflow: hidden;\n      font-family: \"Courier\";\n      white-space: nowrap;\n      font-size: 13px;\n      width: auto; }\n    .avatarBox .writeMessage {\n      animation: writeMessage 3s steps(60, end); }\n    .avatarBox .write2 {\n      animation: write2 6s steps(60, end); }\n    .avatarBox p:nth-child(1) {\n      top: 10px;\n      width: 17em; }\n    .avatarBox p:nth-child(2) {\n      width: 18em;\n      top: 30px; }\n    .avatarBox .pot {\n      border-top: 30px solid #E8B882;\n      border-left: 10px solid transparent;\n      border-right: 10px solid transparent;\n      width: 30px;\n      top: 150px;\n      z-index: 0; }\n      .avatarBox .pot:after {\n        content: \"\";\n        position: absolute;\n        width: 45px;\n        height: 7px;\n        bottom: -7px;\n        background-color: white;\n        right: -20px; }\n      .avatarBox .pot:before {\n        content: \"\";\n        position: absolute;\n        width: 40px;\n        height: 5px;\n        bottom: 30px;\n        background-color: #E8B882;\n        right: -15px; }\n      .avatarBox .pot .potShadow {\n        position: absolute;\n        bottom: 26px;\n        width: 30px;\n        border-top: 4px solid #B9945F;\n        border-left: 1px solid beige;\n        border-right: 1px solid beige;\n        background-color: grey;\n        left: -10px; }\n      .avatarBox .pot .cactus {\n        left: 0px;\n        width: 14px;\n        height: 45px;\n        bottom: 35px;\n        background-color: #2A6034;\n        border-radius: 12% 12% 0 0; }\n        .avatarBox .pot .cactus .cactusShadow {\n          left: 0px;\n          height: 45px;\n          width: 7px;\n          background-color: #377B44; }\n        .avatarBox .pot .cactus .cactusArmLeft {\n          width: 15px;\n          height: 20px;\n          left: -12px; }\n          .avatarBox .pot .cactus .cactusArmLeft:after {\n            content: \"\";\n            border-top: 14px solid #2A6034;\n            border-bottom: 14px solid #2A6034;\n            border-left: 13px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 50% 50% 0 50%; }\n          .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute;\n            width: 50%;\n            height: 40px;\n            background-color: #377B44;\n            border-radius: 30% 0 30% 50%;\n            top: -13px; }\n        .avatarBox .pot .cactus .cactusArmRight {\n          width: 12px;\n          height: 10px;\n          right: -13px;\n          transform: skew(-10deg, 100deg);\n          top: 10px; }\n          .avatarBox .pot .cactus .cactusArmRight:after {\n            content: \"\";\n            border-top: 10px solid #2A6034;\n            border-bottom: 10px solid #2A6034;\n            border-left: 10px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 20% 50% 50% 50%; }\n          .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            width: 50%;\n            height: 30px;\n            background-color: #377B44;\n            border-radius: 0 30% 30% 50%;\n            right: 0;\n            top: -10px; }\n    .avatarBox .head {\n      width: 77px;\n      height: 65px; }\n      .avatarBox .head:after {\n        content: \"\";\n        position: absolute;\n        bottom: -25px;\n        left: 0;\n        width: 0;\n        height: 0;\n        border-left: 38.5px solid transparent;\n        border-right: 38.5px solid transparent;\n        border-top: 25px solid #FDE0AA; }\n      .avatarBox .head .beard1 {\n        border-bottom: 30px solid beige;\n        border-right: 30px solid transparent; }\n      .avatarBox .head .beard2 {\n        border-bottom: 30px solid beige;\n        border-left: 30px solid transparent; }\n      .avatarBox .head .eye1 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        left: 15px; }\n      .avatarBox .head .eye2 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        right: 15px; }\n      .avatarBox .head .eyeBrow1 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        left: 10px; }\n      .avatarBox .head .eyeBrow2 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        right: 10px; }\n      .avatarBox .head .earLeft {\n        width: 10px;\n        height: 20px;\n        left: -10px;\n        top: 15px; }\n        .avatarBox .head .earLeft .earShell {\n          width: 5px;\n          height: 10px;\n          right: 0px;\n          top: 5px; }\n      .avatarBox .head .earRight {\n        width: 10px;\n        height: 20px;\n        right: -10px;\n        top: 15px; }\n        .avatarBox .head .earRight .earShell {\n          width: 5px;\n          height: 10px;\n          right: 5px;\n          top: 5px; }\n    .avatarBox .hair {\n      top: 70px;\n      width: 77px;\n      height: 55px; }\n      .avatarBox .hair .hairSkin {\n        top: 28px;\n        border-top: 20px solid transparent;\n        border-bottom: 16px solid transparent;\n        border-right: 40px solid #FDE0AA; }\n      .avatarBox .hair .hairBackground1 {\n        border-top: 20px solid beige;\n        border-left: 25px solid transparent; }\n      .avatarBox .hair .hairBackground2 {\n        border-top: 20px solid beige;\n        border-right: 15px solid transparent; }\n      .avatarBox .hair .hair1 {\n        top: 13px;\n        left: -6.5px;\n        height: 35px;\n        border-top: 0px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 25.5px solid #5A352A; }\n      .avatarBox .hair .hair2 {\n        top: -10px;\n        left: 0px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #5A352A; }\n      .avatarBox .hair .hair3 {\n        top: 7px;\n        right: 6px;\n        height: 33px;\n        border-top: 12px solid transparent;\n        border-bottom: -10px #170F08;\n        border-left: 10px solid transparent;\n        border-right: 26px solid #170F08; }\n      .avatarBox .hair .hair4 {\n        top: 8px;\n        left: -13px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #503026; }\n    .avatarBox .mouth {\n      bottom: 0px;\n      left: 23px;\n      width: 30px;\n      height: 4px; }\n      .avatarBox .mouth .lipsBottomRight {\n        border-bottom: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopRight {\n        border-top: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopLeft {\n        border-top: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n      .avatarBox .mouth .lipsBottomLeft {\n        border-bottom: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n    .avatarBox .shadow {\n      top: 1px;\n      right: 0;\n      border-left: 15px solid #E4BB86;\n      border-top: 0px solid transparent;\n      border-bottom: 10px solid transparent;\n      height: 74px; }\n    .avatarBox .nose1 {\n      bottom: 20px;\n      left: 43px;\n      width: 23px;\n      border-top: 31px solid #EECB9B;\n      border-left: 0px solid transparent;\n      border-right: 10px solid transparent; }\n    .avatarBox .keyboard {\n      width: 150px;\n      height: 10px;\n      bottom: 0; }\n    .avatarBox .keyButton {\n      z-index: 1;\n      bottom: 10px;\n      width: 15px;\n      border-bottom: 10px solid grey;\n      border-left: 3px solid transparent;\n      border-right: 3px solid transparent; }\n    .avatarBox .neck {\n      z-index: 0;\n      width: 40px;\n      height: 70px;\n      bottom: 80px; }\n    .avatarBox .avatarBodyRight {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 150px; }\n      .avatarBox .avatarBodyRight .collar {\n        left: 0;\n        border-bottom: 20px solid #113A79;\n        border-left: 20px solid transparent; }\n      .avatarBox .avatarBodyRight .rightArm {\n        border-radius: 0 20px 10px 0;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #113A79;\n        bottom: 24.5px;\n        right: -24.1px; }\n        .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          border-top: 40px solid beige;\n          border-left: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyRight .rightArm .armShadowRight {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 0 30px 20px 0; }\n    .avatarBox .avatarBodyLeft {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 110px; }\n      .avatarBox .avatarBodyLeft .collar {\n        right: 0;\n        border-bottom: 20px solid #134E86;\n        border-right: 20px solid transparent; }\n      .avatarBox .avatarBodyLeft .leftArm {\n        border-radius: 20px 0 0 10px;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #2E6085;\n        bottom: 24.5px;\n        left: -24.1px; }\n        .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          border-top: 40px solid beige;\n          border-right: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyLeft .leftArm .armShadowLeft {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 30px 0 0 20px; }\n  .button0 {\n    left: 75px; }\n  .button1 {\n    left: 90px; }\n  .button2 {\n    left: 105px; }\n  .button3 {\n    left: 120px; }\n  .button4 {\n    left: 135px; }\n  .button5 {\n    left: 150px; }\n  .button6 {\n    left: 165px; }\n  .button7 {\n    left: 180px; }\n  .button8 {\n    left: 195px; }\n  .button9 {\n    left: 210px; } }\n\n@media (min-width: 1024px) {\n  .avatarBox {\n    width: 500px;\n    height: 500px; }\n    .avatarBox .message {\n      left: 120px;\n      overflow: hidden;\n      font-family: \"Courier\";\n      white-space: nowrap;\n      animation: writeMessage 3s steps(60, end);\n      font-size: 16px; }\n    .avatarBox p:nth-child(1) {\n      top: 10px;\n      width: 17em; }\n    .avatarBox p:nth-child(2) {\n      width: 18em;\n      top: 40px;\n      animation: write2 6s steps(60, end); }\n    .avatarBox .head {\n      width: 128px;\n      height: 166px; }\n      .avatarBox .head .beard1 {\n        border-bottom: 50px solid beige;\n        border-right: 50px solid transparent; }\n      .avatarBox .head .beard2 {\n        border-bottom: 50px solid beige;\n        border-left: 50px solid transparent; }\n      .avatarBox .head .eye1 {\n        width: 11.5px;\n        height: 11.5px;\n        top: 56.5px;\n        left: 25px; }\n      .avatarBox .head .eye2 {\n        width: 11.5px;\n        height: 11.5px;\n        top: 56.5px;\n        right: 25px; }\n      .avatarBox .head .eyeBrow1 {\n        width: 25px;\n        height: 5px;\n        top: 50px;\n        left: 16.6px; }\n      .avatarBox .head .eyeBrow2 {\n        width: 25px;\n        height: 5px;\n        top: 50px;\n        right: 16.6px; }\n      .avatarBox .head .earLeft {\n        width: 16.6px;\n        height: 33.5px;\n        left: -16.6px;\n        top: 50px; }\n        .avatarBox .head .earLeft .earShell {\n          width: 8.4px;\n          height: 16.6px;\n          right: 0px;\n          top: 8.4px; }\n      .avatarBox .head .earRight {\n        width: 16.6px;\n        height: 33.5px;\n        right: -16.6px;\n        top: 50px; }\n        .avatarBox .head .earRight .earShell {\n          width: 8.4px;\n          height: 16.6px;\n          right: 8.4px;\n          top: 8.4px; }\n    .avatarBox .hair {\n      top: 116px;\n      width: 128px;\n      height: 91.6px; }\n      .avatarBox .hair .hairSkin {\n        top: 46.6px;\n        border-top: 33.6px solid transparent;\n        border-bottom: 26.6px solid transparent;\n        border-right: 66.6px solid #FDE0AA; }\n      .avatarBox .hair .hairBackground1 {\n        border-top: 33.6px solid beige;\n        border-left: 40.6px solid transparent; }\n      .avatarBox .hair .hairBackground2 {\n        border-top: 33.6px solid beige;\n        border-right: 25px solid transparent; }\n      .avatarBox .hair .hair1 {\n        top: 21.6px;\n        left: -11px;\n        height: 58.1px;\n        border-top: 0px solid transparent;\n        border-bottom: 25.3px solid transparent;\n        border-right: 42.5px solid #5A352A; }\n      .avatarBox .hair .hair2 {\n        top: -16.6px;\n        left: 0px;\n        border-top: 25px solid transparent;\n        border-bottom: 25px solid transparent;\n        border-right: 50px solid #5A352A; }\n      .avatarBox .hair .hair3 {\n        top: 11.62px;\n        right: 10px;\n        height: 55px;\n        border-top: 20px solid transparent;\n        border-bottom: -16.6px #170F08;\n        border-left: 16.6px solid transparent;\n        border-right: 43.16px solid #170F08; }\n      .avatarBox .hair .hair4 {\n        top: 13.3px;\n        left: -21.6px;\n        border-top: 25px solid transparent;\n        border-bottom: 25px solid transparent;\n        border-right: 50px solid #503026; }\n    .avatarBox .mouth {\n      bottom: 31.55px;\n      left: 38.2px;\n      width: 50px;\n      height: 6.64px; }\n      .avatarBox .mouth .lipsBottomRight {\n        border-bottom: 8.3px solid #FDE0AA;\n        border-left: 8.3px solid transparent; }\n      .avatarBox .mouth .lipsTopRight {\n        border-top: 8.3px solid #FDE0AA;\n        border-left: 8.3px solid transparent; }\n      .avatarBox .mouth .lipsTopLeft {\n        border-top: 8.3px solid #FDE0AA;\n        border-right: 8.3px solid transparent; }\n      .avatarBox .mouth .lipsBottomLeft {\n        border-bottom: 8.3px solid #FDE0AA;\n        border-right: 8.3px solid transparent; }\n    .avatarBox .shadow {\n      top: 0px;\n      right: 0;\n      border-left: 25px solid #E4BB86;\n      border-top: 0px solid transparent;\n      border-bottom: 25px solid transparent;\n      height: 141px; }\n    .avatarBox .nose1 {\n      bottom: 60px;\n      left: 69.7px;\n      width: 38.2px;\n      border-top: 58.1px solid #EECB9B;\n      border-left: 0px solid transparent;\n      border-right: 16.6px solid transparent; }\n    .avatarBox .keyboard {\n      width: 250px;\n      height: 16.6px;\n      bottom: 0; }\n    .avatarBox .keyButton {\n      z-index: 1;\n      bottom: 16.6px;\n      width: 25px;\n      border-bottom: 16.6px solid grey;\n      border-left: 5px solid transparent;\n      border-right: 5px solid transparent; }\n      .avatarBox .keyButton .finger {\n        width: 10px;\n        height: 10px;\n        top: -12px;\n        background-color: #FDE0AA; }\n    .avatarBox .avatarBodyRight {\n      width: 66.4px;\n      height: 160px;\n      bottom: 0px;\n      left: 250px; }\n      .avatarBox .avatarBodyRight .rightArm {\n        width: 40px;\n        height: 120px;\n        background-color: #113A79;\n        bottom: 41px;\n        left: 317px; }\n        .avatarBox .avatarBodyRight .rightArm .armShadowRight {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #007DB2; }\n    .avatarBox .avatarBodyLeft {\n      width: 66.4px;\n      height: 160px;\n      bottom: 0px;\n      left: 184.6px; }\n      .avatarBox .avatarBodyLeft .leftArm {\n        width: 40px;\n        height: 120px;\n        background-color: #134E86;\n        bottom: 41px;\n        left: 144px; }\n        .avatarBox .avatarBodyLeft .leftArm .armShadowLeft {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #007DB2; }\n  .button0 {\n    left: 125px; }\n  .button1 {\n    left: 150px; }\n  .button2 {\n    left: 175px; }\n  .button3 {\n    left: 200px; }\n  .button4 {\n    left: 225px; }\n  .button5 {\n    left: 250px; }\n  .button6 {\n    left: 275px; }\n  .button7 {\n    left: 300px; }\n  .button8 {\n    left: 325px; }\n  .button9 {\n    left: 350px; }\n  @keyframes buttonClick {\n    from {\n      bottom: 16.6px; }\n    to {\n      bottom: 0px; } }\n  @keyframes hairShake {\n    0% {\n      transform: rotate(0);\n      transform: translate(0); }\n    30% {\n      transform: rotate(-20deg) translate(-29.9px, 0px); }\n    100% {\n      transform: rotate(20deg) translate(29.9px, 0px); } } }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.contact {\n  width: 100%;\n  background-color: beige;\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  flex-wrap: wrap;\n  align-content: space-around;\n  z-index: 0;\n  position: relative; }\n  .contact .opacityImage {\n    opacity: 0.6;\n    background-image: url(" + __webpack_require__(137) + ");\n    background-size: cover;\n    background-position: center;\n    background-repeat: no-repeat;\n    width: 100%;\n    height: 100%;\n    z-index: -1;\n    position: absolute; }\n  .contact .logo {\n    display: flex;\n    align-items: flex-start;\n    justify-content: center;\n    height: 70px;\n    width: 100%; }\n    .contact .logo .logoLink {\n      text-decoration: none;\n      color: #555;\n      font-family: Channel; }\n  .contact .lorem {\n    font-family: 'Alegreya SC', serif;\n    text-align: center;\n    width: 60%;\n    align-self: center;\n    margin: 20px 0; }\n  .contact .error ul {\n    list-style-type: none; }\n  .contact .success {\n    list-style-type: none; }\n  .contact .contactTitle {\n    font-family: 'Alegreya SC', serif;\n    font-weight: 100;\n    font-size: 27px;\n    align-self: center;\n    color: #555; }\n  .contact .form {\n    z-index: 1;\n    background-color: white;\n    align-self: center;\n    height: 60vh;\n    width: 80%;\n    display: flex;\n    flex-direction: column;\n    border: 1px solid #A0947E;\n    justify-content: center;\n    align-items: center;\n    font-family: 'Alegreya SC', serif;\n    font-size: 14px;\n    min-width: 320px; }\n    .contact .form .formInput {\n      width: 80%;\n      height: 2rem;\n      text-transform: uppercase; }\n    .contact .form input, .contact .form textarea {\n      color: black;\n      font-family: 'Alegreya SC', serif;\n      border: 1px solid #DDC59C; }\n      .contact .form input:-ms-input-placeholder, .contact .form textarea:-ms-input-placeholder {\n        color: #967C50; }\n      .contact .form input:-moz-placeholder, .contact .form textarea:-moz-placeholder {\n        color: #967C50; }\n      .contact .form input::-webkit-input-placeholder, .contact .form textarea::-webkit-input-placeholder {\n        color: #967C50; }\n      .contact .form input::-moz-placeholder, .contact .form textarea::-moz-placeholder {\n        color: #967C50; }\n    .contact .form .formMessage {\n      text-transform: uppercase;\n      resize: none;\n      width: 80%;\n      height: 7rem; }\n    .contact .form .submitButton {\n      text-transform: uppercase;\n      width: 80%;\n      height: 2rem;\n      background-color: #967C50;\n      border: 1px solid transparent;\n      color: white;\n      outline: 0; }\n\n@keyframes menuslide {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes vanish {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@font-face {\n  font-family: Channel;\n  src: url(" + __webpack_require__(256) + "); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n@keyframes slideUp {\n  from {\n    bottom: -50vh; }\n  to {\n    top: 0; } }\n\n.main-width {\n  width: 100%;\n  height: 100vh; }\n  .main-width .boxAnimation {\n    animation-name: slideUp;\n    animation-duration: 0.5s; }\n  .main-width .box {\n    width: 100%;\n    height: 50vh;\n    justify-content: flex-start;\n    align-items: flex-start;\n    flex-wrap: wrap;\n    z-index: 0; }\n    .main-width .box .boxImg {\n      height: 50vh;\n      width: 100%;\n      object-fit: cover; }\n  .main-width #menu {\n    width: auto;\n    height: 100vh;\n    display: flex;\n    justify-content: flex-end;\n    flex-wrap: wrap; }\n    .main-width #menu .slider {\n      width: auto;\n      height: 100vh;\n      z-index: 0;\n      top: 0;\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n      flex-wrap: wrap;\n      align-items: center; }\n      .main-width #menu .slider .imgSlider {\n        width: 100%;\n        height: 100vh;\n        background-image: url(" + __webpack_require__(138) + ");\n        background-repeat: no-repeat;\n        position: absolute;\n        background-size: cover;\n        background-position: left;\n        display: inline-block; }\n      .main-width #menu .slider .logo {\n        width: 100%;\n        height: 70px;\n        font-family: Channel;\n        z-index: 0;\n        display: flex;\n        justify-content: center;\n        align-items: center; }\n        .main-width #menu .slider .logo .logoLink {\n          text-decoration: none;\n          color: #555; }\n    .main-width #menu .menu-btn {\n      width: 50px;\n      height: 50px;\n      background-color: transparent;\n      border-radius: 50%;\n      transform: rotate(0deg);\n      transition: .5s ease-in-out;\n      cursor: pointer;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      flex-wrap: wrap;\n      align-content: space-around;\n      position: fixed;\n      top: 10px;\n      right: 10px;\n      z-index: 99;\n      border: 1px solid transparent; }\n    .main-width #menu .hide {\n      display: none; }\n\nspan {\n  height: 3px;\n  width: 70%;\n  opacity: 1;\n  right: 7px;\n  background-color: #89765D;\n  transform: rotate(0deg);\n  transition: .30s ease-in-out;\n  position: absolute; }\n  span:nth-child(1) {\n    top: 13px; }\n  span:nth-child(2), span:nth-child(3) {\n    top: 23px; }\n  span:nth-child(4) {\n    top: 33px; }\n\n.open span:nth-child(1), .open span:nth-child(4) {\n  top: 18px;\n  width: 0%;\n  left: 50%;\n  animation-name: vanish;\n  animation-duration: 0.01s; }\n\n.open span:nth-child(2) {\n  transform: rotate(45deg);\n  height: 3px;\n  background-color: black; }\n\n.open span:nth-child(3) {\n  transform: rotate(-45deg);\n  height: 3px;\n  background-color: black; }\n\n.show {\n  animation-name: menuslide;\n  animation-duration: 0.6s;\n  display: flex;\n  width: auto;\n  height: 80vh;\n  list-style: none;\n  flex-direction: column;\n  align-items: center;\n  background: white;\n  z-index: 5;\n  position: fixed; }\n  .show .liElement {\n    width: 100vw;\n    height: 15vh;\n    display: flex;\n    justify-content: center; }\n    .show .liElement .link {\n      text-decoration: none;\n      color: #555;\n      align-self: center;\n      font-family: Channel; }\n", ""]);
+exports.push([module.i, "@keyframes headShake {\n  0% {\n    transform: rotate(0); }\n  30% {\n    transform: rotate(-20deg); }\n  100% {\n    transform: rotate(20deg); } }\n\n@keyframes hairShake {\n  0% {\n    transform: rotate(0);\n    transform: translate(0); }\n  30% {\n    transform: rotate(-20deg) translate(-18px, 0px); }\n  100% {\n    transform: rotate(20deg) translate(18px, 0px); } }\n\n@keyframes eyeBlink {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@keyframes buttonClick {\n  from {\n    bottom: 10px; }\n  to {\n    bottom: 0px; } }\n\n@keyframes writeMessage {\n  from {\n    width: 0px; } }\n\n@keyframes write2 {\n  0% {\n    width: 0; }\n  50% {\n    width: 0; }\n  100% {\n    width: 100%; } }\n\n@keyframes writeMessage2 {\n  from {\n    width: 0px; } }\n\n@keyframes write3 {\n  0% {\n    width: 0; }\n  50% {\n    width: 0; }\n  100% {\n    width: 100%; } }\n\n.aboutMe {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  background-color: beige; }\n  .aboutMe .logo {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 70px;\n    width: 100%; }\n    .aboutMe .logo .logoLink {\n      text-decoration: none;\n      color: #555;\n      font-family: Channel; }\n  .aboutMe .avatarBox {\n    background-color: beige;\n    align-self: flex-start;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    position: relative; }\n    .aboutMe .avatarBox .message {\n      position: absolute;\n      color: #555; }\n    .aboutMe .avatarBox .pot {\n      position: absolute;\n      right: 0; }\n      .aboutMe .avatarBox .pot .cactus {\n        position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusShadow {\n          position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusArmLeft {\n          position: absolute;\n          transform: rotate(-35deg);\n          z-index: 1; }\n          .aboutMe .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusArmRight {\n          position: absolute;\n          transform: rotate(45deg); }\n          .aboutMe .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            position: absolute; }\n    .aboutMe .avatarBox .head {\n      z-index: 3;\n      background-color: #FDE0AA;\n      position: relative; }\n      .aboutMe .avatarBox .head .beard1 {\n        position: absolute;\n        bottom: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .head .beard2 {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .head .eye1 {\n        animation-name: eyeBlink;\n        animation-duration: 0.3s;\n        animation-delay: 1s;\n        border-radius: 50%;\n        position: absolute;\n        background-color: black;\n        z-index: 2; }\n      .aboutMe .avatarBox .head .eye2 {\n        border-radius: 50%;\n        position: absolute;\n        background-color: black;\n        z-index: 2; }\n      .aboutMe .avatarBox .head .eyeBrow1 {\n        position: absolute;\n        background-color: #472B1F;\n        z-index: 2;\n        transform: skew(-70deg, 183deg); }\n      .aboutMe .avatarBox .head .eyeBrow2 {\n        position: absolute;\n        background-color: #472B1F;\n        z-index: 2;\n        transform: skew(70deg, -5deg); }\n      .aboutMe .avatarBox .head .earLeft {\n        position: absolute;\n        background-color: #FDE0AA; }\n        .aboutMe .avatarBox .head .earLeft .earShell {\n          position: absolute;\n          background-color: #E4BB86; }\n      .aboutMe .avatarBox .head .earRight {\n        position: absolute;\n        background-color: #FDE0AA; }\n        .aboutMe .avatarBox .head .earRight .earShell {\n          position: absolute;\n          background-color: #E4BB86; }\n    .aboutMe .avatarBox .hair {\n      position: absolute;\n      z-index: 4;\n      background-color: #472B1F; }\n      .aboutMe .avatarBox .hair .hairSkin {\n        position: absolute;\n        width: 0;\n        height: 0;\n        transform: rotate(-22deg); }\n      .aboutMe .avatarBox .hair .hairBackground1 {\n        position: absolute;\n        top: 0px;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .hair .hairBackground2 {\n        position: absolute;\n        top: 0px;\n        left: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .hair .hair1 {\n        position: absolute;\n        width: 0;\n        transform: rotate(40deg) skewY(30deg); }\n      .aboutMe .avatarBox .hair .hair2 {\n        position: absolute;\n        left: 0px;\n        width: 0;\n        height: 0;\n        transform: rotate(40deg); }\n      .aboutMe .avatarBox .hair .hair3 {\n        position: absolute;\n        transform: rotate(157deg) skewY(-30deg); }\n      .aboutMe .avatarBox .hair .hair4 {\n        position: absolute;\n        width: 0;\n        height: 0;\n        transform: rotate(-28deg); }\n    .aboutMe .avatarBox .headAnimation {\n      animation-fill-mode: forwards;\n      animation-direction: alternate;\n      animation-timing-function: linear;\n      animation-iteration-count: infinite;\n      animation-delay: 2s;\n      animation-name: headShake;\n      animation-duration: 1s; }\n    .aboutMe .avatarBox .hairAnimation {\n      animation-fill-mode: forwards;\n      animation-direction: alternate;\n      animation-timing-function: linear;\n      animation-iteration-count: infinite;\n      animation-delay: 2s;\n      animation-name: hairShake;\n      animation-duration: 1s; }\n    .aboutMe .avatarBox .mouth {\n      position: absolute;\n      z-index: 2;\n      background-color: #CA9A82; }\n      .aboutMe .avatarBox .mouth .lipsBottomRight {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsTopRight {\n        position: absolute;\n        top: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsTopLeft {\n        position: absolute;\n        top: 0;\n        left: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsBottomLeft {\n        position: absolute;\n        bottom: 0;\n        left: 0;\n        width: 0;\n        height: 0; }\n    .aboutMe .avatarBox .shadow {\n      position: absolute;\n      border-radius: 50% 0% 0% 35%;\n      z-index: 1;\n      width: 0; }\n    .aboutMe .avatarBox .nose1 {\n      position: absolute;\n      border-radius: 50% 0 0 0;\n      transform: skew(0deg, 140deg); }\n    .aboutMe .avatarBox .keyboard {\n      position: absolute;\n      background-color: #AFAB9D;\n      z-index: 1; }\n    .aboutMe .avatarBox .keyButton {\n      position: absolute; }\n      .aboutMe .avatarBox .keyButton .finger {\n        display: none;\n        position: absolute; }\n    .aboutMe .avatarBox .buttonAnimation {\n      animation-name: buttonClick;\n      animation-duration: 0.07s;\n      animation-iteration-count: 1;\n      animation-direction: alternate;\n      animation-timing-function: ease-in; }\n    .aboutMe .avatarBox .avatarBodyRight {\n      position: absolute;\n      background-color: #113A79; }\n      .aboutMe .avatarBox .avatarBodyRight .collar {\n        position: absolute;\n        top: 0;\n        z-index: 3; }\n      .aboutMe .avatarBox .avatarBodyRight .rightArm {\n        position: absolute;\n        z-index: 1; }\n        .aboutMe .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          position: absolute;\n          top: 0;\n          width: 0;\n          height: 0;\n          left: 0; }\n    .aboutMe .avatarBox .neck {\n      z-index: 2;\n      position: absolute;\n      background-color: #E4BB86; }\n    .aboutMe .avatarBox .avatarBodyLeft {\n      position: absolute;\n      background-color: #134E86; }\n      .aboutMe .avatarBox .avatarBodyLeft .collar {\n        position: absolute;\n        z-index: 3;\n        top: 0; }\n      .aboutMe .avatarBox .avatarBodyLeft .leftArm {\n        position: absolute;\n        z-index: 1; }\n        .aboutMe .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          position: absolute;\n          top: 0;\n          width: 0;\n          height: 0; }\n\n@media (min-width: 300px) {\n  .avatarBox {\n    width: 300px;\n    height: 300px; }\n    .avatarBox .message {\n      left: 45px;\n      overflow: hidden;\n      font-family: \"Courier\";\n      white-space: nowrap;\n      font-size: 13px;\n      width: auto; }\n    .avatarBox .writeMessage {\n      animation: writeMessage 3s steps(60, end); }\n    .avatarBox .write2 {\n      animation: write2 6s steps(60, end); }\n    .avatarBox p:nth-child(1) {\n      top: 10px;\n      width: 17em; }\n    .avatarBox p:nth-child(2) {\n      width: 18em;\n      top: 30px; }\n    .avatarBox .pot {\n      border-top: 30px solid #E8B882;\n      border-left: 10px solid transparent;\n      border-right: 10px solid transparent;\n      width: 30px;\n      top: 150px;\n      z-index: 0; }\n      .avatarBox .pot:after {\n        content: \"\";\n        position: absolute;\n        width: 45px;\n        height: 7px;\n        bottom: -7px;\n        background-color: white;\n        right: -20px; }\n      .avatarBox .pot:before {\n        content: \"\";\n        position: absolute;\n        width: 40px;\n        height: 5px;\n        bottom: 30px;\n        background-color: #E8B882;\n        right: -15px; }\n      .avatarBox .pot .potShadow {\n        position: absolute;\n        bottom: 26px;\n        width: 30px;\n        border-top: 4px solid #B9945F;\n        border-left: 1px solid beige;\n        border-right: 1px solid beige;\n        background-color: grey;\n        left: -10px; }\n      .avatarBox .pot .cactus {\n        left: 0px;\n        width: 14px;\n        height: 45px;\n        bottom: 35px;\n        background-color: #2A6034;\n        border-radius: 12% 12% 0 0; }\n        .avatarBox .pot .cactus .cactusShadow {\n          left: 0px;\n          height: 45px;\n          width: 7px;\n          background-color: #377B44; }\n        .avatarBox .pot .cactus .cactusArmLeft {\n          width: 15px;\n          height: 20px;\n          left: -12px; }\n          .avatarBox .pot .cactus .cactusArmLeft:after {\n            content: \"\";\n            border-top: 14px solid #2A6034;\n            border-bottom: 14px solid #2A6034;\n            border-left: 13px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 50% 50% 0 50%; }\n          .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute;\n            width: 50%;\n            height: 40px;\n            background-color: #377B44;\n            border-radius: 30% 0 30% 50%;\n            top: -13px; }\n        .avatarBox .pot .cactus .cactusArmRight {\n          width: 12px;\n          height: 10px;\n          right: -13px;\n          transform: skew(-10deg, 100deg);\n          top: 10px; }\n          .avatarBox .pot .cactus .cactusArmRight:after {\n            content: \"\";\n            border-top: 10px solid #2A6034;\n            border-bottom: 10px solid #2A6034;\n            border-left: 10px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 20% 50% 50% 50%; }\n          .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            width: 50%;\n            height: 30px;\n            background-color: #377B44;\n            border-radius: 0 30% 30% 50%;\n            right: 0;\n            top: -10px; }\n    .avatarBox .head {\n      width: 77px;\n      height: 65px; }\n      .avatarBox .head:after {\n        content: \"\";\n        position: absolute;\n        bottom: -25px;\n        left: 0;\n        width: 0;\n        height: 0;\n        border-left: 38.5px solid transparent;\n        border-right: 38.5px solid transparent;\n        border-top: 25px solid #FDE0AA; }\n      .avatarBox .head .beard1 {\n        border-bottom: 30px solid beige;\n        border-right: 30px solid transparent; }\n      .avatarBox .head .beard2 {\n        border-bottom: 30px solid beige;\n        border-left: 30px solid transparent; }\n      .avatarBox .head .eye1 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        left: 15px; }\n      .avatarBox .head .eye2 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        right: 15px; }\n      .avatarBox .head .eyeBrow1 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        left: 10px; }\n      .avatarBox .head .eyeBrow2 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        right: 10px; }\n      .avatarBox .head .earLeft {\n        width: 10px;\n        height: 20px;\n        left: -10px;\n        top: 15px; }\n        .avatarBox .head .earLeft .earShell {\n          width: 5px;\n          height: 10px;\n          right: 0px;\n          top: 5px; }\n      .avatarBox .head .earRight {\n        width: 10px;\n        height: 20px;\n        right: -10px;\n        top: 15px; }\n        .avatarBox .head .earRight .earShell {\n          width: 5px;\n          height: 10px;\n          right: 5px;\n          top: 5px; }\n    .avatarBox .hair {\n      top: 70px;\n      width: 77px;\n      height: 55px; }\n      .avatarBox .hair .hairSkin {\n        top: 28px;\n        border-top: 20px solid transparent;\n        border-bottom: 16px solid transparent;\n        border-right: 40px solid #FDE0AA; }\n      .avatarBox .hair .hairBackground1 {\n        border-top: 20px solid beige;\n        border-left: 25px solid transparent; }\n      .avatarBox .hair .hairBackground2 {\n        border-top: 20px solid beige;\n        border-right: 15px solid transparent; }\n      .avatarBox .hair .hair1 {\n        top: 13px;\n        left: -6.5px;\n        height: 35px;\n        border-top: 0px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 25.5px solid #5A352A; }\n      .avatarBox .hair .hair2 {\n        top: -10px;\n        left: 0px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #5A352A; }\n      .avatarBox .hair .hair3 {\n        top: 7px;\n        right: 6px;\n        height: 33px;\n        border-top: 12px solid transparent;\n        border-bottom: -10px #170F08;\n        border-left: 10px solid transparent;\n        border-right: 26px solid #170F08; }\n      .avatarBox .hair .hair4 {\n        top: 8px;\n        left: -13px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #503026; }\n    .avatarBox .mouth {\n      bottom: 0px;\n      left: 23px;\n      width: 30px;\n      height: 4px; }\n      .avatarBox .mouth .lipsBottomRight {\n        border-bottom: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopRight {\n        border-top: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopLeft {\n        border-top: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n      .avatarBox .mouth .lipsBottomLeft {\n        border-bottom: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n    .avatarBox .shadow {\n      top: 1px;\n      right: 0;\n      border-left: 15px solid #E4BB86;\n      border-top: 0px solid transparent;\n      border-bottom: 10px solid transparent;\n      height: 74px; }\n    .avatarBox .nose1 {\n      bottom: 20px;\n      left: 43px;\n      width: 23px;\n      border-top: 31px solid #EECB9B;\n      border-left: 0px solid transparent;\n      border-right: 10px solid transparent; }\n    .avatarBox .keyboard {\n      width: 150px;\n      height: 10px;\n      bottom: 0; }\n    .avatarBox .keyButton {\n      z-index: 1;\n      bottom: 10px;\n      width: 15px;\n      border-bottom: 10px solid grey;\n      border-left: 3px solid transparent;\n      border-right: 3px solid transparent; }\n    .avatarBox .neck {\n      z-index: 0;\n      width: 40px;\n      height: 70px;\n      bottom: 80px; }\n    .avatarBox .avatarBodyRight {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 150px; }\n      .avatarBox .avatarBodyRight .collar {\n        left: 0;\n        border-bottom: 20px solid #113A79;\n        border-left: 20px solid transparent; }\n      .avatarBox .avatarBodyRight .rightArm {\n        border-radius: 0 20px 10px 0;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #113A79;\n        bottom: 24.5px;\n        right: -24.1px; }\n        .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          border-top: 40px solid beige;\n          border-left: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyRight .rightArm .armShadowRight {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 0 30px 20px 0; }\n    .avatarBox .avatarBodyLeft {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 110px; }\n      .avatarBox .avatarBodyLeft .collar {\n        right: 0;\n        border-bottom: 20px solid #134E86;\n        border-right: 20px solid transparent; }\n      .avatarBox .avatarBodyLeft .leftArm {\n        border-radius: 20px 0 0 10px;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #2E6085;\n        bottom: 24.5px;\n        left: -24.1px; }\n        .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          border-top: 40px solid beige;\n          border-right: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyLeft .leftArm .armShadowLeft {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 30px 0 0 20px; }\n  .button0 {\n    left: 75px; }\n  .button1 {\n    left: 90px; }\n  .button2 {\n    left: 105px; }\n  .button3 {\n    left: 120px; }\n  .button4 {\n    left: 135px; }\n  .button5 {\n    left: 150px; }\n  .button6 {\n    left: 165px; }\n  .button7 {\n    left: 180px; }\n  .button8 {\n    left: 195px; }\n  .button9 {\n    left: 210px; } }\n\n@media (min-width: 1024px) {\n  .avatarBox {\n    width: 500px;\n    height: 500px; }\n    .avatarBox .message {\n      left: 120px;\n      overflow: hidden;\n      font-family: \"Courier\";\n      white-space: nowrap;\n      animation: writeMessage 3s steps(60, end);\n      font-size: 16px; }\n    .avatarBox p:nth-child(1) {\n      top: 10px;\n      width: 17em; }\n    .avatarBox p:nth-child(2) {\n      width: 18em;\n      top: 40px;\n      animation: write2 6s steps(60, end); }\n    .avatarBox .head {\n      width: 128px;\n      height: 166px; }\n      .avatarBox .head .beard1 {\n        border-bottom: 50px solid beige;\n        border-right: 50px solid transparent; }\n      .avatarBox .head .beard2 {\n        border-bottom: 50px solid beige;\n        border-left: 50px solid transparent; }\n      .avatarBox .head .eye1 {\n        width: 11.5px;\n        height: 11.5px;\n        top: 56.5px;\n        left: 25px; }\n      .avatarBox .head .eye2 {\n        width: 11.5px;\n        height: 11.5px;\n        top: 56.5px;\n        right: 25px; }\n      .avatarBox .head .eyeBrow1 {\n        width: 25px;\n        height: 5px;\n        top: 50px;\n        left: 16.6px; }\n      .avatarBox .head .eyeBrow2 {\n        width: 25px;\n        height: 5px;\n        top: 50px;\n        right: 16.6px; }\n      .avatarBox .head .earLeft {\n        width: 16.6px;\n        height: 33.5px;\n        left: -16.6px;\n        top: 50px; }\n        .avatarBox .head .earLeft .earShell {\n          width: 8.4px;\n          height: 16.6px;\n          right: 0px;\n          top: 8.4px; }\n      .avatarBox .head .earRight {\n        width: 16.6px;\n        height: 33.5px;\n        right: -16.6px;\n        top: 50px; }\n        .avatarBox .head .earRight .earShell {\n          width: 8.4px;\n          height: 16.6px;\n          right: 8.4px;\n          top: 8.4px; }\n    .avatarBox .hair {\n      top: 116px;\n      width: 128px;\n      height: 91.6px; }\n      .avatarBox .hair .hairSkin {\n        top: 46.6px;\n        border-top: 33.6px solid transparent;\n        border-bottom: 26.6px solid transparent;\n        border-right: 66.6px solid #FDE0AA; }\n      .avatarBox .hair .hairBackground1 {\n        border-top: 33.6px solid beige;\n        border-left: 40.6px solid transparent; }\n      .avatarBox .hair .hairBackground2 {\n        border-top: 33.6px solid beige;\n        border-right: 25px solid transparent; }\n      .avatarBox .hair .hair1 {\n        top: 21.6px;\n        left: -11px;\n        height: 58.1px;\n        border-top: 0px solid transparent;\n        border-bottom: 25.3px solid transparent;\n        border-right: 42.5px solid #5A352A; }\n      .avatarBox .hair .hair2 {\n        top: -16.6px;\n        left: 0px;\n        border-top: 25px solid transparent;\n        border-bottom: 25px solid transparent;\n        border-right: 50px solid #5A352A; }\n      .avatarBox .hair .hair3 {\n        top: 11.62px;\n        right: 10px;\n        height: 55px;\n        border-top: 20px solid transparent;\n        border-bottom: -16.6px #170F08;\n        border-left: 16.6px solid transparent;\n        border-right: 43.16px solid #170F08; }\n      .avatarBox .hair .hair4 {\n        top: 13.3px;\n        left: -21.6px;\n        border-top: 25px solid transparent;\n        border-bottom: 25px solid transparent;\n        border-right: 50px solid #503026; }\n    .avatarBox .mouth {\n      bottom: 31.55px;\n      left: 38.2px;\n      width: 50px;\n      height: 6.64px; }\n      .avatarBox .mouth .lipsBottomRight {\n        border-bottom: 8.3px solid #FDE0AA;\n        border-left: 8.3px solid transparent; }\n      .avatarBox .mouth .lipsTopRight {\n        border-top: 8.3px solid #FDE0AA;\n        border-left: 8.3px solid transparent; }\n      .avatarBox .mouth .lipsTopLeft {\n        border-top: 8.3px solid #FDE0AA;\n        border-right: 8.3px solid transparent; }\n      .avatarBox .mouth .lipsBottomLeft {\n        border-bottom: 8.3px solid #FDE0AA;\n        border-right: 8.3px solid transparent; }\n    .avatarBox .shadow {\n      top: 0px;\n      right: 0;\n      border-left: 25px solid #E4BB86;\n      border-top: 0px solid transparent;\n      border-bottom: 25px solid transparent;\n      height: 141px; }\n    .avatarBox .nose1 {\n      bottom: 60px;\n      left: 69.7px;\n      width: 38.2px;\n      border-top: 58.1px solid #EECB9B;\n      border-left: 0px solid transparent;\n      border-right: 16.6px solid transparent; }\n    .avatarBox .keyboard {\n      width: 250px;\n      height: 16.6px;\n      bottom: 0; }\n    .avatarBox .keyButton {\n      z-index: 1;\n      bottom: 16.6px;\n      width: 25px;\n      border-bottom: 16.6px solid grey;\n      border-left: 5px solid transparent;\n      border-right: 5px solid transparent; }\n      .avatarBox .keyButton .finger {\n        width: 10px;\n        height: 10px;\n        top: -12px;\n        background-color: #FDE0AA; }\n    .avatarBox .avatarBodyRight {\n      width: 66.4px;\n      height: 160px;\n      bottom: 0px;\n      left: 250px; }\n      .avatarBox .avatarBodyRight .rightArm {\n        width: 40px;\n        height: 120px;\n        background-color: #113A79;\n        bottom: 41px;\n        left: 317px; }\n        .avatarBox .avatarBodyRight .rightArm .armShadowRight {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #007DB2; }\n    .avatarBox .avatarBodyLeft {\n      width: 66.4px;\n      height: 160px;\n      bottom: 0px;\n      left: 184.6px; }\n      .avatarBox .avatarBodyLeft .leftArm {\n        width: 40px;\n        height: 120px;\n        background-color: #134E86;\n        bottom: 41px;\n        left: 144px; }\n        .avatarBox .avatarBodyLeft .leftArm .armShadowLeft {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #007DB2; }\n  .button0 {\n    left: 125px; }\n  .button1 {\n    left: 150px; }\n  .button2 {\n    left: 175px; }\n  .button3 {\n    left: 200px; }\n  .button4 {\n    left: 225px; }\n  .button5 {\n    left: 250px; }\n  .button6 {\n    left: 275px; }\n  .button7 {\n    left: 300px; }\n  .button8 {\n    left: 325px; }\n  .button9 {\n    left: 350px; }\n  @keyframes buttonClick {\n    from {\n      bottom: 16.6px; }\n    to {\n      bottom: 0px; } }\n  @keyframes hairShake {\n    0% {\n      transform: rotate(0);\n      transform: translate(0); }\n    30% {\n      transform: rotate(-20deg) translate(-29.9px, 0px); }\n    100% {\n      transform: rotate(20deg) translate(29.9px, 0px); } } }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.contact {\n  width: 100%;\n  height: 100%;\n  background-color: beige;\n  display: flex;\n  z-index: 0;\n  position: relative;\n  justify-content: center; }\n  .contact .opacityImage {\n    opacity: 0.8;\n    background-image: url(" + __webpack_require__(137) + ");\n    background-size: cover;\n    background-position: center;\n    background-repeat: no-repeat;\n    width: 100%;\n    height: 100%;\n    z-index: -1;\n    position: absolute; }\n  .contact .logo {\n    position: absolute;\n    top: 1rem;\n    font-size: 1rem;\n    width: 100%;\n    display: flex;\n    align-self: center;\n    justify-content: center; }\n    .contact .logo .logoLink {\n      text-decoration: none;\n      color: #555;\n      font-family: Channel; }\n  .contact .error ul {\n    list-style-type: none; }\n  .contact .success {\n    list-style-type: none; }\n  .contact .book {\n    display: flex;\n    align-self: center;\n    justify-content: center; }\n    .contact .book .contactTitle {\n      align-self: center;\n      text-align: center;\n      color: #555;\n      width: 100%;\n      height: 100%; }\n      .contact .book .contactTitle .title {\n        font-family: 'Alegreya SC', serif;\n        font-weight: 100;\n        text-align: center;\n        width: 100%;\n        align-self: center; }\n      .contact .book .contactTitle .lorem {\n        color: black;\n        font-size: 14px;\n        font-family: 'Alegreya SC', serif;\n        text-align: center;\n        width: 60%;\n        align-self: center;\n        z-index: 2;\n        width: 100%; }\n    .contact .book .form {\n      height: 100%;\n      z-index: 1;\n      background-color: white;\n      align-self: center;\n      width: 100%;\n      display: flex;\n      flex-direction: column;\n      border: 1px solid #A0947E;\n      justify-content: center;\n      align-items: center;\n      font-family: 'Alegreya SC', serif; }\n      .contact .book .form .formInput {\n        width: 80%;\n        text-transform: uppercase;\n        z-index: 1; }\n      .contact .book .form input, .contact .book .form textarea {\n        color: black;\n        font-family: 'Alegreya SC', serif;\n        border: 1px solid #DDC59C;\n        margin: 0.3rem 0; }\n        .contact .book .form input:-ms-input-placeholder, .contact .book .form textarea:-ms-input-placeholder {\n          color: #967C50; }\n        .contact .book .form input:-moz-placeholder, .contact .book .form textarea:-moz-placeholder {\n          color: #967C50; }\n        .contact .book .form input::-webkit-input-placeholder, .contact .book .form textarea::-webkit-input-placeholder {\n          color: #967C50; }\n        .contact .book .form input::-moz-placeholder, .contact .book .form textarea::-moz-placeholder {\n          color: #967C50; }\n      .contact .book .form .formMessage {\n        text-transform: uppercase;\n        resize: none;\n        width: 80%; }\n      .contact .book .form .submitButton {\n        text-transform: uppercase;\n        width: 80%;\n        height: 3rem;\n        background-color: #967C50;\n        border: 1px solid transparent;\n        color: white;\n        outline: 0; }\n\n@media only screen and (min-device-width: 320px) and (orientation: landscape) {\n  .contact {\n    flex-direction: column;\n    justify-content: center; }\n    .contact .book {\n      align-items: center;\n      width: 80%;\n      position: absolute;\n      bottom: 2%;\n      height: 75vh; }\n      .contact .book .contactTitle {\n        border: 1px solid #A0947E;\n        flex-direction: column;\n        display: flex;\n        background-color: white;\n        justify-content: center;\n        flex: 1; }\n        .contact .book .contactTitle .text {\n          font-size: 20px; }\n        .contact .book .contactTitle .lorem {\n          font-size: 12px; }\n      .contact .book .form {\n        font-size: 14px;\n        flex: 1; }\n        .contact .book .form .formInput {\n          height: 2rem; }\n        .contact .book .form .formMessage {\n          height: 7rem; } }\n\n@media only screen and (min-device-width: 320px) and (orientation: portrait) {\n  .contact {\n    flex-direction: column;\n    flex-wrap: wrap; }\n    .contact .book {\n      width: 90%;\n      flex-wrap: wrap; }\n      .contact .book .contactTitle {\n        border: 0.5rem solid transparent; }\n        .contact .book .contactTitle .text {\n          font-size: 20px; }\n        .contact .book .contactTitle .lorem {\n          font-size: 12px; }\n      .contact .book .form {\n        font-size: 14px;\n        height: 70vh; }\n        .contact .book .form .formInput {\n          height: 2.5rem; }\n        .contact .book .form .formMessage {\n          height: 7rem; } }\n\n@media only screen and (min-width: 700px) and (orientation: portrait) {\n  .contact {\n    flex-direction: column;\n    flex-wrap: wrap; }\n    .contact .book {\n      width: 80%;\n      flex-wrap: wrap; }\n      .contact .book .contactTitle {\n        border: 1rem solid transparent; }\n        .contact .book .contactTitle .title {\n          font-size: 27px; }\n      .contact .book .form {\n        font-size: 20px;\n        height: 70vh; }\n        .contact .book .form .formInput {\n          height: 4rem; }\n        .contact .book .form .formMessage {\n          height: 10rem; }\n        .contact .book .form .submitButton {\n          height: 4rem; } }\n\n@media only screen and (min-device-width: 1000px) and (orientation: landscape) {\n  .contact {\n    flex-direction: column;\n    justify-content: center; }\n    .contact .book {\n      align-items: center;\n      width: 70%;\n      position: absolute;\n      bottom: 10%;\n      height: 70vh; }\n      .contact .book .contactTitle {\n        border: 1px solid #A0947E;\n        flex-direction: column;\n        display: flex;\n        background-color: white;\n        justify-content: center;\n        flex: 1; }\n        .contact .book .contactTitle .title {\n          font-size: 27px; }\n      .contact .book .form {\n        font-size: 14px;\n        flex: 1; }\n        .contact .book .form .formInput {\n          height: 3rem; }\n        .contact .book .form .formMessage {\n          height: 12rem; }\n        .contact .book .form .submitButton {\n          height: 3rem; } }\n\n@keyframes menuslide {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes vanish {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@font-face {\n  font-family: Channel;\n  src: url(" + __webpack_require__(256) + "); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n@keyframes slideUp {\n  from {\n    bottom: -50vh; }\n  to {\n    top: 0; } }\n\n.main-width {\n  width: 100%;\n  height: 100vh; }\n  .main-width .boxAnimation {\n    animation-name: slideUp;\n    animation-duration: 0.5s; }\n  .main-width .box {\n    width: 100%;\n    height: 50vh;\n    justify-content: flex-start;\n    align-items: flex-start;\n    flex-wrap: wrap;\n    z-index: 0; }\n    .main-width .box .boxImg {\n      height: 50vh;\n      width: 100%;\n      object-fit: cover; }\n  .main-width #menu {\n    width: auto;\n    height: 100vh;\n    display: flex;\n    justify-content: flex-end;\n    flex-wrap: wrap; }\n    .main-width #menu .slider {\n      width: auto;\n      height: 100vh;\n      z-index: 0;\n      top: 0;\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n      flex-wrap: wrap;\n      align-items: center; }\n      .main-width #menu .slider .imgSlider {\n        width: 100%;\n        height: 100vh;\n        background-image: url(" + __webpack_require__(138) + ");\n        background-repeat: no-repeat;\n        position: absolute;\n        background-size: cover;\n        background-position: left;\n        display: inline-block; }\n      .main-width #menu .slider .logo {\n        width: 100%;\n        height: 70px;\n        font-family: Channel;\n        z-index: 0;\n        display: flex;\n        justify-content: center;\n        align-items: center; }\n        .main-width #menu .slider .logo .logoLink {\n          text-decoration: none;\n          color: #555; }\n    .main-width #menu .menu-btn {\n      width: 50px;\n      height: 50px;\n      background-color: transparent;\n      border-radius: 50%;\n      transform: rotate(0deg);\n      transition: .5s ease-in-out;\n      cursor: pointer;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      flex-wrap: wrap;\n      align-content: space-around;\n      position: fixed;\n      top: 10px;\n      right: 10px;\n      z-index: 99;\n      border: 1px solid transparent; }\n    .main-width #menu .hide {\n      display: none; }\n\nspan {\n  height: 3px;\n  width: 70%;\n  opacity: 1;\n  right: 7px;\n  background-color: #89765D;\n  transform: rotate(0deg);\n  transition: .30s ease-in-out;\n  position: absolute; }\n  span:nth-child(1) {\n    top: 13px; }\n  span:nth-child(2), span:nth-child(3) {\n    top: 23px; }\n  span:nth-child(4) {\n    top: 33px; }\n\n.open span:nth-child(1), .open span:nth-child(4) {\n  top: 18px;\n  width: 0%;\n  left: 50%;\n  animation-name: vanish;\n  animation-duration: 0.01s; }\n\n.open span:nth-child(2) {\n  transform: rotate(45deg);\n  height: 3px;\n  background-color: black; }\n\n.open span:nth-child(3) {\n  transform: rotate(-45deg);\n  height: 3px;\n  background-color: black; }\n\n.show {\n  animation-name: menuslide;\n  animation-duration: 0.6s;\n  display: flex;\n  width: auto;\n  height: 80vh;\n  list-style: none;\n  flex-direction: column;\n  align-items: center;\n  background: white;\n  z-index: 5;\n  position: fixed; }\n  .show .liElement {\n    width: 100vw;\n    height: 15vh;\n    display: flex;\n    justify-content: center; }\n    .show .liElement .link {\n      text-decoration: none;\n      color: #555;\n      align-self: center;\n      font-family: Channel; }\n", ""]);
 
 // exports
 
@@ -14523,7 +14527,7 @@ var _Actions = __webpack_require__(24);
 
 var _PathUtils = __webpack_require__(19);
 
-var _ExecutionEnvironment = __webpack_require__(34);
+var _ExecutionEnvironment = __webpack_require__(35);
 
 var _DOMUtils = __webpack_require__(47);
 
@@ -16771,7 +16775,7 @@ module.exports = DefaultEventPluginOrder;
 
 var EventPropagators = __webpack_require__(31);
 var ReactDOMComponentTree = __webpack_require__(6);
-var SyntheticMouseEvent = __webpack_require__(38);
+var SyntheticMouseEvent = __webpack_require__(39);
 
 var eventTypes = {
   mouseEnter: {
@@ -18447,8 +18451,8 @@ var DOMNamespaces = __webpack_require__(51);
 var DOMProperty = __webpack_require__(17);
 var DOMPropertyOperations = __webpack_require__(82);
 var EventPluginHub = __webpack_require__(30);
-var EventPluginRegistry = __webpack_require__(36);
-var ReactBrowserEventEmitter = __webpack_require__(37);
+var EventPluginRegistry = __webpack_require__(37);
+var ReactBrowserEventEmitter = __webpack_require__(38);
 var ReactDOMComponentFlags = __webpack_require__(83);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMInput = __webpack_require__(167);
@@ -18460,7 +18464,7 @@ var ReactMultiChild = __webpack_require__(186);
 var ReactServerRenderingTransaction = __webpack_require__(191);
 
 var emptyFunction = __webpack_require__(12);
-var escapeTextContentForBrowser = __webpack_require__(40);
+var escapeTextContentForBrowser = __webpack_require__(41);
 var invariant = __webpack_require__(1);
 var isEventSupported = __webpack_require__(62);
 var shallowEqual = __webpack_require__(46);
@@ -20401,7 +20405,7 @@ var DOMChildrenOperations = __webpack_require__(50);
 var DOMLazyTree = __webpack_require__(25);
 var ReactDOMComponentTree = __webpack_require__(6);
 
-var escapeTextContentForBrowser = __webpack_require__(40);
+var escapeTextContentForBrowser = __webpack_require__(41);
 var invariant = __webpack_require__(1);
 var validateDOMNesting = __webpack_require__(64);
 
@@ -20873,7 +20877,7 @@ module.exports = {
 
 
 var DOMProperty = __webpack_require__(17);
-var EventPluginRegistry = __webpack_require__(36);
+var EventPluginRegistry = __webpack_require__(37);
 var ReactComponentTreeHook = __webpack_require__(10);
 
 var warning = __webpack_require__(2);
@@ -21358,7 +21362,7 @@ module.exports = ReactDebugTool;
 var _assign = __webpack_require__(4);
 
 var ReactUpdates = __webpack_require__(14);
-var Transaction = __webpack_require__(39);
+var Transaction = __webpack_require__(40);
 
 var emptyFunction = __webpack_require__(12);
 
@@ -21786,7 +21790,7 @@ var EventPluginHub = __webpack_require__(30);
 var EventPluginUtils = __webpack_require__(52);
 var ReactComponentEnvironment = __webpack_require__(55);
 var ReactEmptyComponent = __webpack_require__(85);
-var ReactBrowserEventEmitter = __webpack_require__(37);
+var ReactBrowserEventEmitter = __webpack_require__(38);
 var ReactHostComponent = __webpack_require__(87);
 var ReactUpdates = __webpack_require__(14);
 
@@ -22509,10 +22513,10 @@ var _assign = __webpack_require__(4);
 
 var CallbackQueue = __webpack_require__(81);
 var PooledClass = __webpack_require__(20);
-var ReactBrowserEventEmitter = __webpack_require__(37);
+var ReactBrowserEventEmitter = __webpack_require__(38);
 var ReactInputSelection = __webpack_require__(88);
 var ReactInstrumentation = __webpack_require__(11);
-var Transaction = __webpack_require__(39);
+var Transaction = __webpack_require__(40);
 var ReactUpdateQueue = __webpack_require__(57);
 
 /**
@@ -22786,7 +22790,7 @@ module.exports = ReactRef;
 var _assign = __webpack_require__(4);
 
 var PooledClass = __webpack_require__(20);
-var Transaction = __webpack_require__(39);
+var Transaction = __webpack_require__(40);
 var ReactInstrumentation = __webpack_require__(11);
 var ReactServerUpdateQueue = __webpack_require__(192);
 
@@ -23557,7 +23561,7 @@ var SyntheticClipboardEvent = __webpack_require__(198);
 var SyntheticEvent = __webpack_require__(16);
 var SyntheticFocusEvent = __webpack_require__(201);
 var SyntheticKeyboardEvent = __webpack_require__(203);
-var SyntheticMouseEvent = __webpack_require__(38);
+var SyntheticMouseEvent = __webpack_require__(39);
 var SyntheticDragEvent = __webpack_require__(200);
 var SyntheticTouchEvent = __webpack_require__(204);
 var SyntheticTransitionEvent = __webpack_require__(205);
@@ -23908,7 +23912,7 @@ module.exports = SyntheticCompositionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(38);
+var SyntheticMouseEvent = __webpack_require__(39);
 
 /**
  * @interface DragEvent
@@ -24215,7 +24219,7 @@ module.exports = SyntheticTransitionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(38);
+var SyntheticMouseEvent = __webpack_require__(39);
 
 /**
  * @interface WheelEvent
@@ -24987,7 +24991,7 @@ module.exports = getVendorPrefixedEventName;
 
 
 
-var escapeTextContentForBrowser = __webpack_require__(40);
+var escapeTextContentForBrowser = __webpack_require__(41);
 
 /**
  * Escapes attribute value to prevent scripting attacks.
@@ -25435,7 +25439,7 @@ var _createHashHistory = __webpack_require__(75);
 
 var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
 
-var _useQueries = __webpack_require__(35);
+var _useQueries = __webpack_require__(36);
 
 var _useQueries2 = _interopRequireDefault(_useQueries);
 
@@ -25453,7 +25457,7 @@ var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager)
 
 var _InternalPropTypes = __webpack_require__(21);
 
-var _RouterContext = __webpack_require__(42);
+var _RouterContext = __webpack_require__(43);
 
 var _RouterContext2 = _interopRequireDefault(_RouterContext);
 
@@ -25664,7 +25668,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _RouterContext = __webpack_require__(42);
+var _RouterContext = __webpack_require__(43);
 
 var _RouterContext2 = _interopRequireDefault(_RouterContext);
 
@@ -25832,7 +25836,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _RouterContext = __webpack_require__(42);
+var _RouterContext = __webpack_require__(43);
 
 var _RouterContext2 = _interopRequireDefault(_RouterContext);
 
@@ -26609,7 +26613,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _useQueries = __webpack_require__(35);
+var _useQueries = __webpack_require__(36);
 
 var _useQueries2 = _interopRequireDefault(_useQueries);
 

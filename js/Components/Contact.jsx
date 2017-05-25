@@ -92,31 +92,35 @@ class Contact extends React.Component {
             <div className="opacityImage"></div>
            <div className="logo"><Link to="/"
            className="logoLink">Awwgraphy</Link></div>
-           <h1 className="contactTitle">Get in touch</h1>
-           <p className="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-           </p>
-           <form onSubmit={this.handleFormSubmit} className="form">
-               <input type="text" value={this.state.name} onChange={this.handleNameChange}
-               placeholder="Name" className="formInput"/><br/>
-               <input type="text"  value={this.state.email} onChange={this.handleEmailChange}
-                placeholder="Email" className="formInput"/><br/>
-                <input type="text"  value={this.state.subject} onChange={this.handleSubjectChange}
-                 placeholder="Subject" className="formInput"/><br/>
-               <textarea  value={this.state.info} onChange={this.handleInfoChange}
-                placeholder="Your Message" className="formMessage"/><br/>
-               <input type="submit" value='Submit' className="submitButton"/>
-               <div style={this.state.errorStyle} className="error">
-                   <ul>
-                   {this.state.errors.map((error, i) => {
-                        return <li key={i}>
-                             {error}
-                        </li>
-                    })
-                   }
-                   </ul>
+           <div className="book">
+               <div className="contactTitle">
+                    <h1 className="title">Get in Touch</h1>
+                   <p className="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                   </p>
                </div>
-               <div style={this.state.successStyle} className="success">{this.state.success}</div><br/>
-           </form>
+               <form onSubmit={this.handleFormSubmit} className="form">
+                   <input type="text" value={this.state.name} onChange={this.handleNameChange}
+                   placeholder="Name" className="formInput"/>
+                   <input type="text"  value={this.state.email} onChange={this.handleEmailChange}
+                    placeholder="Email" className="formInput"/>
+                    <input type="text"  value={this.state.subject} onChange={this.handleSubjectChange}
+                     placeholder="Subject" className="formInput"/>
+                   <textarea  value={this.state.info} onChange={this.handleInfoChange}
+                    placeholder="Your Message" className="formMessage"/>
+                   <input type="submit" value='Submit' className="submitButton"/>
+                   <div style={this.state.errorStyle} className="error">
+                       <ul>
+                       {this.state.errors.map((error, i) => {
+                            return <li key={i}>
+                                 {error}
+                            </li>
+                        })
+                       }
+                       </ul>
+                   </div>
+                   <div style={this.state.successStyle} className="success">{this.state.success}</div><br/>
+               </form>
+           </div>
        </div>
    }
 }
