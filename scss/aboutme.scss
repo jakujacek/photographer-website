@@ -31,7 +31,10 @@ to {opacity: 0}
   from {bottom: 10px}
   to {bottom: 0px}
 }
-
+@keyframes fingerClick {
+  from {bottom: -11px}
+  to {bottom: -27px}
+}
 @keyframes writeMessage {
   from {width: 0px}
 }
@@ -137,6 +140,15 @@ to {opacity: 0}
         position: absolute;
         background-color: black;
         z-index: 2;
+      }
+      .glasses {
+        position: absolute;
+        .glassLeft {
+          position: absolute;
+        }
+        .glassRight {
+          position: absolute;
+        }
       }
       .eyeBrow1 {
         position: absolute;
@@ -287,10 +299,6 @@ to {opacity: 0}
     }
     .keyButton {
       position: absolute;
-      .finger {
-        display: none;
-        position: absolute;
-      }
     }
     .buttonAnimation{
       animation-name: buttonClick;
@@ -317,6 +325,19 @@ to {opacity: 0}
           height: 0;
           left: 0;
         }
+        .rightHand {
+          position: absolute;
+          .finger {
+            position: absolute;
+          }
+          .fingerClick {
+            animation-name: fingerClick;
+            animation-duration: 0.09s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+          }
+        }
       }
     }
     .neck {
@@ -340,6 +361,19 @@ to {opacity: 0}
           top: 0;
           width: 0;
           height: 0;
+        }
+        .leftHand {
+          position: absolute;
+          .finger {
+            position: absolute;
+          }
+          .fingerClick {
+            animation-name: fingerClick;
+            animation-duration: 0.09s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+          }
         }
       }
     }
@@ -500,6 +534,35 @@ to {opacity: 0}
         height: 7px;
         top: 20px;
         right: 15px;
+      }
+      .glasses {
+        width: 100%;
+        height: 20px;
+        top: 17px;
+        z-index: 5;
+        .glassLeft {
+          left: 0;
+          width: 45%;
+          height: 100%;
+          border: 3px solid #0E3A5D;
+          border-radius: 10% 10% 50% 20%;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 4px;
+            background-color: #0E3A5D;
+            top: -2px;
+            right: -12px;
+          }
+        }
+        .glassRight {
+          right: 0;
+          width: 45%;
+          height: 100%;
+          border: 3px solid #0E3A5D;
+          border-radius: 10% 10% 20% 50%;;
+        }
       }
       .eyeBrow1 {
         width: 15px;
@@ -678,6 +741,21 @@ to {opacity: 0}
           background-color: map-get($colors, bodyColorLeft);
           border-radius: 0 30px 20px 0;
         }
+        .rightHand {
+          width: 25px;
+          border-bottom: 15px solid map-get($colors, shadowSkinColor);
+          border-left: 3px solid transparent;
+          border-right: 3px solid transparent;
+          bottom: -3px;
+          .finger {
+            bottom: -16px;
+            width: 8px;
+            border-top: 8px solid map-get($colors, skinColor);
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-radius: 20% 20% 40% 40% ;
+          }
+        }
       }
     }
     .avatarBodyLeft {
@@ -710,24 +788,52 @@ to {opacity: 0}
           background-color: map-get($colors, bodyColorLeft);
           border-radius: 30px 0 0 20px;
         }
+        .leftHand {
+          width: 25px;
+          border-bottom: 15px solid map-get($colors, shadowSkinColor);
+          border-left: 3px solid transparent;
+          border-right: 3px solid transparent;
+          bottom: -3px;
+          .finger {
+            bottom: -17px;
+            width: 8px;
+            border-top: 8px solid map-get($colors, skinColor);
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-radius: 20% 20% 40% 40% ;
+          }
+        }
       }
     }
   }
   @for $i from 0 through 9  {
   .button#{$i} {left: 75px + (15px * $i);}
   }
+
+  @for $i from 0 through 4 {
+    .finger#{$i} {left: -9px+(9px * $i);}
+  }
+  @for $i from 5 through 9 {
+    .finger#{$i} {right: -54px + (9px * $i);}
+  }
 }
 @media (min-width: 1024px) {
   .avatarBox {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     .message {
-      left: 120px;
+      left: 45px;
       overflow: hidden;
       font-family: "Courier";
       white-space: nowrap;
+      font-size: 13px;
+      width: auto;
+    }
+    .writeMessage {
       animation: writeMessage 3s steps(60, end);
-      font-size: 16px;
+    }
+    .write2 {
+      animation: write2 6s steps(60, end);
     }
     p:nth-child(1) {
       top: 10px;
@@ -735,234 +841,415 @@ to {opacity: 0}
     }
     p:nth-child(2) {
       width: 18em;
-      top: 40px;
-      animation: write2 6s steps(60, end);
+      top: 30px;
+    }
+    .pot {
+      border-top: 30px solid #E8B882;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      width: 30px;
+      top: 150px;
+      z-index: 0;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 7px;
+        bottom: -7px;
+        background-color: white;
+        right: -20px;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        bottom: 30px;
+        background-color: #E8B882;
+        right: -15px;
+      }
+      .potShadow {
+        position: absolute;
+        bottom: 26px;
+        width: 30px;
+        border-top: 4px solid #B9945F;
+        border-left: 1px solid beige;
+        border-right: 1px solid beige;
+        background-color: grey;
+        left: -10px;
+      }
+      .cactus {
+        left: 0px;
+        width: 14px;
+        height: 45px;
+        bottom: 35px;
+        background-color: #2A6034;
+        border-radius: 12% 12% 0 0;
+        .cactusShadow {
+          left: 0px;
+          height: 45px;
+          width: 7px;
+          background-color: #377B44;
+        }
+        .cactusArmLeft {
+          width: 15px;
+          height: 20px;
+          left: -12px;
+          &:after {
+            content: "";
+            border-top: 14px solid #2A6034;
+            border-bottom: 14px solid #2A6034;
+            border-left: 13px solid #2A6034;
+            border-right: 14px solid #2A6034;
+            border-radius: 50% 50% 0 50%;
+          }
+          .cactusArmShadow {
+            position: absolute;
+            width: 50%;
+            height: 40px;
+            background-color: #377B44;
+            border-radius: 30% 0 30% 50%;
+            top: -13px;
+          }
+        }
+        .cactusArmRight {
+          width: 12px;
+          height: 10px;
+          right: -13px;
+          transform: skew(-10deg, 100deg);
+          top: 10px;
+          &:after {
+            content: "";
+            border-top: 10px solid #2A6034;
+            border-bottom: 10px solid #2A6034;
+            border-left: 10px solid #2A6034;
+            border-right: 14px solid #2A6034;
+            border-radius: 20% 50% 50% 50%;
+          }
+          .cactusArmShadow {
+            width: 50%;
+            height: 30px;
+            background-color: #377B44;
+            border-radius: 0 30% 30% 50%;
+            right: 0;
+            top: -10px;
+          }
+        }
+      }
     }
     .head {
-      width: 128px;
-      height: 166px;
+      width: 77px;
+      height: 65px;
+      &:after {
+        content: "";
+      	position: absolute;
+      	bottom: -25px;
+      	left: 0;
+      	width: 0;
+      	height: 0;
+      	border-left: 38.5px solid transparent;
+      	border-right: 38.5px solid transparent;
+      	border-top: 25px solid map-get($colors, skinColor);
+      }
       .beard1 {
-        border-bottom: 50px solid map-get($colors, backgroundColor);
-        border-right: 50px solid transparent;
+        border-bottom: 30px solid map-get($colors, backgroundColor);
+        border-right: 30px solid transparent;
       }
       .beard2 {
-        border-bottom: 50px solid map-get($colors, backgroundColor);
-        border-left: 50px solid transparent;
+        border-bottom: 30px solid map-get($colors, backgroundColor);
+        border-left: 30px solid transparent;
       }
       .eye1 {
-        width: 11.5px;
-        height: 11.5px;
-        top: 56.5px;
-        left: 25px;
+        width: 7px;
+        height: 7px;
+        top: 20px;
+        left: 15px;
       }
       .eye2 {
-        width: 11.5px;
-        height: 11.5px;
-        top: 56.5px;
-        right: 25px;
+        width: 7px;
+        height: 7px;
+        top: 20px;
+        right: 15px;
+      }
+      .glasses {
+        width: 100%;
+        height: 20px;
+        top: 17px;
+        z-index: 5;
+        .glassLeft {
+          left: 0;
+          width: 45%;
+          height: 100%;
+          border: 3px solid #0E3A5D;
+          border-radius: 10% 10% 50% 20%;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 4px;
+            background-color: #0E3A5D;
+            top: -2px;
+            right: -12px;
+          }
+        }
+        .glassRight {
+          right: 0;
+          width: 45%;
+          height: 100%;
+          border: 3px solid #0E3A5D;
+          border-radius: 10% 10% 20% 50%;;
+        }
       }
       .eyeBrow1 {
-        width: 25px;
-        height: 5px;
-        top: 50px;
-        left: 16.6px;
+        width: 15px;
+        height: 3px;
+        top: 15px;
+        left: 10px;
       }
       .eyeBrow2 {
-        width: 25px;
-        height: 5px;
-        top: 50px;
-        right: 16.6px;
+        width: 15px;
+        height: 3px;
+        top: 15px;
+        right: 10px;
       }
       .earLeft {
-        width: 16.6px;
-        height: 33.5px;
-        left: -16.6px;
-        top: 50px;
+        width: 10px;
+        height: 20px;
+        left: -10px;
+        top: 15px;
         .earShell {
-          width: 8.4px;
-          height: 16.6px;
+          width: 5px;
+          height: 10px;
           right: 0px;
-          top: 8.4px;
+          top: 5px;
         }
       }
       .earRight {
-        width: 16.6px;
-        height: 33.5px;
-        right: -16.6px;
-        top: 50px;
+        width: 10px;
+        height: 20px;
+        right: -10px;
+        top: 15px;
         .earShell {
-          width: 8.4px;
-          height: 16.6px;
-          right: 8.4px;
-          top: 8.4px;
+          width: 5px;
+          height: 10px;
+          right: 5px;
+          top: 5px;
         }
       }
     }
 
     .hair {
-      top: 116px;
-      width: 128px;
-      height: 91.6px;
+      top: 70px;
+      width: 77px;
+      height: 55px;
       .hairSkin {
-        top: 46.6px;
-        border-top: 33.6px solid transparent;
-        border-bottom: 26.6px solid transparent;
-        border-right: 66.6px solid map-get($colors, skinColor);
+        top: 28px;
+        border-top: 20px solid transparent;
+        border-bottom: 16px solid transparent;
+        border-right: 40px solid map-get($colors, skinColor);
       }
       .hairBackground1 {
-        border-top: 33.6px solid map-get($colors, backgroundColor);
-        border-left: 40.6px solid transparent;
+        border-top: 20px solid map-get($colors, backgroundColor);
+        border-left: 25px solid transparent;
       }
       .hairBackground2 {
-        border-top: 33.6px solid map-get($colors, backgroundColor);
-        border-right: 25px solid transparent;
+        border-top: 20px solid map-get($colors, backgroundColor);
+        border-right: 15px solid transparent;
       }
       .hair1 {
-        top: 21.6px;
-        left: -11px;
-        height: 58.1px;
+        top: 13px;
+        left: -6.5px;
+        height: 35px;
         border-top: 0px solid transparent;
-        border-bottom: 25.3px solid transparent;
-        border-right: 42.5px solid map-get($colors, lightHairColor);
+        border-bottom: 15px solid transparent;
+        border-right: 25.5px solid map-get($colors, lightHairColor);
       }
       .hair2 {
-        top: -16.6px;
+        top: -10px;
         left: 0px;
-        border-top: 25px solid transparent;
-        border-bottom: 25px solid transparent;
-        border-right: 50px solid map-get($colors, lightHairColor);
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 30px solid map-get($colors, lightHairColor);
       }
       .hair3 {
-        top: 11.62px;
-        right: 10px;
-        height: 55px;
-        border-top: 20px solid transparent;
-        border-bottom: -16.6px map-get($colors, smallHairColor);
-        border-left: 16.6px solid transparent;
-        border-right: 43.16px solid map-get($colors, smallHairColor);
+        top: 7px;
+        right: 6px;
+        height: 33px;
+        border-top: 12px solid transparent;
+        border-bottom: -10px map-get($colors, smallHairColor);
+        border-left: 10px solid transparent;
+        border-right: 26px solid map-get($colors, smallHairColor);
       }
       .hair4 {
-        top: 13.3px;
-        left: -21.6px;
-        border-top: 25px solid transparent;
-        border-bottom: 25px solid transparent;
-        border-right: 50px solid #503026;
+        top: 8px;
+        left: -13px;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-right: 30px solid #503026;
       }
     }
     .mouth {
-      bottom: 31.55px;
-      left: 38.2px;
-      width: 50px;
-      height: 6.64px;
+      bottom: 0px;
+      left: 23px;
+      width: 30px;
+      height: 4px;
       .lipsBottomRight {
-        border-bottom: 8.3px solid map-get($colors, skinColor);
-        border-left: 8.3px solid transparent;
+        border-bottom: 5px solid map-get($colors, skinColor);
+        border-left: 5px solid transparent;
       }
       .lipsTopRight {
-        border-top: 8.3px solid map-get($colors, skinColor);
-        border-left: 8.3px solid transparent;
+        border-top: 5px solid map-get($colors, skinColor);
+        border-left: 5px solid transparent;
       }
       .lipsTopLeft {
-        border-top: 8.3px solid map-get($colors, skinColor);
-        border-right: 8.3px solid transparent;
+        border-top: 5px solid map-get($colors, skinColor);
+        border-right: 5px solid transparent;
       }
       .lipsBottomLeft {
-        border-bottom: 8.3px solid map-get($colors, skinColor);
-        border-right: 8.3px solid transparent;
-      }
-      .smile {
-
+        border-bottom: 5px solid map-get($colors, skinColor);
+        border-right: 5px solid transparent;
       }
     }
 
     .shadow {
-    top: 0px;
+    top: 1px;
     right: 0;
-    border-left: 25px solid map-get($colors, shadowSkinColor);
+    border-left: 15px solid map-get($colors, shadowSkinColor);
     border-top: 0px solid transparent;
-    border-bottom: 25px solid transparent;
-    height: 141px;
+    border-bottom: 10px solid transparent;
+    height: 74px;
     }
 
     .nose1 {
-      bottom: 60px;
-      left: 69.7px;
-      width: 38.2px;
-      border-top: 58.1px solid #EECB9B;
+      bottom: 20px;
+      left: 43px;
+      width: 23px;
+      border-top: 31px solid #EECB9B;
       border-left: 0px solid transparent;
-      border-right: 16.6px solid transparent;
+      border-right: 10px solid transparent;
     }
     .keyboard {
-      width: 250px;
-      height: 16.6px;
+      width: 150px;
+      height: 10px;
       bottom: 0;
     }
     .keyButton {
       z-index: 1;
-      bottom: 16.6px;
-      width: 25px;
-      border-bottom: 16.6px solid grey;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      .finger {
-        width: 10px;
-        height: 10px;
-        top: -12px;
-        background-color: map-get($colors, skinColor);
-      }
+      bottom: 10px;
+      width: 15px;
+      border-bottom: 10px solid grey;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+    }
+    .neck {
+      z-index: 0;
+      width: 40px;
+      height: 70px;
+      bottom: 80px;
     }
     .avatarBodyRight {
-      width: 66.4px;
-      height: 160px;
+      width: 40px;
+      height: 96px;
       bottom: 0px;
-      left: 250px;
-      .bodyShapeLeft {
-
+      left: 150px;
+      .collar {
+        left: 0;
+        border-bottom: 20px solid map-get($colors, bodyColorRight);
+        border-left: 20px solid transparent
       }
       .rightArm {
-        width: 40px;
-        height: 120px;
+          border-radius: 0 20px 10px 0;
+        width: 24.1px;
+        height: 71.2px;
         background-color: map-get($colors, bodyColorRight);
-        bottom: 41px;
-        left: 317px;
+        bottom: 24.5px;
+        right: -24.1px;
+        .bodyShapeRight {
+          border-top: 40px solid map-get($colors, backgroundColor);
+          border-left: 40px solid transparent;
+          right: 0px;
+          z-index: 1;
+        }
         .armShadowRight {
           position: absolute;
           height: 100%;
           width: 50%;
-          background-color: #007DB2;
+          background-color: map-get($colors, bodyColorLeft);
+          border-radius: 0 30px 20px 0;
+        }
+        .rightHand {
+          width: 25px;
+          border-bottom: 15px solid map-get($colors, shadowSkinColor);
+          border-left: 3px solid transparent;
+          border-right: 3px solid transparent;
+          bottom: -3px;
+          .finger {
+            bottom: -16px;
+            width: 8px;
+            border-top: 8px solid map-get($colors, skinColor);
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-radius: 20% 20% 40% 40% ;
+          }
         }
       }
     }
     .avatarBodyLeft {
-      width: 66.4px;
-      height: 160px;
+      width: 40px;
+      height: 96px;
       bottom: 0px;
-      left: 184.6px;
+      left: 110px;
+      .collar {
+        right: 0;
+        border-bottom: 20px solid map-get($colors, bodyColorLeft);
+        border-right: 20px solid transparent
+      }
       .leftArm {
-        width: 40px;
-        height: 120px;
-        background-color: map-get($colors, bodyColorLeft);
-        bottom: 41px;
-        left: 144px;
+          border-radius: 20px 0 0 10px;
+        width: 24.1px;
+        height: 71.2px;
+        background-color: #2E6085;
+        bottom: 24.5px;
+        left: -24.1px;
+        .bodyShapeLeft {
+          border-top: 40px solid map-get($colors, backgroundColor);
+          border-right: 40px solid transparent;
+          right: 0px;
+          z-index: 1;
+        }
         .armShadowLeft {
           position: absolute;
           height: 100%;
           width: 50%;
-          background-color: #007DB2 ;
+          background-color: map-get($colors, bodyColorLeft);
+          border-radius: 30px 0 0 20px;
+        }
+        .leftHand {
+          width: 25px;
+          border-bottom: 15px solid map-get($colors, shadowSkinColor);
+          border-left: 3px solid transparent;
+          border-right: 3px solid transparent;
+          bottom: -3px;
+          .finger {
+            bottom: -17px;
+            width: 8px;
+            border-top: 8px solid map-get($colors, skinColor);
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-radius: 20% 20% 40% 40% ;
+          }
         }
       }
     }
   }
   @for $i from 0 through 9  {
-  .button#{$i} {left: 125px + (25px* $i);}
+  .button#{$i} {left: 75px + (15px * $i);}
   }
-  @keyframes buttonClick {
-    from {bottom: 16.6px}
-    to {bottom: 0px}
+
+  @for $i from 0 through 4 {
+    .finger#{$i} {left: -9px+(9px * $i);}
   }
-  @keyframes hairShake {
-    0% {transform: rotate(0); transform: translate(0)}
-    30% {transform: rotate(-20deg) translate(-29.9px, 0px)}
-    100% {transform: rotate(20deg) translate(29.9px, 0px)}
+  @for $i from 5 through 9 {
+    .finger#{$i} {right: -54px + (9px * $i);}
   }
 }

@@ -122,7 +122,6 @@
       .submitButton {
         text-transform: uppercase;
         width: 80%;
-        height: 3rem;
         background-color: #967C50;
         border: 1px solid transparent;
         color: white;
@@ -168,6 +167,9 @@
           .formMessage {
             height: 7rem;
           }
+          .submitButton {
+            height: 3rem;
+          }
         }
 
       }
@@ -203,6 +205,9 @@
           }
           .formMessage {
             height: 7rem;
+          }
+          .submitButton {
+            height: 3rem;
           }
         }
 

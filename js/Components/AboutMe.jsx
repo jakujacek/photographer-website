@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router'
+import {Link, browserHistory} from 'react-router'
 class AboutMe extends React.Component {
   constructor() {
     super()
@@ -7,22 +7,21 @@ class AboutMe extends React.Component {
       animation: true,
       click: true,
       delay: [0.35, 0.25, 0.1, 0.5, 0.05, 0.4, 0.2, 0.6, 0.3, 0.15],
-      text1: "Hi, I am Jacek Jakubiak and",
-      text2: "I invite You to my website.",
+      finger1: [0.35, 0.25, 0.1, 0.5, 0.05],
+      finger2: [0.4, 0.2, 0.6, 0.3, 0.15],
+      text1: "",
+      text2: "",
       textAnim: true
     }
   }
-  componentDidMount() {
-    this.interVal = setInterval(() => {
+  handleIntervals() {
+    this.firstTime = setTimeout (()=> {
       this.setState({
-              animation: !this.state.animation
-            })
-    }, 4000);
-    this.randomClear = setInterval(()=> {
-      this.setState({
-        click: !this.state.click,
-      });
-    }, 700)
+        text1: "Hi, I am Jacek Jakubiak and",
+        text2: "I invite You to my website.",
+        textAnim: !this.state.textAnim
+      })
+    }, 100)
     this.helloTime = setTimeout (()=> {
       this.setState({
         text1: "This website uses React.JS",
@@ -33,17 +32,35 @@ class AboutMe extends React.Component {
 
     this.juniorTime = setTimeout (()=> {
       this.setState({
-        text1: "Look at me I am tireless.",
-        text2: "Taddaa!",
-        textAnim: !this.state.textAnim
+        text1: "I am passionate about good",
+        text2: "coffee and photography.",
+        textAnim: !this.state.textAnim,
       })
     }, 12000)
   }
+  componentDidMount() {
+    setInterval(() =>{
+      this.handleIntervals()
+    },20000)
+    this.interVal = setInterval(() => {
+      this.setState({
+              animation: !this.state.animation
+            })
+    }, 4000);
+    this.randomClear = setInterval(()=> {
+      this.setState({
+        click: !this.state.click,
+      });
+    }, 600)
+      this.handleIntervals();
+  }
+
   componentWillUnmount() {
     clearInterval(this.interVal)
     clearInterval(this.randomClear)
     clearTimeout(this.helloTime)
     clearTimeout(this.juniorTime)
+    clearTimeout(this.firstTime)
   }
   render() {
       let headAnimation = "headAnimation"
@@ -51,12 +68,14 @@ class AboutMe extends React.Component {
       let buttonAnimation = "buttonAnimation"
       let writeMessage = "writeMessage"
       let write2 = "write2"
+      let fingerClick = "fingerClick"
     if (!this.state.animation) {
       headAnimation = ""
       hairAnimation = ""
     }
     if (!this.state.click) {
       buttonAnimation = ""
+      fingerClick = ""
     }
     if(!this.state.textAnim) {
       writeMessage = "writeMessage2"
@@ -100,6 +119,10 @@ class AboutMe extends React.Component {
                           <div className="beard2"></div>*/}
                           <div className="eye1"></div>
                           <div className="eye2"></div>
+                          <div className= "glasses">
+                              <div className="glassLeft"></div>
+                              <div className="glassRight"></div>
+                          </div>
                           <div className="eyeBrow1"></div>
                           <div className="eyeBrow2"></div>
                           <div className="mouth">
@@ -127,7 +150,6 @@ class AboutMe extends React.Component {
                           return <div key={i}
                           className={`keyButton button${i} ${buttonAnimation}`}
                           style={{animationDelay: e + "s"}}>
-                            <div className="finger"></div>
                           </div>
                         })
                       }
@@ -139,6 +161,16 @@ class AboutMe extends React.Component {
                             <div className="rightArm">
                                   <div className="bodyShapeRight"></div>
                                  <div className="armShadowRight"></div>
+                                 <div className="rightHand">
+                                    {
+                                      this.state.finger2.map((e,i)=> {
+                                        return <div key={i}
+                                        className={`finger finger${i + 5} ${fingerClick}`}
+                                        style={{animationDelay: e + "s"}}>
+                                        </div>
+                                      })
+                                    }
+                                 </div>
                             </div>
                       </div>
                       <div className="avatarBodyLeft">
@@ -146,6 +178,16 @@ class AboutMe extends React.Component {
                             <div className="leftArm">
                                 <div className="bodyShapeLeft"></div>
                                 <div className="armShadowLeft"></div>
+                                <div className="leftHand">
+                                {
+                                  this.state.finger1.map((e,i)=> {
+                                    return <div key={i}
+                                    className={`finger finger${i} ${fingerClick}`}
+                                    style={{animationDelay: e + "s"}}>
+                                    </div>
+                                  })
+                                }
+                                </div>
                              </div>
                       </div>
                   </div>
