@@ -1093,6 +1093,7 @@ to {opacity: 0}
       left: 23px;
       width: 30px;
       height: 4px;
+    }
       .lipsBottomRight {
         border-bottom: 5px solid map-get($colors, skinColor);
         border-left: 5px solid transparent;
@@ -1241,7 +1242,6 @@ to {opacity: 0}
         }
       }
     }
-  }
   @for $i from 0 through 9  {
   .button#{$i} {left: 75px + (15px * $i);}
   }

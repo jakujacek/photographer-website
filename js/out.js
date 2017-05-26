@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 258);
+/******/ 	return __webpack_require__(__webpack_require__.s = 254);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -795,7 +795,7 @@ exports.__esModule = true;
 exports.default = routerWarning;
 exports._resetWarned = _resetWarned;
 
-var _warning = __webpack_require__(257);
+var _warning = __webpack_require__(253);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -1248,7 +1248,7 @@ module.exports = ReactComponentTreeHook;
 var debugTool = null;
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactDebugTool = __webpack_require__(176);
+  var ReactDebugTool = __webpack_require__(173);
   debugTool = ReactDebugTool;
 }
 
@@ -3027,7 +3027,7 @@ module.exports = DOMLazyTree;
 
 
 
-var ReactRef = __webpack_require__(190);
+var ReactRef = __webpack_require__(187);
 var ReactInstrumentation = __webpack_require__(11);
 
 var warning = __webpack_require__(2);
@@ -3422,16 +3422,16 @@ function formatPattern(pattern, params) {
 
 var _assign = __webpack_require__(4);
 
-var ReactChildren = __webpack_require__(241);
+var ReactChildren = __webpack_require__(238);
 var ReactComponent = __webpack_require__(68);
-var ReactPureComponent = __webpack_require__(246);
-var ReactClass = __webpack_require__(242);
-var ReactDOMFactories = __webpack_require__(243);
+var ReactPureComponent = __webpack_require__(243);
+var ReactClass = __webpack_require__(239);
+var ReactDOMFactories = __webpack_require__(240);
 var ReactElement = __webpack_require__(22);
-var ReactPropTypes = __webpack_require__(244);
-var ReactVersion = __webpack_require__(247);
+var ReactPropTypes = __webpack_require__(241);
+var ReactVersion = __webpack_require__(244);
 
-var onlyChild = __webpack_require__(250);
+var onlyChild = __webpack_require__(247);
 var warning = __webpack_require__(2);
 
 var createElement = ReactElement.createElement;
@@ -4123,7 +4123,7 @@ Object.defineProperty(exports, 'formatPattern', {
   }
 });
 
-var _Router2 = __webpack_require__(225);
+var _Router2 = __webpack_require__(222);
 
 var _Router3 = _interopRequireDefault(_Router2);
 
@@ -4131,19 +4131,19 @@ var _Link2 = __webpack_require__(101);
 
 var _Link3 = _interopRequireDefault(_Link2);
 
-var _IndexLink2 = __webpack_require__(219);
+var _IndexLink2 = __webpack_require__(216);
 
 var _IndexLink3 = _interopRequireDefault(_IndexLink2);
 
-var _withRouter2 = __webpack_require__(238);
+var _withRouter2 = __webpack_require__(235);
 
 var _withRouter3 = _interopRequireDefault(_withRouter2);
 
-var _IndexRedirect2 = __webpack_require__(220);
+var _IndexRedirect2 = __webpack_require__(217);
 
 var _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);
 
-var _IndexRoute2 = __webpack_require__(221);
+var _IndexRoute2 = __webpack_require__(218);
 
 var _IndexRoute3 = _interopRequireDefault(_IndexRoute2);
 
@@ -4151,23 +4151,23 @@ var _Redirect2 = __webpack_require__(102);
 
 var _Redirect3 = _interopRequireDefault(_Redirect2);
 
-var _Route2 = __webpack_require__(223);
+var _Route2 = __webpack_require__(220);
 
 var _Route3 = _interopRequireDefault(_Route2);
 
-var _History2 = __webpack_require__(218);
+var _History2 = __webpack_require__(215);
 
 var _History3 = _interopRequireDefault(_History2);
 
-var _Lifecycle2 = __webpack_require__(222);
+var _Lifecycle2 = __webpack_require__(219);
 
 var _Lifecycle3 = _interopRequireDefault(_Lifecycle2);
 
-var _RouteContext2 = __webpack_require__(224);
+var _RouteContext2 = __webpack_require__(221);
 
 var _RouteContext3 = _interopRequireDefault(_RouteContext2);
 
-var _useRoutes2 = __webpack_require__(237);
+var _useRoutes2 = __webpack_require__(234);
 
 var _useRoutes3 = _interopRequireDefault(_useRoutes2);
 
@@ -4175,13 +4175,13 @@ var _RouterContext2 = __webpack_require__(43);
 
 var _RouterContext3 = _interopRequireDefault(_RouterContext2);
 
-var _RoutingContext2 = __webpack_require__(226);
+var _RoutingContext2 = __webpack_require__(223);
 
 var _RoutingContext3 = _interopRequireDefault(_RoutingContext2);
 
 var _PropTypes3 = _interopRequireDefault(_PropTypes2);
 
-var _match2 = __webpack_require__(235);
+var _match2 = __webpack_require__(232);
 
 var _match3 = _interopRequireDefault(_match2);
 
@@ -4189,15 +4189,15 @@ var _useRouterHistory2 = __webpack_require__(107);
 
 var _useRouterHistory3 = _interopRequireDefault(_useRouterHistory2);
 
-var _applyRouterMiddleware2 = __webpack_require__(228);
+var _applyRouterMiddleware2 = __webpack_require__(225);
 
 var _applyRouterMiddleware3 = _interopRequireDefault(_applyRouterMiddleware2);
 
-var _browserHistory2 = __webpack_require__(229);
+var _browserHistory2 = __webpack_require__(226);
 
 var _browserHistory3 = _interopRequireDefault(_browserHistory2);
 
-var _hashHistory2 = __webpack_require__(233);
+var _hashHistory2 = __webpack_require__(230);
 
 var _hashHistory3 = _interopRequireDefault(_hashHistory2);
 
@@ -4270,7 +4270,7 @@ var _warning = __webpack_require__(13);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _queryString = __webpack_require__(146);
+var _queryString = __webpack_require__(143);
 
 var _runTransitionHook = __webpack_require__(49);
 
@@ -4717,10 +4717,10 @@ module.exports = EventPluginRegistry;
 var _assign = __webpack_require__(4);
 
 var EventPluginRegistry = __webpack_require__(37);
-var ReactEventEmitterMixin = __webpack_require__(180);
+var ReactEventEmitterMixin = __webpack_require__(177);
 var ViewportMetrics = __webpack_require__(92);
 
-var getVendorPrefixedEventName = __webpack_require__(215);
+var getVendorPrefixedEventName = __webpack_require__(212);
 var isEventSupported = __webpack_require__(62);
 
 /**
@@ -5594,7 +5594,7 @@ var _deprecateObjectProperties = __webpack_require__(44);
 
 var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
 
-var _getRouteParams = __webpack_require__(232);
+var _getRouteParams = __webpack_require__(229);
 
 var _getRouteParams2 = _interopRequireDefault(_getRouteParams);
 
@@ -6075,7 +6075,7 @@ module.exports = exports['default'];
 
 
 var DOMLazyTree = __webpack_require__(25);
-var Danger = __webpack_require__(153);
+var Danger = __webpack_require__(150);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(11);
 
@@ -8023,21 +8023,21 @@ var _routerWarning = __webpack_require__(8);
 
 var _routerWarning2 = _interopRequireDefault(_routerWarning);
 
-var _computeChangedRoutes2 = __webpack_require__(230);
+var _computeChangedRoutes2 = __webpack_require__(227);
 
 var _computeChangedRoutes3 = _interopRequireDefault(_computeChangedRoutes2);
 
-var _TransitionUtils = __webpack_require__(227);
+var _TransitionUtils = __webpack_require__(224);
 
-var _isActive2 = __webpack_require__(234);
+var _isActive2 = __webpack_require__(231);
 
 var _isActive3 = _interopRequireDefault(_isActive2);
 
-var _getComponents = __webpack_require__(231);
+var _getComponents = __webpack_require__(228);
 
 var _getComponents2 = _interopRequireDefault(_getComponents);
 
-var _matchRoutes = __webpack_require__(236);
+var _matchRoutes = __webpack_require__(233);
 
 var _matchRoutes2 = _interopRequireDefault(_matchRoutes);
 
@@ -9104,17 +9104,17 @@ var _warning = __webpack_require__(13);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _deepEqual = __webpack_require__(120);
+var _deepEqual = __webpack_require__(119);
 
 var _deepEqual2 = _interopRequireDefault(_deepEqual);
 
 var _PathUtils = __webpack_require__(19);
 
-var _AsyncUtils = __webpack_require__(139);
+var _AsyncUtils = __webpack_require__(136);
 
 var _Actions = __webpack_require__(24);
 
-var _createLocation2 = __webpack_require__(141);
+var _createLocation2 = __webpack_require__(138);
 
 var _createLocation3 = _interopRequireDefault(_createLocation2);
 
@@ -9567,7 +9567,7 @@ module.exports = exports['default'];
 // Therefore we re-export development-only version with all the PropTypes checks here.
 // However if one is migrating to the `prop-types` npm library, they will go through the
 // `index.js` entry point, and it will branch depending on the environment.
-var factory = __webpack_require__(145);
+var factory = __webpack_require__(142);
 module.exports = function(isValidElement) {
   // It is still allowed in 15.5.
   var throwOnDirectAccess = false;
@@ -9895,7 +9895,7 @@ var DOMProperty = __webpack_require__(17);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(11);
 
-var quoteAttributeValueForBrowser = __webpack_require__(216);
+var quoteAttributeValueForBrowser = __webpack_require__(213);
 var warning = __webpack_require__(2);
 
 var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -10499,9 +10499,9 @@ module.exports = ReactHostComponent;
 
 
 
-var ReactDOMSelection = __webpack_require__(171);
+var ReactDOMSelection = __webpack_require__(168);
 
-var containsNode = __webpack_require__(125);
+var containsNode = __webpack_require__(124);
 var focusNode = __webpack_require__(71);
 var getActiveElement = __webpack_require__(72);
 
@@ -10636,12 +10636,12 @@ var React = __webpack_require__(28);
 var ReactBrowserEventEmitter = __webpack_require__(38);
 var ReactCurrentOwner = __webpack_require__(15);
 var ReactDOMComponentTree = __webpack_require__(6);
-var ReactDOMContainerInfo = __webpack_require__(163);
-var ReactDOMFeatureFlags = __webpack_require__(165);
+var ReactDOMContainerInfo = __webpack_require__(160);
+var ReactDOMFeatureFlags = __webpack_require__(162);
 var ReactFeatureFlags = __webpack_require__(86);
 var ReactInstanceMap = __webpack_require__(32);
 var ReactInstrumentation = __webpack_require__(11);
-var ReactMarkupChecksum = __webpack_require__(185);
+var ReactMarkupChecksum = __webpack_require__(182);
 var ReactReconciler = __webpack_require__(26);
 var ReactUpdateQueue = __webpack_require__(57);
 var ReactUpdates = __webpack_require__(14);
@@ -11448,11 +11448,11 @@ module.exports = getTextContentAccessor;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var ReactCompositeComponent = __webpack_require__(160);
+var ReactCompositeComponent = __webpack_require__(157);
 var ReactEmptyComponent = __webpack_require__(85);
 var ReactHostComponent = __webpack_require__(87);
 
-var getNextDebugID = __webpack_require__(249);
+var getNextDebugID = __webpack_require__(246);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
@@ -11696,9 +11696,9 @@ module.exports = setTextContent;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(15);
-var REACT_ELEMENT_TYPE = __webpack_require__(179);
+var REACT_ELEMENT_TYPE = __webpack_require__(176);
 
-var getIteratorFn = __webpack_require__(213);
+var getIteratorFn = __webpack_require__(210);
 var invariant = __webpack_require__(1);
 var KeyEscapeUtils = __webpack_require__(53);
 var warning = __webpack_require__(2);
@@ -12207,7 +12207,7 @@ var _useBasename = __webpack_require__(77);
 
 var _useBasename2 = _interopRequireDefault(_useBasename);
 
-var _createMemoryHistory = __webpack_require__(142);
+var _createMemoryHistory = __webpack_require__(139);
 
 var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 
@@ -12390,7 +12390,7 @@ var ReactCurrentOwner = __webpack_require__(15);
 var ReactComponentTreeHook = __webpack_require__(10);
 var ReactElement = __webpack_require__(22);
 
-var checkReactTypeSpec = __webpack_require__(248);
+var checkReactTypeSpec = __webpack_require__(245);
 
 var canDefineProperty = __webpack_require__(45);
 var getIteratorFn = __webpack_require__(111);
@@ -12709,7 +12709,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(147);
+var _reactDom = __webpack_require__(144);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -12733,7 +12733,7 @@ var _Contact2 = _interopRequireDefault(_Contact);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-__webpack_require__(255);
+__webpack_require__(252);
 document.addEventListener("DOMContentLoaded", function () {
   _reactDom2.default.render(_react2.default.createElement(
     _reactRouter.Router,
@@ -13500,105 +13500,23 @@ exports.default = Template;
 /* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(119)(undefined);
+exports = module.exports = __webpack_require__(255)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "@keyframes headShake {\n  0% {\n    transform: rotate(0); }\n  30% {\n    transform: rotate(-20deg); }\n  100% {\n    transform: rotate(20deg); } }\n\n@keyframes hairShake {\n  0% {\n    transform: rotate(0);\n    transform: translate(0); }\n  30% {\n    transform: rotate(-20deg) translate(-18px, 0px); }\n  100% {\n    transform: rotate(20deg) translate(18px, 0px); } }\n\n@keyframes eyeBlink {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@keyframes buttonClick {\n  from {\n    bottom: 10px; }\n  to {\n    bottom: 0px; } }\n\n@keyframes fingerClick {\n  from {\n    bottom: -11px; }\n  to {\n    bottom: -27px; } }\n\n@keyframes writeMessage {\n  from {\n    width: 0px; } }\n\n@keyframes write2 {\n  0% {\n    width: 0; }\n  50% {\n    width: 0; }\n  100% {\n    width: 100%; } }\n\n@keyframes writeMessage2 {\n  from {\n    width: 0px; } }\n\n@keyframes write3 {\n  0% {\n    width: 0; }\n  50% {\n    width: 0; }\n  100% {\n    width: 100%; } }\n\n.aboutMe {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  background-color: beige; }\n  .aboutMe .logo {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 70px;\n    width: 100%; }\n    .aboutMe .logo .logoLink {\n      text-decoration: none;\n      color: #555;\n      font-family: Channel; }\n  .aboutMe .avatarBox {\n    background-color: beige;\n    align-self: flex-start;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    position: relative; }\n    .aboutMe .avatarBox .message {\n      position: absolute;\n      color: #555; }\n    .aboutMe .avatarBox .pot {\n      position: absolute;\n      right: 0; }\n      .aboutMe .avatarBox .pot .cactus {\n        position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusShadow {\n          position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusArmLeft {\n          position: absolute;\n          transform: rotate(-35deg);\n          z-index: 1; }\n          .aboutMe .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusArmRight {\n          position: absolute;\n          transform: rotate(45deg); }\n          .aboutMe .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            position: absolute; }\n    .aboutMe .avatarBox .head {\n      z-index: 3;\n      background-color: #FDE0AA;\n      position: relative; }\n      .aboutMe .avatarBox .head .beard1 {\n        position: absolute;\n        bottom: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .head .beard2 {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .head .eye1 {\n        animation-name: eyeBlink;\n        animation-duration: 0.3s;\n        animation-delay: 1s;\n        border-radius: 50%;\n        position: absolute;\n        background-color: black;\n        z-index: 2; }\n      .aboutMe .avatarBox .head .eye2 {\n        border-radius: 50%;\n        position: absolute;\n        background-color: black;\n        z-index: 2; }\n      .aboutMe .avatarBox .head .glasses {\n        position: absolute; }\n        .aboutMe .avatarBox .head .glasses .glassLeft {\n          position: absolute; }\n        .aboutMe .avatarBox .head .glasses .glassRight {\n          position: absolute; }\n      .aboutMe .avatarBox .head .eyeBrow1 {\n        position: absolute;\n        background-color: #472B1F;\n        z-index: 2;\n        transform: skew(-70deg, 183deg); }\n      .aboutMe .avatarBox .head .eyeBrow2 {\n        position: absolute;\n        background-color: #472B1F;\n        z-index: 2;\n        transform: skew(70deg, -5deg); }\n      .aboutMe .avatarBox .head .earLeft {\n        position: absolute;\n        background-color: #FDE0AA; }\n        .aboutMe .avatarBox .head .earLeft .earShell {\n          position: absolute;\n          background-color: #E4BB86; }\n      .aboutMe .avatarBox .head .earRight {\n        position: absolute;\n        background-color: #FDE0AA; }\n        .aboutMe .avatarBox .head .earRight .earShell {\n          position: absolute;\n          background-color: #E4BB86; }\n    .aboutMe .avatarBox .hair {\n      position: absolute;\n      z-index: 4;\n      background-color: #472B1F; }\n      .aboutMe .avatarBox .hair .hairSkin {\n        position: absolute;\n        width: 0;\n        height: 0;\n        transform: rotate(-22deg); }\n      .aboutMe .avatarBox .hair .hairBackground1 {\n        position: absolute;\n        top: 0px;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .hair .hairBackground2 {\n        position: absolute;\n        top: 0px;\n        left: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .hair .hair1 {\n        position: absolute;\n        width: 0;\n        transform: rotate(40deg) skewY(30deg); }\n      .aboutMe .avatarBox .hair .hair2 {\n        position: absolute;\n        left: 0px;\n        width: 0;\n        height: 0;\n        transform: rotate(40deg); }\n      .aboutMe .avatarBox .hair .hair3 {\n        position: absolute;\n        transform: rotate(157deg) skewY(-30deg); }\n      .aboutMe .avatarBox .hair .hair4 {\n        position: absolute;\n        width: 0;\n        height: 0;\n        transform: rotate(-28deg); }\n    .aboutMe .avatarBox .headAnimation {\n      animation-fill-mode: forwards;\n      animation-direction: alternate;\n      animation-timing-function: linear;\n      animation-iteration-count: infinite;\n      animation-delay: 2s;\n      animation-name: headShake;\n      animation-duration: 1s; }\n    .aboutMe .avatarBox .hairAnimation {\n      animation-fill-mode: forwards;\n      animation-direction: alternate;\n      animation-timing-function: linear;\n      animation-iteration-count: infinite;\n      animation-delay: 2s;\n      animation-name: hairShake;\n      animation-duration: 1s; }\n    .aboutMe .avatarBox .mouth {\n      position: absolute;\n      z-index: 2;\n      background-color: #CA9A82; }\n      .aboutMe .avatarBox .mouth .lipsBottomRight {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsTopRight {\n        position: absolute;\n        top: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsTopLeft {\n        position: absolute;\n        top: 0;\n        left: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsBottomLeft {\n        position: absolute;\n        bottom: 0;\n        left: 0;\n        width: 0;\n        height: 0; }\n    .aboutMe .avatarBox .shadow {\n      position: absolute;\n      border-radius: 50% 0% 0% 35%;\n      z-index: 1;\n      width: 0; }\n    .aboutMe .avatarBox .nose1 {\n      position: absolute;\n      border-radius: 50% 0 0 0;\n      transform: skew(0deg, 140deg); }\n    .aboutMe .avatarBox .keyboard {\n      position: absolute;\n      background-color: #AFAB9D;\n      z-index: 1; }\n    .aboutMe .avatarBox .keyButton {\n      position: absolute; }\n    .aboutMe .avatarBox .buttonAnimation {\n      animation-name: buttonClick;\n      animation-duration: 0.07s;\n      animation-iteration-count: 1;\n      animation-direction: alternate;\n      animation-timing-function: ease-in; }\n    .aboutMe .avatarBox .avatarBodyRight {\n      position: absolute;\n      background-color: #113A79; }\n      .aboutMe .avatarBox .avatarBodyRight .collar {\n        position: absolute;\n        top: 0;\n        z-index: 3; }\n      .aboutMe .avatarBox .avatarBodyRight .rightArm {\n        position: absolute;\n        z-index: 1; }\n        .aboutMe .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          position: absolute;\n          top: 0;\n          width: 0;\n          height: 0;\n          left: 0; }\n        .aboutMe .avatarBox .avatarBodyRight .rightArm .rightHand {\n          position: absolute; }\n          .aboutMe .avatarBox .avatarBodyRight .rightArm .rightHand .finger {\n            position: absolute; }\n          .aboutMe .avatarBox .avatarBodyRight .rightArm .rightHand .fingerClick {\n            animation-name: fingerClick;\n            animation-duration: 0.09s;\n            animation-iteration-count: 1;\n            animation-direction: alternate;\n            animation-timing-function: ease-in; }\n    .aboutMe .avatarBox .neck {\n      z-index: 2;\n      position: absolute;\n      background-color: #E4BB86; }\n    .aboutMe .avatarBox .avatarBodyLeft {\n      position: absolute;\n      background-color: #134E86; }\n      .aboutMe .avatarBox .avatarBodyLeft .collar {\n        position: absolute;\n        z-index: 3;\n        top: 0; }\n      .aboutMe .avatarBox .avatarBodyLeft .leftArm {\n        position: absolute;\n        z-index: 1; }\n        .aboutMe .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          position: absolute;\n          top: 0;\n          width: 0;\n          height: 0; }\n        .aboutMe .avatarBox .avatarBodyLeft .leftArm .leftHand {\n          position: absolute; }\n          .aboutMe .avatarBox .avatarBodyLeft .leftArm .leftHand .finger {\n            position: absolute; }\n          .aboutMe .avatarBox .avatarBodyLeft .leftArm .leftHand .fingerClick {\n            animation-name: fingerClick;\n            animation-duration: 0.09s;\n            animation-iteration-count: 1;\n            animation-direction: alternate;\n            animation-timing-function: ease-in; }\n\n@media (min-width: 300px) {\n  .avatarBox {\n    width: 300px;\n    height: 300px; }\n    .avatarBox .message {\n      left: 45px;\n      overflow: hidden;\n      font-family: \"Courier\";\n      white-space: nowrap;\n      font-size: 13px;\n      width: auto; }\n    .avatarBox .writeMessage {\n      animation: writeMessage 3s steps(60, end); }\n    .avatarBox .write2 {\n      animation: write2 6s steps(60, end); }\n    .avatarBox p:nth-child(1) {\n      top: 10px;\n      width: 17em; }\n    .avatarBox p:nth-child(2) {\n      width: 18em;\n      top: 30px; }\n    .avatarBox .pot {\n      border-top: 30px solid #E8B882;\n      border-left: 10px solid transparent;\n      border-right: 10px solid transparent;\n      width: 30px;\n      top: 150px;\n      z-index: 0; }\n      .avatarBox .pot:after {\n        content: \"\";\n        position: absolute;\n        width: 45px;\n        height: 7px;\n        bottom: -7px;\n        background-color: white;\n        right: -20px; }\n      .avatarBox .pot:before {\n        content: \"\";\n        position: absolute;\n        width: 40px;\n        height: 5px;\n        bottom: 30px;\n        background-color: #E8B882;\n        right: -15px; }\n      .avatarBox .pot .potShadow {\n        position: absolute;\n        bottom: 26px;\n        width: 30px;\n        border-top: 4px solid #B9945F;\n        border-left: 1px solid beige;\n        border-right: 1px solid beige;\n        background-color: grey;\n        left: -10px; }\n      .avatarBox .pot .cactus {\n        left: 0px;\n        width: 14px;\n        height: 45px;\n        bottom: 35px;\n        background-color: #2A6034;\n        border-radius: 12% 12% 0 0; }\n        .avatarBox .pot .cactus .cactusShadow {\n          left: 0px;\n          height: 45px;\n          width: 7px;\n          background-color: #377B44; }\n        .avatarBox .pot .cactus .cactusArmLeft {\n          width: 15px;\n          height: 20px;\n          left: -12px; }\n          .avatarBox .pot .cactus .cactusArmLeft:after {\n            content: \"\";\n            border-top: 14px solid #2A6034;\n            border-bottom: 14px solid #2A6034;\n            border-left: 13px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 50% 50% 0 50%; }\n          .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute;\n            width: 50%;\n            height: 40px;\n            background-color: #377B44;\n            border-radius: 30% 0 30% 50%;\n            top: -13px; }\n        .avatarBox .pot .cactus .cactusArmRight {\n          width: 12px;\n          height: 10px;\n          right: -13px;\n          transform: skew(-10deg, 100deg);\n          top: 10px; }\n          .avatarBox .pot .cactus .cactusArmRight:after {\n            content: \"\";\n            border-top: 10px solid #2A6034;\n            border-bottom: 10px solid #2A6034;\n            border-left: 10px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 20% 50% 50% 50%; }\n          .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            width: 50%;\n            height: 30px;\n            background-color: #377B44;\n            border-radius: 0 30% 30% 50%;\n            right: 0;\n            top: -10px; }\n    .avatarBox .head {\n      width: 77px;\n      height: 65px; }\n      .avatarBox .head:after {\n        content: \"\";\n        position: absolute;\n        bottom: -25px;\n        left: 0;\n        width: 0;\n        height: 0;\n        border-left: 38.5px solid transparent;\n        border-right: 38.5px solid transparent;\n        border-top: 25px solid #FDE0AA; }\n      .avatarBox .head .beard1 {\n        border-bottom: 30px solid beige;\n        border-right: 30px solid transparent; }\n      .avatarBox .head .beard2 {\n        border-bottom: 30px solid beige;\n        border-left: 30px solid transparent; }\n      .avatarBox .head .eye1 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        left: 15px; }\n      .avatarBox .head .eye2 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        right: 15px; }\n      .avatarBox .head .glasses {\n        width: 100%;\n        height: 20px;\n        top: 17px;\n        z-index: 5; }\n        .avatarBox .head .glasses .glassLeft {\n          left: 0;\n          width: 45%;\n          height: 100%;\n          border: 3px solid #0E3A5D;\n          border-radius: 10% 10% 50% 20%; }\n          .avatarBox .head .glasses .glassLeft:after {\n            content: \"\";\n            position: absolute;\n            width: 12px;\n            height: 4px;\n            background-color: #0E3A5D;\n            top: -2px;\n            right: -12px; }\n        .avatarBox .head .glasses .glassRight {\n          right: 0;\n          width: 45%;\n          height: 100%;\n          border: 3px solid #0E3A5D;\n          border-radius: 10% 10% 20% 50%; }\n      .avatarBox .head .eyeBrow1 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        left: 10px; }\n      .avatarBox .head .eyeBrow2 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        right: 10px; }\n      .avatarBox .head .earLeft {\n        width: 10px;\n        height: 20px;\n        left: -10px;\n        top: 15px; }\n        .avatarBox .head .earLeft .earShell {\n          width: 5px;\n          height: 10px;\n          right: 0px;\n          top: 5px; }\n      .avatarBox .head .earRight {\n        width: 10px;\n        height: 20px;\n        right: -10px;\n        top: 15px; }\n        .avatarBox .head .earRight .earShell {\n          width: 5px;\n          height: 10px;\n          right: 5px;\n          top: 5px; }\n    .avatarBox .hair {\n      top: 70px;\n      width: 77px;\n      height: 55px; }\n      .avatarBox .hair .hairSkin {\n        top: 28px;\n        border-top: 20px solid transparent;\n        border-bottom: 16px solid transparent;\n        border-right: 40px solid #FDE0AA; }\n      .avatarBox .hair .hairBackground1 {\n        border-top: 20px solid beige;\n        border-left: 25px solid transparent; }\n      .avatarBox .hair .hairBackground2 {\n        border-top: 20px solid beige;\n        border-right: 15px solid transparent; }\n      .avatarBox .hair .hair1 {\n        top: 13px;\n        left: -6.5px;\n        height: 35px;\n        border-top: 0px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 25.5px solid #5A352A; }\n      .avatarBox .hair .hair2 {\n        top: -10px;\n        left: 0px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #5A352A; }\n      .avatarBox .hair .hair3 {\n        top: 7px;\n        right: 6px;\n        height: 33px;\n        border-top: 12px solid transparent;\n        border-bottom: -10px #170F08;\n        border-left: 10px solid transparent;\n        border-right: 26px solid #170F08; }\n      .avatarBox .hair .hair4 {\n        top: 8px;\n        left: -13px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #503026; }\n    .avatarBox .mouth {\n      bottom: 0px;\n      left: 23px;\n      width: 30px;\n      height: 4px; }\n      .avatarBox .mouth .lipsBottomRight {\n        border-bottom: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopRight {\n        border-top: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopLeft {\n        border-top: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n      .avatarBox .mouth .lipsBottomLeft {\n        border-bottom: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n    .avatarBox .shadow {\n      top: 1px;\n      right: 0;\n      border-left: 15px solid #E4BB86;\n      border-top: 0px solid transparent;\n      border-bottom: 10px solid transparent;\n      height: 74px; }\n    .avatarBox .nose1 {\n      bottom: 20px;\n      left: 43px;\n      width: 23px;\n      border-top: 31px solid #EECB9B;\n      border-left: 0px solid transparent;\n      border-right: 10px solid transparent; }\n    .avatarBox .keyboard {\n      width: 150px;\n      height: 10px;\n      bottom: 0; }\n    .avatarBox .keyButton {\n      z-index: 1;\n      bottom: 10px;\n      width: 15px;\n      border-bottom: 10px solid grey;\n      border-left: 3px solid transparent;\n      border-right: 3px solid transparent; }\n    .avatarBox .neck {\n      z-index: 0;\n      width: 40px;\n      height: 70px;\n      bottom: 80px; }\n    .avatarBox .avatarBodyRight {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 150px; }\n      .avatarBox .avatarBodyRight .collar {\n        left: 0;\n        border-bottom: 20px solid #113A79;\n        border-left: 20px solid transparent; }\n      .avatarBox .avatarBodyRight .rightArm {\n        border-radius: 0 20px 10px 0;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #113A79;\n        bottom: 24.5px;\n        right: -24.1px; }\n        .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          border-top: 40px solid beige;\n          border-left: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyRight .rightArm .armShadowRight {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 0 30px 20px 0; }\n        .avatarBox .avatarBodyRight .rightArm .rightHand {\n          width: 25px;\n          border-bottom: 15px solid #E4BB86;\n          border-left: 3px solid transparent;\n          border-right: 3px solid transparent;\n          bottom: -3px; }\n          .avatarBox .avatarBodyRight .rightArm .rightHand .finger {\n            bottom: -16px;\n            width: 8px;\n            border-top: 8px solid #FDE0AA;\n            border-left: 1px solid transparent;\n            border-right: 1px solid transparent;\n            border-radius: 20% 20% 40% 40%; }\n    .avatarBox .avatarBodyLeft {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 110px; }\n      .avatarBox .avatarBodyLeft .collar {\n        right: 0;\n        border-bottom: 20px solid #134E86;\n        border-right: 20px solid transparent; }\n      .avatarBox .avatarBodyLeft .leftArm {\n        border-radius: 20px 0 0 10px;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #2E6085;\n        bottom: 24.5px;\n        left: -24.1px; }\n        .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          border-top: 40px solid beige;\n          border-right: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyLeft .leftArm .armShadowLeft {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 30px 0 0 20px; }\n        .avatarBox .avatarBodyLeft .leftArm .leftHand {\n          width: 25px;\n          border-bottom: 15px solid #E4BB86;\n          border-left: 3px solid transparent;\n          border-right: 3px solid transparent;\n          bottom: -3px; }\n          .avatarBox .avatarBodyLeft .leftArm .leftHand .finger {\n            bottom: -17px;\n            width: 8px;\n            border-top: 8px solid #FDE0AA;\n            border-left: 1px solid transparent;\n            border-right: 1px solid transparent;\n            border-radius: 20% 20% 40% 40%; }\n  .button0 {\n    left: 75px; }\n  .button1 {\n    left: 90px; }\n  .button2 {\n    left: 105px; }\n  .button3 {\n    left: 120px; }\n  .button4 {\n    left: 135px; }\n  .button5 {\n    left: 150px; }\n  .button6 {\n    left: 165px; }\n  .button7 {\n    left: 180px; }\n  .button8 {\n    left: 195px; }\n  .button9 {\n    left: 210px; }\n  .finger0 {\n    left: -9px; }\n  .finger1 {\n    left: 0px; }\n  .finger2 {\n    left: 9px; }\n  .finger3 {\n    left: 18px; }\n  .finger4 {\n    left: 27px; }\n  .finger5 {\n    right: -9px; }\n  .finger6 {\n    right: 0px; }\n  .finger7 {\n    right: 9px; }\n  .finger8 {\n    right: 18px; }\n  .finger9 {\n    right: 27px; } }\n\n@media (min-width: 1024px) {\n  .avatarBox {\n    width: 300px;\n    height: 300px; }\n    .avatarBox .message {\n      left: 45px;\n      overflow: hidden;\n      font-family: \"Courier\";\n      white-space: nowrap;\n      font-size: 13px;\n      width: auto; }\n    .avatarBox .writeMessage {\n      animation: writeMessage 3s steps(60, end); }\n    .avatarBox .write2 {\n      animation: write2 6s steps(60, end); }\n    .avatarBox p:nth-child(1) {\n      top: 10px;\n      width: 17em; }\n    .avatarBox p:nth-child(2) {\n      width: 18em;\n      top: 30px; }\n    .avatarBox .pot {\n      border-top: 30px solid #E8B882;\n      border-left: 10px solid transparent;\n      border-right: 10px solid transparent;\n      width: 30px;\n      top: 150px;\n      z-index: 0; }\n      .avatarBox .pot:after {\n        content: \"\";\n        position: absolute;\n        width: 45px;\n        height: 7px;\n        bottom: -7px;\n        background-color: white;\n        right: -20px; }\n      .avatarBox .pot:before {\n        content: \"\";\n        position: absolute;\n        width: 40px;\n        height: 5px;\n        bottom: 30px;\n        background-color: #E8B882;\n        right: -15px; }\n      .avatarBox .pot .potShadow {\n        position: absolute;\n        bottom: 26px;\n        width: 30px;\n        border-top: 4px solid #B9945F;\n        border-left: 1px solid beige;\n        border-right: 1px solid beige;\n        background-color: grey;\n        left: -10px; }\n      .avatarBox .pot .cactus {\n        left: 0px;\n        width: 14px;\n        height: 45px;\n        bottom: 35px;\n        background-color: #2A6034;\n        border-radius: 12% 12% 0 0; }\n        .avatarBox .pot .cactus .cactusShadow {\n          left: 0px;\n          height: 45px;\n          width: 7px;\n          background-color: #377B44; }\n        .avatarBox .pot .cactus .cactusArmLeft {\n          width: 15px;\n          height: 20px;\n          left: -12px; }\n          .avatarBox .pot .cactus .cactusArmLeft:after {\n            content: \"\";\n            border-top: 14px solid #2A6034;\n            border-bottom: 14px solid #2A6034;\n            border-left: 13px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 50% 50% 0 50%; }\n          .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute;\n            width: 50%;\n            height: 40px;\n            background-color: #377B44;\n            border-radius: 30% 0 30% 50%;\n            top: -13px; }\n        .avatarBox .pot .cactus .cactusArmRight {\n          width: 12px;\n          height: 10px;\n          right: -13px;\n          transform: skew(-10deg, 100deg);\n          top: 10px; }\n          .avatarBox .pot .cactus .cactusArmRight:after {\n            content: \"\";\n            border-top: 10px solid #2A6034;\n            border-bottom: 10px solid #2A6034;\n            border-left: 10px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 20% 50% 50% 50%; }\n          .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            width: 50%;\n            height: 30px;\n            background-color: #377B44;\n            border-radius: 0 30% 30% 50%;\n            right: 0;\n            top: -10px; }\n    .avatarBox .head {\n      width: 77px;\n      height: 65px; }\n      .avatarBox .head:after {\n        content: \"\";\n        position: absolute;\n        bottom: -25px;\n        left: 0;\n        width: 0;\n        height: 0;\n        border-left: 38.5px solid transparent;\n        border-right: 38.5px solid transparent;\n        border-top: 25px solid #FDE0AA; }\n      .avatarBox .head .beard1 {\n        border-bottom: 30px solid beige;\n        border-right: 30px solid transparent; }\n      .avatarBox .head .beard2 {\n        border-bottom: 30px solid beige;\n        border-left: 30px solid transparent; }\n      .avatarBox .head .eye1 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        left: 15px; }\n      .avatarBox .head .eye2 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        right: 15px; }\n      .avatarBox .head .glasses {\n        width: 100%;\n        height: 20px;\n        top: 17px;\n        z-index: 5; }\n        .avatarBox .head .glasses .glassLeft {\n          left: 0;\n          width: 45%;\n          height: 100%;\n          border: 3px solid #0E3A5D;\n          border-radius: 10% 10% 50% 20%; }\n          .avatarBox .head .glasses .glassLeft:after {\n            content: \"\";\n            position: absolute;\n            width: 12px;\n            height: 4px;\n            background-color: #0E3A5D;\n            top: -2px;\n            right: -12px; }\n        .avatarBox .head .glasses .glassRight {\n          right: 0;\n          width: 45%;\n          height: 100%;\n          border: 3px solid #0E3A5D;\n          border-radius: 10% 10% 20% 50%; }\n      .avatarBox .head .eyeBrow1 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        left: 10px; }\n      .avatarBox .head .eyeBrow2 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        right: 10px; }\n      .avatarBox .head .earLeft {\n        width: 10px;\n        height: 20px;\n        left: -10px;\n        top: 15px; }\n        .avatarBox .head .earLeft .earShell {\n          width: 5px;\n          height: 10px;\n          right: 0px;\n          top: 5px; }\n      .avatarBox .head .earRight {\n        width: 10px;\n        height: 20px;\n        right: -10px;\n        top: 15px; }\n        .avatarBox .head .earRight .earShell {\n          width: 5px;\n          height: 10px;\n          right: 5px;\n          top: 5px; }\n    .avatarBox .hair {\n      top: 70px;\n      width: 77px;\n      height: 55px; }\n      .avatarBox .hair .hairSkin {\n        top: 28px;\n        border-top: 20px solid transparent;\n        border-bottom: 16px solid transparent;\n        border-right: 40px solid #FDE0AA; }\n      .avatarBox .hair .hairBackground1 {\n        border-top: 20px solid beige;\n        border-left: 25px solid transparent; }\n      .avatarBox .hair .hairBackground2 {\n        border-top: 20px solid beige;\n        border-right: 15px solid transparent; }\n      .avatarBox .hair .hair1 {\n        top: 13px;\n        left: -6.5px;\n        height: 35px;\n        border-top: 0px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 25.5px solid #5A352A; }\n      .avatarBox .hair .hair2 {\n        top: -10px;\n        left: 0px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #5A352A; }\n      .avatarBox .hair .hair3 {\n        top: 7px;\n        right: 6px;\n        height: 33px;\n        border-top: 12px solid transparent;\n        border-bottom: -10px #170F08;\n        border-left: 10px solid transparent;\n        border-right: 26px solid #170F08; }\n      .avatarBox .hair .hair4 {\n        top: 8px;\n        left: -13px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #503026; }\n    .avatarBox .mouth {\n      bottom: 0px;\n      left: 23px;\n      width: 30px;\n      height: 4px; }\n      .avatarBox .mouth .lipsBottomRight {\n        border-bottom: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopRight {\n        border-top: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopLeft {\n        border-top: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n      .avatarBox .mouth .lipsBottomLeft {\n        border-bottom: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n    .avatarBox .shadow {\n      top: 1px;\n      right: 0;\n      border-left: 15px solid #E4BB86;\n      border-top: 0px solid transparent;\n      border-bottom: 10px solid transparent;\n      height: 74px; }\n    .avatarBox .nose1 {\n      bottom: 20px;\n      left: 43px;\n      width: 23px;\n      border-top: 31px solid #EECB9B;\n      border-left: 0px solid transparent;\n      border-right: 10px solid transparent; }\n    .avatarBox .keyboard {\n      width: 150px;\n      height: 10px;\n      bottom: 0; }\n    .avatarBox .keyButton {\n      z-index: 1;\n      bottom: 10px;\n      width: 15px;\n      border-bottom: 10px solid grey;\n      border-left: 3px solid transparent;\n      border-right: 3px solid transparent; }\n    .avatarBox .neck {\n      z-index: 0;\n      width: 40px;\n      height: 70px;\n      bottom: 80px; }\n    .avatarBox .avatarBodyRight {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 150px; }\n      .avatarBox .avatarBodyRight .collar {\n        left: 0;\n        border-bottom: 20px solid #113A79;\n        border-left: 20px solid transparent; }\n      .avatarBox .avatarBodyRight .rightArm {\n        border-radius: 0 20px 10px 0;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #113A79;\n        bottom: 24.5px;\n        right: -24.1px; }\n        .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          border-top: 40px solid beige;\n          border-left: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyRight .rightArm .armShadowRight {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 0 30px 20px 0; }\n        .avatarBox .avatarBodyRight .rightArm .rightHand {\n          width: 25px;\n          border-bottom: 15px solid #E4BB86;\n          border-left: 3px solid transparent;\n          border-right: 3px solid transparent;\n          bottom: -3px; }\n          .avatarBox .avatarBodyRight .rightArm .rightHand .finger {\n            bottom: -16px;\n            width: 8px;\n            border-top: 8px solid #FDE0AA;\n            border-left: 1px solid transparent;\n            border-right: 1px solid transparent;\n            border-radius: 20% 20% 40% 40%; }\n    .avatarBox .avatarBodyLeft {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 110px; }\n      .avatarBox .avatarBodyLeft .collar {\n        right: 0;\n        border-bottom: 20px solid #134E86;\n        border-right: 20px solid transparent; }\n      .avatarBox .avatarBodyLeft .leftArm {\n        border-radius: 20px 0 0 10px;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #2E6085;\n        bottom: 24.5px;\n        left: -24.1px; }\n        .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          border-top: 40px solid beige;\n          border-right: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyLeft .leftArm .armShadowLeft {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 30px 0 0 20px; }\n        .avatarBox .avatarBodyLeft .leftArm .leftHand {\n          width: 25px;\n          border-bottom: 15px solid #E4BB86;\n          border-left: 3px solid transparent;\n          border-right: 3px solid transparent;\n          bottom: -3px; }\n          .avatarBox .avatarBodyLeft .leftArm .leftHand .finger {\n            bottom: -17px;\n            width: 8px;\n            border-top: 8px solid #FDE0AA;\n            border-left: 1px solid transparent;\n            border-right: 1px solid transparent;\n            border-radius: 20% 20% 40% 40%; }\n  .button0 {\n    left: 75px; }\n  .button1 {\n    left: 90px; }\n  .button2 {\n    left: 105px; }\n  .button3 {\n    left: 120px; }\n  .button4 {\n    left: 135px; }\n  .button5 {\n    left: 150px; }\n  .button6 {\n    left: 165px; }\n  .button7 {\n    left: 180px; }\n  .button8 {\n    left: 195px; }\n  .button9 {\n    left: 210px; }\n  .finger0 {\n    left: -9px; }\n  .finger1 {\n    left: 0px; }\n  .finger2 {\n    left: 9px; }\n  .finger3 {\n    left: 18px; }\n  .finger4 {\n    left: 27px; }\n  .finger5 {\n    right: -9px; }\n  .finger6 {\n    right: 0px; }\n  .finger7 {\n    right: 9px; }\n  .finger8 {\n    right: 18px; }\n  .finger9 {\n    right: 27px; } }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.contact {\n  width: 100%;\n  height: 100%;\n  background-color: beige;\n  display: flex;\n  z-index: 0;\n  position: relative;\n  justify-content: center; }\n  .contact .opacityImage {\n    opacity: 0.8;\n    background-image: url(" + __webpack_require__(137) + ");\n    background-size: cover;\n    background-position: center;\n    background-repeat: no-repeat;\n    width: 100%;\n    height: 100%;\n    z-index: -1;\n    position: absolute; }\n  .contact .logo {\n    position: absolute;\n    top: 1rem;\n    font-size: 1rem;\n    width: 100%;\n    display: flex;\n    align-self: center;\n    justify-content: center; }\n    .contact .logo .logoLink {\n      text-decoration: none;\n      color: #555;\n      font-family: Channel; }\n  .contact .error ul {\n    list-style-type: none; }\n  .contact .success {\n    list-style-type: none; }\n  .contact .book {\n    display: flex;\n    align-self: center;\n    justify-content: center; }\n    .contact .book .contactTitle {\n      align-self: center;\n      text-align: center;\n      color: #555;\n      width: 100%;\n      height: 100%; }\n      .contact .book .contactTitle .title {\n        font-family: 'Alegreya SC', serif;\n        font-weight: 100;\n        text-align: center;\n        width: 100%;\n        align-self: center; }\n      .contact .book .contactTitle .lorem {\n        color: black;\n        font-size: 14px;\n        font-family: 'Alegreya SC', serif;\n        text-align: center;\n        width: 60%;\n        align-self: center;\n        z-index: 2;\n        width: 100%; }\n    .contact .book .form {\n      height: 100%;\n      z-index: 1;\n      background-color: white;\n      align-self: center;\n      width: 100%;\n      display: flex;\n      flex-direction: column;\n      border: 1px solid #A0947E;\n      justify-content: center;\n      align-items: center;\n      font-family: 'Alegreya SC', serif; }\n      .contact .book .form .formInput {\n        width: 80%;\n        text-transform: uppercase;\n        z-index: 1; }\n      .contact .book .form input, .contact .book .form textarea {\n        color: black;\n        font-family: 'Alegreya SC', serif;\n        border: 1px solid #DDC59C;\n        margin: 0.3rem 0; }\n        .contact .book .form input:-ms-input-placeholder, .contact .book .form textarea:-ms-input-placeholder {\n          color: #967C50; }\n        .contact .book .form input:-moz-placeholder, .contact .book .form textarea:-moz-placeholder {\n          color: #967C50; }\n        .contact .book .form input::-webkit-input-placeholder, .contact .book .form textarea::-webkit-input-placeholder {\n          color: #967C50; }\n        .contact .book .form input::-moz-placeholder, .contact .book .form textarea::-moz-placeholder {\n          color: #967C50; }\n      .contact .book .form .formMessage {\n        text-transform: uppercase;\n        resize: none;\n        width: 80%; }\n      .contact .book .form .submitButton {\n        text-transform: uppercase;\n        width: 80%;\n        background-color: #967C50;\n        border: 1px solid transparent;\n        color: white;\n        outline: 0; }\n\n@media only screen and (min-device-width: 320px) and (orientation: landscape) {\n  .contact {\n    flex-direction: column;\n    justify-content: center; }\n    .contact .book {\n      align-items: center;\n      width: 80%;\n      position: absolute;\n      bottom: 2%;\n      height: 75vh; }\n      .contact .book .contactTitle {\n        border: 1px solid #A0947E;\n        flex-direction: column;\n        display: flex;\n        background-color: white;\n        justify-content: center;\n        flex: 1; }\n        .contact .book .contactTitle .text {\n          font-size: 20px; }\n        .contact .book .contactTitle .lorem {\n          font-size: 12px; }\n      .contact .book .form {\n        font-size: 14px;\n        flex: 1; }\n        .contact .book .form .formInput {\n          height: 2rem; }\n        .contact .book .form .formMessage {\n          height: 7rem; }\n        .contact .book .form .submitButton {\n          height: 3rem; } }\n\n@media only screen and (min-device-width: 320px) and (orientation: portrait) {\n  .contact {\n    flex-direction: column;\n    flex-wrap: wrap; }\n    .contact .book {\n      width: 90%;\n      flex-wrap: wrap; }\n      .contact .book .contactTitle {\n        border: 0.5rem solid transparent; }\n        .contact .book .contactTitle .text {\n          font-size: 20px; }\n        .contact .book .contactTitle .lorem {\n          font-size: 12px; }\n      .contact .book .form {\n        font-size: 14px;\n        height: 70vh; }\n        .contact .book .form .formInput {\n          height: 2.5rem; }\n        .contact .book .form .formMessage {\n          height: 7rem; }\n        .contact .book .form .submitButton {\n          height: 3rem; } }\n\n@media only screen and (min-width: 700px) and (orientation: portrait) {\n  .contact {\n    flex-direction: column;\n    flex-wrap: wrap; }\n    .contact .book {\n      width: 80%;\n      flex-wrap: wrap; }\n      .contact .book .contactTitle {\n        border: 1rem solid transparent; }\n        .contact .book .contactTitle .title {\n          font-size: 27px; }\n      .contact .book .form {\n        font-size: 20px;\n        height: 70vh; }\n        .contact .book .form .formInput {\n          height: 4rem; }\n        .contact .book .form .formMessage {\n          height: 10rem; }\n        .contact .book .form .submitButton {\n          height: 4rem; } }\n\n@media only screen and (min-device-width: 1000px) and (orientation: landscape) {\n  .contact {\n    flex-direction: column;\n    justify-content: center; }\n    .contact .book {\n      align-items: center;\n      width: 70%;\n      position: absolute;\n      bottom: 10%;\n      height: 70vh; }\n      .contact .book .contactTitle {\n        border: 1px solid #A0947E;\n        flex-direction: column;\n        display: flex;\n        background-color: white;\n        justify-content: center;\n        flex: 1; }\n        .contact .book .contactTitle .title {\n          font-size: 27px; }\n      .contact .book .form {\n        font-size: 14px;\n        flex: 1; }\n        .contact .book .form .formInput {\n          height: 3rem; }\n        .contact .book .form .formMessage {\n          height: 12rem; }\n        .contact .book .form .submitButton {\n          height: 3rem; } }\n\n@keyframes menuslide {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes vanish {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@font-face {\n  font-family: Channel;\n  src: url(" + __webpack_require__(256) + "); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n@keyframes slideUp {\n  from {\n    bottom: -50vh; }\n  to {\n    top: 0; } }\n\n.main-width {\n  width: 100%;\n  height: 100vh; }\n  .main-width .boxAnimation {\n    animation-name: slideUp;\n    animation-duration: 0.5s; }\n  .main-width .box {\n    width: 100%;\n    height: 50vh;\n    justify-content: flex-start;\n    align-items: flex-start;\n    flex-wrap: wrap;\n    z-index: 0; }\n    .main-width .box .boxImg {\n      height: 50vh;\n      width: 100%;\n      object-fit: cover; }\n  .main-width #menu {\n    width: auto;\n    height: 100vh;\n    display: flex;\n    justify-content: flex-end;\n    flex-wrap: wrap; }\n    .main-width #menu .slider {\n      width: auto;\n      height: 100vh;\n      z-index: 0;\n      top: 0;\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n      flex-wrap: wrap;\n      align-items: center; }\n      .main-width #menu .slider .imgSlider {\n        width: 100%;\n        height: 100vh;\n        background-image: url(" + __webpack_require__(138) + ");\n        background-repeat: no-repeat;\n        position: absolute;\n        background-size: cover;\n        background-position: left;\n        display: inline-block; }\n      .main-width #menu .slider .logo {\n        width: 100%;\n        height: 70px;\n        font-family: Channel;\n        z-index: 0;\n        display: flex;\n        justify-content: center;\n        align-items: center; }\n        .main-width #menu .slider .logo .logoLink {\n          text-decoration: none;\n          color: #555; }\n    .main-width #menu .menu-btn {\n      width: 50px;\n      height: 50px;\n      background-color: transparent;\n      border-radius: 50%;\n      transform: rotate(0deg);\n      transition: .5s ease-in-out;\n      cursor: pointer;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      flex-wrap: wrap;\n      align-content: space-around;\n      position: fixed;\n      top: 10px;\n      right: 10px;\n      z-index: 99;\n      border: 1px solid transparent; }\n    .main-width #menu .hide {\n      display: none; }\n\nspan {\n  height: 3px;\n  width: 70%;\n  opacity: 1;\n  right: 7px;\n  background-color: #89765D;\n  transform: rotate(0deg);\n  transition: .30s ease-in-out;\n  position: absolute; }\n  span:nth-child(1) {\n    top: 13px; }\n  span:nth-child(2), span:nth-child(3) {\n    top: 23px; }\n  span:nth-child(4) {\n    top: 33px; }\n\n.open span:nth-child(1), .open span:nth-child(4) {\n  top: 18px;\n  width: 0%;\n  left: 50%;\n  animation-name: vanish;\n  animation-duration: 0.01s; }\n\n.open span:nth-child(2) {\n  transform: rotate(45deg);\n  height: 3px;\n  background-color: black; }\n\n.open span:nth-child(3) {\n  transform: rotate(-45deg);\n  height: 3px;\n  background-color: black; }\n\n.show {\n  animation-name: menuslide;\n  animation-duration: 0.6s;\n  display: flex;\n  width: auto;\n  height: 80vh;\n  list-style: none;\n  flex-direction: column;\n  align-items: center;\n  background: white;\n  z-index: 5;\n  position: fixed; }\n  .show .liElement {\n    width: 100vw;\n    height: 15vh;\n    display: flex;\n    justify-content: center; }\n    .show .liElement .link {\n      text-decoration: none;\n      color: #555;\n      align-self: center;\n      font-family: Channel; }\n", ""]);
+exports.push([module.i, "@keyframes headShake {\n  0% {\n    transform: rotate(0); }\n  30% {\n    transform: rotate(-20deg); }\n  100% {\n    transform: rotate(20deg); } }\n\n@keyframes hairShake {\n  0% {\n    transform: rotate(0);\n    transform: translate(0); }\n  30% {\n    transform: rotate(-20deg) translate(-18px, 0px); }\n  100% {\n    transform: rotate(20deg) translate(18px, 0px); } }\n\n@keyframes eyeBlink {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@keyframes buttonClick {\n  from {\n    bottom: 10px; }\n  to {\n    bottom: 0px; } }\n\n@keyframes fingerClick {\n  from {\n    bottom: -11px; }\n  to {\n    bottom: -27px; } }\n\n@keyframes writeMessage {\n  from {\n    width: 0px; } }\n\n@keyframes write2 {\n  0% {\n    width: 0; }\n  50% {\n    width: 0; }\n  100% {\n    width: 100%; } }\n\n@keyframes writeMessage2 {\n  from {\n    width: 0px; } }\n\n@keyframes write3 {\n  0% {\n    width: 0; }\n  50% {\n    width: 0; }\n  100% {\n    width: 100%; } }\n\n.aboutMe {\n  width: 100%;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n  background-color: beige; }\n  .aboutMe .logo {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    height: 70px;\n    width: 100%; }\n    .aboutMe .logo .logoLink {\n      text-decoration: none;\n      color: #555;\n      font-family: Channel; }\n  .aboutMe .avatarBox {\n    background-color: beige;\n    align-self: flex-start;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    position: relative; }\n    .aboutMe .avatarBox .message {\n      position: absolute;\n      color: #555; }\n    .aboutMe .avatarBox .pot {\n      position: absolute;\n      right: 0; }\n      .aboutMe .avatarBox .pot .cactus {\n        position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusShadow {\n          position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusArmLeft {\n          position: absolute;\n          transform: rotate(-35deg);\n          z-index: 1; }\n          .aboutMe .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute; }\n        .aboutMe .avatarBox .pot .cactus .cactusArmRight {\n          position: absolute;\n          transform: rotate(45deg); }\n          .aboutMe .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            position: absolute; }\n    .aboutMe .avatarBox .head {\n      z-index: 3;\n      background-color: #FDE0AA;\n      position: relative; }\n      .aboutMe .avatarBox .head .beard1 {\n        position: absolute;\n        bottom: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .head .beard2 {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .head .eye1 {\n        animation-name: eyeBlink;\n        animation-duration: 0.3s;\n        animation-delay: 1s;\n        border-radius: 50%;\n        position: absolute;\n        background-color: black;\n        z-index: 2; }\n      .aboutMe .avatarBox .head .eye2 {\n        border-radius: 50%;\n        position: absolute;\n        background-color: black;\n        z-index: 2; }\n      .aboutMe .avatarBox .head .glasses {\n        position: absolute; }\n        .aboutMe .avatarBox .head .glasses .glassLeft {\n          position: absolute; }\n        .aboutMe .avatarBox .head .glasses .glassRight {\n          position: absolute; }\n      .aboutMe .avatarBox .head .eyeBrow1 {\n        position: absolute;\n        background-color: #472B1F;\n        z-index: 2;\n        transform: skew(-70deg, 183deg); }\n      .aboutMe .avatarBox .head .eyeBrow2 {\n        position: absolute;\n        background-color: #472B1F;\n        z-index: 2;\n        transform: skew(70deg, -5deg); }\n      .aboutMe .avatarBox .head .earLeft {\n        position: absolute;\n        background-color: #FDE0AA; }\n        .aboutMe .avatarBox .head .earLeft .earShell {\n          position: absolute;\n          background-color: #E4BB86; }\n      .aboutMe .avatarBox .head .earRight {\n        position: absolute;\n        background-color: #FDE0AA; }\n        .aboutMe .avatarBox .head .earRight .earShell {\n          position: absolute;\n          background-color: #E4BB86; }\n    .aboutMe .avatarBox .hair {\n      position: absolute;\n      z-index: 4;\n      background-color: #472B1F; }\n      .aboutMe .avatarBox .hair .hairSkin {\n        position: absolute;\n        width: 0;\n        height: 0;\n        transform: rotate(-22deg); }\n      .aboutMe .avatarBox .hair .hairBackground1 {\n        position: absolute;\n        top: 0px;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .hair .hairBackground2 {\n        position: absolute;\n        top: 0px;\n        left: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .hair .hair1 {\n        position: absolute;\n        width: 0;\n        transform: rotate(40deg) skewY(30deg); }\n      .aboutMe .avatarBox .hair .hair2 {\n        position: absolute;\n        left: 0px;\n        width: 0;\n        height: 0;\n        transform: rotate(40deg); }\n      .aboutMe .avatarBox .hair .hair3 {\n        position: absolute;\n        transform: rotate(157deg) skewY(-30deg); }\n      .aboutMe .avatarBox .hair .hair4 {\n        position: absolute;\n        width: 0;\n        height: 0;\n        transform: rotate(-28deg); }\n    .aboutMe .avatarBox .headAnimation {\n      animation-fill-mode: forwards;\n      animation-direction: alternate;\n      animation-timing-function: linear;\n      animation-iteration-count: infinite;\n      animation-delay: 2s;\n      animation-name: headShake;\n      animation-duration: 1s; }\n    .aboutMe .avatarBox .hairAnimation {\n      animation-fill-mode: forwards;\n      animation-direction: alternate;\n      animation-timing-function: linear;\n      animation-iteration-count: infinite;\n      animation-delay: 2s;\n      animation-name: hairShake;\n      animation-duration: 1s; }\n    .aboutMe .avatarBox .mouth {\n      position: absolute;\n      z-index: 2;\n      background-color: #CA9A82; }\n      .aboutMe .avatarBox .mouth .lipsBottomRight {\n        position: absolute;\n        bottom: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsTopRight {\n        position: absolute;\n        top: 0;\n        right: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsTopLeft {\n        position: absolute;\n        top: 0;\n        left: 0;\n        width: 0;\n        height: 0; }\n      .aboutMe .avatarBox .mouth .lipsBottomLeft {\n        position: absolute;\n        bottom: 0;\n        left: 0;\n        width: 0;\n        height: 0; }\n    .aboutMe .avatarBox .shadow {\n      position: absolute;\n      border-radius: 50% 0% 0% 35%;\n      z-index: 1;\n      width: 0; }\n    .aboutMe .avatarBox .nose1 {\n      position: absolute;\n      border-radius: 50% 0 0 0;\n      transform: skew(0deg, 140deg); }\n    .aboutMe .avatarBox .keyboard {\n      position: absolute;\n      background-color: #AFAB9D;\n      z-index: 1; }\n    .aboutMe .avatarBox .keyButton {\n      position: absolute; }\n    .aboutMe .avatarBox .buttonAnimation {\n      animation-name: buttonClick;\n      animation-duration: 0.07s;\n      animation-iteration-count: 1;\n      animation-direction: alternate;\n      animation-timing-function: ease-in; }\n    .aboutMe .avatarBox .avatarBodyRight {\n      position: absolute;\n      background-color: #113A79; }\n      .aboutMe .avatarBox .avatarBodyRight .collar {\n        position: absolute;\n        top: 0;\n        z-index: 3; }\n      .aboutMe .avatarBox .avatarBodyRight .rightArm {\n        position: absolute;\n        z-index: 1; }\n        .aboutMe .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          position: absolute;\n          top: 0;\n          width: 0;\n          height: 0;\n          left: 0; }\n        .aboutMe .avatarBox .avatarBodyRight .rightArm .rightHand {\n          position: absolute; }\n          .aboutMe .avatarBox .avatarBodyRight .rightArm .rightHand .finger {\n            position: absolute; }\n          .aboutMe .avatarBox .avatarBodyRight .rightArm .rightHand .fingerClick {\n            animation-name: fingerClick;\n            animation-duration: 0.09s;\n            animation-iteration-count: 1;\n            animation-direction: alternate;\n            animation-timing-function: ease-in; }\n    .aboutMe .avatarBox .neck {\n      z-index: 2;\n      position: absolute;\n      background-color: #E4BB86; }\n    .aboutMe .avatarBox .avatarBodyLeft {\n      position: absolute;\n      background-color: #134E86; }\n      .aboutMe .avatarBox .avatarBodyLeft .collar {\n        position: absolute;\n        z-index: 3;\n        top: 0; }\n      .aboutMe .avatarBox .avatarBodyLeft .leftArm {\n        position: absolute;\n        z-index: 1; }\n        .aboutMe .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          position: absolute;\n          top: 0;\n          width: 0;\n          height: 0; }\n        .aboutMe .avatarBox .avatarBodyLeft .leftArm .leftHand {\n          position: absolute; }\n          .aboutMe .avatarBox .avatarBodyLeft .leftArm .leftHand .finger {\n            position: absolute; }\n          .aboutMe .avatarBox .avatarBodyLeft .leftArm .leftHand .fingerClick {\n            animation-name: fingerClick;\n            animation-duration: 0.09s;\n            animation-iteration-count: 1;\n            animation-direction: alternate;\n            animation-timing-function: ease-in; }\n\n@media (min-width: 300px) {\n  .avatarBox {\n    width: 300px;\n    height: 300px; }\n    .avatarBox .message {\n      left: 45px;\n      overflow: hidden;\n      font-family: \"Courier\";\n      white-space: nowrap;\n      font-size: 13px;\n      width: auto; }\n    .avatarBox .writeMessage {\n      animation: writeMessage 3s steps(60, end); }\n    .avatarBox .write2 {\n      animation: write2 6s steps(60, end); }\n    .avatarBox p:nth-child(1) {\n      top: 10px;\n      width: 17em; }\n    .avatarBox p:nth-child(2) {\n      width: 18em;\n      top: 30px; }\n    .avatarBox .pot {\n      border-top: 30px solid #E8B882;\n      border-left: 10px solid transparent;\n      border-right: 10px solid transparent;\n      width: 30px;\n      top: 150px;\n      z-index: 0; }\n      .avatarBox .pot:after {\n        content: \"\";\n        position: absolute;\n        width: 45px;\n        height: 7px;\n        bottom: -7px;\n        background-color: white;\n        right: -20px; }\n      .avatarBox .pot:before {\n        content: \"\";\n        position: absolute;\n        width: 40px;\n        height: 5px;\n        bottom: 30px;\n        background-color: #E8B882;\n        right: -15px; }\n      .avatarBox .pot .potShadow {\n        position: absolute;\n        bottom: 26px;\n        width: 30px;\n        border-top: 4px solid #B9945F;\n        border-left: 1px solid beige;\n        border-right: 1px solid beige;\n        background-color: grey;\n        left: -10px; }\n      .avatarBox .pot .cactus {\n        left: 0px;\n        width: 14px;\n        height: 45px;\n        bottom: 35px;\n        background-color: #2A6034;\n        border-radius: 12% 12% 0 0; }\n        .avatarBox .pot .cactus .cactusShadow {\n          left: 0px;\n          height: 45px;\n          width: 7px;\n          background-color: #377B44; }\n        .avatarBox .pot .cactus .cactusArmLeft {\n          width: 15px;\n          height: 20px;\n          left: -12px; }\n          .avatarBox .pot .cactus .cactusArmLeft:after {\n            content: \"\";\n            border-top: 14px solid #2A6034;\n            border-bottom: 14px solid #2A6034;\n            border-left: 13px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 50% 50% 0 50%; }\n          .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute;\n            width: 50%;\n            height: 40px;\n            background-color: #377B44;\n            border-radius: 30% 0 30% 50%;\n            top: -13px; }\n        .avatarBox .pot .cactus .cactusArmRight {\n          width: 12px;\n          height: 10px;\n          right: -13px;\n          transform: skew(-10deg, 100deg);\n          top: 10px; }\n          .avatarBox .pot .cactus .cactusArmRight:after {\n            content: \"\";\n            border-top: 10px solid #2A6034;\n            border-bottom: 10px solid #2A6034;\n            border-left: 10px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 20% 50% 50% 50%; }\n          .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            width: 50%;\n            height: 30px;\n            background-color: #377B44;\n            border-radius: 0 30% 30% 50%;\n            right: 0;\n            top: -10px; }\n    .avatarBox .head {\n      width: 77px;\n      height: 65px; }\n      .avatarBox .head:after {\n        content: \"\";\n        position: absolute;\n        bottom: -25px;\n        left: 0;\n        width: 0;\n        height: 0;\n        border-left: 38.5px solid transparent;\n        border-right: 38.5px solid transparent;\n        border-top: 25px solid #FDE0AA; }\n      .avatarBox .head .beard1 {\n        border-bottom: 30px solid beige;\n        border-right: 30px solid transparent; }\n      .avatarBox .head .beard2 {\n        border-bottom: 30px solid beige;\n        border-left: 30px solid transparent; }\n      .avatarBox .head .eye1 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        left: 15px; }\n      .avatarBox .head .eye2 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        right: 15px; }\n      .avatarBox .head .glasses {\n        width: 100%;\n        height: 20px;\n        top: 17px;\n        z-index: 5; }\n        .avatarBox .head .glasses .glassLeft {\n          left: 0;\n          width: 45%;\n          height: 100%;\n          border: 3px solid #0E3A5D;\n          border-radius: 10% 10% 50% 20%; }\n          .avatarBox .head .glasses .glassLeft:after {\n            content: \"\";\n            position: absolute;\n            width: 12px;\n            height: 4px;\n            background-color: #0E3A5D;\n            top: -2px;\n            right: -12px; }\n        .avatarBox .head .glasses .glassRight {\n          right: 0;\n          width: 45%;\n          height: 100%;\n          border: 3px solid #0E3A5D;\n          border-radius: 10% 10% 20% 50%; }\n      .avatarBox .head .eyeBrow1 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        left: 10px; }\n      .avatarBox .head .eyeBrow2 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        right: 10px; }\n      .avatarBox .head .earLeft {\n        width: 10px;\n        height: 20px;\n        left: -10px;\n        top: 15px; }\n        .avatarBox .head .earLeft .earShell {\n          width: 5px;\n          height: 10px;\n          right: 0px;\n          top: 5px; }\n      .avatarBox .head .earRight {\n        width: 10px;\n        height: 20px;\n        right: -10px;\n        top: 15px; }\n        .avatarBox .head .earRight .earShell {\n          width: 5px;\n          height: 10px;\n          right: 5px;\n          top: 5px; }\n    .avatarBox .hair {\n      top: 70px;\n      width: 77px;\n      height: 55px; }\n      .avatarBox .hair .hairSkin {\n        top: 28px;\n        border-top: 20px solid transparent;\n        border-bottom: 16px solid transparent;\n        border-right: 40px solid #FDE0AA; }\n      .avatarBox .hair .hairBackground1 {\n        border-top: 20px solid beige;\n        border-left: 25px solid transparent; }\n      .avatarBox .hair .hairBackground2 {\n        border-top: 20px solid beige;\n        border-right: 15px solid transparent; }\n      .avatarBox .hair .hair1 {\n        top: 13px;\n        left: -6.5px;\n        height: 35px;\n        border-top: 0px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 25.5px solid #5A352A; }\n      .avatarBox .hair .hair2 {\n        top: -10px;\n        left: 0px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #5A352A; }\n      .avatarBox .hair .hair3 {\n        top: 7px;\n        right: 6px;\n        height: 33px;\n        border-top: 12px solid transparent;\n        border-bottom: -10px #170F08;\n        border-left: 10px solid transparent;\n        border-right: 26px solid #170F08; }\n      .avatarBox .hair .hair4 {\n        top: 8px;\n        left: -13px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #503026; }\n    .avatarBox .mouth {\n      bottom: 0px;\n      left: 23px;\n      width: 30px;\n      height: 4px; }\n      .avatarBox .mouth .lipsBottomRight {\n        border-bottom: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopRight {\n        border-top: 5px solid #FDE0AA;\n        border-left: 5px solid transparent; }\n      .avatarBox .mouth .lipsTopLeft {\n        border-top: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n      .avatarBox .mouth .lipsBottomLeft {\n        border-bottom: 5px solid #FDE0AA;\n        border-right: 5px solid transparent; }\n    .avatarBox .shadow {\n      top: 1px;\n      right: 0;\n      border-left: 15px solid #E4BB86;\n      border-top: 0px solid transparent;\n      border-bottom: 10px solid transparent;\n      height: 74px; }\n    .avatarBox .nose1 {\n      bottom: 20px;\n      left: 43px;\n      width: 23px;\n      border-top: 31px solid #EECB9B;\n      border-left: 0px solid transparent;\n      border-right: 10px solid transparent; }\n    .avatarBox .keyboard {\n      width: 150px;\n      height: 10px;\n      bottom: 0; }\n    .avatarBox .keyButton {\n      z-index: 1;\n      bottom: 10px;\n      width: 15px;\n      border-bottom: 10px solid grey;\n      border-left: 3px solid transparent;\n      border-right: 3px solid transparent; }\n    .avatarBox .neck {\n      z-index: 0;\n      width: 40px;\n      height: 70px;\n      bottom: 80px; }\n    .avatarBox .avatarBodyRight {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 150px; }\n      .avatarBox .avatarBodyRight .collar {\n        left: 0;\n        border-bottom: 20px solid #113A79;\n        border-left: 20px solid transparent; }\n      .avatarBox .avatarBodyRight .rightArm {\n        border-radius: 0 20px 10px 0;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #113A79;\n        bottom: 24.5px;\n        right: -24.1px; }\n        .avatarBox .avatarBodyRight .rightArm .bodyShapeRight {\n          border-top: 40px solid beige;\n          border-left: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyRight .rightArm .armShadowRight {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 0 30px 20px 0; }\n        .avatarBox .avatarBodyRight .rightArm .rightHand {\n          width: 25px;\n          border-bottom: 15px solid #E4BB86;\n          border-left: 3px solid transparent;\n          border-right: 3px solid transparent;\n          bottom: -3px; }\n          .avatarBox .avatarBodyRight .rightArm .rightHand .finger {\n            bottom: -16px;\n            width: 8px;\n            border-top: 8px solid #FDE0AA;\n            border-left: 1px solid transparent;\n            border-right: 1px solid transparent;\n            border-radius: 20% 20% 40% 40%; }\n    .avatarBox .avatarBodyLeft {\n      width: 40px;\n      height: 96px;\n      bottom: 0px;\n      left: 110px; }\n      .avatarBox .avatarBodyLeft .collar {\n        right: 0;\n        border-bottom: 20px solid #134E86;\n        border-right: 20px solid transparent; }\n      .avatarBox .avatarBodyLeft .leftArm {\n        border-radius: 20px 0 0 10px;\n        width: 24.1px;\n        height: 71.2px;\n        background-color: #2E6085;\n        bottom: 24.5px;\n        left: -24.1px; }\n        .avatarBox .avatarBodyLeft .leftArm .bodyShapeLeft {\n          border-top: 40px solid beige;\n          border-right: 40px solid transparent;\n          right: 0px;\n          z-index: 1; }\n        .avatarBox .avatarBodyLeft .leftArm .armShadowLeft {\n          position: absolute;\n          height: 100%;\n          width: 50%;\n          background-color: #134E86;\n          border-radius: 30px 0 0 20px; }\n        .avatarBox .avatarBodyLeft .leftArm .leftHand {\n          width: 25px;\n          border-bottom: 15px solid #E4BB86;\n          border-left: 3px solid transparent;\n          border-right: 3px solid transparent;\n          bottom: -3px; }\n          .avatarBox .avatarBodyLeft .leftArm .leftHand .finger {\n            bottom: -17px;\n            width: 8px;\n            border-top: 8px solid #FDE0AA;\n            border-left: 1px solid transparent;\n            border-right: 1px solid transparent;\n            border-radius: 20% 20% 40% 40%; }\n  .button0 {\n    left: 75px; }\n  .button1 {\n    left: 90px; }\n  .button2 {\n    left: 105px; }\n  .button3 {\n    left: 120px; }\n  .button4 {\n    left: 135px; }\n  .button5 {\n    left: 150px; }\n  .button6 {\n    left: 165px; }\n  .button7 {\n    left: 180px; }\n  .button8 {\n    left: 195px; }\n  .button9 {\n    left: 210px; }\n  .finger0 {\n    left: -9px; }\n  .finger1 {\n    left: 0px; }\n  .finger2 {\n    left: 9px; }\n  .finger3 {\n    left: 18px; }\n  .finger4 {\n    left: 27px; }\n  .finger5 {\n    right: -9px; }\n  .finger6 {\n    right: 0px; }\n  .finger7 {\n    right: 9px; }\n  .finger8 {\n    right: 18px; }\n  .finger9 {\n    right: 27px; } }\n\n@media (min-width: 1024px) {\n  .avatarBox {\n    width: 300px;\n    height: 300px; }\n    .avatarBox .message {\n      left: 45px;\n      overflow: hidden;\n      font-family: \"Courier\";\n      white-space: nowrap;\n      font-size: 13px;\n      width: auto; }\n    .avatarBox .writeMessage {\n      animation: writeMessage 3s steps(60, end); }\n    .avatarBox .write2 {\n      animation: write2 6s steps(60, end); }\n    .avatarBox p:nth-child(1) {\n      top: 10px;\n      width: 17em; }\n    .avatarBox p:nth-child(2) {\n      width: 18em;\n      top: 30px; }\n    .avatarBox .pot {\n      border-top: 30px solid #E8B882;\n      border-left: 10px solid transparent;\n      border-right: 10px solid transparent;\n      width: 30px;\n      top: 150px;\n      z-index: 0; }\n      .avatarBox .pot:after {\n        content: \"\";\n        position: absolute;\n        width: 45px;\n        height: 7px;\n        bottom: -7px;\n        background-color: white;\n        right: -20px; }\n      .avatarBox .pot:before {\n        content: \"\";\n        position: absolute;\n        width: 40px;\n        height: 5px;\n        bottom: 30px;\n        background-color: #E8B882;\n        right: -15px; }\n      .avatarBox .pot .potShadow {\n        position: absolute;\n        bottom: 26px;\n        width: 30px;\n        border-top: 4px solid #B9945F;\n        border-left: 1px solid beige;\n        border-right: 1px solid beige;\n        background-color: grey;\n        left: -10px; }\n      .avatarBox .pot .cactus {\n        left: 0px;\n        width: 14px;\n        height: 45px;\n        bottom: 35px;\n        background-color: #2A6034;\n        border-radius: 12% 12% 0 0; }\n        .avatarBox .pot .cactus .cactusShadow {\n          left: 0px;\n          height: 45px;\n          width: 7px;\n          background-color: #377B44; }\n        .avatarBox .pot .cactus .cactusArmLeft {\n          width: 15px;\n          height: 20px;\n          left: -12px; }\n          .avatarBox .pot .cactus .cactusArmLeft:after {\n            content: \"\";\n            border-top: 14px solid #2A6034;\n            border-bottom: 14px solid #2A6034;\n            border-left: 13px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 50% 50% 0 50%; }\n          .avatarBox .pot .cactus .cactusArmLeft .cactusArmShadow {\n            position: absolute;\n            width: 50%;\n            height: 40px;\n            background-color: #377B44;\n            border-radius: 30% 0 30% 50%;\n            top: -13px; }\n        .avatarBox .pot .cactus .cactusArmRight {\n          width: 12px;\n          height: 10px;\n          right: -13px;\n          transform: skew(-10deg, 100deg);\n          top: 10px; }\n          .avatarBox .pot .cactus .cactusArmRight:after {\n            content: \"\";\n            border-top: 10px solid #2A6034;\n            border-bottom: 10px solid #2A6034;\n            border-left: 10px solid #2A6034;\n            border-right: 14px solid #2A6034;\n            border-radius: 20% 50% 50% 50%; }\n          .avatarBox .pot .cactus .cactusArmRight .cactusArmShadow {\n            width: 50%;\n            height: 30px;\n            background-color: #377B44;\n            border-radius: 0 30% 30% 50%;\n            right: 0;\n            top: -10px; }\n    .avatarBox .head {\n      width: 77px;\n      height: 65px; }\n      .avatarBox .head:after {\n        content: \"\";\n        position: absolute;\n        bottom: -25px;\n        left: 0;\n        width: 0;\n        height: 0;\n        border-left: 38.5px solid transparent;\n        border-right: 38.5px solid transparent;\n        border-top: 25px solid #FDE0AA; }\n      .avatarBox .head .beard1 {\n        border-bottom: 30px solid beige;\n        border-right: 30px solid transparent; }\n      .avatarBox .head .beard2 {\n        border-bottom: 30px solid beige;\n        border-left: 30px solid transparent; }\n      .avatarBox .head .eye1 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        left: 15px; }\n      .avatarBox .head .eye2 {\n        width: 7px;\n        height: 7px;\n        top: 20px;\n        right: 15px; }\n      .avatarBox .head .glasses {\n        width: 100%;\n        height: 20px;\n        top: 17px;\n        z-index: 5; }\n        .avatarBox .head .glasses .glassLeft {\n          left: 0;\n          width: 45%;\n          height: 100%;\n          border: 3px solid #0E3A5D;\n          border-radius: 10% 10% 50% 20%; }\n          .avatarBox .head .glasses .glassLeft:after {\n            content: \"\";\n            position: absolute;\n            width: 12px;\n            height: 4px;\n            background-color: #0E3A5D;\n            top: -2px;\n            right: -12px; }\n        .avatarBox .head .glasses .glassRight {\n          right: 0;\n          width: 45%;\n          height: 100%;\n          border: 3px solid #0E3A5D;\n          border-radius: 10% 10% 20% 50%; }\n      .avatarBox .head .eyeBrow1 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        left: 10px; }\n      .avatarBox .head .eyeBrow2 {\n        width: 15px;\n        height: 3px;\n        top: 15px;\n        right: 10px; }\n      .avatarBox .head .earLeft {\n        width: 10px;\n        height: 20px;\n        left: -10px;\n        top: 15px; }\n        .avatarBox .head .earLeft .earShell {\n          width: 5px;\n          height: 10px;\n          right: 0px;\n          top: 5px; }\n      .avatarBox .head .earRight {\n        width: 10px;\n        height: 20px;\n        right: -10px;\n        top: 15px; }\n        .avatarBox .head .earRight .earShell {\n          width: 5px;\n          height: 10px;\n          right: 5px;\n          top: 5px; }\n    .avatarBox .hair {\n      top: 70px;\n      width: 77px;\n      height: 55px; }\n      .avatarBox .hair .hairSkin {\n        top: 28px;\n        border-top: 20px solid transparent;\n        border-bottom: 16px solid transparent;\n        border-right: 40px solid #FDE0AA; }\n      .avatarBox .hair .hairBackground1 {\n        border-top: 20px solid beige;\n        border-left: 25px solid transparent; }\n      .avatarBox .hair .hairBackground2 {\n        border-top: 20px solid beige;\n        border-right: 15px solid transparent; }\n      .avatarBox .hair .hair1 {\n        top: 13px;\n        left: -6.5px;\n        height: 35px;\n        border-top: 0px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 25.5px solid #5A352A; }\n      .avatarBox .hair .hair2 {\n        top: -10px;\n        left: 0px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #5A352A; }\n      .avatarBox .hair .hair3 {\n        top: 7px;\n        right: 6px;\n        height: 33px;\n        border-top: 12px solid transparent;\n        border-bottom: -10px #170F08;\n        border-left: 10px solid transparent;\n        border-right: 26px solid #170F08; }\n      .avatarBox .hair .hair4 {\n        top: 8px;\n        left: -13px;\n        border-top: 15px solid transparent;\n        border-bottom: 15px solid transparent;\n        border-right: 30px solid #503026; }\n    .avatarBox .mouth {\n      bottom: 0px;\n      left: 23px;\n      width: 30px;\n      height: 4px; }\n    .avatarBox .lipsBottomRight {\n      border-bottom: 5px solid #FDE0AA;\n      border-left: 5px solid transparent; }\n    .avatarBox .lipsTopRight {\n      border-top: 5px solid #FDE0AA;\n      border-left: 5px solid transparent; }\n    .avatarBox .lipsTopLeft {\n      border-top: 5px solid #FDE0AA;\n      border-right: 5px solid transparent; }\n    .avatarBox .lipsBottomLeft {\n      border-bottom: 5px solid #FDE0AA;\n      border-right: 5px solid transparent; }\n  .shadow {\n    top: 1px;\n    right: 0;\n    border-left: 15px solid #E4BB86;\n    border-top: 0px solid transparent;\n    border-bottom: 10px solid transparent;\n    height: 74px; }\n  .nose1 {\n    bottom: 20px;\n    left: 43px;\n    width: 23px;\n    border-top: 31px solid #EECB9B;\n    border-left: 0px solid transparent;\n    border-right: 10px solid transparent; }\n  .keyboard {\n    width: 150px;\n    height: 10px;\n    bottom: 0; }\n  .keyButton {\n    z-index: 1;\n    bottom: 10px;\n    width: 15px;\n    border-bottom: 10px solid grey;\n    border-left: 3px solid transparent;\n    border-right: 3px solid transparent; }\n  .neck {\n    z-index: 0;\n    width: 40px;\n    height: 70px;\n    bottom: 80px; }\n  .avatarBodyRight {\n    width: 40px;\n    height: 96px;\n    bottom: 0px;\n    left: 150px; }\n    .avatarBodyRight .collar {\n      left: 0;\n      border-bottom: 20px solid #113A79;\n      border-left: 20px solid transparent; }\n    .avatarBodyRight .rightArm {\n      border-radius: 0 20px 10px 0;\n      width: 24.1px;\n      height: 71.2px;\n      background-color: #113A79;\n      bottom: 24.5px;\n      right: -24.1px; }\n      .avatarBodyRight .rightArm .bodyShapeRight {\n        border-top: 40px solid beige;\n        border-left: 40px solid transparent;\n        right: 0px;\n        z-index: 1; }\n      .avatarBodyRight .rightArm .armShadowRight {\n        position: absolute;\n        height: 100%;\n        width: 50%;\n        background-color: #134E86;\n        border-radius: 0 30px 20px 0; }\n      .avatarBodyRight .rightArm .rightHand {\n        width: 25px;\n        border-bottom: 15px solid #E4BB86;\n        border-left: 3px solid transparent;\n        border-right: 3px solid transparent;\n        bottom: -3px; }\n        .avatarBodyRight .rightArm .rightHand .finger {\n          bottom: -16px;\n          width: 8px;\n          border-top: 8px solid #FDE0AA;\n          border-left: 1px solid transparent;\n          border-right: 1px solid transparent;\n          border-radius: 20% 20% 40% 40%; }\n  .avatarBodyLeft {\n    width: 40px;\n    height: 96px;\n    bottom: 0px;\n    left: 110px; }\n    .avatarBodyLeft .collar {\n      right: 0;\n      border-bottom: 20px solid #134E86;\n      border-right: 20px solid transparent; }\n    .avatarBodyLeft .leftArm {\n      border-radius: 20px 0 0 10px;\n      width: 24.1px;\n      height: 71.2px;\n      background-color: #2E6085;\n      bottom: 24.5px;\n      left: -24.1px; }\n      .avatarBodyLeft .leftArm .bodyShapeLeft {\n        border-top: 40px solid beige;\n        border-right: 40px solid transparent;\n        right: 0px;\n        z-index: 1; }\n      .avatarBodyLeft .leftArm .armShadowLeft {\n        position: absolute;\n        height: 100%;\n        width: 50%;\n        background-color: #134E86;\n        border-radius: 30px 0 0 20px; }\n      .avatarBodyLeft .leftArm .leftHand {\n        width: 25px;\n        border-bottom: 15px solid #E4BB86;\n        border-left: 3px solid transparent;\n        border-right: 3px solid transparent;\n        bottom: -3px; }\n        .avatarBodyLeft .leftArm .leftHand .finger {\n          bottom: -17px;\n          width: 8px;\n          border-top: 8px solid #FDE0AA;\n          border-left: 1px solid transparent;\n          border-right: 1px solid transparent;\n          border-radius: 20% 20% 40% 40%; }\n  .button0 {\n    left: 75px; }\n  .button1 {\n    left: 90px; }\n  .button2 {\n    left: 105px; }\n  .button3 {\n    left: 120px; }\n  .button4 {\n    left: 135px; }\n  .button5 {\n    left: 150px; }\n  .button6 {\n    left: 165px; }\n  .button7 {\n    left: 180px; }\n  .button8 {\n    left: 195px; }\n  .button9 {\n    left: 210px; }\n  .finger0 {\n    left: -9px; }\n  .finger1 {\n    left: 0px; }\n  .finger2 {\n    left: 9px; }\n  .finger3 {\n    left: 18px; }\n  .finger4 {\n    left: 27px; }\n  .finger5 {\n    right: -9px; }\n  .finger6 {\n    right: 0px; }\n  .finger7 {\n    right: 9px; }\n  .finger8 {\n    right: 18px; }\n  .finger9 {\n    right: 27px; } }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n.contact {\n  width: 100%;\n  height: 100%;\n  background-color: beige;\n  display: flex;\n  z-index: 0;\n  position: relative;\n  justify-content: center; }\n  .contact .opacityImage {\n    opacity: 0.8;\n    background-image: url(" + __webpack_require__(256) + ");\n    background-size: cover;\n    background-position: center;\n    background-repeat: no-repeat;\n    width: 100%;\n    height: 100%;\n    z-index: -1;\n    position: absolute; }\n  .contact .logo {\n    position: absolute;\n    top: 1rem;\n    font-size: 1rem;\n    width: 100%;\n    display: flex;\n    align-self: center;\n    justify-content: center; }\n    .contact .logo .logoLink {\n      text-decoration: none;\n      color: #555;\n      font-family: Channel; }\n  .contact .error ul {\n    list-style-type: none; }\n  .contact .success {\n    list-style-type: none; }\n  .contact .book {\n    display: flex;\n    align-self: center;\n    justify-content: center; }\n    .contact .book .contactTitle {\n      align-self: center;\n      text-align: center;\n      color: #555;\n      width: 100%;\n      height: 100%; }\n      .contact .book .contactTitle .title {\n        font-family: 'Alegreya SC', serif;\n        font-weight: 100;\n        text-align: center;\n        width: 100%;\n        align-self: center; }\n      .contact .book .contactTitle .lorem {\n        color: black;\n        font-size: 14px;\n        font-family: 'Alegreya SC', serif;\n        text-align: center;\n        width: 60%;\n        align-self: center;\n        z-index: 2;\n        width: 100%; }\n    .contact .book .form {\n      height: 100%;\n      z-index: 1;\n      background-color: white;\n      align-self: center;\n      width: 100%;\n      display: flex;\n      flex-direction: column;\n      border: 1px solid #A0947E;\n      justify-content: center;\n      align-items: center;\n      font-family: 'Alegreya SC', serif; }\n      .contact .book .form .formInput {\n        width: 80%;\n        text-transform: uppercase;\n        z-index: 1; }\n      .contact .book .form input, .contact .book .form textarea {\n        color: black;\n        font-family: 'Alegreya SC', serif;\n        border: 1px solid #DDC59C;\n        margin: 0.3rem 0; }\n        .contact .book .form input:-ms-input-placeholder, .contact .book .form textarea:-ms-input-placeholder {\n          color: #967C50; }\n        .contact .book .form input:-moz-placeholder, .contact .book .form textarea:-moz-placeholder {\n          color: #967C50; }\n        .contact .book .form input::-webkit-input-placeholder, .contact .book .form textarea::-webkit-input-placeholder {\n          color: #967C50; }\n        .contact .book .form input::-moz-placeholder, .contact .book .form textarea::-moz-placeholder {\n          color: #967C50; }\n      .contact .book .form .formMessage {\n        text-transform: uppercase;\n        resize: none;\n        width: 80%; }\n      .contact .book .form .submitButton {\n        text-transform: uppercase;\n        width: 80%;\n        background-color: #967C50;\n        border: 1px solid transparent;\n        color: white;\n        outline: 0; }\n\n@media only screen and (min-device-width: 320px) and (orientation: landscape) {\n  .contact {\n    flex-direction: column;\n    justify-content: center; }\n    .contact .book {\n      align-items: center;\n      width: 80%;\n      position: absolute;\n      bottom: 2%;\n      height: 75vh; }\n      .contact .book .contactTitle {\n        border: 1px solid #A0947E;\n        flex-direction: column;\n        display: flex;\n        background-color: white;\n        justify-content: center;\n        flex: 1; }\n        .contact .book .contactTitle .text {\n          font-size: 20px; }\n        .contact .book .contactTitle .lorem {\n          font-size: 12px; }\n      .contact .book .form {\n        font-size: 14px;\n        flex: 1; }\n        .contact .book .form .formInput {\n          height: 2rem; }\n        .contact .book .form .formMessage {\n          height: 7rem; }\n        .contact .book .form .submitButton {\n          height: 3rem; } }\n\n@media only screen and (min-device-width: 320px) and (orientation: portrait) {\n  .contact {\n    flex-direction: column;\n    flex-wrap: wrap; }\n    .contact .book {\n      width: 90%;\n      flex-wrap: wrap; }\n      .contact .book .contactTitle {\n        border: 0.5rem solid transparent; }\n        .contact .book .contactTitle .text {\n          font-size: 20px; }\n        .contact .book .contactTitle .lorem {\n          font-size: 12px; }\n      .contact .book .form {\n        font-size: 14px;\n        height: 70vh; }\n        .contact .book .form .formInput {\n          height: 2.5rem; }\n        .contact .book .form .formMessage {\n          height: 7rem; }\n        .contact .book .form .submitButton {\n          height: 3rem; } }\n\n@media only screen and (min-width: 700px) and (orientation: portrait) {\n  .contact {\n    flex-direction: column;\n    flex-wrap: wrap; }\n    .contact .book {\n      width: 80%;\n      flex-wrap: wrap; }\n      .contact .book .contactTitle {\n        border: 1rem solid transparent; }\n        .contact .book .contactTitle .title {\n          font-size: 27px; }\n      .contact .book .form {\n        font-size: 20px;\n        height: 70vh; }\n        .contact .book .form .formInput {\n          height: 4rem; }\n        .contact .book .form .formMessage {\n          height: 10rem; }\n        .contact .book .form .submitButton {\n          height: 4rem; } }\n\n@media only screen and (min-device-width: 1000px) and (orientation: landscape) {\n  .contact {\n    flex-direction: column;\n    justify-content: center; }\n    .contact .book {\n      align-items: center;\n      width: 70%;\n      position: absolute;\n      bottom: 10%;\n      height: 70vh; }\n      .contact .book .contactTitle {\n        border: 1px solid #A0947E;\n        flex-direction: column;\n        display: flex;\n        background-color: white;\n        justify-content: center;\n        flex: 1; }\n        .contact .book .contactTitle .title {\n          font-size: 27px; }\n      .contact .book .form {\n        font-size: 14px;\n        flex: 1; }\n        .contact .book .form .formInput {\n          height: 3rem; }\n        .contact .book .form .formMessage {\n          height: 12rem; }\n        .contact .book .form .submitButton {\n          height: 3rem; } }\n\n@keyframes menuslide {\n  from {\n    opacity: 0; }\n  to {\n    opacity: 1; } }\n\n@keyframes vanish {\n  from {\n    opacity: 1; }\n  to {\n    opacity: 0; } }\n\n@font-face {\n  font-family: Channel;\n  src: url(" + __webpack_require__(258) + "); }\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\n@keyframes slideUp {\n  from {\n    bottom: -50vh; }\n  to {\n    top: 0; } }\n\n.main-width {\n  width: 100%;\n  height: 100vh; }\n  .main-width .boxAnimation {\n    animation-name: slideUp;\n    animation-duration: 0.5s; }\n  .main-width .box {\n    width: 100%;\n    height: 50vh;\n    justify-content: flex-start;\n    align-items: flex-start;\n    flex-wrap: wrap;\n    z-index: 0; }\n    .main-width .box .boxImg {\n      height: 50vh;\n      width: 100%;\n      object-fit: cover; }\n  .main-width #menu {\n    width: auto;\n    height: 100vh;\n    display: flex;\n    justify-content: flex-end;\n    flex-wrap: wrap; }\n    .main-width #menu .slider {\n      width: auto;\n      height: 100vh;\n      z-index: 0;\n      top: 0;\n      display: flex;\n      flex-direction: column;\n      flex-grow: 1;\n      flex-wrap: wrap;\n      align-items: center; }\n      .main-width #menu .slider .imgSlider {\n        width: 100%;\n        height: 100vh;\n        background-image: url(" + __webpack_require__(257) + ");\n        background-repeat: no-repeat;\n        position: absolute;\n        background-size: cover;\n        background-position: left;\n        display: inline-block; }\n      .main-width #menu .slider .logo {\n        width: 100%;\n        height: 70px;\n        font-family: Channel;\n        z-index: 0;\n        display: flex;\n        justify-content: center;\n        align-items: center; }\n        .main-width #menu .slider .logo .logoLink {\n          text-decoration: none;\n          color: #555; }\n    .main-width #menu .menu-btn {\n      width: 50px;\n      height: 50px;\n      background-color: transparent;\n      border-radius: 50%;\n      transform: rotate(0deg);\n      transition: .5s ease-in-out;\n      cursor: pointer;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      flex-wrap: wrap;\n      align-content: space-around;\n      position: fixed;\n      top: 10px;\n      right: 10px;\n      z-index: 99;\n      border: 1px solid transparent; }\n    .main-width #menu .hide {\n      display: none; }\n\nspan {\n  height: 3px;\n  width: 70%;\n  opacity: 1;\n  right: 7px;\n  background-color: #89765D;\n  transform: rotate(0deg);\n  transition: .30s ease-in-out;\n  position: absolute; }\n  span:nth-child(1) {\n    top: 13px; }\n  span:nth-child(2), span:nth-child(3) {\n    top: 23px; }\n  span:nth-child(4) {\n    top: 33px; }\n\n.open span:nth-child(1), .open span:nth-child(4) {\n  top: 18px;\n  width: 0%;\n  left: 50%;\n  animation-name: vanish;\n  animation-duration: 0.01s; }\n\n.open span:nth-child(2) {\n  transform: rotate(45deg);\n  height: 3px;\n  background-color: black; }\n\n.open span:nth-child(3) {\n  transform: rotate(-45deg);\n  height: 3px;\n  background-color: black; }\n\n.show {\n  animation-name: menuslide;\n  animation-duration: 0.6s;\n  display: flex;\n  width: auto;\n  height: 80vh;\n  list-style: none;\n  flex-direction: column;\n  align-items: center;\n  background: white;\n  z-index: 5;\n  position: fixed; }\n  .show .liElement {\n    width: 100vw;\n    height: 15vh;\n    display: flex;\n    justify-content: center; }\n    .show .liElement .link {\n      text-decoration: none;\n      color: #555;\n      align-self: center;\n      font-family: Channel; }\n", ""]);
 
 // exports
 
 
 /***/ }),
 /* 119 */
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-
-
-/***/ }),
-/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var pSlice = Array.prototype.slice;
-var objectKeys = __webpack_require__(122);
-var isArguments = __webpack_require__(121);
+var objectKeys = __webpack_require__(121);
+var isArguments = __webpack_require__(120);
 
 var deepEqual = module.exports = function (actual, expected, opts) {
   if (!opts) opts = {};
@@ -13693,7 +13611,7 @@ function objEquiv(a, b, opts) {
 
 
 /***/ }),
-/* 121 */
+/* 120 */
 /***/ (function(module, exports) {
 
 var supportsArgumentsClass = (function(){
@@ -13719,7 +13637,7 @@ function unsupported(object){
 
 
 /***/ }),
-/* 122 */
+/* 121 */
 /***/ (function(module, exports) {
 
 exports = module.exports = typeof Object.keys === 'function'
@@ -13734,7 +13652,7 @@ function shim (obj) {
 
 
 /***/ }),
-/* 123 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13771,7 +13689,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 124 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13788,7 +13706,7 @@ module.exports = camelize;
 
 
 
-var camelize = __webpack_require__(123);
+var camelize = __webpack_require__(122);
 
 var msPattern = /^-ms-/;
 
@@ -13816,7 +13734,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 125 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13833,7 +13751,7 @@ module.exports = camelizeStyleName;
  * 
  */
 
-var isTextNode = __webpack_require__(133);
+var isTextNode = __webpack_require__(132);
 
 /*eslint-disable no-bitwise */
 
@@ -13861,7 +13779,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 126 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13994,7 +13912,7 @@ module.exports = createArrayFromMixed;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 127 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14015,8 +13933,8 @@ module.exports = createArrayFromMixed;
 
 var ExecutionEnvironment = __webpack_require__(7);
 
-var createArrayFromMixed = __webpack_require__(126);
-var getMarkupWrap = __webpack_require__(128);
+var createArrayFromMixed = __webpack_require__(125);
+var getMarkupWrap = __webpack_require__(127);
 var invariant = __webpack_require__(1);
 
 /**
@@ -14084,7 +14002,7 @@ module.exports = createNodesFromMarkup;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 128 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14185,7 +14103,7 @@ module.exports = getMarkupWrap;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 129 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14229,7 +14147,7 @@ function getUnboundedScrollPosition(scrollable) {
 module.exports = getUnboundedScrollPosition;
 
 /***/ }),
-/* 130 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14267,7 +14185,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 131 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14284,7 +14202,7 @@ module.exports = hyphenate;
 
 
 
-var hyphenate = __webpack_require__(130);
+var hyphenate = __webpack_require__(129);
 
 var msPattern = /^ms-/;
 
@@ -14311,7 +14229,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 132 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14341,7 +14259,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 133 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14358,7 +14276,7 @@ module.exports = isNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(132);
+var isNode = __webpack_require__(131);
 
 /**
  * @param {*} object The object to check.
@@ -14371,7 +14289,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 134 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14406,7 +14324,7 @@ function memoizeStringOnly(callback) {
 module.exports = memoizeStringOnly;
 
 /***/ }),
-/* 135 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14434,7 +14352,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = performance || {};
 
 /***/ }),
-/* 136 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14451,7 +14369,7 @@ module.exports = performance || {};
  * @typechecks
  */
 
-var performance = __webpack_require__(135);
+var performance = __webpack_require__(134);
 
 var performanceNow;
 
@@ -14473,19 +14391,7 @@ if (performance.now) {
 module.exports = performanceNow;
 
 /***/ }),
-/* 137 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/orchard.jpg";
-
-/***/ }),
-/* 138 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/projekt-main.jpg";
-
-/***/ }),
-/* 139 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14549,7 +14455,7 @@ function loopAsync(turns, work, callback) {
 }
 
 /***/ }),
-/* 140 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14736,7 +14642,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 141 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14794,7 +14700,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 142 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14955,7 +14861,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 143 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15012,7 +14918,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 
 /***/ }),
-/* 144 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15081,7 +14987,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 145 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15101,7 +15007,7 @@ var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
 var ReactPropTypesSecret = __webpack_require__(79);
-var checkPropTypes = __webpack_require__(144);
+var checkPropTypes = __webpack_require__(141);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -15567,12 +15473,12 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 146 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var strictUriEncode = __webpack_require__(252);
+var strictUriEncode = __webpack_require__(249);
 
 exports.extract = function (str) {
 	return str.split('?')[1] || '';
@@ -15640,17 +15546,17 @@ exports.stringify = function (obj) {
 
 
 /***/ }),
-/* 147 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-module.exports = __webpack_require__(161);
+module.exports = __webpack_require__(158);
 
 
 /***/ }),
-/* 148 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15729,7 +15635,7 @@ var ARIADOMPropertyConfig = {
 module.exports = ARIADOMPropertyConfig;
 
 /***/ }),
-/* 149 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15758,7 +15664,7 @@ var AutoFocusUtils = {
 module.exports = AutoFocusUtils;
 
 /***/ }),
-/* 150 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15776,9 +15682,9 @@ module.exports = AutoFocusUtils;
 
 var EventPropagators = __webpack_require__(31);
 var ExecutionEnvironment = __webpack_require__(7);
-var FallbackCompositionState = __webpack_require__(156);
-var SyntheticCompositionEvent = __webpack_require__(199);
-var SyntheticInputEvent = __webpack_require__(202);
+var FallbackCompositionState = __webpack_require__(153);
+var SyntheticCompositionEvent = __webpack_require__(196);
+var SyntheticInputEvent = __webpack_require__(199);
 
 var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 var START_KEYCODE = 229;
@@ -16148,7 +16054,7 @@ var BeforeInputEventPlugin = {
 module.exports = BeforeInputEventPlugin;
 
 /***/ }),
-/* 151 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16168,10 +16074,10 @@ var CSSProperty = __webpack_require__(80);
 var ExecutionEnvironment = __webpack_require__(7);
 var ReactInstrumentation = __webpack_require__(11);
 
-var camelizeStyleName = __webpack_require__(124);
-var dangerousStyleValue = __webpack_require__(209);
-var hyphenateStyleName = __webpack_require__(131);
-var memoizeStringOnly = __webpack_require__(134);
+var camelizeStyleName = __webpack_require__(123);
+var dangerousStyleValue = __webpack_require__(206);
+var hyphenateStyleName = __webpack_require__(130);
+var memoizeStringOnly = __webpack_require__(133);
 var warning = __webpack_require__(2);
 
 var processStyleName = memoizeStringOnly(function (styleName) {
@@ -16363,7 +16269,7 @@ module.exports = CSSPropertyOperations;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 152 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16714,7 +16620,7 @@ var ChangeEventPlugin = {
 module.exports = ChangeEventPlugin;
 
 /***/ }),
-/* 153 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16735,7 +16641,7 @@ var _prodInvariant = __webpack_require__(3);
 var DOMLazyTree = __webpack_require__(25);
 var ExecutionEnvironment = __webpack_require__(7);
 
-var createNodesFromMarkup = __webpack_require__(127);
+var createNodesFromMarkup = __webpack_require__(126);
 var emptyFunction = __webpack_require__(12);
 var invariant = __webpack_require__(1);
 
@@ -16768,7 +16674,7 @@ module.exports = Danger;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 154 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16799,7 +16705,7 @@ var DefaultEventPluginOrder = ['ResponderEventPlugin', 'SimpleEventPlugin', 'Tap
 module.exports = DefaultEventPluginOrder;
 
 /***/ }),
-/* 155 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16904,7 +16810,7 @@ var EnterLeaveEventPlugin = {
 module.exports = EnterLeaveEventPlugin;
 
 /***/ }),
-/* 156 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17004,7 +16910,7 @@ PooledClass.addPoolingTo(FallbackCompositionState);
 module.exports = FallbackCompositionState;
 
 /***/ }),
-/* 157 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17245,7 +17151,7 @@ var HTMLDOMPropertyConfig = {
 module.exports = HTMLDOMPropertyConfig;
 
 /***/ }),
-/* 158 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17405,7 +17311,7 @@ module.exports = ReactChildReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 159 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17422,7 +17328,7 @@ module.exports = ReactChildReconciler;
 
 
 var DOMChildrenOperations = __webpack_require__(50);
-var ReactDOMIDOperations = __webpack_require__(166);
+var ReactDOMIDOperations = __webpack_require__(163);
 
 /**
  * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -17440,7 +17346,7 @@ var ReactComponentBrowserEnvironment = {
 module.exports = ReactComponentBrowserEnvironment;
 
 /***/ }),
-/* 160 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17469,7 +17375,7 @@ var ReactNodeTypes = __webpack_require__(90);
 var ReactReconciler = __webpack_require__(26);
 
 if (process.env.NODE_ENV !== 'production') {
-  var checkReactTypeSpec = __webpack_require__(208);
+  var checkReactTypeSpec = __webpack_require__(205);
 }
 
 var emptyObject = __webpack_require__(29);
@@ -18348,7 +18254,7 @@ module.exports = ReactCompositeComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 161 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18367,15 +18273,15 @@ module.exports = ReactCompositeComponent;
 
 
 var ReactDOMComponentTree = __webpack_require__(6);
-var ReactDefaultInjection = __webpack_require__(178);
+var ReactDefaultInjection = __webpack_require__(175);
 var ReactMount = __webpack_require__(89);
 var ReactReconciler = __webpack_require__(26);
 var ReactUpdates = __webpack_require__(14);
-var ReactVersion = __webpack_require__(193);
+var ReactVersion = __webpack_require__(190);
 
-var findDOMNode = __webpack_require__(210);
+var findDOMNode = __webpack_require__(207);
 var getHostComponentFromComposite = __webpack_require__(95);
-var renderSubtreeIntoContainer = __webpack_require__(217);
+var renderSubtreeIntoContainer = __webpack_require__(214);
 var warning = __webpack_require__(2);
 
 ReactDefaultInjection.inject();
@@ -18452,9 +18358,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 if (process.env.NODE_ENV !== 'production') {
   var ReactInstrumentation = __webpack_require__(11);
-  var ReactDOMUnknownPropertyHook = __webpack_require__(175);
-  var ReactDOMNullInputValuePropHook = __webpack_require__(169);
-  var ReactDOMInvalidARIAHook = __webpack_require__(168);
+  var ReactDOMUnknownPropertyHook = __webpack_require__(172);
+  var ReactDOMNullInputValuePropHook = __webpack_require__(166);
+  var ReactDOMInvalidARIAHook = __webpack_require__(165);
 
   ReactInstrumentation.debugTool.addHook(ReactDOMUnknownPropertyHook);
   ReactInstrumentation.debugTool.addHook(ReactDOMNullInputValuePropHook);
@@ -18465,7 +18371,7 @@ module.exports = ReactDOM;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 162 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18486,8 +18392,8 @@ module.exports = ReactDOM;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var AutoFocusUtils = __webpack_require__(149);
-var CSSPropertyOperations = __webpack_require__(151);
+var AutoFocusUtils = __webpack_require__(146);
+var CSSPropertyOperations = __webpack_require__(148);
 var DOMLazyTree = __webpack_require__(25);
 var DOMNamespaces = __webpack_require__(51);
 var DOMProperty = __webpack_require__(17);
@@ -18497,13 +18403,13 @@ var EventPluginRegistry = __webpack_require__(37);
 var ReactBrowserEventEmitter = __webpack_require__(38);
 var ReactDOMComponentFlags = __webpack_require__(83);
 var ReactDOMComponentTree = __webpack_require__(6);
-var ReactDOMInput = __webpack_require__(167);
-var ReactDOMOption = __webpack_require__(170);
+var ReactDOMInput = __webpack_require__(164);
+var ReactDOMOption = __webpack_require__(167);
 var ReactDOMSelect = __webpack_require__(84);
-var ReactDOMTextarea = __webpack_require__(173);
+var ReactDOMTextarea = __webpack_require__(170);
 var ReactInstrumentation = __webpack_require__(11);
-var ReactMultiChild = __webpack_require__(186);
-var ReactServerRenderingTransaction = __webpack_require__(191);
+var ReactMultiChild = __webpack_require__(183);
+var ReactServerRenderingTransaction = __webpack_require__(188);
 
 var emptyFunction = __webpack_require__(12);
 var escapeTextContentForBrowser = __webpack_require__(41);
@@ -19472,7 +19378,7 @@ module.exports = ReactDOMComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 163 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19511,7 +19417,7 @@ module.exports = ReactDOMContainerInfo;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 164 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19576,7 +19482,7 @@ _assign(ReactDOMEmptyComponent.prototype, {
 module.exports = ReactDOMEmptyComponent;
 
 /***/ }),
-/* 165 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19600,7 +19506,7 @@ var ReactDOMFeatureFlags = {
 module.exports = ReactDOMFeatureFlags;
 
 /***/ }),
-/* 166 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19639,7 +19545,7 @@ var ReactDOMIDOperations = {
 module.exports = ReactDOMIDOperations;
 
 /***/ }),
-/* 167 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19930,7 +19836,7 @@ module.exports = ReactDOMInput;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 168 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20029,7 +19935,7 @@ module.exports = ReactDOMInvalidARIAHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 169 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20078,7 +19984,7 @@ module.exports = ReactDOMNullInputValuePropHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 170 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20207,7 +20113,7 @@ module.exports = ReactDOMOption;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 171 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20225,7 +20131,7 @@ module.exports = ReactDOMOption;
 
 var ExecutionEnvironment = __webpack_require__(7);
 
-var getNodeForCharacterOffset = __webpack_require__(214);
+var getNodeForCharacterOffset = __webpack_require__(211);
 var getTextContentAccessor = __webpack_require__(96);
 
 /**
@@ -20424,7 +20330,7 @@ var ReactDOMSelection = {
 module.exports = ReactDOMSelection;
 
 /***/ }),
-/* 172 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20594,7 +20500,7 @@ module.exports = ReactDOMTextComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 173 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20760,7 +20666,7 @@ module.exports = ReactDOMTextarea;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 174 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20902,7 +20808,7 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 175 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21020,7 +20926,7 @@ module.exports = ReactDOMUnknownPropertyHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 176 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21037,12 +20943,12 @@ module.exports = ReactDOMUnknownPropertyHook;
 
 
 
-var ReactInvalidSetStateWarningHook = __webpack_require__(184);
-var ReactHostOperationHistoryHook = __webpack_require__(182);
+var ReactInvalidSetStateWarningHook = __webpack_require__(181);
+var ReactHostOperationHistoryHook = __webpack_require__(179);
 var ReactComponentTreeHook = __webpack_require__(10);
 var ExecutionEnvironment = __webpack_require__(7);
 
-var performanceNow = __webpack_require__(136);
+var performanceNow = __webpack_require__(135);
 var warning = __webpack_require__(2);
 
 var hooks = [];
@@ -21385,7 +21291,7 @@ module.exports = ReactDebugTool;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 177 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21458,7 +21364,7 @@ var ReactDefaultBatchingStrategy = {
 module.exports = ReactDefaultBatchingStrategy;
 
 /***/ }),
-/* 178 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21474,25 +21380,25 @@ module.exports = ReactDefaultBatchingStrategy;
 
 
 
-var ARIADOMPropertyConfig = __webpack_require__(148);
-var BeforeInputEventPlugin = __webpack_require__(150);
-var ChangeEventPlugin = __webpack_require__(152);
-var DefaultEventPluginOrder = __webpack_require__(154);
-var EnterLeaveEventPlugin = __webpack_require__(155);
-var HTMLDOMPropertyConfig = __webpack_require__(157);
-var ReactComponentBrowserEnvironment = __webpack_require__(159);
-var ReactDOMComponent = __webpack_require__(162);
+var ARIADOMPropertyConfig = __webpack_require__(145);
+var BeforeInputEventPlugin = __webpack_require__(147);
+var ChangeEventPlugin = __webpack_require__(149);
+var DefaultEventPluginOrder = __webpack_require__(151);
+var EnterLeaveEventPlugin = __webpack_require__(152);
+var HTMLDOMPropertyConfig = __webpack_require__(154);
+var ReactComponentBrowserEnvironment = __webpack_require__(156);
+var ReactDOMComponent = __webpack_require__(159);
 var ReactDOMComponentTree = __webpack_require__(6);
-var ReactDOMEmptyComponent = __webpack_require__(164);
-var ReactDOMTreeTraversal = __webpack_require__(174);
-var ReactDOMTextComponent = __webpack_require__(172);
-var ReactDefaultBatchingStrategy = __webpack_require__(177);
-var ReactEventListener = __webpack_require__(181);
-var ReactInjection = __webpack_require__(183);
-var ReactReconcileTransaction = __webpack_require__(189);
-var SVGDOMPropertyConfig = __webpack_require__(194);
-var SelectEventPlugin = __webpack_require__(195);
-var SimpleEventPlugin = __webpack_require__(196);
+var ReactDOMEmptyComponent = __webpack_require__(161);
+var ReactDOMTreeTraversal = __webpack_require__(171);
+var ReactDOMTextComponent = __webpack_require__(169);
+var ReactDefaultBatchingStrategy = __webpack_require__(174);
+var ReactEventListener = __webpack_require__(178);
+var ReactInjection = __webpack_require__(180);
+var ReactReconcileTransaction = __webpack_require__(186);
+var SVGDOMPropertyConfig = __webpack_require__(191);
+var SelectEventPlugin = __webpack_require__(192);
+var SimpleEventPlugin = __webpack_require__(193);
 
 var alreadyInjected = false;
 
@@ -21549,7 +21455,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 179 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21574,7 +21480,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 180 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21612,7 +21518,7 @@ var ReactEventEmitterMixin = {
 module.exports = ReactEventEmitterMixin;
 
 /***/ }),
-/* 181 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21637,7 +21543,7 @@ var ReactDOMComponentTree = __webpack_require__(6);
 var ReactUpdates = __webpack_require__(14);
 
 var getEventTarget = __webpack_require__(61);
-var getUnboundedScrollPosition = __webpack_require__(129);
+var getUnboundedScrollPosition = __webpack_require__(128);
 
 /**
  * Find the deepest React component completely containing the root of the
@@ -21772,7 +21678,7 @@ var ReactEventListener = {
 module.exports = ReactEventListener;
 
 /***/ }),
-/* 182 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21811,7 +21717,7 @@ var ReactHostOperationHistoryHook = {
 module.exports = ReactHostOperationHistoryHook;
 
 /***/ }),
-/* 183 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21850,7 +21756,7 @@ var ReactInjection = {
 module.exports = ReactInjection;
 
 /***/ }),
-/* 184 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21893,7 +21799,7 @@ module.exports = ReactInvalidSetStateWarningHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 185 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21909,7 +21815,7 @@ module.exports = ReactInvalidSetStateWarningHook;
 
 
 
-var adler32 = __webpack_require__(207);
+var adler32 = __webpack_require__(204);
 
 var TAG_END = /\/?>/;
 var COMMENT_START = /^<\!\-\-/;
@@ -21948,7 +21854,7 @@ var ReactMarkupChecksum = {
 module.exports = ReactMarkupChecksum;
 
 /***/ }),
-/* 186 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21972,10 +21878,10 @@ var ReactInstrumentation = __webpack_require__(11);
 
 var ReactCurrentOwner = __webpack_require__(15);
 var ReactReconciler = __webpack_require__(26);
-var ReactChildReconciler = __webpack_require__(158);
+var ReactChildReconciler = __webpack_require__(155);
 
 var emptyFunction = __webpack_require__(12);
-var flattenChildren = __webpack_require__(211);
+var flattenChildren = __webpack_require__(208);
 var invariant = __webpack_require__(1);
 
 /**
@@ -22404,7 +22310,7 @@ module.exports = ReactMultiChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 187 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22504,7 +22410,7 @@ module.exports = ReactOwner;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 188 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22535,7 +22441,7 @@ module.exports = ReactPropTypeLocationNames;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 189 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22719,7 +22625,7 @@ module.exports = ReactReconcileTransaction;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 190 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22736,7 +22642,7 @@ module.exports = ReactReconcileTransaction;
 
 
 
-var ReactOwner = __webpack_require__(187);
+var ReactOwner = __webpack_require__(184);
 
 var ReactRef = {};
 
@@ -22813,7 +22719,7 @@ ReactRef.detachRefs = function (instance, element) {
 module.exports = ReactRef;
 
 /***/ }),
-/* 191 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22834,7 +22740,7 @@ var _assign = __webpack_require__(4);
 var PooledClass = __webpack_require__(20);
 var Transaction = __webpack_require__(40);
 var ReactInstrumentation = __webpack_require__(11);
-var ReactServerUpdateQueue = __webpack_require__(192);
+var ReactServerUpdateQueue = __webpack_require__(189);
 
 /**
  * Executed within the scope of the `Transaction` instance. Consider these as
@@ -22909,7 +22815,7 @@ module.exports = ReactServerRenderingTransaction;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 192 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23054,7 +22960,7 @@ module.exports = ReactServerUpdateQueue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 193 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23073,7 +22979,7 @@ module.exports = ReactServerUpdateQueue;
 module.exports = '15.5.4';
 
 /***/ }),
-/* 194 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23380,7 +23286,7 @@ Object.keys(ATTRS).forEach(function (key) {
 module.exports = SVGDOMPropertyConfig;
 
 /***/ }),
-/* 195 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23576,7 +23482,7 @@ var SelectEventPlugin = {
 module.exports = SelectEventPlugin;
 
 /***/ }),
-/* 196 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23598,17 +23504,17 @@ var _prodInvariant = __webpack_require__(3);
 var EventListener = __webpack_require__(70);
 var EventPropagators = __webpack_require__(31);
 var ReactDOMComponentTree = __webpack_require__(6);
-var SyntheticAnimationEvent = __webpack_require__(197);
-var SyntheticClipboardEvent = __webpack_require__(198);
+var SyntheticAnimationEvent = __webpack_require__(194);
+var SyntheticClipboardEvent = __webpack_require__(195);
 var SyntheticEvent = __webpack_require__(16);
-var SyntheticFocusEvent = __webpack_require__(201);
-var SyntheticKeyboardEvent = __webpack_require__(203);
+var SyntheticFocusEvent = __webpack_require__(198);
+var SyntheticKeyboardEvent = __webpack_require__(200);
 var SyntheticMouseEvent = __webpack_require__(39);
-var SyntheticDragEvent = __webpack_require__(200);
-var SyntheticTouchEvent = __webpack_require__(204);
-var SyntheticTransitionEvent = __webpack_require__(205);
+var SyntheticDragEvent = __webpack_require__(197);
+var SyntheticTouchEvent = __webpack_require__(201);
+var SyntheticTransitionEvent = __webpack_require__(202);
 var SyntheticUIEvent = __webpack_require__(33);
-var SyntheticWheelEvent = __webpack_require__(206);
+var SyntheticWheelEvent = __webpack_require__(203);
 
 var emptyFunction = __webpack_require__(12);
 var getEventCharCode = __webpack_require__(59);
@@ -23810,7 +23716,7 @@ module.exports = SimpleEventPlugin;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 197 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23854,7 +23760,7 @@ SyntheticEvent.augmentClass(SyntheticAnimationEvent, AnimationEventInterface);
 module.exports = SyntheticAnimationEvent;
 
 /***/ }),
-/* 198 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23897,7 +23803,7 @@ SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 module.exports = SyntheticClipboardEvent;
 
 /***/ }),
-/* 199 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23938,7 +23844,7 @@ SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface
 module.exports = SyntheticCompositionEvent;
 
 /***/ }),
-/* 200 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23979,7 +23885,7 @@ SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 module.exports = SyntheticDragEvent;
 
 /***/ }),
-/* 201 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24020,7 +23926,7 @@ SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 module.exports = SyntheticFocusEvent;
 
 /***/ }),
-/* 202 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24062,7 +23968,7 @@ SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 module.exports = SyntheticInputEvent;
 
 /***/ }),
-/* 203 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24081,7 +23987,7 @@ module.exports = SyntheticInputEvent;
 var SyntheticUIEvent = __webpack_require__(33);
 
 var getEventCharCode = __webpack_require__(59);
-var getEventKey = __webpack_require__(212);
+var getEventKey = __webpack_require__(209);
 var getEventModifierState = __webpack_require__(60);
 
 /**
@@ -24151,7 +24057,7 @@ SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 module.exports = SyntheticKeyboardEvent;
 
 /***/ }),
-/* 204 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24201,7 +24107,7 @@ SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 module.exports = SyntheticTouchEvent;
 
 /***/ }),
-/* 205 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24245,7 +24151,7 @@ SyntheticEvent.augmentClass(SyntheticTransitionEvent, TransitionEventInterface);
 module.exports = SyntheticTransitionEvent;
 
 /***/ }),
-/* 206 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24304,7 +24210,7 @@ SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 module.exports = SyntheticWheelEvent;
 
 /***/ }),
-/* 207 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24353,7 +24259,7 @@ function adler32(data) {
 module.exports = adler32;
 
 /***/ }),
-/* 208 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24371,7 +24277,7 @@ module.exports = adler32;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactPropTypeLocationNames = __webpack_require__(188);
+var ReactPropTypeLocationNames = __webpack_require__(185);
 var ReactPropTypesSecret = __webpack_require__(91);
 
 var invariant = __webpack_require__(1);
@@ -24446,7 +24352,7 @@ module.exports = checkReactTypeSpec;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 209 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24531,7 +24437,7 @@ module.exports = dangerousStyleValue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 210 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24597,7 +24503,7 @@ module.exports = findDOMNode;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 211 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24679,7 +24585,7 @@ module.exports = flattenChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 212 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24786,7 +24692,7 @@ function getEventKey(nativeEvent) {
 module.exports = getEventKey;
 
 /***/ }),
-/* 213 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24832,7 +24738,7 @@ function getIteratorFn(maybeIterable) {
 module.exports = getIteratorFn;
 
 /***/ }),
-/* 214 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24911,7 +24817,7 @@ function getNodeForCharacterOffset(root, offset) {
 module.exports = getNodeForCharacterOffset;
 
 /***/ }),
-/* 215 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25017,7 +24923,7 @@ function getVendorPrefixedEventName(eventName) {
 module.exports = getVendorPrefixedEventName;
 
 /***/ }),
-/* 216 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25048,7 +24954,7 @@ function quoteAttributeValueForBrowser(value) {
 module.exports = quoteAttributeValueForBrowser;
 
 /***/ }),
-/* 217 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25069,7 +24975,7 @@ var ReactMount = __webpack_require__(89);
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ }),
-/* 218 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25105,7 +25011,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 219 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25139,7 +25045,7 @@ exports.default = IndexLink;
 module.exports = exports['default'];
 
 /***/ }),
-/* 220 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25209,7 +25115,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 221 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25276,7 +25182,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 222 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25351,7 +25257,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 223 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25415,7 +25321,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 224 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25467,7 +25373,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 225 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25698,7 +25604,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 226 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25735,7 +25641,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 227 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25864,7 +25770,7 @@ function runLeaveHooks(routes, prevState) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 228 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25928,7 +25834,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 229 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25936,7 +25842,7 @@ module.exports = exports['default'];
 
 exports.__esModule = true;
 
-var _createBrowserHistory = __webpack_require__(140);
+var _createBrowserHistory = __webpack_require__(137);
 
 var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
@@ -25950,7 +25856,7 @@ exports.default = (0, _createRouterHistory2.default)(_createBrowserHistory2.defa
 module.exports = exports['default'];
 
 /***/ }),
-/* 230 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26033,7 +25939,7 @@ exports.default = computeChangedRoutes;
 module.exports = exports['default'];
 
 /***/ }),
-/* 231 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26085,7 +25991,7 @@ exports.default = getComponents;
 module.exports = exports['default'];
 
 /***/ }),
-/* 232 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26117,7 +26023,7 @@ exports.default = getRouteParams;
 module.exports = exports['default'];
 
 /***/ }),
-/* 233 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26139,7 +26045,7 @@ exports.default = (0, _createRouterHistory2.default)(_createHashHistory2.default
 module.exports = exports['default'];
 
 /***/ }),
-/* 234 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26297,7 +26203,7 @@ function isActive(_ref, indexOnly, currentLocation, routes, params) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 235 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26387,7 +26293,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 236 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26645,7 +26551,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 237 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26703,7 +26609,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 238 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26723,7 +26629,7 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _hoistNonReactStatics = __webpack_require__(143);
+var _hoistNonReactStatics = __webpack_require__(140);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
@@ -26774,7 +26680,7 @@ module.exports = exports['default'];
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 239 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26838,7 +26744,7 @@ var KeyEscapeUtils = {
 module.exports = KeyEscapeUtils;
 
 /***/ }),
-/* 240 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26956,7 +26862,7 @@ module.exports = PooledClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 241 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26972,11 +26878,11 @@ module.exports = PooledClass;
 
 
 
-var PooledClass = __webpack_require__(240);
+var PooledClass = __webpack_require__(237);
 var ReactElement = __webpack_require__(22);
 
 var emptyFunction = __webpack_require__(12);
-var traverseAllChildren = __webpack_require__(251);
+var traverseAllChildren = __webpack_require__(248);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
 var fourArgumentPooler = PooledClass.fourArgumentPooler;
@@ -27152,7 +27058,7 @@ var ReactChildren = {
 module.exports = ReactChildren;
 
 /***/ }),
-/* 242 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27881,7 +27787,7 @@ module.exports = ReactClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 243 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28057,7 +27963,7 @@ module.exports = ReactDOMFactories;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 244 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28081,7 +27987,7 @@ var factory = __webpack_require__(78);
 module.exports = factory(isValidElement);
 
 /***/ }),
-/* 245 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28103,7 +28009,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 246 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28150,7 +28056,7 @@ ReactPureComponent.prototype.isPureReactComponent = true;
 module.exports = ReactPureComponent;
 
 /***/ }),
-/* 247 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28169,7 +28075,7 @@ module.exports = ReactPureComponent;
 module.exports = '15.5.4';
 
 /***/ }),
-/* 248 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28188,7 +28094,7 @@ module.exports = '15.5.4';
 var _prodInvariant = __webpack_require__(23);
 
 var ReactPropTypeLocationNames = __webpack_require__(110);
-var ReactPropTypesSecret = __webpack_require__(245);
+var ReactPropTypesSecret = __webpack_require__(242);
 
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
@@ -28262,7 +28168,7 @@ module.exports = checkReactTypeSpec;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 249 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28288,7 +28194,7 @@ function getNextDebugID() {
 module.exports = getNextDebugID;
 
 /***/ }),
-/* 250 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28332,7 +28238,7 @@ module.exports = onlyChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 251 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28355,7 +28261,7 @@ var REACT_ELEMENT_TYPE = __webpack_require__(108);
 
 var getIteratorFn = __webpack_require__(111);
 var invariant = __webpack_require__(1);
-var KeyEscapeUtils = __webpack_require__(239);
+var KeyEscapeUtils = __webpack_require__(236);
 var warning = __webpack_require__(2);
 
 var SEPARATOR = '.';
@@ -28514,7 +28420,7 @@ module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 252 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28527,7 +28433,7 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 253 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -28564,7 +28470,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(254);
+	fixUrls = __webpack_require__(251);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -28823,7 +28729,7 @@ function updateLink(linkElement, options, obj) {
 
 
 /***/ }),
-/* 254 */
+/* 251 */
 /***/ (function(module, exports) {
 
 
@@ -28918,7 +28824,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 255 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -28927,7 +28833,7 @@ module.exports = function (css) {
 var content = __webpack_require__(118);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(253)(content, {});
+var update = __webpack_require__(250)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -28944,13 +28850,7 @@ if(false) {
 }
 
 /***/ }),
-/* 256 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "2d2bba8a7ba9300ae5976cb3fb769a30.ttf";
-
-/***/ }),
-/* 257 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29018,11 +28918,111 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 258 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(112);
 
+
+/***/ }),
+/* 255 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+/* 256 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/orchard.jpg";
+
+/***/ }),
+/* 257 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/projekt-main.jpg";
+
+/***/ }),
+/* 258 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "2d2bba8a7ba9300ae5976cb3fb769a30.ttf";
 
 /***/ })
 /******/ ]);
