@@ -39,7 +39,7 @@ class AboutMe extends React.Component {
     }, 12000)
   }
   componentDidMount() {
-    setInterval(() =>{
+    this.interReset = setInterval(() =>{
       this.handleIntervals()
     },20000)
     this.interVal = setInterval(() => {
@@ -61,6 +61,7 @@ class AboutMe extends React.Component {
     clearTimeout(this.helloTime)
     clearTimeout(this.juniorTime)
     clearTimeout(this.firstTime)
+    clearInterval(this.interReset)
   }
   render() {
       let headAnimation = "headAnimation"
